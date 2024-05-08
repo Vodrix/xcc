@@ -4,4 +4,7 @@
 #include <dsound.h>
 #include <virtual_binary.h>
 
-void xap_play(LPDIRECTSOUND, Cvirtual_binary);
+void xap_play(string, LPDIRECTSOUND, Cvirtual_binary);
+
+inline atomic<BOOL> xapTestBool;
+inline string xapTestString;

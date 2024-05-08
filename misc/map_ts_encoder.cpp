@@ -348,7 +348,7 @@ static void write_pack(ostream& os, const byte* s, int cb_s)
 	while (r < r_end)
 	{
 		char line[80];
-		int cb_line = min(r_end - r, 70);
+		int cb_line = min(int(r_end - r), 70);
 		memcpy(line, r, cb_line);
 		line[cb_line] = 0;
 		r += cb_line;

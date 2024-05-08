@@ -1,6 +1,5 @@
 #include "xcc_dirs.h"
 
-#include <boost/algorithm/string.hpp>
 #include <cassert>
 #include <windows.h>
 #include "reg_key.h"
@@ -86,7 +85,7 @@ string xcc_dirs::get_exe(t_game game)
 	case game_nox:
 		return nox_dir + "nox.exe";
 	case game_ra2_yr:
-		return ra2_dir + "ra2md.exe";
+		return ra2_dir + "gamemd.exe";
 	case game_gr:
 		return gr_dir + "generals.exe";
 	case game_bfme:
@@ -203,7 +202,7 @@ string xcc_dirs::get_main_mix(t_game game)
 
 static void set_path(string s, string& path)
 {
-	boost::to_lower(s);
+	s = to_lower(s);
 	if (!s.empty() && s.back() != '\\')
 		s += '\\';	
 	path = s;
@@ -304,6 +303,7 @@ static void read_dir(const string& key, const string& value, t_game game)
 
 void xcc_dirs::load_from_registry()
 {
+
 	Creg_key kh_base;
 	if (!Cxcc_registry::get_base_key(kh_base))
 	{
@@ -322,6 +322,26 @@ void xcc_dirs::load_from_registry()
 			set_data_dir(s);
 		if (ERROR_SUCCESS == kh_base.query_value("enable_log", s))
 			g_enable_log = true;
+		if (ERROR_SUCCESS == kh_base.query_value("ra2_dir", s))
+			set_dir(game_ra2, s);
+		if (ERROR_SUCCESS == kh_base.query_value("ts_dir", s))
+			set_dir(game_ts, s);
+		if (ERROR_SUCCESS == kh_base.query_value("dune2000_dir", s))
+			set_dir(game_dune2000, s);
+		if (ERROR_SUCCESS == kh_base.query_value("nox_dir", s))
+			set_dir(game_nox, s);
+		if (ERROR_SUCCESS == kh_base.query_value("rg_dir", s))
+			set_dir(game_rg, s);
+		if (ERROR_SUCCESS == kh_base.query_value("ebfd_dir", s))
+			set_dir(game_ebfd, s);
+		if (ERROR_SUCCESS == kh_base.query_value("gr_dir", s))
+			set_dir(game_gr, s);
+		if (ERROR_SUCCESS == kh_base.query_value("gr_zh_dir", s))
+			set_dir(game_gr_zh, s);
+		if (ERROR_SUCCESS == kh_base.query_value("bfme_dir", s))
+			set_dir(game_bfme, s);
+		if (ERROR_SUCCESS == kh_base.query_value("tw_dir", s))
+			set_dir(game_tw, s);
 	}
 	if (cd_dir.empty())
 		reset_cd_dir();
@@ -353,6 +373,12 @@ void xcc_dirs::save_to_registry()
 	kh_base.set_value("dir1", td_primary_dir);
 	kh_base.set_value("dir2", td_secondary_dir);
 	kh_base.set_value("ra_dir", ra_dir);
+	kh_base.set_value("dune2000_dir", dune2000_dir);
+	kh_base.set_value("ts_dir", ts_dir);
+	kh_base.set_value("ra2_dir", ra2_dir);
+	kh_base.set_value("rg_dir", rg_dir);
+	kh_base.set_value("gr_dir", gr_dir);
+	kh_base.set_value("gr_zh_dir", gr_zh_dir);
 };
 
 string xcc_dirs::find_file(Cfname s)

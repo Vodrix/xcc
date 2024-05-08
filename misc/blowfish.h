@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vartypes.h>
+#include <xcc/data_ref.h>
 
 class Cblowfish
 {

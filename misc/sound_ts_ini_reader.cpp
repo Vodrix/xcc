@@ -1,5 +1,8 @@
 #include "stdafx.h"
+#include <xcc/string_view.h>
+
 #include "sound_ts_ini_reader.h"
+#include "string_conversion.h"
 
 Csound_data::Csound_data()
 {
@@ -41,7 +44,7 @@ int Csound_ts_ini_reader::process_key(string_view name, string_view value)
 	switch (m_section)
 	{
 	case sei_sounds:
-		m_sound_list[to_lower_copy(string(value))];
+		m_sound_list[to_lower(string(value))];
 		break;
 	case sei_unknown:
 		switch (find_id(name, sound_code, soi_unknown))

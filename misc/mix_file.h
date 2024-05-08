@@ -6,7 +6,7 @@
 class Cmix_file : public Ccc_file  
 {
 public:
-	int post_open();
+	virtual int post_open();
 	string get_name(int id);
 	static int get_id(t_game game, string name);
 	int get_index(unsigned int id) const;
@@ -14,7 +14,7 @@ public:
 	using Ccc_file::vdata;
 	Cvirtual_binary get_vdata(int id);
 	Cvirtual_binary get_vdata(const string& name);
-	bool is_valid();
+	virtual bool is_valid();
 	void close();
 	Cmix_file();
 
@@ -30,7 +30,7 @@ public:
 		m_mix_expansion = true;
 	}
 
-	int get_c_files() const
+	auto get_c_files() const
 	{
 		return m_index.size();
 	}
@@ -78,11 +78,16 @@ public:
 		return m_is_encrypted;	
 	}
 
+	int rawflags() const
+	{
+		return m_rawflagvalue;
+	}
+
 	const t_mix_index_entry* index() const
 	{
 		return &m_index[0];
 	}
-private:
+protected:
 	using t_id_index = map<int, int>;
 
 	static bool m_ft_support;
@@ -91,6 +96,7 @@ private:
 	bool m_mix_expansion = false;
 	bool m_is_encrypted;
 	bool m_has_checksum;
+	int m_rawflagvalue;
 	vector<t_mix_index_entry> m_index;
 	vector<t_file_type> m_index_ft;
 	t_id_index m_id_index;

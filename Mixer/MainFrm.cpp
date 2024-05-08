@@ -1,13 +1,9 @@
 #include "stdafx.h"
 #include "XCC Mixer.h"
-
 #include "MainFrm.h"
-
 #include "XCCFileView.h"
 #include "XSE_dlg.h"
 #include "XSTE_dlg.h"
-
-#include <boost/algorithm/string.hpp>
 #include <fstream>
 #include "aud_file.h"
 #include "directoriesdlg.h"
@@ -21,8 +17,6 @@
 #include "xcc_log.h"
 #include "xste.h"
 
-using namespace boost;
-
 IMPLEMENT_DYNCREATE(CMainFrame, CFrameWnd)
 
 BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
@@ -32,9 +26,11 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_COMMAND(ID_VIEW_GAME_TD, OnViewGameTD)
 	ON_COMMAND(ID_VIEW_GAME_RA, OnViewGameRA)
 	ON_COMMAND(ID_VIEW_GAME_TS, OnViewGameTS)
+	ON_COMMAND(ID_VIEW_GAME_RA2, OnViewGameRA2)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_GAME_TD, OnUpdateViewGameTD)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_GAME_RA, OnUpdateViewGameRA)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_GAME_TS, OnUpdateViewGameTS)
+	ON_UPDATE_COMMAND_UI(ID_VIEW_GAME_RA2, OnUpdateViewGameRA2)
 	ON_UPDATE_COMMAND_UI(ID_FILE_FOUND_UPDATE, OnUpdateFileFoundUpdate)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_PALET_UPDATE, OnUpdateViewPaletUpdate)
 	ON_COMMAND(ID_VIEW_GAME_AUTO, OnViewGameAuto)
@@ -55,6 +51,8 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_VOXEL_SURFACE_NORMALS, OnUpdateViewVoxelSurfaceNormals)
 	ON_COMMAND(ID_VIEW_VOXEL_DEPTH_INFORMATION, OnViewVoxelDepthInformation)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_VOXEL_DEPTH_INFORMATION, OnUpdateViewVoxelDepthInformation)
+	ON_COMMAND(ID_VIEW_VOXEL_TEST, OnViewVoxelTest)
+	ON_UPDATE_COMMAND_UI(ID_VIEW_VOXEL_TEST, OnUpdateViewVoxelTest)
 	ON_COMMAND(ID_CONVERSION_SPLIT_SHADOWS, OnConversionSplitShadows)
 	ON_UPDATE_COMMAND_UI(ID_CONVERSION_SPLIT_SHADOWS, OnUpdateConversionSplitShadows)
 	ON_COMMAND(ID_VIEW_DIRECTORIES, OnViewDirectories)
@@ -92,6 +90,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_COMMAND(ID_LAUNCH_XSE_RA2_YR, OnLaunchXSE_RA2_YR)
 	ON_UPDATE_COMMAND_UI(ID_LAUNCH_XSE_RA2_YR, OnUpdateLaunchXSE_RA2_YR)
 END_MESSAGE_MAP()
+
 
 static UINT indicators[] =
 {
@@ -194,6 +193,11 @@ void CMainFrame::OnViewGameTS()
 	m_game = game_ts;
 }
 
+void CMainFrame::OnViewGameRA2()
+{
+	m_game = game_ra2;
+}
+
 void CMainFrame::OnUpdateViewGameAuto(CCmdUI* pCmdUI) 
 {
 	pCmdUI->SetCheck(m_game == -1);
@@ -212,6 +216,11 @@ void CMainFrame::OnUpdateViewGameRA(CCmdUI* pCmdUI)
 void CMainFrame::OnUpdateViewGameTS(CCmdUI* pCmdUI) 
 {
 	pCmdUI->SetCheck(m_game == game_ts);
+}
+
+void CMainFrame::OnUpdateViewGameRA2(CCmdUI* pCmdUI)
+{
+	pCmdUI->SetCheck(m_game == game_ra2);
 }
 
 t_game CMainFrame::get_game()
@@ -322,7 +331,7 @@ void CMainFrame::find_mixs(const string& dir, t_game game, string filter)
 			{
 				if (fd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
 					continue;
-				const string fname = to_lower_copy(string(fd.cFileName));
+				const string fname = to_lower(string(fd.cFileName));
 				xcc_log::write_line("finds: " + fname, 1);
 				Cmix_file f;
 				if (!f.open(dir + fname))
@@ -457,6 +466,8 @@ void CMainFrame::initialize_lists()
     memcpy(m_ra_palet, pal_f.get_palet(), sizeof(t_palet));
 	if (!f1.open("tibsun.mix") && !f2.open("cache.mix", f1) && !pal_f.open("unittem.pal", f2))
     memcpy(m_ts_palet, pal_f.get_palet(), sizeof(t_palet));
+	if (!f1.open("ra2.mix") && !f2.open("cache.mix", f1) && !pal_f.open("unittem.pal", f2))
+		memcpy(m_ra2_palet, pal_f.get_palet(), sizeof(t_palet));
 	if (m_palet_i >= m_pal_list.size())
 		m_palet_i = -1;
 	clean_pal_map_list();
@@ -478,6 +489,8 @@ const t_palet_entry* CMainFrame::get_game_palet(t_game game)
 		return m_td_palet;
 	case game_ra:
 		return m_ra_palet;
+	case game_ra2:
+		return m_ra2_palet;
 	default:
 		return m_ts_palet;
 	}
@@ -611,6 +624,17 @@ void CMainFrame::OnViewVoxelDepthInformation()
 void CMainFrame::OnUpdateViewVoxelDepthInformation(CCmdUI* pCmdUI) 
 {
 	pCmdUI->SetCheck(m_vxl_mode == 2);
+}
+
+void CMainFrame::OnViewVoxelTest()
+{
+	m_vxl_mode = 3;
+	m_file_info_pane->Invalidate();
+}
+
+void CMainFrame::OnUpdateViewVoxelTest(CCmdUI* pCmdUI)
+{
+	pCmdUI->SetCheck(m_vxl_mode == 3);
 }
 
 void CMainFrame::OnConversionCombineShadows() 
@@ -793,12 +817,18 @@ void CMainFrame::OnLaunchXSE_Open()
 	CFileDialog dlg0(true, "bag", NULL, OFN_HIDEREADONLY | OFN_FILEMUSTEXIST, "BAG files (*.bag)|*.bag|", this);
 	if (IDOK != dlg0.DoModal())
 		return;
-	CFileDialog dlg1(true, "idx", NULL, OFN_HIDEREADONLY | OFN_FILEMUSTEXIST, "IDX files (*.idx)|*.idx|", this);
-	if (IDOK != dlg1.DoModal())
-		return;
+	Cfname bag_path(string(dlg0.GetPathName()));
+	Cfname idx_path(bag_path.get_path() + bag_path.get_ftitle() + ".idx");
+	if (!idx_path.exists())
+	{
+		CFileDialog dlg1(true, "idx", NULL, OFN_HIDEREADONLY | OFN_FILEMUSTEXIST, "IDX files (*.idx)|*.idx|", this);
+		if (IDOK != dlg1.DoModal())
+			return;
+		idx_path = string(dlg1.GetPathName());
+	}
 	CXSE_dlg dlg2(game_ra2_yr);
-	dlg2.bag_file(string(dlg0.GetPathName()));
-	dlg2.idx_file(string(dlg1.GetPathName()));
+	dlg2.bag_file(bag_path.get_all());
+	dlg2.idx_file(idx_path.get_all());
 	dlg2.DoModal();
 }
 
@@ -844,7 +874,7 @@ void CMainFrame::OnLaunchXTW_TS()
 				Ctheme_data e;
 				e.name(Cfname(fd.cFileName).get_ftitle());
 				e.length(static_cast<float>(f.get_c_samples()) / f.get_samplerate() / 60);
-				theme_list[to_upper_copy(Cfname(b).get_ftitle())] = e;
+				theme_list[to_upper(Cfname(b).get_ftitle())] = e;
 			}
 		}
 		while (FindNextFile(findhandle, &fd));
@@ -855,12 +885,12 @@ void CMainFrame::OnLaunchXTW_TS()
 	// "1=INTRO" << endl;
 	int j = 51;
 	for (auto& i : theme_list)
-		g << n(j++) << '=' << to_upper_copy(i.first) << endl;
+		g << n(j++) << '=' << to_upper(i.first) << endl;
 	g << endl;
 	for (auto& i : theme_list)
 	{
 		const Ctheme_data& e = i.second;
-		g << '[' << to_upper_copy(i.first) << ']' << endl
+		g << '[' << to_upper(i.first) << ']' << endl
 			<< "Name=" << e.name() << endl;
 		if (e.normal())
 			g << "Length=" << e.length() << endl;
@@ -918,7 +948,7 @@ void CMainFrame::launch_xtw(t_game game)
 				Ctheme_data e;
 				e.name("THEME:" + Cfname(b).get_ftitle());
 				e.sound(Cfname(b).get_ftitle());
-				theme_list[to_upper_copy(Cfname(b).get_ftitle())] = e;
+				theme_list[to_upper(Cfname(b).get_ftitle())] = e;
 				if (xste_open)
 					xste.csf_f().set_value(e.name(), Ccsf_file::convert2wstring(Cfname(fname).get_ftitle()), "");
 
@@ -933,12 +963,12 @@ void CMainFrame::launch_xtw(t_game game)
 	g << "[Themes]" << endl;
 	int j = 51;
 	for (auto& i : theme_list)
-		g << n(j++) << '=' << to_upper_copy(i.first) << endl;
+		g << n(j++) << '=' << to_upper(i.first) << endl;
 	g << endl;
 	for (auto& i : theme_list)
 	{
 		const Ctheme_data& e = i.second;
-		g << '[' << to_upper_copy(i.first) << ']' << endl;
+		g << '[' << to_upper(i.first) << ']' << endl;
 		if (!e.name().empty())
 			g << "Name=" << e.name() << endl;
 		if (!e.normal())

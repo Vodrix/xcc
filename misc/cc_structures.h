@@ -25,17 +25,11 @@ enum t_game
 
 const char* game_name[];
 
-inline __int32 reverse(__int32 v)
+static int32_t reverse(int32_t v)
 {
-	_asm
-	{
-		mov		eax, v
-		xchg	al, ah
-		rol		eax, 16
-		xchg	al, ah
-		mov		v, eax
-	}
-	return v;
+	uint32_t result = ((v & 0x00FF00FF) << 8) | ((v & 0xFF00FF00) >> 8);
+	result = (result << 16) | (result >> 16);
+	return result;
 }
 
 #pragma pack(push, 1)
@@ -278,12 +272,13 @@ struct t_shp_dune2_image_header
 
 struct t_shp_header
 {
-    __int16 c_images;
-    __int16 unknown1;
-    __int16 unknown2;
-    __int16 cx;
-    __int16 cy;
-    __int32 unknown3;
+		__int16 c_images;
+		__int16 xpos;
+		__int16 ypos;
+		__int16 cx;
+		__int16 cy;
+		__int16 delta;
+		__int16 flags;
 };
 
 struct t_shp_ts_header
@@ -298,10 +293,13 @@ struct t_shp_ts_image_header
 {
 	__int16 x;
 	__int16 y;
-    __int16 cx;
-    __int16 cy;
-    __int32 compression;
-	__int32 unknown;
+	__int16 cx;
+	__int16 cy;
+	__int32 flags;
+	unsigned __int8 red;
+	unsigned __int8 green;
+	unsigned __int8 blue;
+	unsigned __int8 alpha;
 	__int32 zero;
 	__int32 offset;
 };

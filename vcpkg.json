@@ -2,12 +2,11 @@
   "name": "xcc",
   "version-string": "0",
   "dependencies": [
-		"boost-algorithm",
-		"boost-crc",
-		"bzip2",
-		"libjpeg-turbo",
-		"libpng",
-		"libvorbis",
-		"lzo"
-  ]
+    "bzip2",
+    "libjpeg-turbo",
+    "libpng",
+    "libvorbis",
+    "lzo"
+  ],
+  "builtin-baseline": "66b4b34d99ab272fcf21f2bd12b616e371c6bb31"
 }

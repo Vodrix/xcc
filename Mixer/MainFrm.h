@@ -124,6 +124,7 @@ protected:
 	t_palet m_td_palet;
 	t_palet m_ra_palet;
 	t_palet m_ts_palet;
+	t_palet m_ra2_palet;
 	int m_palet_i = -1;
 	int m_vxl_mode = 0;
 	bool m_lists_initialized;
@@ -155,9 +156,11 @@ protected:
 	afx_msg void OnViewGameTD();
 	afx_msg void OnViewGameRA();
 	afx_msg void OnViewGameTS();
+	afx_msg void OnViewGameRA2();
 	afx_msg void OnUpdateViewGameTD(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateViewGameRA(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateViewGameTS(CCmdUI* pCmdUI);
+	afx_msg void OnUpdateViewGameRA2(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateFileFoundUpdate(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateViewPaletUpdate(CCmdUI* pCmdUI);
 	afx_msg void OnViewGameAuto();
@@ -178,6 +181,8 @@ protected:
 	afx_msg void OnUpdateViewVoxelSurfaceNormals(CCmdUI* pCmdUI);
 	afx_msg void OnViewVoxelDepthInformation();
 	afx_msg void OnUpdateViewVoxelDepthInformation(CCmdUI* pCmdUI);
+	afx_msg void OnViewVoxelTest();
+	afx_msg void OnUpdateViewVoxelTest(CCmdUI* pCmdUI);
 	afx_msg void OnConversionSplitShadows();
 	afx_msg void OnUpdateConversionSplitShadows(CCmdUI* pCmdUI);
 	afx_msg void OnUtilitiesXccAvPlayer();
@@ -226,5 +231,6 @@ protected:
 	afx_msg void OnUpdateViewPalet(CCmdUI* pCmdUI);
 	afx_msg void OnConversionRemapTeamColors();
 	afx_msg void OnUpdateConversionRemapTeamColors(CCmdUI* pCmdUI);
+
 	DECLARE_MESSAGE_MAP()
 };

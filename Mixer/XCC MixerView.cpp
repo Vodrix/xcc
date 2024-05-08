@@ -1,18 +1,17 @@
 #include "stdafx.h"
 #include "XCC Mixer.h"
-
+#include "XSE_dlg.h"
 #include "MainFrm.h"
 #include "XCCFileView.h"
 #include "XCC MixerDoc.h"
 #include "XCC MixerView.h"
 #include "resource.h"
-
+#include "XSTE_dlg.h"
 #include <aud_decode.h>
 #include <aud_file_write.h>
 #include <aud_file.h>
 #include <big_edit.h>
 #include <big_file_write.h>
-#include <boost/algorithm/string.hpp>
 #include <cps_file.h>
 #include <dds_file.h>
 #include <fstream>
@@ -59,8 +58,7 @@
 #include "dlg_shp_viewer.h"
 #include "resizedlg.h"
 #include "shp_properties_dlg.h"
-
-using namespace boost;
+#include "shortcut.h"
 
 IMPLEMENT_DYNCREATE(CXCCMixerView, CListView)
 
@@ -267,7 +265,7 @@ void CXCCMixerView::OnFileNew()
 
 void CXCCMixerView::OnFileOpen()
 {
-	CFileDialog dlg(true, "mix", NULL, OFN_HIDEREADONLY | OFN_FILEMUSTEXIST, "MIX files (*.big;*.dat;*.mix;*.pkg)|*.big;*.dat;*.mix;*.pkg|", this);
+	CFileDialog dlg(true, "mix", NULL, OFN_HIDEREADONLY | OFN_FILEMUSTEXIST, "Archive files (*.big;*.dat;*.mix;*.pkg;*.wsx)|*.big;*.dat;*.mix;*.pkg;*.wsx;|", this);
 	if (IDOK == dlg.DoModal())
 	{
 		close_all_locations();
@@ -299,11 +297,24 @@ void CXCCMixerView::open_location_dir(const string& name)
 
 void CXCCMixerView::open_location_mix(const string& name)
 {
+	m_inmix = true;
 	Cmix_file* mix_f = new Cmix_file;
 	if (mix_f->open(name))
+	{
 		delete mix_f;
+		mix_f = new Cmix_file_rd;
+		if (static_cast<Cmix_file_rd*>(mix_f)->open(name))
+		{
+			delete mix_f;
+		}
+		else
+		{
+			goto MPUSH;
+		}
+	}
 	else
 	{
+	MPUSH:
 		m_location.push(m_mix_f);
 		m_mix_f = mix_f;
 		m_mix_fname = name;
@@ -343,13 +354,50 @@ void CXCCMixerView::open_location_mix(t_mix_map_list::const_iterator i, int file
 	}
 }
 
+void CXCCMixerView::open_location_mix(int mix_id, int sub_mix_id, int file_id)
+{
+	close_all_locations();
+	const t_index_entry& mix = t_index_list().at(mix_id);
+	open_location_mix(m_dir.rfind('\\') == string::npos ? (m_dir + '\\' + mix.name) : (m_dir + mix.name));
+	if (sub_mix_id >= 0)
+	{
+		open_location_mix(m_mix_f->get_id(sub_mix_id));
+	}
+	if (file_id)
+	{
+		CListCtrl& lc = GetListCtrl();
+		LVFINDINFO lvf;
+		lvf.flags = LVFI_PARAM;
+		lvf.lParam = file_id;
+		int i = lc.FindItem(&lvf, -1);
+		if (i != -1)
+		{
+			lc.SetItemState(i, LVIS_FOCUSED | LVIS_SELECTED, LVIS_FOCUSED | LVIS_SELECTED);
+			lc.EnsureVisible(i, false);
+		}
+	}
+}
+
 void CXCCMixerView::open_location_mix(int id)
 {
+	m_inmix = true;
 	Cmix_file* mix_f = new Cmix_file;
 	if (mix_f->open(id, *m_mix_f))
+	{
 		delete mix_f;
+		mix_f = new Cmix_file_rd;
+		if (static_cast<Cmix_file_rd*>(mix_f)->open(id, *m_mix_f))
+		{
+			delete static_cast<Cmix_file_rd*>(mix_f);
+		}
+		else
+		{
+			goto MPUSH;
+		}
+	}
 	else
 	{
+	MPUSH:
 		m_location.push(m_mix_f);
 		m_mix_f = mix_f;
 		update_list();
@@ -360,6 +408,7 @@ void CXCCMixerView::close_location(int reload)
 {
 	if (m_mix_f)
 	{
+		m_inmix = false;
 		delete m_mix_f;
 		m_mix_f = m_location.top();
 		m_location.pop();
@@ -380,14 +429,35 @@ void CXCCMixerView::clear_list()
 	m_index.clear();
 }
 
+string totalSize(size_t i)
+{
+	static const char* sizenames[] = { " B", " KB", " MB", " GB" };
+	size_t div = 0;
+	size_t rem = 0;
+	while (i >= 1024 && div < (sizeof sizenames / sizeof * sizenames))
+	{
+		rem = (i % 1024);
+		div++;
+		i /= 1024;
+	}
+	return n((float)i + (float)rem / 1024.0) + sizenames[div];
+}
+
 void CXCCMixerView::update_list()
 {
 	DragAcceptFiles(can_edit());
 	clear_list();
 	t_index_entry e;
 	m_palet_loaded = false;
+
 	if (m_mix_f)
 	{
+		e.name = "..";
+		e.ft = ft_dir;
+		e.size = "";
+		e.description = "";
+		m_index[0] = e;
+
 		m_game = m_mix_f->get_game();
 		for (int i = 0; i < m_mix_f->get_c_files(); i++)
 		{
@@ -397,7 +467,7 @@ void CXCCMixerView::update_list()
 			e.name = mix_database::get_name(m_game, id);
 			if (e.name.empty())
 				e.name = nh(8, id);
-			e.size = m_mix_f->get_size(id);
+			e.size = totalSize(m_mix_f->get_size(id));
 			m_index[id] = e;
 			if (e.ft == ft_pal)
 			{
@@ -417,7 +487,7 @@ void CXCCMixerView::update_list()
 			{
 				e.name = drive_name;
 				e.ft = ft_drive;
-				e.size = -1;
+				e.size = "";
 				e.description = "";
 				m_index[Cmix_file::get_id(get_game(), e.name)] = e;
 			}
@@ -431,7 +501,7 @@ void CXCCMixerView::update_list()
 			do
 			{
 				e.name = finddata.cFileName;
-				e.size = -1;
+				e.size = "";
 				if (finddata.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
 				{
 					if (e.name == ".")
@@ -482,8 +552,7 @@ void CXCCMixerView::OnGetdispinfo(NMHDR* pNMHDR, LRESULT* pResult)
 			m_buffer[m_buffer_w] = ft_name[e.ft];
 		break;
 	case 2:
-		if (e.size != -1)
-			m_buffer[m_buffer_w] = n(e.size);
+		m_buffer[m_buffer_w] = e.size;
 		break;
 	case 3:
 		m_buffer[m_buffer_w] = e.description;
@@ -511,15 +580,15 @@ int CXCCMixerView::compare(int id_a, int id_b) const
 			return -1;
 		if (b.ft == ft_drive)
 			return 1;
-		if (a.ft == ft_dir)
+		if (a.ft == ft_dir || a.ft == ft_lnkdir)
 			return -1;
-		if (b.ft == ft_dir)
+		if (b.ft == ft_dir || b.ft == ft_lnkdir)
 			return 1;
 	}
 	switch (m_sort_column)
 	{
 	case 0:
-		return ::compare(to_lower_copy(a.name), to_lower_copy(b.name));
+		return ::compare(to_lower(a.name), to_lower(b.name));
 	case 1:
 		return ::compare(a.ft, b.ft);
 	case 2:
@@ -577,7 +646,7 @@ void CXCCMixerView::OnItemchanged(NMHDR* pNMHDR, LRESULT* pResult)
 		else
 		{
 			const t_index_entry& index = m_index[lvi.lParam];
-			if (index.ft != ft_dir && index.ft != ft_drive)
+			if (index.ft != ft_dir && index.ft != ft_drive && index.ft != ft_lnkdir)
 				m_file_view_pane->open_f(m_dir + index.name);
 		}
 	}
@@ -877,7 +946,7 @@ bool CXCCMixerView::can_delete()
 	{
 		int id = GetListCtrl().GetItemData(i);
 		const t_index_entry& index = find_ref(m_index, id);
-		if (index.ft == ft_dir || index.ft == ft_drive || index.name.empty())
+		if (index.ft == ft_drive || index.name.empty() || (index.ft == ft_dir && (index.name == "." || index.name == "..")))
 			return false;
 		m_index_selected.push_back(i);
 		i = GetListCtrl().GetNextItem(i, LVNI_ALL | LVNI_SELECTED);
@@ -1217,7 +1286,7 @@ static int copy_as_image(Cvideo_decoder* v, string fname, t_file_type ft)
 	{
 		v->decode(frame.write_start(v->cb_image()));
 		t.set_title(Cfname(fname).get_ftitle() + " " + nwzl(4, i));
-		if (int error = image_file_write(t, ft, frame.data(), palet, v->cx(), v->cy()))
+		if (int error = image_file_write(t, ft, frame.data(), palet, v->cx(), v->cy(), v->cb_pixel()))
 			return error;
 	}
 	delete v;
@@ -2172,6 +2241,53 @@ void CXCCMixerView::OnUpdatePopupCompact(CCmdUI* pCmdUI)
 	pCmdUI->Enable(m_location.size() == 1);
 }
 
+bool DeleteDirectory(string strPath, const int uiEndLevel = -1, int iCurrentLevel = 0)
+{
+	if (iCurrentLevel > uiEndLevel)
+	{
+		return true;
+	}
+	WIN32_FIND_DATA findFileData;
+	auto strFindPath = strPath + "\\*";
+
+	HANDLE hFind = FindFirstFile(strFindPath.c_str(), &findFileData);
+	if (INVALID_HANDLE_VALUE == hFind) {
+		return false;
+	}
+
+	bool result = true;
+	do
+	{
+		string strFileName = findFileData.cFileName;
+		if (strFileName != "." && strFileName != "..")
+		{
+			strFindPath = strPath + "\\" + strFileName;
+			if (findFileData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+			{
+				if (!DeleteDirectory(strFindPath, uiEndLevel, iCurrentLevel + 1) || !RemoveDirectory(strFindPath.c_str()))
+				{
+					result = false;
+					break;
+				}
+			}
+			else
+			{
+				if (!DeleteFile(strFindPath.c_str()))
+				{
+					result = false;
+					break;
+				}
+			}
+		}
+	} while (FindNextFile(hFind, &findFileData));
+	FindClose(hFind);
+	if (result && !RemoveDirectory(strPath.c_str()))
+	{
+		result = false;
+	}
+	return result;
+}
+
 void CXCCMixerView::OnPopupDelete()
 {
 	if (~GetAsyncKeyState(VK_SHIFT) < 0 && MessageBox("Are you sure you want to delete these files?", NULL, MB_ICONQUESTION | MB_YESNO) != IDYES)
@@ -2227,7 +2343,13 @@ void CXCCMixerView::OnPopupDelete()
 	{
 		for (auto& i : m_index_selected)
 		{
-			if (!DeleteFile((m_dir + find_ref(m_index, get_id(i)).name).c_str()))
+			const t_index_entry& index = find_ref(m_index, get_id(i));
+			if (index.ft == ft_dir)
+			{
+				if (!DeleteDirectory(m_dir + index.name, 1))
+					error = 1;
+			}
+			else if (!DeleteFile((m_dir + index.name).c_str()))
 				error = 1;
 		}
 	}
@@ -2267,6 +2389,7 @@ void CXCCMixerView::OnUpdatePopupOpen(CCmdUI* pCmdUI)
 		case ft_big:
 		case ft_dir:
 		case ft_drive:
+		case ft_lnkdir:
 		case ft_mix:
 		case ft_mix_rg:
 		case ft_pak:
@@ -2621,7 +2744,18 @@ BOOL CXCCMixerView::OnIdle(LONG lCount)
 			else
 			{
 				e.ft = f.get_file_type();
-				e.size = f.get_size();
+				e.size = totalSize(f.get_size());
+			}
+
+			if (e.ft == ft_unknown)
+			{
+				Cfname fname = to_lower(e.name);
+				if (fname.get_fext() == ".mix")
+				{
+					//e.ft = f.get_file_type_ext();
+					e.ft = ft_mix;
+					e.size = totalSize(f.get_size());
+				}
 			}
 			CListCtrl& lc = GetListCtrl();
 			LVFINDINFO lvf;
@@ -2650,9 +2784,32 @@ string CXCCMixerView::report() const
 	for (int i = 0; i < lc.GetItemCount(); i++)
 	{
 		const t_index_entry& e = find_ref(m_index, lc.GetItemData(i));
-		page += "<tr><td>" + e.name + "<td>" + ft_name[e.ft] + "<td align=right>" + (e.size == -1 ? "&nbsp;" : n(e.size)) + "<td>" + (e.description.empty() ? "&nbsp;" : e.description);
+		page += "<tr><td>" + e.name + "<td>" + ft_name[e.ft] + "<td align=right>" + (e.size == "" ? "&nbsp;" : e.size) + "<td>" + (e.description.empty() ? "&nbsp;" : e.description);
 	}
 	return "<table border=1 width=100%>" + page + "</table>";
+}
+
+void CXCCMixerView::extract_open_audio_pak(const string& bag, const string& idx) const
+{
+	string bag_path = m_dir + bag;
+	string idx_path = m_dir + idx;
+	if (m_mix_f && (!Cfname(bag_path).exists() || !Cfname(idx_path).exists()))
+	{
+		int idx_id, bag_id;
+		idx_id = Cmix_file::get_id(game_ra2_yr, idx);
+		bag_id = Cmix_file::get_id(game_ra2_yr, bag);
+		Ccc_file f_bag(false);
+		if (!open_f_id(f_bag, bag_id))
+			f_bag.extract(bag_path);
+		Ccc_file f_idx(false);
+		if (!open_f_id(f_idx, idx_id))
+			f_idx.extract(idx_path);
+	}
+
+	CXSE_dlg dlg(game_ra2_yr);
+	dlg.bag_file(bag_path);
+	dlg.idx_file(idx_path);
+	dlg.DoModal();
 }
 
 void CXCCMixerView::open_item(int id)
@@ -2664,32 +2821,56 @@ void CXCCMixerView::open_item(int id)
 	case ft_ogg:
 	case ft_voc:
 	case ft_wav:
+	{
 		if (GetMainFrame()->get_ds())
 		{
 			CWaitCursor wait;
 			Ccc_file f(true);
 			if (!open_f_id(f, id))
-				xap_play(GetMainFrame()->get_ds(), f.vdata());
+				xap_play(index.name, GetMainFrame()->get_ds(), f.vdata());
 		}
 		break;
+	}
 	case ft_dir:
 		{
 			string name = index.name;
-			close_location(false);
 			if (name == "..")
 			{
-				int i = m_dir.rfind('\\');
-				if (i != string::npos)
+				if (!m_inmix)
 				{
-					i = m_dir.rfind('\\', i - 1);
+					close_location(false);
+					int i = m_dir.rfind('\\');
 					if (i != string::npos)
-						open_location_dir(m_dir.substr(0, i + 1));
+					{
+						i = m_dir.rfind('\\', i - 1);
+						if (i != string::npos)
+							open_location_dir(m_dir.substr(0, i + 1));
+					}
+				}
+				else
+				{
+					m_inmix = false;
+					close_location(false);
+					open_location_dir(m_dir + '\\');
 				}
 			}
 			else
+			{
+				close_location(false);
 				open_location_dir(m_dir + name + '\\');
+			}
 			break;
 		}
+	case ft_lnkdir:
+	{
+		close_location(false);
+		Cfname lnkdir(index.name);
+		CString cs;
+		resolveShortcutTarget(m_hWnd, (m_dir + lnkdir.get_fname()).c_str(), cs);
+		m_dir = cs + '\\';
+		update_list();
+		break;
+	}
 	case ft_drive:
 		{
 			string name = index.name;
@@ -2708,6 +2889,31 @@ void CXCCMixerView::open_item(int id)
 				open_location_mix(m_dir + index.name);
 			break;
 		}
+	case ft_csf:
+	{
+		CXSTE_dlg dlg2(game_unknown);
+		dlg2.open(m_dir + index.name);
+		dlg2.DoModal();
+		break;
+	}
+	case ft_unknown:
+	{
+		Cfname unknown_file(index.name);
+		t_index_entry* ptr_entry;
+		if (unknown_file.get_fext() == ".bag")
+		{
+			extract_open_audio_pak(unknown_file, unknown_file.get_ftitle() + ".idx");
+		}
+		else if (unknown_file.get_fext() == ".idx")
+		{
+			extract_open_audio_pak(unknown_file.get_ftitle() + ".bag", unknown_file);
+		}
+		else
+		{
+			ShellExecute(m_hWnd, "open", (m_dir + unknown_file.get_fname()).c_str(), NULL, NULL, SW_SHOW);
+		} 
+		break;
+	}
 	case ft_shp:
 	case ft_shp_ts:
 	case ft_vqa:
@@ -2761,6 +2967,12 @@ void CXCCMixerView::open_item(int id)
 			delete decoder;
 			break;
 		}
+	default:
+	{
+			Cfname unknown_file(index.name);
+			ShellExecute(m_hWnd, "open", (m_dir + unknown_file.get_fname()).c_str(), NULL, NULL, SW_SHOW);
+			break;
+	}
 	}
 }
 
@@ -2773,6 +2985,7 @@ void CXCCMixerView::OnEditSelectAll()
 		{
 		case ft_dir:
 		case ft_drive:
+		case ft_lnkdir:
 			lc.SetItemState(index, 0, LVIS_SELECTED);
 			break;
 		default:

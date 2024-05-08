@@ -39,7 +39,7 @@ const Cvirtual_image& Cvirtual_image::palet(const t_palet_entry* palet, bool inf
 
 void Cvirtual_image::load(const Cvirtual_binary& image, int cx, int cy, int cb_pixel, const t_palet_entry* p, bool inflate)
 {
-	assert(cb_pixel == 1 || cb_pixel == 3 || cb_pixel == 4);
+	assert(cb_pixel == 1 || cb_pixel == 3 || cb_pixel == 4 || cb_pixel == 6 || cb_pixel == 8);
 	m_cx = cx;
 	m_cy = cy;
 	mcb_pixel = cb_pixel;
@@ -52,7 +52,7 @@ void Cvirtual_image::load(const Cvirtual_binary& image, int cx, int cy, int cb_p
 
 void Cvirtual_image::load(const void* image, int cx, int cy, int cb_pixel, const t_palet_entry* p, bool inflate)
 {
-	assert(cb_pixel == 1 || cb_pixel == 3 || cb_pixel == 4);
+	assert(cb_pixel == 1 || cb_pixel == 3 || cb_pixel == 4 || cb_pixel == 6 || cb_pixel == 8);
 	m_cx = cx;
 	m_cy = cy;
 	mcb_pixel = cb_pixel;
@@ -123,17 +123,17 @@ int Cvirtual_image::load(const string& fname)
 
 int Cvirtual_image::save(Cvirtual_file& f, t_file_type ft) const
 {
-	return image_file_write(f, ft, image(), palet(), m_cx, m_cy);
+	return image_file_write(f, ft, image(), palet(), m_cx, m_cy, mcb_pixel);
 }
 
 Cvirtual_file Cvirtual_image::save(t_file_type ft) const
 {
-	return image_file_write(ft, image(), palet(), m_cx, m_cy);
+	return image_file_write(ft, image(), palet(), m_cx, m_cy, mcb_pixel);
 }
 
 int Cvirtual_image::save(const string& fname, t_file_type ft) const
 {
-	return image_file_write(fname, ft, image(), palet(), m_cx, m_cy);
+	return image_file_write(fname, ft, image(), palet(), m_cx, m_cy, mcb_pixel);
 }
 
 void Cvirtual_image::swap_rb()

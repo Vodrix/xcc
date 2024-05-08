@@ -14,6 +14,7 @@ private:
 public:
 	const Cfname& operator=(string_view);
 	bool exists() const;
+	const Cfname& operator=(const string&);
 	void make_path();
 	void use_default_ext(string_view);
 	void use_default_path(string_view);

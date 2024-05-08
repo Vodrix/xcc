@@ -7,12 +7,13 @@
 #include "xap.h"
 #include "xm_types.h"
 
+
 struct t_index_entry
 {
 	string description;
 	t_file_type ft;
 	string name;
-	long long size;
+	string size;
 };
 
 class CXCCMixerView : public CListView
@@ -67,9 +68,17 @@ public:
 	void open_location_mix(const string& name);
 	void open_location_mix(int id);
 	void open_location_mix(t_mix_map_list::const_iterator i, int file_id);
+	void open_location_mix(int mix_id, int sub_mix_id, int file_id);
 	void set_other_panes(CXCCFileView* file_view_pane, CXCCMixerView* other_pane);
 	void sort_list(int i, bool reverse);
 	void update_list();
+
+	const map<int, t_index_entry>& t_index_list() const
+	{
+		return m_index;
+	}
+
+	const string& current_dir() const { return m_dir; }
 
 // Overrides
 	// ClassWizard generated virtual function overrides
@@ -91,6 +100,7 @@ public:
 	~CXCCMixerView();
 
 protected:
+	void extract_open_audio_pak(const string& bag, const string& idx) const;
 
 // Generated message map functions
 protected:
@@ -209,4 +219,5 @@ private:
 	int m_sort_column;
 	bool m_sort_reverse;
 	bool m_reading = false;
+	bool m_inmix = false;
 };

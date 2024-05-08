@@ -77,11 +77,11 @@ void add_file(t_game game, const string& fname, t_idlist& id_list)
 	while (getline(inf, line))
 	{
 		lineindex++;
-		if (!is_valid_line(line, '\t', 1))
-		{
-			cerr << "Error in line " << lineindex << endl;
-			continue;
-		}
+		//if (!is_valid_line(line, '\t', 1))
+		//{
+		//	cerr << "Error in line " << lineindex << endl;
+		//	continue;
+		//}
 		parse_line_normal(line, idinfo);
 		if (!idinfo.name.empty())
 			id_list[Cmix_file::get_id(game, idinfo.name)] = idinfo;
@@ -166,7 +166,7 @@ void write_database(const string& ifname, t_idlist& td_list, t_idlist& ra_list, 
 
 int main()
 {
-	xcc_dirs::load_from_registry();
+	//xcc_dirs::load_from_registry();
 	t_idlist td_list, ra_list, ts_list, ra2_list;
 	const string indir = xcc_dirs::get_data_dir();
 	const string filenameend = " description.txt";
@@ -175,30 +175,46 @@ int main()
 	else
 	{
 		// add_mm(indir + "mm list.txt", td_list);
-		add_rm(indir + "rm list.txt", ra_list);
-		WIN32_FIND_DATA finddata;
-		HANDLE findhandle = FindFirstFile((indir + "*").c_str(), &finddata);
-		if (findhandle != INVALID_HANDLE_VALUE)
-		{
-			do
-			{
-				if (finddata.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
-					continue;
-				string filename = finddata.cFileName;
-				if (filename.find(filenameend, 0) == filename.npos)
-					continue;
-				if (boost::starts_with(filename, "ra2"))
-					add_file(game_ra2, indir + filename, ra2_list);
-				else if (boost::starts_with(filename, "ra"))
-					add_file(game_ra, indir + filename, ra_list);
-				else if (boost::starts_with(filename, "ts"))
-					add_file(game_ts, indir + filename, ts_list);
-				else
-					add_file(game_td, indir + filename, td_list);
-			}
-			while (FindNextFile(findhandle, &finddata));
-			FindClose(findhandle);
-		}
+
+		//add_rm(indir + "rm list.txt", ra_list);
+
+		add_file(game_td, indir + "td mix description.txt", td_list);
+
+		add_file(game_ra, indir + "ra description", ra_list);
+		add_file(game_ra, indir + "ra mix description", ra_list);
+
+		add_file(game_ts, indir + "ts mix description.txt", ts_list);
+		add_file(game_ts, indir + "ts setup description.txt", ts_list);
+
+		add_file(game_ra2, indir + "ra2 mix description.txt", ra2_list);
+		add_file(game_ra2, indir + "ra2 mm mix description.txt", ra2_list);
+		add_file(game_ra2, indir + "ra2 setup description.txt", ra2_list);
+
+
+
+		//WIN32_FIND_DATA finddata;
+		//HANDLE findhandle = FindFirstFile((indir + "*").c_str(), &finddata);
+		//if (findhandle != INVALID_HANDLE_VALUE)
+		//{
+		//	do
+		//	{
+		//		if (finddata.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+		//			continue;
+		//		string filename = finddata.cFileName;
+		//		if (filename.find(filenameend, 0) == filename.npos)
+		//			continue;
+		//		if (boost::starts_with(filename, "ra2"))
+		//			add_file(game_ra2, indir + filename, ra2_list);
+		//		else if (boost::starts_with(filename, "ra"))
+		//			add_file(game_ra, indir + filename, ra_list);
+		//		else if (boost::starts_with(filename, "ts"))
+		//			add_file(game_ts, indir + filename, ts_list);
+		//		else
+		//			add_file(game_td, indir + filename, td_list);
+		//	}
+		//	while (FindNextFile(findhandle, &finddata));
+		//	FindClose(findhandle);
+		//}
 	}
 	write_database(indir + "global mix database", td_list, ra_list, ts_list, ra2_list);
 	return 0;

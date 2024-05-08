@@ -73,12 +73,19 @@
 #define IDC_RA2_STATIC                  1044
 #define IDC_DATA_STATIC                 1045
 #define IDC_CD_STATIC                   1046
+#define IDC_RG													1047
+#define IDC_GR													1048
+#define IDC_GR_ZH												1049
+#define IDC_RG_STATIC 									1050
+#define IDC_GR_STATIC 									1051
+#define IDC_GR_ZH_STATIC 								1052
 #define ID_VIEW_WSA                     32778
 #define ID_POPUP_DELETE                 32780
 #define ID_POPUP_EXTRACT                32781
 #define ID_VIEW_GAME_TD                 32783
 #define ID_VIEW_GAME_RA                 32784
 #define ID_VIEW_GAME_TS                 32785
+#define ID_VIEW_GAME_RA2                32786
 #define ID_FILE_FOUND_MIX000            32800
 #define ID_FILE_FOUND_MIX001            32801
 #define ID_FILE_FOUND_MIX002            32802
@@ -315,6 +322,8 @@
 #define ID_POPUP_PLAY                   33054
 #define ID_VIEW_DIRECTX_OPTIONS         33056
 #define ID_VIEW_DIRECTORIES             33057
+#define ID_VIEW_VOXEL_TEST							33058
+
 #define ID_POPUP_COPY_AS_MAP_TS_PREVIEW 33073
 #define ID_POPUP_REFRESH                33075
 #define ID_POPUP_RESIZE                 33076

@@ -28,12 +28,14 @@ bool Cmix_file::is_valid()
 	int size = get_size();
 	if (sizeof(t_mix_header) > size)
 		return false;
-	if (header.c_files && sizeof(t_mix_header) + header.c_files * sizeof(t_mix_index_entry) + header.size == size)
+	//even if you don't get the proper header, you can read it anyways
+	if (header.c_files /*&& sizeof(t_mix_header) + header.c_files * sizeof(t_mix_index_entry) + header.size == size*/)
 		return true;
 	if (header.flags & ~(mix_encrypted | mix_checksum))
 		return false;
 	m_has_checksum = header.flags & mix_checksum;
 	m_is_encrypted = header.flags & mix_encrypted;
+	m_rawflagvalue = header.flags;
 	if (m_is_encrypted)
 	{
 		Cblowfish bf;
@@ -43,7 +45,7 @@ bool Cmix_file::is_valid()
 		byte e[8];
 		bf.decipher(data + 84, e, 8);
 		t_mix_header* header = reinterpret_cast<t_mix_header*>(e);
-		if (!header->c_files || 84 + (sizeof(t_mix_header) + header->c_files * sizeof(t_mix_index_entry) + 7 & ~7) + header->size + (m_has_checksum ? 20 : 0) != size)
+		if (!header->c_files /*|| 4 + sizeof(t_mix_header) + header->c_files * sizeof(t_mix_index_entry) + header->size + (m_has_checksum ? 20 : 0) != size*/)
 			return false;
 	}
 	else
@@ -157,6 +159,7 @@ int Cmix_file::post_open()
 		{
 			m_has_checksum = header.flags & mix_checksum;
 			m_is_encrypted = header.flags & mix_encrypted;
+			m_rawflagvalue = header.flags;
 			bool aligned = true;
 			Cblowfish bf;
 			seek(4);
@@ -334,7 +337,7 @@ string Cmix_file::get_name(int id)
 
 int Cmix_file::get_id(t_game game, string name)
 {
-	boost::to_upper(name);
+	name = to_upper(name);
 	std::replace(name.begin(), name.end(), '/', '\\');
 	switch (game)
 	{

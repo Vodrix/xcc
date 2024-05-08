@@ -2,6 +2,7 @@
 
 #include <cc_file.h>
 #include <mix_file.h>
+#include <mix_file_rd.h>
 #include <palet.h>
 #include "palet_filter.h"
 
@@ -26,6 +27,9 @@ public:
 	void load_color_table(const t_palet palet, bool convert_palet);
 	void draw_image8(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
 	void draw_image24(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
+	void draw_image32(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
+	void draw_image48(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
+	void draw_image64(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
 	void draw_info(string n, string d);
 	// void set_game(t_game);
 	void open_f(int id, Cmix_file& mix_f, t_game game, t_palet palet);
@@ -42,9 +46,13 @@ protected:
 	virtual ~CXCCFileView();
 	//{{AFX_MSG(CXCCFileView)
 	afx_msg void OnDisable(CCmdUI* pCmdUI);
+	afx_msg BOOL OnMouseWheel(UINT nFlags, short zDelta, CPoint pt);
+	afx_msg void OnMouseHWheel(UINT nFlags, short zDelta, CPoint pt);
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 private:
+	COLORREF  m_colour = RGB(0, 0, 0);
+	CRect			clientRect;
 	bool			m_can_pick;
 	CRect			m_clip_rect;
 	DWORD			m_color_table[256];
@@ -69,4 +77,5 @@ private:
 	int				m_x;
 	int				m_y;
 	int				m_y_inc;
+	CBrush test_brush;
 };
