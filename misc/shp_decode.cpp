@@ -53,7 +53,7 @@ static void write_v40(byte v, int count, byte*& d)
 				*d++ = v;
 				break;
 			}
-			int c_write = min(count, 0x3fff);
+			int c_write = min<size_t>(count, 0x3fff);
 			*d++ = 0x80;
 			write_w(0xc000 | c_write, d);
 			count -= c_write;
@@ -781,6 +781,85 @@ int decode80c(const byte image_in[], byte image_out[], int cb_in)
 	return (w - image_out);
 }
 
+int decode80asm(const byte image_in[], byte image_out[])	//only used for dune2 shp, i am not smart enough in asm to know why any conversion breaks specifically dune 2 shapes
+{
+	int cb_out;
+	/*
+	0 copy 0cccpppp p
+	1 copy 10cccccc
+	2 copy 11cccccc p p
+	3 fill 11111110 c c v
+	4 copy 11111111 c c p p
+	*/
+
+	_asm
+	{
+		push	esi
+		push	edi
+		mov		ax, ds
+		mov		es, ax
+		mov		esi, image_in
+		mov		edi, image_out
+		next0 :
+		xor eax, eax
+			lodsb
+			mov		ecx, eax
+			test	eax, 0x80
+			jnz		c1c
+			shr		ecx, 4
+			add		ecx, 3
+			and eax, 0xf
+			shl		eax, 8
+			lodsb
+			mov		edx, esi
+			mov		esi, edi
+			sub		esi, eax
+			jmp		copy_from_destination
+			c1c :
+		and ecx, 0x3f
+			test	eax, 0x40
+			jnz		c2c
+			or ecx, ecx
+			jz		end0
+			jmp		copy_from_source
+			c2c :
+		xor eax, eax
+			lodsw
+			cmp		ecx, 0x3e
+			je		c3
+			ja		c4
+			mov		edx, esi
+			mov		esi, image_out
+			add		esi, eax
+			add		ecx, 3
+			jmp		copy_from_destination
+			c3 :
+		mov		ecx, eax
+			lodsb
+			rep		stosb
+			jmp		next0
+			c4 :
+		mov		ecx, eax
+			lodsw
+			mov		edx, esi
+			mov		esi, image_out
+			add		esi, eax
+			copy_from_destination :
+		rep		movsb
+			mov		esi, edx
+			jmp		next0
+			copy_from_source :
+		rep		movsb
+			jmp		next0
+			end0 :
+		sub		edi, image_out
+			mov		cb_out, edi
+			pop		edi
+			pop		esi
+	}
+	return cb_out;
+}
+
 int __fastcall decode80(const byte image_in[], byte image_out[])
 {
 	byte* i; // edi
@@ -1091,7 +1170,7 @@ static void write5_c0(byte*& w, int count, const byte* r, byte* small_copy)
 		count = count;
 	if ((count < 4 || count > 7) && small_copy)
 	{
-		int small_count = min(count, 3);
+		int small_count = min<size_t>(count, 3);
 		*small_copy |= small_count;
 		memcpy(w, r, small_count);
 		r += small_count;

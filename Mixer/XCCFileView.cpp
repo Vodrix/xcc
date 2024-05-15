@@ -694,9 +694,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					Cvirtual_binary s = decode64(ppd);
 					Cvirtual_binary image;
 
-					if ((pd.cx * pd.cy) / 33 > ppd.size())
+					if ((pd.cx * pd.cy) / 33 > ppd.size())	//test to not try to render weirdly small (corrupted) preview images
 					{
-						//test to not try to render weirdly small (corrupted) preview images
 						m_y += m_y_inc;
 						tf.load_data(m_data);
 						while (!tf.eof())
@@ -829,7 +828,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					if (f.is_compressed(i))
 					{
 						byte* d = new byte[f.get_image_header(i)->size_out];
-						decode2(d, image, decode80(f.get_image(i), d), f.get_reference_palet(i));
+						decode2(d, image, decode80asm(f.get_image(i), d), f.get_reference_palet(i));
 						delete[] d;
 					}
 					else
@@ -933,40 +932,40 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				}
 				break;
 			}
-		case ft_theme_ini_ts:
-			{
-				Cvirtual_tfile tf;
-				tf.load_data(m_data);
-				Ctheme_ts_ini_reader ir;
-				while (!tf.eof())
-				{
-					ir.process_line(tf.read_line());
-				}
-				const Ctheme_ts_ini_reader::t_theme_list& tl = ir.get_theme_list();
-				draw_info("Count themes:", n(tl.size()));
-				m_y += m_y_inc;
-				size_t column_size[] = {0, 6, 3, 0};
-				for (auto& i : tl)
-				{
-					const Ctheme_data& td = i.second;
-					column_size[0] = max(column_size[0], td.name().size());
-					column_size[3] = max(column_size[3], td.side().size());
-				}
-				for (auto& i : tl)
-				{
-					const Ctheme_data& td = i.second;
-					float length = td.length();
-					string line = swsr(column_size[0], td.name()) + nwsl(3, length) + ':' + nwzl(2, static_cast<int>(length * 60) % 60)
-						+ nwsl(3, td.scenario())
-						+ ' ' + swsr(column_size[3], td.side());
-					if (td.normal())
-						line += " normal";
-					if (td.repeat())
-						line += " repeat";
-					draw_info(line, "");
-				}
-				break;
-			}
+		//case ft_theme_ini_ts:
+		//	{
+		//		Cvirtual_tfile tf;
+		//		tf.load_data(m_data);
+		//		Ctheme_ts_ini_reader ir;
+		//		while (!tf.eof())
+		//		{
+		//			ir.process_line(tf.read_line());
+		//		}
+		//		const Ctheme_ts_ini_reader::t_theme_list& tl = ir.get_theme_list();
+		//		draw_info("Count themes:", n(tl.size()));
+		//		m_y += m_y_inc;
+		//		size_t column_size[] = {0, 6, 3, 0};
+		//		for (auto& i : tl)
+		//		{
+		//			const Ctheme_data& td = i.second;
+		//			column_size[0] = max(column_size[0], td.name().size());
+		//			column_size[3] = max(column_size[3], td.side().size());
+		//		}
+		//		for (auto& i : tl)
+		//		{
+		//			const Ctheme_data& td = i.second;
+		//			float length = td.length();
+		//			string line = swsr(column_size[0], td.name()) + nwsl(3, length) + ':' + nwzl(2, static_cast<int>(length * 60) % 60)
+		//				+ nwsl(3, td.scenario())
+		//				+ ' ' + swsr(column_size[3], td.side());
+		//			if (td.normal())
+		//				line += " normal";
+		//			if (td.repeat())
+		//				line += " repeat";
+		//			draw_info(line, "");
+		//		}
+		//		break;
+		//	}
 		case ft_tmp:
 			{
 				Ctmp_file f;
@@ -1362,28 +1361,28 @@ void CXCCFileView::OnDraw(CDC* pDC)
 						draw_info(i.first, i.second.m_description + ", " + i.second.m_gamemode);
 					break;
 				}
-			case ft_sound_ini_ts:
-				{
-					Csound_ts_ini_reader ir;
-					ir.process(m_data);
-					const Csound_ts_ini_reader::t_sound_list& sl = ir.get_sound_list();
-					draw_info("Count sounds:", n(sl.size()));
-					m_y += m_y_inc;
-					/*
-					int column_size[] = {0, 6, 3, 0};
-					for (Csound_ts_ini_reader::t_sound_list::const_iterator i = sl.begin(); i != sl.end(); i++)
-					{
-					const Csound_data& td = i->second;
-					column_size[0] = max(column_size[0], td.name().length());
-					column_size[3] = max(column_size[3], td.side().length());
-					}
-					*/
-					for (auto& i : sl)
-					{
-						draw_info(i.first, "");
-					}
-					break;
-				}
+			//case ft_sound_ini_ts:
+			//	{
+			//		Csound_ts_ini_reader ir;
+			//		ir.process(m_data);
+			//		const Csound_ts_ini_reader::t_sound_list& sl = ir.get_sound_list();
+			//		draw_info("Count sounds:", n(sl.size()));
+			//		m_y += m_y_inc;
+			//		/*
+			//		int column_size[] = {0, 6, 3, 0};
+			//		for (Csound_ts_ini_reader::t_sound_list::const_iterator i = sl.begin(); i != sl.end(); i++)
+			//		{
+			//		const Csound_data& td = i->second;
+			//		column_size[0] = max(column_size[0], td.name().length());
+			//		column_size[3] = max(column_size[3], td.side().length());
+			//		}
+			//		*/
+			//		for (auto& i : sl)
+			//		{
+			//			draw_info(i.first, "");
+			//		}
+			//		break;
+			//	}
 			case ft_st:
 				{
 					Cst_file f;
@@ -1395,6 +1394,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 						draw_info(nwzl(5, i) + ' ' + f.get_string(i), "");
 					break;
 				}
+			case ft_theme_ini_ts:
+			case ft_sound_ini_ts:
 			case ft_ini:
 			case ft_rules_ini_ts:
 			case ft_text:
@@ -1426,6 +1427,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Cfname fname = to_lower(m_fname);
 				if (fname.get_fext() == ".mix" && m_ft != ft_mix)
 				{
+					m_ft = ft_mix;
 					Cmix_file_rd f;
 					f.load(m_data, m_size);
 					const int c_files = f.get_c_files();

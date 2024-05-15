@@ -14,6 +14,7 @@ Cvirtual_binary decode64(data_ref);
 Cvirtual_binary encode64(data_ref);
 int decode40(const byte image_in[], byte image_out[]);
 int __fastcall decode80(const byte image_in[], byte image_out[]);
+int decode80asm(const byte image_in[], byte image_out[]);
 int decode80c(const byte image_in[], byte image_out[], int cb_in);
 int __fastcall decode80r(const byte image_in[], byte image_out[]);
 int encode40(const byte* last_s, const byte* s, byte* d, int cb_s);
