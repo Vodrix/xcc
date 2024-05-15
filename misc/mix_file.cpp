@@ -79,7 +79,7 @@ int Cmix_file::post_open()
 			for (int i = 0; i < c_files; i++)
 			{
 				string name = f.get_name(i);
-				mix_database::add_name(m_game, name, "-");
+				mix_database::add_name(m_game, name, "");
 				m_index[i] = t_mix_index_entry(get_id(get_game(), name), f.get_offset(name), f.get_size(name));
 			}
 			index_read = true;
@@ -100,7 +100,7 @@ int Cmix_file::post_open()
 				for (int i = 0; i < c_files; i++)
 				{
 					string name = f.get_name(i);
-					mix_database::add_name(m_game, name, "-");
+					mix_database::add_name(m_game, name, "");
 					m_index[i] = t_mix_index_entry(get_id(get_game(), name), f.get_offset(name), f.get_size(name));
 				}
 				index_read = true;
@@ -287,7 +287,7 @@ int Cmix_file::post_open()
 				{
 					string name = r;
 					r += name.length() + 1;
-					mix_database::add_name(m_game, name, "-");
+					mix_database::add_name(m_game, name, "");
 				}
 			}
 		}

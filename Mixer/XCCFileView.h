@@ -48,10 +48,11 @@ protected:
 	afx_msg void OnDisable(CCmdUI* pCmdUI);
 	afx_msg BOOL OnMouseWheel(UINT nFlags, short zDelta, CPoint pt);
 	afx_msg void OnMouseHWheel(UINT nFlags, short zDelta, CPoint pt);
+	afx_msg BOOL OnEraseBkgnd(CDC* pDC);
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 private:
-	COLORREF  m_colour = RGB(0, 0, 0);
+	COLORREF  m_colour = RGB(40, 40, 40);
 	CRect			clientRect;
 	bool			m_can_pick;
 	CRect			m_clip_rect;

@@ -225,7 +225,7 @@ int Cmix_file_rd::post_open()
 				{
 					string name = r;
 					r += name.length() + 1;
-					mix_database::add_name(m_game, name, "-");
+					mix_database::add_name(m_game, name, "");
 				}
 			}
 		}

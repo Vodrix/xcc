@@ -192,9 +192,9 @@ Ccc_file::Ccc_file(bool read_on_open) :
 		if (m_fext == ".mmx")
 		{
 			fname.set_ext(".map");
-			mix_database::add_name(game_ra2, fname.get_fname(), "-");
+			mix_database::add_name(game_ra2, fname.get_fname(), "");
 			fname.set_ext(".pkt");
-			mix_database::add_name(game_ra2, fname.get_fname(), "-");
+			mix_database::add_name(game_ra2, fname.get_fname(), "");
 		}
 #endif
 		test_fail(post_open())

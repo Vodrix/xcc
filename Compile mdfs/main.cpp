@@ -23,36 +23,6 @@ struct t_idinfo
 
 typedef map<int, t_idinfo> t_idlist;
 
-bool is_valid_line(const string& s, char seperator, int c_seperators)
-{
-	int count = 0;
-	for (auto c : s)
-	{
-		if(c < 0x20)
-			return false;		
-		if (c == seperator)
-			count++;
-	}
-	return count == c_seperators;	
-}
-
-void parse_line_mm(string& line, t_idinfo& idinfo)
-{
-	Cmulti_line mline = to_lower(line);
-	idinfo.name = mline.get_next_line(',');
-	mline.get_next_line(',');
-	idinfo.description = mline.get_next_line(',');
-}
-
-void parse_line_rm(string& line, t_idinfo& idinfo)
-{
-	Cmulti_line mline = to_lower(line);
-	mline.get_next_line(',');
-	mline.get_next_line(',');
-	idinfo.name = mline.get_next_line(',');
-	idinfo.description = mline.get_next_line(',');
-}
-
 void parse_line_normal(string& line, t_idinfo& idinfo)
 {
 	Cmulti_line mline = to_lower(line);
@@ -60,7 +30,7 @@ void parse_line_normal(string& line, t_idinfo& idinfo)
 	idinfo.description = mline.get_next_line('\t');
 }
 
-void add_file(t_game game, const string& fname, t_idlist& id_list)
+void add_file(const string& fname, t_idlist& id_list)
 {
 	cout << "Adding " + fname << endl;
 	ifstream inf(fname.c_str());
@@ -75,70 +45,27 @@ void add_file(t_game game, const string& fname, t_idlist& id_list)
 	while (getline(inf, line))
 	{
 		lineindex++;
-		//if (!is_valid_line(line, '\t', 1))
-		//{
-		//	cerr << "Error in line " << lineindex << endl;
-		//	continue;
-		//}
 		parse_line_normal(line, idinfo);
 		if (!idinfo.name.empty())
-			id_list[Cmix_file::get_id(game, idinfo.name)] = idinfo;
+			id_list[Cmix_file::get_id(game_unknown, idinfo.name)] = idinfo;
 	}
 }
 
-void add_rm(const string& fname, t_idlist& id_list)
-{
-	cout << "Adding " + fname << endl;
-	ifstream inf(fname.c_str());
-	if (!inf)
-	{
-		cerr << "Error opening file " << fname << endl;
-		return;
-	}
-	int lineindex = 0;
-	string line;
-	t_idinfo idinfo;
-	while (getline(inf, line))
-	{
-		lineindex++;
-		if (!is_valid_line(line, ',', 3))
-		{
-			cerr << "Error in line " << lineindex << endl;
-			continue;
-		}
-		parse_line_rm(line, idinfo);
-		if (idinfo.name != "")
-			id_list[Cmix_file::get_id(game_ra, idinfo.name)] = idinfo;
-	}
-}
-
-int get_id(const string& s)
-{
-	int r = 0;
-	for (int i = 0; i < 8; i++)
-	{
-		int c = s.c_str()[i];
-		c -= c < 'a' ? '0' : 'a' - 0x0a;
-		r = r << 4 | c;
-	}
-	return r;
-}
-
-void write_list(t_idlist& id_list, Cfile32& f1, ofstream& f2, t_game game)
+void write_list(t_idlist& id_list, Cfile32& f1, ofstream& f2)
 {
 	t_idinfo idinfo;
-	const char* v_name[] = {"TD", "RA", "TS", "D2", "D2K", "RA2"};
+	const char* v_name[] = {"TEST"};
 	int size = id_list.size();
 	f1.write(&size, 4);
 	for (auto& i : id_list)
 	{
 		f1.write(i.second.name.c_str(), i.second.name.size() + 1);
 		f1.write(i.second.description.c_str(), i.second.description.size() + 1);
-		f2 << nh(8, Cmix_file::get_id(game, i.second.name)) << '\t' << v_name[game] << '\t' << i.second.name << '\t' << i.second.description << endl;
+		f2 << nh(8, Cmix_file::get_id(game_unknown, i.second.name)) << '\t' << v_name << '\t' << i.second.name << '\t' << i.second.description << endl;
 	}
 }
 
-void write_database(const string& ifname, t_idlist& td_list, t_idlist& ra_list, t_idlist& ts_list, t_idlist& ra2_list)
+void write_database(const string& ifname, t_idlist& test_list)
 {
 	Cfile32 f1;
 	Cfname fname = ifname;
@@ -156,37 +83,21 @@ void write_database(const string& ifname, t_idlist& td_list, t_idlist& ra_list, 
 		cerr << "error opening text output file" << endl;
 		return;
 	}
-	write_list(td_list, f1, f2, game_td);
-	write_list(ra_list, f1, f2, game_ra);
-	write_list(ts_list, f1, f2, game_ts);
-	write_list(ra2_list, f1, f2, game_ra2);
+	write_list(test_list, f1, f2);
 }
 
 int main()
 {
-	t_idlist td_list, ra_list, ts_list, ra2_list;
+	t_idlist test_list;
 	const string indir = xcc_dirs::get_data_dir();
 	const string filenameend = " description.txt";
-	if (0)
-		add_file(game_ra, indir + "ra movies description.txt", ra_list);
-	else
-	{
-		add_file(game_td, indir + "td mix description.txt", td_list);
 
-		add_file(game_td, indir + "sole mix description.txt", td_list);
+	add_file(indir + "mega" + filenameend, test_list);
 
-		add_file(game_ra, indir + "ra description.txt", ra_list);
-		add_file(game_ra, indir + "ra mix description.txt", ra_list);
-
-		add_file(game_ts, indir + "ts mix description.txt", ts_list);
-		add_file(game_ts, indir + "ts setup description.txt", ts_list);
-
-		add_file(game_ra2, indir + "ra2 mix description.txt", ra2_list);
-		add_file(game_ra2, indir + "ra2 mm mix description.txt", ra2_list);
-		add_file(game_ra2, indir + "ra2 setup description.txt", ra2_list);
-
-		//why do it a weirdly complicated way when this works fine?
-	}
-	write_database(indir + "global mix database", td_list, ra_list, ts_list, ra2_list);
+	//only use one descriptor, the game it's assigned to wont matter as it's handled by mixer
+	//cache works just as previous with game assignments
+	//this will, in short, mean that there wont be duplicates between games
+	
+	write_database(indir + "global mix database", test_list);
 	return 0;
 }

@@ -2897,23 +2897,23 @@ void CXCCMixerView::open_item(int id)
 		break;
 	}
 	case ft_unknown:
-	{
-		Cfname unknown_file(index.name);
-		t_index_entry* ptr_entry;
-		if (unknown_file.get_fext() == ".bag")
 		{
-			extract_open_audio_pak(unknown_file, unknown_file.get_ftitle() + ".idx");
+			Cfname unknown_file(index.name);
+			t_index_entry* ptr_entry;
+			if (unknown_file.get_fext() == ".bag")
+			{
+				extract_open_audio_pak(unknown_file, unknown_file.get_ftitle() + ".idx");
+			}
+			else if (unknown_file.get_fext() == ".idx")
+			{
+				extract_open_audio_pak(unknown_file.get_ftitle() + ".bag", unknown_file);
+			}
+			else if (!m_inmix)
+			{
+				ShellExecute(m_hWnd, "open", (m_dir + unknown_file.get_fname()).c_str(), NULL, NULL, SW_SHOW);
+			} 
+			break;
 		}
-		else if (unknown_file.get_fext() == ".idx")
-		{
-			extract_open_audio_pak(unknown_file.get_ftitle() + ".bag", unknown_file);
-		}
-		else
-		{
-			ShellExecute(m_hWnd, "open", (m_dir + unknown_file.get_fname()).c_str(), NULL, NULL, SW_SHOW);
-		} 
-		break;
-	}
 	case ft_shp:
 	case ft_shp_ts:
 	case ft_vqa:
@@ -2968,11 +2968,14 @@ void CXCCMixerView::open_item(int id)
 			break;
 		}
 	default:
-	{
-			Cfname unknown_file(index.name);
-			ShellExecute(m_hWnd, "open", (m_dir + unknown_file.get_fname()).c_str(), NULL, NULL, SW_SHOW);
+		{
+			if (!m_inmix)
+			{
+				Cfname unknown_file(index.name);
+				ShellExecute(m_hWnd, "open", (m_dir + unknown_file.get_fname()).c_str(), NULL, NULL, SW_SHOW);
+			}
 			break;
-	}
+		}
 	}
 }
 

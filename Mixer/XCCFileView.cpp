@@ -61,8 +61,16 @@ BEGIN_MESSAGE_MAP(CXCCFileView, CScrollView)
 	ON_UPDATE_COMMAND_UI(ID_FILE_CLOSE, OnDisable)
 	ON_WM_MOUSEWHEEL()
 	ON_WM_MOUSEHWHEEL()
+	//ON_WM_ERASEBKGND()
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
+
+BOOL CXCCFileView::OnEraseBkgnd(CDC* pDC)
+{
+	GetClientRect(clientRect);
+	pDC->FillRect(clientRect, &test_brush);
+	return TRUE;
+}
 
 BOOL CXCCFileView::OnMouseWheel(UINT nFlags, short zDelta, CPoint pt)
 {
@@ -452,13 +460,12 @@ int get_size(unsigned int v)
 
 void CXCCFileView::OnDraw(CDC* pDC)
 {
-	//pDC->SetTextColor(RGB(255, 0, 0));
+	//pDC->SetTextColor(RGB(249, 245, 215));
 
 	const char* b2a[] = {"no", "yes"};
 	pDC->SelectObject(&m_font);
 
-	//GetClientRect(clientRect);
-	//pDC->FillRect(clientRect, &test_brush);
+
 	//pDC->SetBkColor(m_colour);
 
 	if (m_is_open)
