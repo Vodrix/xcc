@@ -25,11 +25,11 @@ public:
 	void close_f();
 	const t_palet_entry* get_default_palet();
 	void load_color_table(const t_palet palet, bool convert_palet);
-	void draw_image8(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
-	void draw_image24(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
-	void draw_image32(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
-	void draw_image48(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
-	void draw_image64(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d, int y_d);
+	void draw_image8(const byte* s, int cx_s, int cy_s, CDC* pDC, int x_d);
+	void draw_image24(const byte* s, int cx_s, int cy_s, CDC* pDC);
+	void draw_image32(const byte* s, int cx_s, int cy_s, CDC* pDC);
+	void draw_image48(const byte* s, int cx_s, int cy_s, CDC* pDC);
+	void draw_image64(const byte* s, int cx_s, int cy_s, CDC* pDC);
 	void draw_info(string n, string d);
 	// void set_game(t_game);
 	void open_f(int id, Cmix_file& mix_f, t_game game, t_palet palet);
@@ -79,4 +79,5 @@ private:
 	int				m_y;
 	int				m_y_inc;
 	CBrush test_brush;
+	static const int offset = 4;
 };

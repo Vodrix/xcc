@@ -265,7 +265,7 @@ void CXCCMixerView::OnFileNew()
 
 void CXCCMixerView::OnFileOpen()
 {
-	CFileDialog dlg(true, "mix", NULL, OFN_HIDEREADONLY | OFN_FILEMUSTEXIST, "Archive files (*.big;*.dat;*.mix;*.pkg;*.wsx)|*.big;*.dat;*.mix;*.pkg;*.wsx;|", this);
+	CFileDialog dlg(true, "mix", NULL, OFN_HIDEREADONLY | OFN_FILEMUSTEXIST, "Archive files (*.big;*.dat;*.mix;*.pkg;*.wsx;*.pak)|*.big;*.dat;*.mix;*.pkg;*.wsx;*.pak;|", this);
 	if (IDOK == dlg.DoModal())
 	{
 		close_all_locations();

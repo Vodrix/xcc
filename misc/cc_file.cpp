@@ -99,7 +99,7 @@ const char* ft_name[] =
 	"rules ini (ts)",
 	"rules ini (ra2)",
 	"shp (dune2)",
-	"shp",
+	"shp (td)",
 	"shp (ts)",
 	"sound ini (ts)",
 	"sound ini (ra2)",
@@ -461,12 +461,12 @@ Ccc_file::Ccc_file(bool read_on_open) :
 		}
 		if (xif_f.load(data, m_size), xif_f.is_valid())
 			return ft_xif;
+		if (pak_f.load(data, m_size), pak_f.is_valid())	//moved up so it doesn't think they're mix files
+			return ft_pak;
 		if (mix_f.load(data, m_size), mix_f.is_valid())
 			return ft_mix;
 		if (mix_rg_f.load(data, m_size), mix_rg_f.is_valid())
 			return ft_mix_rg;
-		if (pak_f.load(data, m_size), pak_f.is_valid())
-			return ft_pak;
 		if (w3d_f.load(data, m_size), w3d_f.is_valid())
 			return ft_w3d;
 

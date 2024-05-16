@@ -137,7 +137,7 @@ bool Cwsa_dune2_file::has_loop() const
 }
 
 
-bool Cwsa_dune2_file::is_valid() const
+bool Cwsa_dune2_file::is_valid() const	//todo: make this actually work
 {
 	const t_wsa_dune2_header& h = header();
 	int size = get_size();

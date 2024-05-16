@@ -206,7 +206,7 @@ void Cvqa_decode::decode_vqfl_chunk(const byte* s, int cb_s)
 	{
 		int cb_in = s[8]
 			? decode80(s + 8, m_in_decoded)
-			: decode80r(s + 9, m_in_decoded);
+			: decode80(s + 9, m_in_decoded);
 		decode_cbf_chunk(m_in_decoded, cb_in);
 	}
 	else
@@ -243,7 +243,7 @@ void Cvqa_decode::decode_vqfr_chunk(const byte* in_raw, byte* out, t_palet palet
 			if (in_raw[8])
 				cb_in = decode80(in_raw + 8, in_decoded);
 			else
-				cb_in = decode80r(in_raw + 9, in_decoded);
+				cb_in = decode80(in_raw + 9, in_decoded);
 			in = in_decoded;
 		}
 		else
