@@ -230,11 +230,11 @@ void CXCCMixerView::OnInitialUpdate()
 
 void CXCCMixerView::OnFileNew()
 {
-	const char* save_filter = "Red Alert MIXs (*.mix)|*.mix|Tiberian Sun MIXs (*.mix)|*.mix|Red Alert 2 MIXs (*.mix)|*.mix|Renegade MIXs (*.mix)|*.mix|Generals BIGs (*.big)|*.big|";
+	const char* save_filter = "Red Alert MIX (*.mix)|*.mix|Tiberian Sun MIX (*.mix)|*.mix|Renegade MIX (*.mix)|*.mix|Generals BIG (*.big)|*.big|";
 
 	close_all_locations();
 	CFileDialog dlg(false, NULL, NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT | OFN_PATHMUSTEXIST, save_filter, this);
-	dlg.m_ofn.nFilterIndex = 3;
+	dlg.m_ofn.nFilterIndex = 2;
 	if (IDOK == dlg.DoModal())
 	{
 		string name(dlg.GetPathName());
@@ -247,19 +247,21 @@ void CXCCMixerView::OnFileNew()
 		case 2:
 			error = Cmix_file_write(game_ts).write().save(name);
 			break;
+		//case 3:	//TS mixes are the same as ra2 ones
+		//	error = Cmix_file_write(game_ra2).write().save(name);
+		//	break;
 		case 3:
-			error = Cmix_file_write(game_ra2).write().save(name);
-			break;
-		case 4:
 			error = Cmix_rg_file_write().write().save(name);
 			break;
-		case 5:
+		case 4:
 			error = Cbig_file_write().write().save(name);
 			break;
 		default:
 			assert(false);
 		}
-		update_list();
+		//update_list();
+		close_all_locations();
+		open_location_mix(static_cast<string>(dlg.GetPathName()));
 	}
 }
 
@@ -297,7 +299,6 @@ void CXCCMixerView::open_location_dir(const string& name)
 
 void CXCCMixerView::open_location_mix(const string& name)
 {
-	m_inmix = true;
 	Cmix_file* mix_f = new Cmix_file;
 	if (mix_f->open(name))
 	{
@@ -380,7 +381,6 @@ void CXCCMixerView::open_location_mix(int mix_id, int sub_mix_id, int file_id)
 
 void CXCCMixerView::open_location_mix(int id)
 {
-	m_inmix = true;
 	Cmix_file* mix_f = new Cmix_file;
 	if (mix_f->open(id, *m_mix_f))
 	{
@@ -408,7 +408,6 @@ void CXCCMixerView::close_location(int reload)
 {
 	if (m_mix_f)
 	{
-		m_inmix = false;
 		delete m_mix_f;
 		m_mix_f = m_location.top();
 		m_location.pop();
@@ -479,20 +478,25 @@ void CXCCMixerView::update_list()
 	else
 	{
 		m_game = game_ts;
-		int drivemap = GetLogicalDrives();
-		char drive_name[] = "a:\\";
-		for (int i = 0; i < 26; i++)
-		{
-			if (drivemap >> i & 1)
-			{
-				e.name = drive_name;
-				e.ft = ft_drive;
-				e.size = "";
-				e.description = "";
-				m_index[Cmix_file::get_id(get_game(), e.name)] = e;
-			}
-			drive_name[0]++;
-		}
+		e.name = "Browse...";
+		e.ft = ft_drive;
+		e.size = "";
+		e.description = "";
+		m_index[0] = e;
+		//int drivemap = GetLogicalDrives();
+		//char drive_name[] = "a:\\";
+		//for (int i = 0; i < 26; i++)
+		//{
+		//	if (drivemap >> i & 1)
+		//	{
+		//		e.name = drive_name;
+		//		e.ft = ft_drive;
+		//		e.size = "";
+		//		e.description = "";
+		//		m_index[Cmix_file::get_id(get_game(), e.name)] = e;
+		//	}
+		//	drive_name[0]++;
+		//}
 		WIN32_FIND_DATA finddata;
 		HANDLE findhandle = FindFirstFile((m_dir + "*").c_str(), &finddata);
 		if (findhandle != INVALID_HANDLE_VALUE)
@@ -2518,7 +2522,7 @@ int CXCCMixerView::resize(int id)
 				const byte* r;
 				if (f.is_compressed(i))
 				{
-					decode3(f.get_image(i), image, cx, cy);
+					RLEZeroTSDecompress(f.get_image(i), image, cx, cy);
 					r = image;
 				}
 				else
@@ -2827,7 +2831,9 @@ void CXCCMixerView::open_item(int id)
 			CWaitCursor wait;
 			Ccc_file f(true);
 			if (!open_f_id(f, id))
-				xap_play(index.name, GetMainFrame()->get_ds(), f.vdata());
+			{
+				xap_play(GetMainFrame()->get_ds(), f.vdata());
+			}
 		}
 		break;
 	}
@@ -2836,7 +2842,7 @@ void CXCCMixerView::open_item(int id)
 			string name = index.name;
 			if (name == "..")
 			{
-				if (!m_inmix)
+				if (!m_mix_f)
 				{
 					close_location(false);
 					int i = m_dir.rfind('\\');
@@ -2849,7 +2855,6 @@ void CXCCMixerView::open_item(int id)
 				}
 				else
 				{
-					m_inmix = false;
 					close_location(false);
 					open_location_dir(m_dir + '\\');
 				}
@@ -2874,6 +2879,16 @@ void CXCCMixerView::open_item(int id)
 	case ft_drive:
 		{
 			string name = index.name;
+			if (name == "Browse...")
+			{
+				CFolderPickerDialog dlg(m_dir.c_str(), NULL, this);
+				if (IDOK == dlg.DoModal())
+				{
+					close_all_locations();
+					open_location_dir(static_cast<string>(dlg.GetPathName() + '\\'));
+				}
+				break;
+			}
 			close_location(false);
 			open_location_dir(name);
 			break;
@@ -2908,7 +2923,7 @@ void CXCCMixerView::open_item(int id)
 			{
 				extract_open_audio_pak(unknown_file.get_ftitle() + ".bag", unknown_file);
 			}
-			else if (!m_inmix)
+			else if (!m_mix_f)
 			{
 				ShellExecute(m_hWnd, "open", (m_dir + unknown_file.get_fname()).c_str(), NULL, NULL, SW_SHOW);
 			} 
@@ -2969,7 +2984,7 @@ void CXCCMixerView::open_item(int id)
 		}
 	default:
 		{
-			if (!m_inmix)
+			if (!m_mix_f)
 			{
 				Cfname unknown_file(index.name);
 				ShellExecute(m_hWnd, "open", (m_dir + unknown_file.get_fname()).c_str(), NULL, NULL, SW_SHOW);

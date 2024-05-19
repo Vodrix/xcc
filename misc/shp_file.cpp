@@ -126,7 +126,7 @@ Cvirtual_binary shp_file_write(const byte* s, int cx, int cy, int c_images)
 	//first frame is always format80(LCW)
 	*index++ = 0x80000000 | w - d.data();
 	*index++ = 0;
-	w += encode80(r, w, cx * cy);
+	w += LCWCompress(r, w, cx * cy);
 	r += cx * cy;
 	largest = w - last80w;
 
@@ -139,14 +139,14 @@ Cvirtual_binary shp_file_write(const byte* s, int cx, int cy, int c_images)
 		// do test encodes of the 3 possible frame formats to see which is
 		// smaller.
 		if (last40 != nullptr) {
-			size20 = encode40(last, r, w, cx * cy);
+			size20 = GenerateXORDelta(last, r, w, cx * cy);
 		}
 		else {
 			size20 = 0x7FFFFFFF;
 		}
 
-		size40 = encode40(last80, r, w, cx * cy);
-		size80 = encode80(r, w, cx * cy);
+		size40 = GenerateXORDelta(last80, r, w, cx * cy);
+		size80 = LCWCompress(r, w, cx * cy);
 
 		// if format80 is smallest or equal, do format80
 		if (size80 <= size40 && size80 <= size20) {
@@ -156,7 +156,7 @@ Cvirtual_binary shp_file_write(const byte* s, int cx, int cy, int c_images)
 			last40 = nullptr;
 			last = r;
 			last80w = w;
-			w += encode80(r, w, cx * cy);
+			w += LCWCompress(r, w, cx * cy);
 			r += cx * cy;
 
 			if (size80 > largest) {
@@ -169,7 +169,7 @@ Cvirtual_binary shp_file_write(const byte* s, int cx, int cy, int c_images)
 			last = r;
 			last40 = r;
 			deltaframe = i;
-			w += encode40(last80, r, w, cx * cy);
+			w += GenerateXORDelta(last80, r, w, cx * cy);
 			r += cx * cy;
 
 			if (size40 > largest) {
@@ -179,7 +179,7 @@ Cvirtual_binary shp_file_write(const byte* s, int cx, int cy, int c_images)
 		else {
 			*index++ = 0x20000000 | w - d.data();
 			*index++ = 0x48000000 | deltaframe;
-			w += encode40(last, r, w, cx * cy);
+			w += GenerateXORDelta(last, r, w, cx * cy);
 			last = r;
 			r += cx * cy;
 

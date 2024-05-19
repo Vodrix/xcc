@@ -27,7 +27,7 @@ bool Ccps_file::is_valid() const
 
 void Ccps_file::decode(void* d) const
 {
-	decode80(get_image(), reinterpret_cast<byte*>(d));
+	LCWDecompress(get_image(), reinterpret_cast<byte*>(d));
 }
 
 Cvirtual_image Ccps_file::vimage() const
@@ -52,7 +52,7 @@ Cvirtual_binary cps_file_write(const byte* s, const t_palet_entry* palet)
 		memcpy(w, palet, sizeof(t_palet));
 		w += sizeof(t_palet);
 	}
-	w += encode80(s, w, 320 * 200);
+	w += LCWCompress(s, w, 320 * 200);
 	header.size = w - d.data() - 2;
 	d.set_size(w - d.data());
 	return d;

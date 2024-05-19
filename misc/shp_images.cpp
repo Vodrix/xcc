@@ -85,11 +85,11 @@ const byte* shp_images::t_image_data::get(int f)
 		int cb_out = cx * cy;
 		index[f].data_out = new byte[cb_out];
 		if (index[f].format & 8 << 28)
-			decode80(index[f].data_in, index[f].data_out);
+			LCWDecompress(index[f].data_in, index[f].data_out);
 		else
 		{
 			memcpy(index[f].data_out, get(index[f].format & shp_o_mask), cb_out);
-			decode40(index[f].data_in, index[f].data_out);
+			ApplyXORDelta(index[f].data_in, index[f].data_out);
 		}
 	}
 	return index[f].data_out;

@@ -91,7 +91,7 @@ Cvirtual_binary shp_ts_file_write(const byte* s, int global_cx, int global_cy, i
 		if (cy)
 		{
 			copy_image(r, t, x, y, global_cx, cx, cy);
-			int cb_u = enable_compression ? encode3(t, u, cx, cy) : INT_MAX;
+			int cb_u = enable_compression ? RLEZeroTSCompress(t, u, cx, cy) : INT_MAX;
 			if (cb_u < cx * cy)
 			{
 				image_header.flags = 3;

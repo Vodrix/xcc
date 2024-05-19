@@ -9,10 +9,9 @@
 #include "wav_file.h"
 #include "string_conversion.h"
 
-static int xap_play2(string str, LPDIRECTSOUND ds, Cvirtual_binary s)
+static int xap_play2(LPDIRECTSOUND ds, Cvirtual_binary s)
 {
 	xapTestBool = true;
-	xapTestString = str;
 	Ccc_file f(true);
 	f.load(s);
 	t_file_type ft = f.get_file_type();
@@ -166,33 +165,29 @@ static int xap_play2(string str, LPDIRECTSOUND ds, Cvirtual_binary s)
 		else
 		{
 			DWORD status;
-			while (dsr = dsb->GetStatus(&status), DS_OK == dsr && status & DSBSTATUS_PLAYING && xapTestBool)
+			while (dsr = dsb->GetStatus(&status), DS_OK == dsr && status & DSBSTATUS_PLAYING)
+			{
+				if (!xapTestBool)
+					break;
 				Sleep(100);
-		}
-		if (!xapTestBool)
-		{
-			dsb->Stop();
+			}
 		}
 	}
 	dsb->Release();
 	xapTestBool = false;
-	xapTestString = "";
 	return error;
 }
 
-void xap_play(string str, LPDIRECTSOUND ds, Cvirtual_binary s)
+void xap_play(LPDIRECTSOUND ds, Cvirtual_binary s)
 {
 	if (xapTestBool)
 	{
 		xapTestBool = false;
-		if (iequals(str, xapTestString))
-		{
-			xapTestString = "";
-			return;
-		}
+		return;
 	}
-	thread([str, ds, s]()
+
+	thread([ds, s]()
 	{
-		xap_play2(str, ds, s);
+		xap_play2(ds, s);
 	}).detach();
 }

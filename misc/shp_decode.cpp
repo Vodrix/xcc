@@ -192,7 +192,7 @@ static void flush_copy(byte*& w, const byte* r, const byte*& copy_from)
 #define XOR_LARGE		16383
 #define XOR_MAX			32767
 
-int encode40(const byte* last_s, const byte* x, byte* d, int cb_s) //Generate XOR Delta
+int GenerateXORDelta(const byte* last_s, const byte* x, byte* d, int cb_s) //Generate XOR Delta
 {
 	byte* putp = static_cast<byte*>(d);	//our delta
 	byte const* getsp = static_cast<byte const*>(x);	//This is the image we go to
@@ -315,7 +315,7 @@ int encode40(const byte* last_s, const byte* x, byte* d, int cb_s) //Generate XO
 }
 
 
-int decode40(const byte* s, byte* d)	//Apply XOR Delta
+int ApplyXORDelta(const byte* s, byte* d)	//Apply XOR Delta
 {
 	 unsigned char* putp = (unsigned char*)(d);
     const unsigned char* getp = (const unsigned char*)(s);
@@ -489,7 +489,7 @@ static void flush_c1(byte*& w, const byte* r, const byte*& copy_from)
 	}
 }
 
-int encode80(const byte* s, byte* d, int cb_s)	//LCW Compress
+int LCWCompress(const byte* s, byte* d, int cb_s)	//LCW Compress
 {
 	if (!cb_s) {
 		return 0;
@@ -629,7 +629,7 @@ int encode80(const byte* s, byte* d, int cb_s)	//LCW Compress
 }
 
 
-int decode80(void const* source, void* dest)	//LCW Decompress
+int LCWDecompress(void const* source, void* dest)	//LCW Decompress
 {
 	unsigned char* source_ptr, * dest_ptr, * copy_ptr, op_code;
 	unsigned count;
@@ -762,7 +762,7 @@ int decode2(const byte* s, byte* d, int cb_s, const byte* reference_palet)
 	return w - d;
 }
 
-int decode3(const byte* s, byte* d, int cx, int cy)
+int RLEZeroTSDecompress(const byte* s, byte* d, int cx, int cy)	//RLE Zero TS Decompress
 {
 	const byte* r = s;
 	byte* w = d;
@@ -794,7 +794,7 @@ int decode3(const byte* s, byte* d, int cx, int cy)
 	return w - d;
 }
 
-int encode3(const byte* s, byte* d, int cx, int cy)
+int RLEZeroTSCompress(const byte* s, byte* d, int cx, int cy)	//RLE Zero TS Compress
 {
 	const byte* r = s;
 	byte* w = d;
@@ -1135,7 +1135,7 @@ int encode5(const byte* s, byte* d, int cb_s, int format)
 		int cb_section = min<size_t>(r_end - r, 8192);
 		t_pack_section_header& header = *reinterpret_cast<t_pack_section_header*>(w);
 		w += sizeof(t_pack_section_header);
-		w += header.size_in = format == 80 ? encode80(r, w, cb_section) : encode5s(r, w, cb_section);
+		w += header.size_in = format == 80 ? LCWCompress(r, w, cb_section) : encode5s(r, w, cb_section);
 		r += header.size_out = cb_section;
 	}
 	return w - d;
@@ -1151,7 +1151,7 @@ int decode5(const byte* s, byte* d, int cb_s, int format)
 		const t_pack_section_header& header = *reinterpret_cast<const t_pack_section_header*>(r);
 		r += sizeof(t_pack_section_header);
 		if (format == 80)
-			decode80(r, w);
+			LCWDecompress(r, w);
 		else
 			decode5s(r, w, header.size_in);
 		r += header.size_in;

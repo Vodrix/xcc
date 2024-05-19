@@ -40,7 +40,7 @@ public:
 		const byte* r;
 		if (m_f.is_compressed(m_frame_i))
 		{
-			decode3(m_f.get_image(m_frame_i), s.write_start(cx * cy), cx, cy);
+			RLEZeroTSDecompress(m_f.get_image(m_frame_i), s.write_start(cx * cy), cx, cy);
 			r = s.data();
 		}
 		else
@@ -144,7 +144,7 @@ int Cshp_ts_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_pal
 			const byte* r;
 			if (is_compressed(i))
 			{
-				decode3(get_image(i), image, cx, cy);
+				RLEZeroTSDecompress(get_image(i), image, cx, cy);
 				r = image;
 			}
 			else
@@ -202,7 +202,7 @@ int Cshp_ts_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_pal
 			const byte* r;
 			if (is_compressed(i))
 			{
-				decode3(get_image(i), image, cx, cy);
+				RLEZeroTSDecompress(get_image(i), image, cx, cy);
 				r = image;
 			}
 			else
@@ -256,7 +256,7 @@ Cvirtual_image Cshp_ts_file::extract_as_pcx_single(const t_palet _palet, bool co
 			const byte* r;
 			if (is_compressed(i))
 			{
-				decode3(get_image(i), image.write_start(global_cx * global_cy), cx, cy);
+				RLEZeroTSDecompress(get_image(i), image.write_start(global_cx * global_cy), cx, cy);
 				r = image.data();
 			}
 			else
@@ -293,7 +293,7 @@ Cvirtual_image Cshp_ts_file::extract_as_pcx_single(const t_palet _palet, bool co
 			const byte* r;
 			if (is_compressed(i))
 			{
-				decode3(get_image(i), image.write_start(global_cx * global_cy), cx, cy);
+				RLEZeroTSDecompress(get_image(i), image.write_start(global_cx * global_cy), cx, cy);
 				r = image.data();
 			}
 			else
@@ -564,7 +564,7 @@ int shp_encode4(const Cshp_ts_file& f, byte* d)
 		if (f.is_compressed(i))
 		{
 			Cvirtual_binary image;
-			decode3(f.get_image(i), image.write_start(cx * cy), cx, cy);
+			RLEZeroTSDecompress(f.get_image(i), image.write_start(cx * cy), cx, cy);
 			w += encode4(image.data(), w, cx, cy);
 		}
 		else

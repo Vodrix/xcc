@@ -219,5 +219,4 @@ private:
 	int m_sort_column;
 	bool m_sort_reverse;
 	bool m_reading = false;
-	bool m_inmix = false;
 };

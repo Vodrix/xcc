@@ -38,7 +38,7 @@ int Cshp_dune2_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_
 		if (is_compressed(i))
 		{
 			byte* d = new byte[get_image_header(i)->size_out];
-			decode2(d, image.write_start(cx * cy), decode80(get_image(i), d), get_reference_palet(i));
+			decode2(d, image.write_start(cx * cy), LCWDecompress(get_image(i), d), get_reference_palet(i));
 			delete[] d;
 		}
 		else

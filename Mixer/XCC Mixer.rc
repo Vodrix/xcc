@@ -158,6 +158,7 @@ BEGIN
     BEGIN
         MENUITEM "Open\tEnter",                 ID_POPUP_OPEN
         MENUITEM "&Explore",                    ID_POPUP_EXPLORE
+				MENUITEM "&New Archive",								ID_FILE_NEW
         MENUITEM SEPARATOR
         POPUP "Clipboard"
         BEGIN
@@ -178,26 +179,26 @@ BEGIN
             MENUITEM "Copy as CSV",                 ID_POPUP_COPY_AS_CSV
             MENUITEM "Copy as HTML",                ID_POPUP_COPY_AS_HTML
             MENUITEM "Copy as HVA",                 ID_POPUP_COPY_AS_HVA
-            MENUITEM "Copy as JPEG (single)",       ID_POPUP_COPY_AS_JPEG_SINGLE
+            MENUITEM "Copy as JPEG (Single)",       ID_POPUP_COPY_AS_JPEG_SINGLE
             MENUITEM "Copy as JPEG",                ID_POPUP_COPY_AS_JPEG
             MENUITEM "Copy as MAP (TS) Preview",    ID_POPUP_COPY_AS_MAP_TS_PREVIEW
             MENUITEM "Copy as PAL",                 ID_POPUP_COPY_AS_PAL
             MENUITEM "Copy as PAL (JASC)",          ID_POPUP_COPY_AS_PAL_JASC
-            MENUITEM "Copy as PCX (single)",        ID_POPUP_COPY_AS_PCX_SINGLE
+            MENUITEM "Copy as PCX (Single)",        ID_POPUP_COPY_AS_PCX_SINGLE
             MENUITEM "Copy as PCX",                 ID_POPUP_COPY_AS_PCX
-            MENUITEM "Copy as PNG (single)",        ID_POPUP_COPY_AS_PNG_SINGLE
+            MENUITEM "Copy as PNG (Single)",        ID_POPUP_COPY_AS_PNG_SINGLE
             MENUITEM "Copy as PNG",                 ID_POPUP_COPY_AS_PNG
-            MENUITEM "Copy as SHP",                 ID_POPUP_COPY_AS_SHP
+            MENUITEM "Copy as SHP (TD)",            ID_POPUP_COPY_AS_SHP
             MENUITEM "Copy as SHP (TS)",            ID_POPUP_COPY_AS_SHP_TS
-            MENUITEM "Copy as TGA (single)",        ID_POPUP_COPY_AS_TGA_SINGLE
+            MENUITEM "Copy as TGA (Single)",        ID_POPUP_COPY_AS_TGA_SINGLE
             MENUITEM "Copy as TGA",                 ID_POPUP_COPY_AS_TGA
             MENUITEM "Copy as TXT",                 ID_POPUP_COPY_AS_TEXT
-            MENUITEM "Copy as VXL",                 ID_POPUP_COPY_AS_VXL
-            POPUP "Copy as WAV"
-            BEGIN
-                MENUITEM "IMA ADPCM",                   ID_POPUP_COPY_AS_WAV_IMA_ADPCM
-                MENUITEM "PCM",                         ID_POPUP_COPY_AS_WAV_PCM
-            END
+            MENUITEM "Copy as VOXEL",               ID_POPUP_COPY_AS_VXL
+            //POPUP "Copy as WAV"
+            //BEGIN
+            MENUITEM "Copy as WAV (IMA ADPCM)",     ID_POPUP_COPY_AS_WAV_IMA_ADPCM
+            MENUITEM "Copy as WAV (PCM)",           ID_POPUP_COPY_AS_WAV_PCM
+            //END
             MENUITEM "Copy as WSA",                 ID_POPUP_COPY_AS_WSA
             MENUITEM "Copy as XIF",                 ID_POPUP_COPY_AS_XIF
         END

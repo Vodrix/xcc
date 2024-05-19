@@ -38,8 +38,8 @@ public:
 		if (m_f.get_offset(m_frame_i))
 		{
 			Cvirtual_binary s;
-			decode80(m_f.get_frame(m_frame_i), s.write_start(64 << 10));
-      decode40(s.data(), m_frame.data_edit());
+			LCWDecompress(m_f.get_frame(m_frame_i), s.write_start(64 << 10));
+      ApplyXORDelta(s.data(), m_frame.data_edit());
 		}
 		if (d)
 			m_frame.read(d);
@@ -99,8 +99,8 @@ void Cwsa_file::decode(void* d) const
 			memcpy(w, w - cb_image(), cb_image());
 		if (get_offset(i))
 		{
-			decode80(get_frame(i), s.write_start(64 << 10));
-			decode40(s.data(), w);
+			LCWDecompress(get_frame(i), s.write_start(64 << 10));
+			ApplyXORDelta(s.data(), w);
 		}
 		w += cb_image();
 	}

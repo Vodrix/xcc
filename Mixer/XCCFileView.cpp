@@ -828,7 +828,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					if (f.is_compressed(i))
 					{
 						byte* d = new byte[f.get_image_header(i)->size_out];
-						decode2(d, image, decode80(f.get_image(i), d), f.get_reference_palet(i));
+						decode2(d, image, LCWDecompress(f.get_image(i), d), f.get_reference_palet(i));
 						delete[] d;
 					}
 					else
@@ -899,7 +899,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 						if (f.is_compressed(i))
 						{
 							Cvirtual_binary image;
-							decode3(f.get_image(i), image.write_start(cx * cy), cx, cy);
+							RLEZeroTSDecompress(f.get_image(i), image.write_start(cx * cy), cx, cy);
 							draw_image8(image.data(), cx, cy, pDC, offset);
 						}
 						else
@@ -1293,8 +1293,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				if (!f.process())
 				{
 					const t_riff_wave_format_chunk& format_chunk = f.get_format_chunk();
-					// draw_info("Audio:", n(format_chunk.samplerate) + " hz, " + n(format_chunk.cbits_sample) + " bit, " + (format_chunk.c_channels == 1 ? "mono" : "stereo"));
-					// draw_info("Count samples:", n(format_chunk.tag == 1 ? f.get_data_header().size * 8 / (format_chunk.cbits_sample * format_chunk.c_channels) : f.get_fact_chunk().c_samples));
+					draw_info("Audio:", n(format_chunk.samplerate) + " hz, " + n(format_chunk.cbits_sample) + " bit, " + (format_chunk.c_channels == 1 ? "mono" : "stereo"));
+					draw_info("Count samples:", n(format_chunk.tag == 1 ? f.get_data_header().size * 8 / (format_chunk.cbits_sample * format_chunk.c_channels) : f.get_fact_chunk().c_samples));
 					draw_info("Format:", nh(4, format_chunk.tag));
 				}
 				break;
