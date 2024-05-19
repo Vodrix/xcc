@@ -1255,26 +1255,6 @@ void CXCCFileView::OnDraw(CDC* pDC)
 										draw_image8(reinterpret_cast<const byte*>(image_z), cl, cl, pDC, xr * (cl + m_y_inc) + offset);
 										break;
 									}
-								case 3:
-									{
-									//draw_image8(image, cl, cl, pDC, xr * (cl + m_y_inc), m_y);
-									//t_palet gray_palet;
-									//if (section_tailer.unknown == 2)
-									//{
-									//	for (int i = 0; i < 256; i++)
-									//		gray_palet[i].r = gray_palet[i].g = gray_palet[i].b = i * 255 / 35;
-									//}
-									//else
-									//{
-									//	for (int i = 0; i < 256; i++)
-									//		gray_palet[i].r = gray_palet[i].g = gray_palet[i].b = i;
-									//}
-									//load_color_table(gray_palet, false);
-									//load_color_table(get_default_palet(), true);
-									draw_image8(image_s, cl, cl, pDC, xr * (cl + m_y_inc) + offset);
-
-									break;
-									}
 								}
 							}
 						}

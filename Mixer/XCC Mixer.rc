@@ -77,77 +77,77 @@ IDR_MAINFRAME MENU
 BEGIN
     POPUP "&File"
     BEGIN
-        MENUITEM "&New Archive...\tCtrl+N",     ID_FILE_NEW
-        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
-        MENUITEM "Close\tBackspace",            ID_FILE_CLOSE
-        MENUITEM "Find...\tCtrl+F",             ID_FILE_SEARCH
+        MENUITEM "&New Archive...\tCtrl+N",							ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",										ID_FILE_OPEN
+        MENUITEM "Close\tBackspace",										ID_FILE_CLOSE
+        MENUITEM "Find...\tCtrl+F",											ID_FILE_SEARCH
         POPUP "&Found"
         BEGIN
-            MENUITEM "Update",                      ID_FILE_FOUND_UPDATE
+            MENUITEM "Update",													ID_FILE_FOUND_UPDATE
         END
         MENUITEM SEPARATOR
-        MENUITEM "E&xit",                       ID_APP_EXIT
+        MENUITEM "E&xit",																ID_APP_EXIT
     END
     POPUP "&Conversion"
     BEGIN
-        MENUITEM "Combine shadows",             ID_CONVERSION_COMBINE_SHADOWS
-        MENUITEM "Enable compression",          ID_CONVERSION_ENABLE_COMPRESSION
-        MENUITEM "Fix shadows",                 ID_CONVERSION_FIX_SHADOWS
-        MENUITEM "Split shadows",               ID_CONVERSION_SPLIT_SHADOWS
+        MENUITEM "Combine shadows",											ID_CONVERSION_COMBINE_SHADOWS
+        MENUITEM "Enable compression",									ID_CONVERSION_ENABLE_COMPRESSION
+        MENUITEM "Fix shadows",													ID_CONVERSION_FIX_SHADOWS
+        MENUITEM "Split shadows",												ID_CONVERSION_SPLIT_SHADOWS
     END
     POPUP "&View"
     BEGIN
         POPUP "&Game"
         BEGIN
-            MENUITEM "Tiberium Dawn",               ID_VIEW_GAME_TD
-            MENUITEM "Red Alert",                   ID_VIEW_GAME_RA
-            MENUITEM "Tiberian Sun",                ID_VIEW_GAME_TS
-            MENUITEM "Auto",                        ID_VIEW_GAME_AUTO
+            MENUITEM "Tiberium Dawn",										ID_VIEW_GAME_TD
+            MENUITEM "Red Alert",												ID_VIEW_GAME_RA
+            MENUITEM "Tiberian Sun",										ID_VIEW_GAME_TS
+            MENUITEM "Auto",														ID_VIEW_GAME_AUTO
         END
         POPUP "&Palette"
         BEGIN
-            MENUITEM "Update",                      ID_VIEW_PALET_UPDATE
-            MENUITEM "Auto",                        ID_VIEW_PALET_AUTO
-            MENUITEM "Auto select\tCtrl+Q",         ID_VIEW_PALET_AUTO_SELECT
-            MENUITEM "&Select...\tCtrl+R",          ID_VIEW_PALET_SELECT
-            MENUITEM "Previous\tCtrl+[",            ID_VIEW_PALET_PREV
-            MENUITEM "Next\tCtrl+]",                ID_VIEW_PALET_NEXT
-            MENUITEM "Convert from TD",             ID_VIEW_PALET_CONVERT_FROM_TD
-            MENUITEM "Convert from RA",             ID_VIEW_PALET_CONVERT_FROM_RA
-            MENUITEM "Use for conversion",          ID_VIEW_PALET_USE_FOR_CONVERSION
+            MENUITEM "Update",													ID_VIEW_PALET_UPDATE
+            MENUITEM "Auto",														ID_VIEW_PALET_AUTO
+            MENUITEM "Auto select\tCtrl+Q",							ID_VIEW_PALET_AUTO_SELECT
+            MENUITEM "&Select...\tCtrl+R",							ID_VIEW_PALET_SELECT
+            MENUITEM "Previous\tCtrl+[",								ID_VIEW_PALET_PREV
+            MENUITEM "Next\tCtrl+]",										ID_VIEW_PALET_NEXT
+            MENUITEM "Convert from TD",									ID_VIEW_PALET_CONVERT_FROM_TD
+            MENUITEM "Convert from RA",									ID_VIEW_PALET_CONVERT_FROM_RA
+            MENUITEM "Use for conversion",							ID_VIEW_PALET_USE_FOR_CONVERSION
         END
         POPUP "&Voxel"
         BEGIN
-            MENUITEM "&Colors",                     ID_VIEW_VOXEL_NORMAL
-            MENUITEM "Surface &normals",            ID_VIEW_VOXEL_SURFACE_NORMALS
-            MENUITEM "&Depth information",          ID_VIEW_VOXEL_DEPTH_INFORMATION
+            MENUITEM "&Colors",													ID_VIEW_VOXEL_NORMAL
+            MENUITEM "Surface &normals",								ID_VIEW_VOXEL_SURFACE_NORMALS
+            MENUITEM "&Depth information",							ID_VIEW_VOXEL_DEPTH_INFORMATION
         END
-        MENUITEM "Directories...",              ID_VIEW_DIRECTORIES
-        MENUITEM "&Report",                     ID_VIEW_REPORT
+        MENUITEM "Directories...",											ID_VIEW_DIRECTORIES
+        MENUITEM "&Report",															ID_VIEW_REPORT
     END
     POPUP "&Launch"
     BEGIN
         POPUP "XCC &Sound Editor"
         BEGIN
-            MENUITEM "&Red Alert 2",                ID_LAUNCH_XSE_RA2
-            MENUITEM "Red Alert 2 &Yuri's Revenge", ID_LAUNCH_XSE_RA2_YR
+            MENUITEM "&Red Alert 2",										ID_LAUNCH_XSE_RA2
+            MENUITEM "Red Alert 2: &Yuri's Revenge",		ID_LAUNCH_XSE_RA2_YR
             MENUITEM SEPARATOR
-            MENUITEM "&Open...",                    ID_LAUNCH_XSE_OPEN
+            MENUITEM "&Open...",												ID_LAUNCH_XSE_OPEN
         END
         POPUP "XCC &String Table Editor"
         BEGIN
-            MENUITEM "&Red Alert 2",                ID_LAUNCH_XSTE_RA2
-            MENUITEM "Red Alert 2 &Yuri's Revenge", ID_LAUNCH_XSTE_RA2_YR
-            MENUITEM "&Generals",                   ID_LAUNCH_XSTE_GR
-            MENUITEM "Generals &Zero Hour",         ID_LAUNCH_XSTE_GR_ZH
+            MENUITEM "&Red Alert 2",										ID_LAUNCH_XSTE_RA2
+            MENUITEM "Red Alert 2: &Yuri's Revenge",		ID_LAUNCH_XSTE_RA2_YR
+            MENUITEM "&Generals",												ID_LAUNCH_XSTE_GR
+            MENUITEM "Generals: &Zero Hour",						ID_LAUNCH_XSTE_GR_ZH
             MENUITEM SEPARATOR
-            MENUITEM "&Open...",                    ID_LAUNCH_XSTE_OPEN
+            MENUITEM "&Open...",												ID_LAUNCH_XSTE_OPEN
         END
         POPUP "XCC &Theme Writer"
         BEGIN
-            MENUITEM "&Tiberian Sun",               ID_LAUNCH_XTW_TS
-            MENUITEM "&Red Alert 2",                ID_LAUNCH_XTW_RA2
-            MENUITEM "&Red Alert 2 YR",             ID_LAUNCH_XTW_RA2_YR
+            MENUITEM "&Tiberian Sun",										ID_LAUNCH_XTW_TS
+            MENUITEM "&Red Alert 2",										ID_LAUNCH_XTW_RA2
+            MENUITEM "&Red Alert 2: &Yuri's Revenge",   ID_LAUNCH_XTW_RA2_YR
         END
     END
 END
@@ -156,51 +156,48 @@ CG_IDR_POPUP_MIX_VIEW MENU
 BEGIN
     POPUP "_POPUP_"
     BEGIN
-        MENUITEM "Open\tEnter",                 ID_POPUP_OPEN
-        MENUITEM "&Explore",                    ID_POPUP_EXPLORE
-				MENUITEM "&New Archive",								ID_FILE_NEW
+        MENUITEM "Open\tEnter",													ID_POPUP_OPEN
+        MENUITEM "&Explore",														ID_POPUP_EXPLORE
+				MENUITEM "&New Archive",												ID_FILE_NEW
         MENUITEM SEPARATOR
         POPUP "Clipboard"
         BEGIN
-            MENUITEM "Copy\tCtrl+C",                ID_EDIT_COPY
-            MENUITEM "Paste as JPEG",               ID_POPUP_CLIPBOARD_PASTE_AS_JPEG
-            MENUITEM "Paste as PCX",                ID_POPUP_CLIPBOARD_PASTE_AS_PCX
-            MENUITEM "Paste as PNG",                ID_POPUP_CLIPBOARD_PASTE_AS_PNG
-            MENUITEM "Paste as SHP (TS)",           ID_POPUP_CLIPBOARD_PASTE_AS_SHP_TS
-            MENUITEM "Paste as TGA",                ID_POPUP_CLIPBOARD_PASTE_AS_TGA
+            MENUITEM "Copy\tCtrl+C",										ID_EDIT_COPY
+            MENUITEM "Paste as JPEG",										ID_POPUP_CLIPBOARD_PASTE_AS_JPEG
+            MENUITEM "Paste as PCX",										ID_POPUP_CLIPBOARD_PASTE_AS_PCX
+            MENUITEM "Paste as PNG",										ID_POPUP_CLIPBOARD_PASTE_AS_PNG
+            MENUITEM "Paste as SHP (TS)",								ID_POPUP_CLIPBOARD_PASTE_AS_SHP_TS
+            MENUITEM "Paste as TGA",										ID_POPUP_CLIPBOARD_PASTE_AS_TGA
         END
-        MENUITEM "&Extract...",                 ID_POPUP_EXTRACT
-        MENUITEM "Copy",                        ID_POPUP_COPY
+        MENUITEM "&Extract...",													ID_POPUP_EXTRACT
+        MENUITEM "Copy",																ID_POPUP_COPY
         POPUP "Copy as..."
         BEGIN
-            MENUITEM "Copy as AUD",                 ID_POPUP_COPY_AS_AUD
-            MENUITEM "Copy as AVI",                 ID_POPUP_COPY_AS_AVI
-            MENUITEM "Copy as CPS",                 ID_POPUP_COPY_AS_CPS
-            MENUITEM "Copy as CSV",                 ID_POPUP_COPY_AS_CSV
-            MENUITEM "Copy as HTML",                ID_POPUP_COPY_AS_HTML
-            MENUITEM "Copy as HVA",                 ID_POPUP_COPY_AS_HVA
-            MENUITEM "Copy as JPEG (Single)",       ID_POPUP_COPY_AS_JPEG_SINGLE
-            MENUITEM "Copy as JPEG",                ID_POPUP_COPY_AS_JPEG
-            MENUITEM "Copy as MAP (TS) Preview",    ID_POPUP_COPY_AS_MAP_TS_PREVIEW
-            MENUITEM "Copy as PAL",                 ID_POPUP_COPY_AS_PAL
-            MENUITEM "Copy as PAL (JASC)",          ID_POPUP_COPY_AS_PAL_JASC
-            MENUITEM "Copy as PCX (Single)",        ID_POPUP_COPY_AS_PCX_SINGLE
-            MENUITEM "Copy as PCX",                 ID_POPUP_COPY_AS_PCX
-            MENUITEM "Copy as PNG (Single)",        ID_POPUP_COPY_AS_PNG_SINGLE
-            MENUITEM "Copy as PNG",                 ID_POPUP_COPY_AS_PNG
-            MENUITEM "Copy as SHP (TD)",            ID_POPUP_COPY_AS_SHP
-            MENUITEM "Copy as SHP (TS)",            ID_POPUP_COPY_AS_SHP_TS
-            MENUITEM "Copy as TGA (Single)",        ID_POPUP_COPY_AS_TGA_SINGLE
-            MENUITEM "Copy as TGA",                 ID_POPUP_COPY_AS_TGA
-            MENUITEM "Copy as TXT",                 ID_POPUP_COPY_AS_TEXT
-            MENUITEM "Copy as VOXEL",               ID_POPUP_COPY_AS_VXL
-            //POPUP "Copy as WAV"
-            //BEGIN
-            MENUITEM "Copy as WAV (IMA ADPCM)",     ID_POPUP_COPY_AS_WAV_IMA_ADPCM
-            MENUITEM "Copy as WAV (PCM)",           ID_POPUP_COPY_AS_WAV_PCM
-            //END
-            MENUITEM "Copy as WSA",                 ID_POPUP_COPY_AS_WSA
-            MENUITEM "Copy as XIF",                 ID_POPUP_COPY_AS_XIF
+            MENUITEM "Copy as AUD",											ID_POPUP_COPY_AS_AUD
+            MENUITEM "Copy as AVI",											ID_POPUP_COPY_AS_AVI
+            MENUITEM "Copy as CPS",											ID_POPUP_COPY_AS_CPS
+            MENUITEM "Copy as CSV",											ID_POPUP_COPY_AS_CSV
+            MENUITEM "Copy as HTML",										ID_POPUP_COPY_AS_HTML
+            MENUITEM "Copy as HVA",											ID_POPUP_COPY_AS_HVA
+            MENUITEM "Copy as JPEG (Single)",						ID_POPUP_COPY_AS_JPEG_SINGLE
+            MENUITEM "Copy as JPEG",										ID_POPUP_COPY_AS_JPEG
+            MENUITEM "Copy as MAP (TS) Preview",				ID_POPUP_COPY_AS_MAP_TS_PREVIEW
+            MENUITEM "Copy as PAL",											ID_POPUP_COPY_AS_PAL
+            MENUITEM "Copy as PAL (JASC)",							ID_POPUP_COPY_AS_PAL_JASC
+            MENUITEM "Copy as PCX (Single)",						ID_POPUP_COPY_AS_PCX_SINGLE
+            MENUITEM "Copy as PCX",											ID_POPUP_COPY_AS_PCX
+            MENUITEM "Copy as PNG (Single)",						ID_POPUP_COPY_AS_PNG_SINGLE
+            MENUITEM "Copy as PNG",											ID_POPUP_COPY_AS_PNG
+            MENUITEM "Copy as SHP (TD)",								ID_POPUP_COPY_AS_SHP
+            MENUITEM "Copy as SHP (TS)",								ID_POPUP_COPY_AS_SHP_TS
+            MENUITEM "Copy as TGA (Single)",						ID_POPUP_COPY_AS_TGA_SINGLE
+            MENUITEM "Copy as TGA",											ID_POPUP_COPY_AS_TGA
+            MENUITEM "Copy as TXT",											ID_POPUP_COPY_AS_TEXT
+            MENUITEM "Copy as VOXEL",										ID_POPUP_COPY_AS_VXL
+            MENUITEM "Copy as WAV (IMA ADPCM)",					ID_POPUP_COPY_AS_WAV_IMA_ADPCM
+            MENUITEM "Copy as WAV (PCM)",								ID_POPUP_COPY_AS_WAV_PCM
+            MENUITEM "Copy as WSA",											ID_POPUP_COPY_AS_WSA
+            MENUITEM "Copy as XIF",											ID_POPUP_COPY_AS_XIF
         END
         MENUITEM SEPARATOR
         MENUITEM "Refresh\tF5",                 ID_POPUP_REFRESH
@@ -248,13 +245,13 @@ BEGIN
     DEFPUSHBUTTON   "OK",IDOK,216,7,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,216,24,50,14
     LTEXT           "Dune 2:",IDC_DUNE2_STATIC,7,7,30,13
-    LTEXT           "TD primary:",IDC_TD_PRIMARY_STATIC,7,23,40,13
-    LTEXT           "TD secondary:",IDC_TD_SECONDARY_STATIC,7,39,52,13
+    LTEXT           "TD Primary:",IDC_TD_PRIMARY_STATIC,7,23,40,13
+    LTEXT           "TD Secondary:",IDC_TD_SECONDARY_STATIC,7,39,52,13
     LTEXT           "RA:",IDC_RA_STATIC,7,55,13,13
     LTEXT           "Dune 2000:",IDC_DUNE2000_STATIC,7,71,44,13
     LTEXT           "TS:",IDC_TS_STATIC,7,87,12,13
-    LTEXT           "RA 2:",IDC_RA2_STATIC,7,103,19,13
-    LTEXT           "Rengade:",IDC_RG_STATIC,7,119,38,13
+    LTEXT           "RA2:",IDC_RA2_STATIC,7,103,19,13
+    LTEXT           "Renegade:",IDC_RG_STATIC,7,119,38,13
     LTEXT           "Generals:",IDC_GR_STATIC,7,135,38,13
     LTEXT           "Generals ZH:",IDC_GR_ZH_STATIC,7,151,48,13
     LTEXT           "Data:",IDC_DATA_STATIC,7,119,18,13
@@ -284,16 +281,16 @@ BEGIN
     EDITTEXT        IDC_CY,131,16,42,13,ES_AUTOHSCROLL | ES_NUMBER
     EDITTEXT        IDC_RELATIVE_CX,43,49,46,13,ES_AUTOHSCROLL | ES_NUMBER
     EDITTEXT        IDC_RELATIVE_CY,131,49,42,13,ES_AUTOHSCROLL | ES_NUMBER
-    CONTROL         "Maintain aspect ratio",IDC_MAINTAIN_ASPECT_RATIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,70,81,10
+    CONTROL         "Maintain Aspect Ratio",IDC_MAINTAIN_ASPECT_RATIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,70,81,10
     CONTROL         "Fix shadows",IDC_FIX_SHADOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,4,82,55,10
     DEFPUSHBUTTON   "OK",IDOK,74,93,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,130,93,50,14
     LTEXT           "Width:",IDC_STATIC,12,49,22,13
     LTEXT           "Height:",IDC_STATIC,98,49,24,13
-    GROUPBOX        "Percentage of original",IDC_STATIC,4,35,176,31
+    GROUPBOX        "Percentage of Original",IDC_STATIC,4,35,176,31
     LTEXT           "Width:",IDC_STATIC,12,16,22,13
     LTEXT           "Height:",IDC_STATIC,98,16,24,13
-    GROUPBOX        "Pixel size",IDC_STATIC,4,2,176,31
+    GROUPBOX        "Pixel Size",IDC_STATIC,4,2,176,31
 END
 
 IDD_SEARCH_FILE DIALOGEX 0, 0, 123, 143

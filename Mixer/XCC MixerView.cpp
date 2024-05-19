@@ -219,8 +219,10 @@ void CXCCMixerView::OnInitialUpdate()
 			m_dir = dir;
 		}
 	}
+
 	CListView::OnInitialUpdate();
-	GetListCtrl().SetExtendedStyle(GetListCtrl().GetExtendedStyle() | LVS_EX_FULLROWSELECT);
+
+	GetListCtrl().SetExtendedStyle(LVS_EX_FULLROWSELECT | LVS_EX_GRIDLINES | LVS_EX_HEADERDRAGDROP);
 	GetListCtrl().InsertColumn(0, "Name", LVCFMT_LEFT);
 	GetListCtrl().InsertColumn(1, "Type", LVCFMT_LEFT);
 	GetListCtrl().InsertColumn(2, "Size", LVCFMT_RIGHT);

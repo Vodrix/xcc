@@ -51,8 +51,6 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_VOXEL_SURFACE_NORMALS, OnUpdateViewVoxelSurfaceNormals)
 	ON_COMMAND(ID_VIEW_VOXEL_DEPTH_INFORMATION, OnViewVoxelDepthInformation)
 	ON_UPDATE_COMMAND_UI(ID_VIEW_VOXEL_DEPTH_INFORMATION, OnUpdateViewVoxelDepthInformation)
-	ON_COMMAND(ID_VIEW_VOXEL_TEST, OnViewVoxelTest)
-	ON_UPDATE_COMMAND_UI(ID_VIEW_VOXEL_TEST, OnUpdateViewVoxelTest)
 	ON_COMMAND(ID_CONVERSION_SPLIT_SHADOWS, OnConversionSplitShadows)
 	ON_UPDATE_COMMAND_UI(ID_CONVERSION_SPLIT_SHADOWS, OnUpdateConversionSplitShadows)
 	ON_COMMAND(ID_VIEW_DIRECTORIES, OnViewDirectories)
@@ -299,6 +297,7 @@ void CMainFrame::do_mix(Cmix_file& f, const string& mix_name, int mix_parent, in
         if (!g.open(id, f))
           do_mix(g, mix_name + " - " + name, mix_list_create_map(name, "", id, mix_parent), pal_list_create_map(name, pal_parent));
 			}
+			set_msg("Ready");
 			break;
 		case ft_pal:
 			{
@@ -309,6 +308,7 @@ void CMainFrame::do_mix(Cmix_file& f, const string& mix_name, int mix_parent, in
 				memcpy(e.palet, h.get_data(), sizeof(t_palet));
 				e.parent = pal_parent;
 				m_pal_list.push_back(e);
+				set_msg("Ready");
 				break;
 			}
 		}
@@ -624,17 +624,6 @@ void CMainFrame::OnViewVoxelDepthInformation()
 void CMainFrame::OnUpdateViewVoxelDepthInformation(CCmdUI* pCmdUI) 
 {
 	pCmdUI->SetCheck(m_vxl_mode == 2);
-}
-
-void CMainFrame::OnViewVoxelTest()
-{
-	m_vxl_mode = 3;
-	m_file_info_pane->Invalidate();
-}
-
-void CMainFrame::OnUpdateViewVoxelTest(CCmdUI* pCmdUI)
-{
-	pCmdUI->SetCheck(m_vxl_mode == 3);
 }
 
 void CMainFrame::OnConversionCombineShadows() 
