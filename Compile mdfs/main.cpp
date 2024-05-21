@@ -47,25 +47,25 @@ void add_file(const string& fname, t_idlist& id_list)
 		lineindex++;
 		parse_line_normal(line, idinfo);
 		if (!idinfo.name.empty())
-			id_list[Cmix_file::get_id(game_unknown, idinfo.name)] = idinfo;
+			id_list[lineindex] = idinfo;	//it's just a collection of names, why would we care what the hash is?
 	}
 }
 
 void write_list(t_idlist& id_list, Cfile32& f1, ofstream& f2)
 {
 	t_idinfo idinfo;
-	const char* v_name[] = {"TEST"};
 	int size = id_list.size();
 	f1.write(&size, 4);
 	for (auto& i : id_list)
 	{
 		f1.write(i.second.name.c_str(), i.second.name.size() + 1);
 		f1.write(i.second.description.c_str(), i.second.description.size() + 1);
-		f2 << nh(8, Cmix_file::get_id(game_unknown, i.second.name)) << '\t' << v_name << '\t' << i.second.name << '\t' << i.second.description << endl;
+		f2 << nh(8, Cmix_file::get_id(game_td, i.second.name)) + "TD" << '\t' << nh(8, Cmix_file::get_id(game_ra2, i.second.name)) + "RA2" << '\t' << nh(8, Cmix_file::get_id(game_rg, i.second.name)) + "RG"
+			<< '\t' << '\t' << i.second.name << '\t' << i.second.description << endl;	//this is just for diagnostics anyways
 	}
 }
 
-void write_database(const string& ifname, t_idlist& test_list)
+void write_database(const string& ifname, t_idlist& id_list)
 {
 	Cfile32 f1;
 	Cfname fname = ifname;
@@ -83,21 +83,19 @@ void write_database(const string& ifname, t_idlist& test_list)
 		cerr << "error opening text output file" << endl;
 		return;
 	}
-	write_list(test_list, f1, f2);
+	write_list(id_list, f1, f2);
 }
 
 int main()
 {
-	t_idlist test_list;
-	const string indir = xcc_dirs::get_data_dir();
-	const string filenameend = " description.txt";
+	t_idlist mega_list;
 
-	add_file(indir + "mega" + filenameend, test_list);
+	add_file("mega description.txt", mega_list);
 
 	//only use one descriptor, the game it's assigned to wont matter as it's handled by mixer
 	//cache works just as previous with game assignments
 	//this will, in short, mean that there wont be duplicates between games
 	
-	write_database(indir + "global mix database", test_list);
+	write_database("global mix database", mega_list);
 	return 0;
 }
