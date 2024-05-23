@@ -26,7 +26,6 @@
 #include <shp_file.h>
 #include <shp_images.h>
 #include <shp_ts_file.h>
-#include <sound_ts_ini_reader.h>
 #include <sstream>
 #include <st_file.h>
 #include <string_conversion.h>

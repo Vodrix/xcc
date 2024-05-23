@@ -66,35 +66,6 @@ string xcc_dirs::get_dir(t_game game)
 	return "";
 }
 
-string xcc_dirs::get_exe(t_game game)
-{
-	switch (game)
-	{
-	case game_td:
-		return td_primary_dir + "c&c95.exe";
-	case game_ra:
-		return ra_dir + "ra95.exe";
-	case game_ts:
-		return ts_dir + "sun.exe";
-	case game_dune2:
-		return dune2_dir + "dune2.exe";
-	case game_dune2000:
-		return dune2000_dir + "dune2000.exe";
-	case game_ra2:
-		return ra2_dir + "ra2.exe";
-	case game_nox:
-		return nox_dir + "nox.exe";
-	case game_ra2_yr:
-		return ra2_dir + "gamemd.exe";
-	case game_gr:
-		return gr_dir + "generals.exe";
-	case game_bfme:
-		return bfme_dir + "lotrbfme.exe";
-	}
-	assert(false);
-	return "";
-}
-
 string xcc_dirs::get_audio_mix(t_game game)
 {
 	switch (game)
@@ -122,34 +93,6 @@ string xcc_dirs::get_csf_fname(t_game game)
 	}
 	assert(false);
 	return "";
-}
-
-static string get_suffix(t_game game)
-{
-	return game == game_ra2_yr ? "md" : "";
-}
-
-string xcc_dirs::get_ecache_mix(t_game game, bool dir, int i)
-{
-	return get_ecache_mix(game, dir, nwzl(2, i));
-}
-
-string xcc_dirs::get_ecache_mix(t_game game, bool dir, const string& s)
-{
-	string r = "ecache" + get_suffix(game) + s + ".mix";
-	if (dir)
-		r = get_dir(game) + r;
-	return r;
-}
-
-string xcc_dirs::get_expand_mix(t_game game, int i)
-{
-	return get_expand_mix(game, nwzl(2, i));
-}
-
-string xcc_dirs::get_expand_mix(t_game game, const string& s)
-{
-	return get_dir(game) + "expand" + get_suffix(game) + s + ".mix";
 }
 
 string xcc_dirs::get_language_mix(t_game game)
@@ -316,12 +259,6 @@ void xcc_dirs::load_from_registry()
 			set_td_secondary_dir(s);
 		if (ERROR_SUCCESS == kh_base.query_value("ra_dir", s))
 			set_dir(game_ra, s);
-		if (ERROR_SUCCESS == kh_base.query_value("cd_dir", s))
-			set_cd_dir(s);
-		if (ERROR_SUCCESS == kh_base.query_value("data_dir", s))
-			set_data_dir(s);
-		if (ERROR_SUCCESS == kh_base.query_value("enable_log", s))
-			g_enable_log = true;
 		if (ERROR_SUCCESS == kh_base.query_value("ra2_dir", s))
 			set_dir(game_ra2, s);
 		if (ERROR_SUCCESS == kh_base.query_value("ts_dir", s))
@@ -342,6 +279,14 @@ void xcc_dirs::load_from_registry()
 			set_dir(game_bfme, s);
 		if (ERROR_SUCCESS == kh_base.query_value("tw_dir", s))
 			set_dir(game_tw, s);
+
+		if (ERROR_SUCCESS == kh_base.query_value("cd_dir", s))
+			set_cd_dir(s);
+		if (ERROR_SUCCESS == kh_base.query_value("data_dir", s))
+			set_data_dir(s);
+
+		if (ERROR_SUCCESS == kh_base.query_value("enable_log", s))
+			g_enable_log = true;
 	}
 	if (cd_dir.empty())
 		reset_cd_dir();
@@ -379,35 +324,13 @@ void xcc_dirs::save_to_registry()
 	kh_base.set_value("rg_dir", rg_dir);
 	kh_base.set_value("gr_dir", gr_dir);
 	kh_base.set_value("gr_zh_dir", gr_zh_dir);
+	kh_base.set_value("nox_dir", nox_dir);
+	kh_base.set_value("ebfd_dir", ebfd_dir);
+	kh_base.set_value("bfme_dir", bfme_dir);
+	kh_base.set_value("tw_dir", tw_dir);
+
+	kh_base.set_value("cd_dir", cd_dir);
 };
-
-string xcc_dirs::find_file(Cfname s)
-{
-	if (!s.get_path().empty() || s.exists())
-		return s;
-	s.set_path(td_primary_dir);
-	if (s.exists())
-		return s;
-	s.set_path(td_secondary_dir);
-	if (s.exists())
-		return s;
-	s.set_path(ra_dir);
-	if (s.exists())
-		return s;
-	s.set_path(ts_dir);
-	if (s.exists())
-		return s;
-	s.set_path(ra2_dir);
-	if (s.exists())
-		return s;
-	s.set_path(cd_dir);
-	return s;
-}
-
-bool xcc_dirs::is_available(t_game game)
-{
-	return Cfname(get_exe(game)).exists();
-}
 
 const string& xcc_dirs::get_td_secondary_dir()
 {

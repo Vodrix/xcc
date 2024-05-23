@@ -243,10 +243,6 @@
     </ClCompile>
     <ClCompile Include="..\misc\multi_line.cpp">
     </ClCompile>
-    <ClCompile Include="..\misc\neat_ini_reader.cpp">
-    </ClCompile>
-    <ClCompile Include="..\misc\neat_key_list.cpp">
-    </ClCompile>
     <ClCompile Include="..\misc\ogg_file.cpp">
     </ClCompile>
     <ClCompile Include="..\misc\pak_file.cpp">
@@ -268,8 +264,6 @@
     </ClCompile>
     <ClCompile Include="..\misc\riff_file.cpp">
     </ClCompile>
-    <ClCompile Include="..\misc\rules_ts_ini_reader.cpp">
-    </ClCompile>
     <ClCompile Include="..\misc\shp_decode.cpp">
     </ClCompile>
     <ClCompile Include="..\misc\shp_dune2_file.cpp">
@@ -281,8 +275,6 @@
     <ClCompile Include="..\misc\shp_ts_file.cpp">
     </ClCompile>
     <ClCompile Include="..\misc\shp_ts_file_write.cpp">
-    </ClCompile>
-    <ClCompile Include="..\misc\sound_ts_ini_reader.cpp">
     </ClCompile>
     <ClCompile Include="..\misc\st_file.cpp">
     </ClCompile>
@@ -335,17 +327,11 @@
     </ClCompile>
     <ClCompile Include="..\misc\wsa_file.cpp">
     </ClCompile>
-    <ClCompile Include="..\misc\xcc_apps.cpp">
-    </ClCompile>
     <ClCompile Include="..\misc\xcc_dirs.cpp">
-    </ClCompile>
-    <ClCompile Include="..\misc\xcc_draw.cpp">
     </ClCompile>
     <ClCompile Include="..\misc\xcc_lmd_file_write.cpp">
     </ClCompile>
     <ClCompile Include="..\misc\xcc_log.cpp">
-    </ClCompile>
-    <ClCompile Include="..\misc\xcc_mixs.cpp">
     </ClCompile>
     <ClCompile Include="..\misc\xcc_registry.cpp">
     </ClCompile>
@@ -381,11 +367,9 @@
     <ClInclude Include="..\misc\cps_file.h" />
     <ClInclude Include="..\misc\crc.h" />
     <ClInclude Include="..\misc\csf_file.h" />
-    <ClInclude Include="..\misc\dd_window.h" />
     <ClInclude Include="..\misc\ddpf_conversion.h" />
     <ClInclude Include="..\misc\dds_file.h" />
     <ClInclude Include="..\misc\ETSLayout.h" />
-    <ClInclude Include="..\misc\extract_object.h" />
     <ClInclude Include="..\misc\file32.h" />
     <ClInclude Include="..\misc\fname.h" />
     <ClInclude Include="..\misc\fnt_file.h" />
@@ -413,8 +397,6 @@
     <ClInclude Include="..\misc\mp3_file.h" />
     <ClInclude Include="..\misc\mp3_frame_header.h" />
     <ClInclude Include="..\misc\multi_line.h" />
-    <ClInclude Include="..\misc\neat_ini_reader.h" />
-    <ClInclude Include="..\misc\neat_key_list.h" />
     <ClInclude Include="..\misc\null_ini_reader.h" />
     <ClInclude Include="..\misc\ogg_file.h" />
     <ClInclude Include="..\misc\pak_file.h" />
@@ -428,14 +410,12 @@
     <ClInclude Include="..\misc\reg_key.h" />
     <ClInclude Include="..\misc\riff_file.h" />
     <ClInclude Include="..\misc\riff_structures.h" />
-    <ClInclude Include="..\misc\rules_ts_ini_reader.h" />
     <ClInclude Include="..\misc\shp_decode.h" />
     <ClInclude Include="..\misc\shp_dune2_file.h" />
     <ClInclude Include="..\misc\shp_file.h" />
     <ClInclude Include="..\misc\shp_images.h" />
     <ClInclude Include="..\misc\shp_ts_file.h" />
     <ClInclude Include="..\misc\shp_ts_file_write.h" />
-    <ClInclude Include="..\misc\sound_ts_ini_reader.h" />
     <ClInclude Include="..\misc\st_file.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="..\misc\stream_reader.h" />
@@ -457,7 +437,6 @@
     <ClInclude Include="..\misc\voc_file.h" />
     <ClInclude Include="..\misc\vqa_decode.h" />
     <ClInclude Include="..\misc\vqa_file.h" />
-    <ClInclude Include="..\misc\vqa_play.h" />
     <ClInclude Include="..\misc\vqp_file.h" />
     <ClInclude Include="..\misc\vxl_file.h" />
     <ClInclude Include="..\misc\w3d_file.h" />
@@ -467,29 +446,13 @@
     <ClInclude Include="..\misc\win_handle.h" />
     <ClInclude Include="..\misc\wsa_dune2_file.h" />
     <ClInclude Include="..\misc\wsa_file.h" />
-    <ClInclude Include="..\misc\xcc_apps.h" />
-    <ClInclude Include="..\misc\xcc_cell.h" />
-    <ClInclude Include="..\misc\xcc_cell_manager.h" />
-    <ClInclude Include="..\misc\xcc_dd.h" />
-    <ClInclude Include="..\misc\xcc_dds.h" />
     <ClInclude Include="..\misc\xcc_dirs.h" />
-    <ClInclude Include="..\misc\xcc_draw.h" />
-    <ClInclude Include="..\misc\xcc_ds.h" />
-    <ClInclude Include="..\misc\xcc_dsb.h" />
     <ClInclude Include="..\misc\xcc_file.h" />
     <ClInclude Include="..\misc\xcc_file_sh.h" />
-    <ClInclude Include="..\misc\xcc_infantry.h" />
-    <ClInclude Include="..\misc\xcc_level.h" />
     <ClInclude Include="..\misc\xcc_lmd_file.h" />
     <ClInclude Include="..\misc\xcc_lmd_file_write.h" />
     <ClInclude Include="..\misc\xcc_log.h" />
-    <ClInclude Include="..\misc\xcc_mixs.h" />
-    <ClInclude Include="..\misc\xcc_overlays.h" />
     <ClInclude Include="..\misc\xcc_registry.h" />
-    <ClInclude Include="..\misc\xcc_structures.h" />
-    <ClInclude Include="..\misc\xcc_templates.h" />
-    <ClInclude Include="..\misc\xcc_units.h" />
-    <ClInclude Include="..\misc\XCCSetDirectoriesDlg.h" />
     <ClInclude Include="..\misc\xif_file.h" />
     <ClInclude Include="..\misc\XSTE.h" />
   </ItemGroup>

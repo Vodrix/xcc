@@ -21,7 +21,6 @@ public:
 	void set_ext(string_view);
 	void set_path(string_view);
 	void set_title(string_view);
-	void expand();
 	string get_all() const;
 	string get_path() const;
 	string get_fname() const;

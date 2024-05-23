@@ -134,8 +134,6 @@ protected:
 	afx_msg void OnUpdatePopupDelete(CCmdUI* pCmdUI);
 	afx_msg void OnPopupOpen();
 	afx_msg void OnUpdatePopupOpen(CCmdUI* pCmdUI);
-	afx_msg void OnPopupOpenWithFinalsun();
-	afx_msg void OnUpdatePopupOpenWithFinalsun(CCmdUI* pCmdUI);
 	afx_msg void OnPopupCopyAsVXL();
 	afx_msg void OnUpdatePopupCopyAsVXL(CCmdUI* pCmdUI);
 	afx_msg void OnPopupCopyAsXIF();
@@ -179,8 +177,6 @@ protected:
 	afx_msg void OnPopupClipboardPasteAsShpTs();
 	afx_msg void OnUpdatePopupClipboardPasteAsVideo(CCmdUI* pCmdUI);
 	afx_msg void OnPopupClipboardPasteAsPng();
-	afx_msg void OnPopupOpenWithFinalalert();
-	afx_msg void OnUpdatePopupOpenWithFinalalert(CCmdUI* pCmdUI);
 	afx_msg void OnPopupCopyAsJpeg();
 	afx_msg void OnUpdatePopupCopyAsJpeg(CCmdUI* pCmdUI);
 	afx_msg void OnPopupClipboardPasteAsJpeg();

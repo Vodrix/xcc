@@ -30,7 +30,6 @@
 #include "shp_dune2_file.h"
 #include "shp_file.h"
 #include "shp_ts_file.h"
-#include "sound_ts_ini_reader.h"
 #include "st_file.h"
 #include "string_conversion.h"
 #include "text_file.h"
@@ -174,11 +173,11 @@ Ccc_file::Ccc_file(bool read_on_open) :
 	{
 		close();
 		assert(!is_open());
-#ifdef NO_MIX_SUPPORT
+//#ifdef NO_MIX_SUPPORT
 		test_fail(m_f.open_read(name));
-#else
-		test_fail(m_f.open_read(xcc_dirs::find_file(name)));
-#endif
+//#else
+//		test_fail(m_f.open_read(xcc_dirs::find_file(name)));		//???
+//#endif
 		m_offset = 0;
 		m_size = m_f.size();
 		m_p = 0;
@@ -515,17 +514,17 @@ Ccc_file::Ccc_file(bool read_on_open) :
 					if (!ir.process(data) && ir.is_valid())
 						return ft_pkt_ts;
 				}
-				{
-					Csound_ts_ini_reader ir;
-					ir.fast(true);
-					if (!ir.process(data) && ir.is_valid())
-						return ft_sound_ini_ts;
-				}
-				{
-					Ctheme_ts_ini_reader ir;
-					if (!ir.process(data) && ir.is_valid())
-						return ft_theme_ini_ts;
-				}
+				//{
+				//	Csound_ts_ini_reader ir;
+				//	ir.fast(true);
+				//	if (!ir.process(data) && ir.is_valid())
+				//		return ft_sound_ini_ts;
+				//}
+				//{
+				//	Ctheme_ts_ini_reader ir;
+				//	if (!ir.process(data) && ir.is_valid())
+				//		return ft_theme_ini_ts;
+				//}
 				return ft_ini;
 			}
 			if (m_fext == ".ini")

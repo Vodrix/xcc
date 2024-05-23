@@ -114,7 +114,6 @@ int Cini_reader::process_line(string_view line)
 								return process_key(name, line.substr(first_non_ws, last_non_ws - first_non_ws + 1));
 							}
 							i++;
-
 						}
 						return process_key(name, "");
 					}

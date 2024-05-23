@@ -48,7 +48,7 @@ int mix_database::load()
 	read_list(game_ts, data);	//ts for ts and ra2 value
 
 	return 0;
-	char name[12] = "scg00ea.bin";	//i have no idea what's going on here
+	char name[12] = "scg00ea.bin";	//i have no idea what's going on here, ra and td isn't my expertise
 	const char char1[] = "bgjm";
 	const char char2[] = "ew";
 	const char char3[] = "abc";

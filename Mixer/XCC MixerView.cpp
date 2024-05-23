@@ -93,8 +93,6 @@ BEGIN_MESSAGE_MAP(CXCCMixerView, CListView)
 	ON_UPDATE_COMMAND_UI(ID_POPUP_DELETE, OnUpdatePopupDelete)
 	ON_COMMAND(ID_POPUP_OPEN, OnPopupOpen)
 	ON_UPDATE_COMMAND_UI(ID_POPUP_OPEN, OnUpdatePopupOpen)
-	ON_COMMAND(ID_POPUP_OPEN_WITH_FINALSUN, OnPopupOpenWithFinalsun)
-	ON_UPDATE_COMMAND_UI(ID_POPUP_OPEN_WITH_FINALSUN, OnUpdatePopupOpenWithFinalsun)
 	ON_COMMAND(ID_POPUP_COPY_AS_VXL, OnPopupCopyAsVXL)
 	ON_UPDATE_COMMAND_UI(ID_POPUP_COPY_AS_VXL, OnUpdatePopupCopyAsVXL)
 	ON_COMMAND(ID_POPUP_COPY_AS_XIF, OnPopupCopyAsXIF)
@@ -136,8 +134,6 @@ BEGIN_MESSAGE_MAP(CXCCMixerView, CListView)
 	ON_COMMAND(ID_POPUP_CLIPBOARD_PASTE_AS_SHP_TS, OnPopupClipboardPasteAsShpTs)
 	ON_UPDATE_COMMAND_UI(ID_POPUP_CLIPBOARD_PASTE_AS_SHP_TS, OnUpdatePopupClipboardPasteAsVideo)
 	ON_COMMAND(ID_POPUP_CLIPBOARD_PASTE_AS_PNG, OnPopupClipboardPasteAsPng)
-	ON_COMMAND(ID_POPUP_OPEN_WITH_FINALALERT, OnPopupOpenWithFinalalert)
-	ON_UPDATE_COMMAND_UI(ID_POPUP_OPEN_WITH_FINALALERT, OnUpdatePopupOpenWithFinalalert)
 	ON_COMMAND(ID_POPUP_COPY_AS_JPEG, OnPopupCopyAsJpeg)
 	ON_UPDATE_COMMAND_UI(ID_POPUP_COPY_AS_JPEG, OnUpdatePopupCopyAsJpeg)
 	ON_COMMAND(ID_POPUP_CLIPBOARD_PASTE_AS_JPEG, OnPopupClipboardPasteAsJpeg)
@@ -2409,40 +2405,6 @@ void CXCCMixerView::OnUpdatePopupOpen(CCmdUI* pCmdUI)
 	pCmdUI->Enable(false);
 }
 
-void CXCCMixerView::OnPopupOpenWithFinalsun()
-{
-	Ccc_file f(false);
-	if (open_f_index(f, get_current_index()))
-		return;
-	const string fname = xcc_dirs::get_dir(game_ts) + find_ref(m_index, get_current_id()).name;
-	f.extract(fname);
-	ShellExecute(m_hWnd, "open", GetApp()->get_fs_exe().c_str(), fname.c_str(), NULL, SW_SHOW);
-}
-
-void CXCCMixerView::OnUpdatePopupOpenWithFinalsun(CCmdUI* pCmdUI)
-{
-	pCmdUI->Enable(get_current_id() != -1 &&
-		(find_ref(m_index, get_current_id()).ft == ft_map_ts || find_ref(m_index, get_current_id()).ft == ft_text) &&
-		GetApp()->is_fs_available());
-}
-
-void CXCCMixerView::OnPopupOpenWithFinalalert()
-{
-	Ccc_file f(false);
-	if (open_f_index(f, get_current_index()))
-		return;
-	const string fname = xcc_dirs::get_dir(game_ra2) + find_ref(m_index, get_current_id()).name;
-	f.extract(fname);
-	ShellExecute(m_hWnd, "open", GetApp()->get_fa_exe().c_str(), fname.c_str(), NULL, SW_SHOW);
-}
-
-void CXCCMixerView::OnUpdatePopupOpenWithFinalalert(CCmdUI* pCmdUI)
-{
-	pCmdUI->Enable(get_current_id() != -1 &&
-		(find_ref(m_index, get_current_id()).ft == ft_map_ra2 || find_ref(m_index, get_current_id()).ft == ft_text) &&
-		GetApp()->is_fa_available());
-}
-
 void CXCCMixerView::OnPopupExplore()
 {
 	ShellExecute(m_hWnd, "open", m_dir.c_str(), NULL, NULL, SW_SHOW);
@@ -2834,7 +2796,7 @@ void CXCCMixerView::open_item(int id)
 			Ccc_file f(true);
 			if (!open_f_id(f, id))
 			{
-				xap_play(GetMainFrame()->get_ds(), f.vdata());
+				xap_play(GetMainFrame()->get_ds(), f.vdata(), index.name);
 			}
 		}
 		break;

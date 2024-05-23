@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "shp_decode.h"
 #include "shp_images.h"
-#include "xcc_mixs.h"
 
 static t_theater_id g_theater = static_cast<t_theater_id>(-1);
 
@@ -35,17 +34,6 @@ int shp_images::load_shp(const Cshp_file& f, shp_images::t_image_data*& data)
 		}
 	}
 	return 0;
-}
-
-int load_shp(const string& name, Cmix_file& mix, shp_images::t_image_data*& p)
-{
-	Cshp_file f;
-	return f.open(name, mix) || shp_images::load_shp(f, p);
-}
-
-int shp_images::load_shp(const string& name, t_image_data*& p)
-{
-	return load_shp(name + Cxcc_mixs::theater_fext(g_theater), Cxcc_mixs::theater(g_theater), p) && load_shp(name + ".shp", Cxcc_mixs::conquer(), p);
 }
 
 const byte* shp_images::t_image_data::get(int f, int& cx0, int& cy0)
