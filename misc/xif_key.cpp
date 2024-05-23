@@ -4,6 +4,7 @@
 #include <bzlib.h>
 #include <string_conversion.h>
 #include <zlib.h>
+#include <fstream>
 
 template <class T>
 static T read(const byte*& r)

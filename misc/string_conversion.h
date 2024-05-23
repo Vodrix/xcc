@@ -17,7 +17,7 @@ std::string swsr(int l, std::string);
 std::string nwp(int l, unsigned int);
 std::string nwsl(int l, unsigned int);
 std::string nwzl(int l, unsigned int);
-std::string nh(int l, long long v);
+std::string nh(int l, __int64 v);
 void split_key(const std::string& key, std::string& name, std::string& value);
 std::string tabs2spaces(const std::string&);
 std::string time2a(time_t);

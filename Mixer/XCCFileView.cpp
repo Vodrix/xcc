@@ -55,14 +55,12 @@ CXCCFileView::~CXCCFileView()
 }
 
 BEGIN_MESSAGE_MAP(CXCCFileView, CScrollView)
-	//{{AFX_MSG_MAP(CXCCFileView)
 	ON_UPDATE_COMMAND_UI(ID_FILE_NEW, OnDisable)
 	ON_UPDATE_COMMAND_UI(ID_FILE_OPEN, OnDisable)
 	ON_UPDATE_COMMAND_UI(ID_FILE_CLOSE, OnDisable)
 	ON_WM_MOUSEWHEEL()
 	ON_WM_MOUSEHWHEEL()
 	//ON_WM_ERASEBKGND()
-	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 BOOL CXCCFileView::OnEraseBkgnd(CDC* pDC)
@@ -172,6 +170,7 @@ void CXCCFileView::draw_image24(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	mem_dc.SelectObject(old_bitmap);
 	DeleteObject(mh_dib);
 	m_x = max(m_x, offset + cx_s);
+
 }
 
 void CXCCFileView::draw_image32(const byte* s, int cx_s, int cy_s, CDC* pDC)
@@ -249,8 +248,6 @@ void CXCCFileView::draw_image48(const byte* s, int cx_s, int cy_s, CDC* pDC)
 
 void CXCCFileView::draw_image64(const byte* s, int cx_s, int cy_s, CDC* pDC)
 {
-	//if (!CRect().IntersectRect(m_clip_rect, CRect(CPoint(x_d, y_d), CSize(cx_s, cy_s))))
-	//	return;
 	CDC mem_dc;
 	mem_dc.CreateCompatibleDC(pDC);
 	void* old_bitmap;
@@ -459,7 +456,6 @@ void CXCCFileView::OnDraw(CDC* pDC)
 
 	if (m_is_open)
 	{
-		//pDC->GetClipBox(&m_clip_rect);
 		TEXTMETRIC tm;
 		pDC->GetTextMetrics(&tm);
 		m_dc = pDC;
@@ -844,12 +840,10 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				f.load(m_data);
 				draw_info("Frame Count:", n(f.cf()));
 				draw_info("Size:", n(f.cx()) + " x " + n(f.cy()));
-//#ifndef NDEBUG
 				draw_info("XPos:", n(f.header().xpos));
 				draw_info("YPos:", n(f.header().ypos));
 				draw_info("Delta Size:", n(f.header().delta));
 				draw_info("Flags:", n(f.header().flags));
-//#endif
 				m_y += m_y_inc;
 				load_color_table(get_default_palet(), true);
 				Cvirtual_image image = f.vimage();
@@ -931,40 +925,6 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				}
 				break;
 			}
-		//case ft_theme_ini_ts:
-		//	{
-		//		Cvirtual_tfile tf;
-		//		tf.load_data(m_data);
-		//		Ctheme_ts_ini_reader ir;
-		//		while (!tf.eof())
-		//		{
-		//			ir.process_line(tf.read_line());
-		//		}
-		//		const Ctheme_ts_ini_reader::t_theme_list& tl = ir.get_theme_list();
-		//		draw_info("Count themes:", n(tl.size()));
-		//		m_y += m_y_inc;
-		//		size_t column_size[] = {0, 6, 3, 0};
-		//		for (auto& i : tl)
-		//		{
-		//			const Ctheme_data& td = i.second;
-		//			column_size[0] = max(column_size[0], td.name().size());
-		//			column_size[3] = max(column_size[3], td.side().size());
-		//		}
-		//		for (auto& i : tl)
-		//		{
-		//			const Ctheme_data& td = i.second;
-		//			float length = td.length();
-		//			string line = swsr(column_size[0], td.name()) + nwsl(3, length) + ':' + nwzl(2, static_cast<int>(length * 60) % 60)
-		//				+ nwsl(3, td.scenario())
-		//				+ ' ' + swsr(column_size[3], td.side());
-		//			if (td.normal())
-		//				line += " normal";
-		//			if (td.repeat())
-		//				line += " repeat";
-		//			draw_info(line, "");
-		//		}
-		//		break;
-		//	}
 		case ft_tmp:
 			{
 				Ctmp_file f;
@@ -1154,7 +1114,6 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					{
 						for (int xr = 0; xr < 8; xr++)
 						{
-							//if (CRect().IntersectRect(m_clip_rect, CRect(CPoint(xr * (cl + m_y_inc), m_y), CSize(cl, cl))))
 							{
 								memset(image, 0, c_pixels);
 								memset(image_s, 0, c_pixels);
@@ -1344,28 +1303,6 @@ void CXCCFileView::OnDraw(CDC* pDC)
 						draw_info(i.first, i.second.m_description + ", " + i.second.m_gamemode);
 					break;
 				}
-			//case ft_sound_ini_ts:
-			//	{
-			//		Csound_ts_ini_reader ir;
-			//		ir.process(m_data);
-			//		const Csound_ts_ini_reader::t_sound_list& sl = ir.get_sound_list();
-			//		draw_info("Count sounds:", n(sl.size()));
-			//		m_y += m_y_inc;
-			//		/*
-			//		int column_size[] = {0, 6, 3, 0};
-			//		for (Csound_ts_ini_reader::t_sound_list::const_iterator i = sl.begin(); i != sl.end(); i++)
-			//		{
-			//		const Csound_data& td = i->second;
-			//		column_size[0] = max(column_size[0], td.name().length());
-			//		column_size[3] = max(column_size[3], td.side().length());
-			//		}
-			//		*/
-			//		for (auto& i : sl)
-			//		{
-			//			draw_info(i.first, "");
-			//		}
-			//		break;
-			//	}
 			case ft_st:
 				{
 					Cst_file f;
@@ -1462,7 +1399,6 @@ void CXCCFileView::OnDraw(CDC* pDC)
 		}
 		for (auto& i : m_text_cache)
 		{
-			//if (CRect().IntersectRect(m_clip_rect, i.text_extent)
 				pDC->TextOut(i.text_extent.TopLeft().x, i.text_extent.TopLeft().y, i.t.c_str());
 		}
 	}

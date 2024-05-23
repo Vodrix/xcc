@@ -100,5 +100,3 @@ Cvirtual_binary shp_decode4(const byte* s, int cb_d);
 int shp_encode4(const Cshp_ts_file& f, byte* d);
 void shp_split_frames(Cvirtual_image& image, int cblocks_x, int cblocks_y);
 void shp_split_shadows(Cvirtual_image& image);
-void shp_xor_decode_frames(Cvirtual_image& image, int c_frames);
-void shp_xor_encode_frames(Cvirtual_image& image, int c_frames);
