@@ -57,7 +57,7 @@ public:
 	int get_current_index() const;
 	int get_paste_fname(string& fname, t_file_type ft, const char* extension, const char* filter);
 	void paste_as_image(t_file_type ft, const char* extension, const char* filter);
-	const t_palet_entry* get_default_palet() const;
+	const t_palette_entry* get_default_palette() const;
 	string get_dir() const;
 	void set_reg_key(const string& v);
 	int get_id(int i) const;
@@ -207,9 +207,9 @@ private:
 	CXCCFileView* m_file_view_pane;
 	CXCCMixerView* m_other_pane;
 	t_game m_game;
-	t_palet m_palet;
+	t_palette m_palette;
 	CString m_reg_key;
-	bool m_palet_loaded;
+	bool m_palette_loaded;
 	string m_buffer[4];
 	int m_buffer_w;
 	int m_sort_column;

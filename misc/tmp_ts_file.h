@@ -4,7 +4,7 @@
 #include <cc_structures.h>
 #include "fname.h"
 #include "image_file.h"
-#include "palet.h"
+#include "palette.h"
 
 class Ctmp_ts_file : public Cimage_file<t_tmp_ts_header>
 {

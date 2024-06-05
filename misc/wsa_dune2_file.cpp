@@ -47,9 +47,9 @@ public:
 		return 0;
 	}
 
-	const t_palet_entry* palet() const
+	const t_palette_entry* palette() const
 	{
-		return m_palet;
+		return m_palette;
 	}
 
 	int seek(int f)
@@ -61,22 +61,22 @@ public:
 		return 0;
 	}
 
-	Cwsa_dune2_decoder(const Cwsa_dune2_file& f, const t_palet_entry* palet)
+	Cwsa_dune2_decoder(const Cwsa_dune2_file& f, const t_palette_entry* palette)
 	{
 		m_f.load(f);
 		m_frame_i = 0;
-		memcpy(m_palet, palet, sizeof(t_palet));
+		memcpy(m_palette, palette, sizeof(t_palette));
 	}
 private:
 	Cwsa_dune2_file m_f;
 	Cvirtual_binary m_frame;
 	int m_frame_i;
-	t_palet m_palet;
+	t_palette m_palette;
 };
 
-Cvideo_decoder* Cwsa_dune2_file::decoder(const t_palet_entry* palet)
+Cvideo_decoder* Cwsa_dune2_file::decoder(const t_palette_entry* palette)
 {
-	return new Cwsa_dune2_decoder(*this, palet);
+	return new Cwsa_dune2_decoder(*this, palette);
 }
 
 int Cwsa_dune2_file::cb_pixel() const
@@ -168,13 +168,13 @@ Cvirtual_image Cwsa_dune2_file::vimage() const
 {
 	Cvirtual_binary image;
 	decode(image.write_start(cb_video()));
-	return Cvirtual_image(image, cx(), cf() * cy(), cb_pixel(), palet(), true);
+	return Cvirtual_image(image, cx(), cf() * cy(), cb_pixel(), palette(), true);
 }
 
-int Cwsa_dune2_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_palet _palet) const
+int Cwsa_dune2_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_palette _palette) const
 {
-	t_palet palet;
-	convert_palet_18_to_24(_palet, palet);
+	t_palette palette;
+	convert_palette_18_to_24(_palette, palette);
 	Cvirtual_binary frame;
 	Cvirtual_binary s;
 	memset(frame.write_start(cb_image()), 0, cb_image());
@@ -187,7 +187,7 @@ int Cwsa_dune2_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_
 			ApplyXORDelta(s.data(), frame.data_edit());
 		}
 		t.set_title(name.get_ftitle() + " " + nwzl(4, i));
-		if (int error = image_file_write(t, ft, frame.data(), palet, cx(), cy()))
+		if (int error = image_file_write(t, ft, frame.data(), palette, cx(), cy()))
 			return error;
 	}
 	return 0;

@@ -38,9 +38,9 @@ public:
 		return 0;
 	}
 
-	const t_palet_entry* palet() const
+	const t_palette_entry* palette() const
 	{
-		return m_palet;
+		return m_palette;
 	}
 
 	int seek(int f)
@@ -49,23 +49,23 @@ public:
 		return 0;
 	}
 
-	Cshp_decoder(const Cshp_file& f, const t_palet_entry* palet)
+	Cshp_decoder(const Cshp_file& f, const t_palette_entry* palette)
 	{
 		m_f.load(f);
 		m_f.decode(m_video.write_start(cb_video()));
 		m_frame_i = 0;
-		memcpy(m_palet, palet, sizeof(t_palet));
+		memcpy(m_palette, palette, sizeof(t_palette));
 	}
 private:
 	Cshp_file m_f;
 	int m_frame_i;
-	t_palet m_palet;
+	t_palette m_palette;
 	Cvirtual_binary m_video;
 };
 
-Cvideo_decoder* Cshp_file::decoder(const t_palet_entry* palet)
+Cvideo_decoder* Cshp_file::decoder(const t_palette_entry* palette)
 {
-	return new Cshp_decoder(*this, palet);
+	return new Cshp_decoder(*this, palette);
 }
 
 bool Cshp_file::is_valid() const

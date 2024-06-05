@@ -740,7 +740,7 @@ int LCWDecompress(void const* source, void* dest)	//LCW Decompress
 	return (int)(dest_ptr - (unsigned char*)dest);
 }
 
-int decode2(const byte* s, byte* d, int cb_s, const byte* reference_palet)
+int decode2(const byte* s, byte* d, int cb_s, const byte* reference_palette)
 {
 	const byte* r = s;
 	const byte* r_end = s + cb_s;
@@ -757,8 +757,8 @@ int decode2(const byte* s, byte* d, int cb_s, const byte* reference_palet)
 			w += v;
 		}
 	}
-	if (reference_palet)
-		apply_rp(d, w - d, reference_palet);
+	if (reference_palette)
+		apply_rp(d, w - d, reference_palette);
 	return w - d;
 }
 

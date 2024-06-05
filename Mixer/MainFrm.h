@@ -20,7 +20,7 @@ struct t_pal_map_list_entry
 struct t_pal_list_entry
 {
 	string name;
-	t_palet palet;
+	t_palette palette;
 	int parent;
 };
 
@@ -58,8 +58,8 @@ public:
 
 // Implementation
 public:
-	bool auto_select(t_game game, string palet);
-	void set_palet(int id);
+	bool auto_select(t_game game, string palette);
+	void set_palette(int id);
 	void clean_pal_map_list();
 	int mix_list_create_map(string name, string fname, int id, int parent);
 	int pal_list_create_map(string name, int parent);
@@ -69,8 +69,8 @@ public:
 	LPDIRECTSOUND get_ds();
 	t_game get_game();
 	string get_mix_name(int i) const;
-	const t_palet_entry* get_game_palet(t_game game);
-	const t_palet_entry* get_pal_data();
+	const t_palette_entry* get_game_palette(t_game game);
+	const t_palette_entry* get_pal_data();
 	int get_vxl_mode() const;
 	void set_msg(const string& s);
 	virtual ~CMainFrame();
@@ -115,17 +115,17 @@ public:
 		return m_split_shadows;
 	}
 
-	bool use_palet_for_conversion() const
+	bool use_palette_for_conversion() const
 	{
-		return m_use_palet_for_conversion;
+		return m_use_palette_for_conversion;
 	}
 protected:
 	t_game m_game;
-	t_palet m_td_palet;
-	t_palet m_ra_palet;
-	t_palet m_ts_palet;
-	t_palet m_ra2_palet;
-	int m_palet_i = -1;
+	t_palette m_td_palette;
+	t_palette m_ra_palette;
+	t_palette m_ts_palette;
+	t_palette m_ra2_palette;
+	int m_palette_i = -1;
 	int m_vxl_mode = 0;
 	bool m_lists_initialized;
 	int m_mix_i[game_unknown] = { 0 };
@@ -141,7 +141,7 @@ protected:
 	bool m_fix_shadows = false;
 	bool m_remap_team_colors = false;
 	bool m_split_shadows = false;
-	bool m_use_palet_for_conversion = false;
+	bool m_use_palette_for_conversion = false;
 	CXCCMixerView* m_left_mix_pane;
 	CXCCMixerView* m_right_mix_pane;
 	CXCCFileView* m_file_info_pane;
@@ -162,19 +162,19 @@ protected:
 	afx_msg void OnUpdateViewGameTS(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateViewGameRA2(CCmdUI* pCmdUI);
 	afx_msg void OnUpdateFileFoundUpdate(CCmdUI* pCmdUI);
-	afx_msg void OnUpdateViewPaletUpdate(CCmdUI* pCmdUI);
+	afx_msg void OnUpdateViewPaletteUpdate(CCmdUI* pCmdUI);
 	afx_msg void OnViewGameAuto();
 	afx_msg void OnUpdateViewGameAuto(CCmdUI* pCmdUI);
-	afx_msg void OnViewPaletAuto();
-	afx_msg void OnUpdateViewPaletAuto(CCmdUI* pCmdUI);
-	afx_msg void OnViewPaletPrev();
-	afx_msg void OnViewPaletNext();
-	afx_msg void OnViewPaletUseForConversion();
-	afx_msg void OnUpdateViewPaletUseForConversion(CCmdUI* pCmdUI);
-	afx_msg void OnViewPaletConvertFromTD();
-	afx_msg void OnUpdateViewPaletConvertFromTD(CCmdUI* pCmdUI);
-	afx_msg void OnViewPaletConvertFromRA();
-	afx_msg void OnUpdateViewPaletConvertFromRA(CCmdUI* pCmdUI);
+	afx_msg void OnViewPaletteAuto();
+	afx_msg void OnUpdateViewPaletteAuto(CCmdUI* pCmdUI);
+	afx_msg void OnViewPalettePrev();
+	afx_msg void OnViewPaletteNext();
+	afx_msg void OnViewPaletteUseForConversion();
+	afx_msg void OnUpdateViewPaletteUseForConversion(CCmdUI* pCmdUI);
+	afx_msg void OnViewPaletteConvertFromTD();
+	afx_msg void OnUpdateViewPaletteConvertFromTD(CCmdUI* pCmdUI);
+	afx_msg void OnViewPaletteConvertFromRA();
+	afx_msg void OnUpdateViewPaletteConvertFromRA(CCmdUI* pCmdUI);
 	afx_msg void OnViewVoxelNormal();
 	afx_msg void OnUpdateViewVoxelNormal(CCmdUI* pCmdUI);
 	afx_msg void OnViewVoxelSurfaceNormals();
@@ -212,9 +212,9 @@ protected:
 	afx_msg void OnUpdateLaunchXSTE_RA2_YR(CCmdUI* pCmdUI);
 	afx_msg void OnLaunchXTW_RA2_YR();
 	afx_msg void OnUpdateLaunchXTW_RA2_YR(CCmdUI* pCmdUI);
-	afx_msg void OnViewPaletSelect();
-	afx_msg void OnViewPaletAutoSelect();
-	afx_msg void OnUpdateViewPaletAutoSelect(CCmdUI* pCmdUI);
+	afx_msg void OnViewPaletteSelect();
+	afx_msg void OnViewPaletteAutoSelect();
+	afx_msg void OnUpdateViewPaletteAutoSelect(CCmdUI* pCmdUI);
 	afx_msg void OnLaunchXSTE_GR();
 	afx_msg void OnUpdateLaunchXSTE_GR(CCmdUI* pCmdUI);
 	afx_msg void OnLaunchXSTE_GR_ZH();
@@ -227,8 +227,8 @@ protected:
 	afx_msg void OnLaunchXSE_RA2_YR();
 	afx_msg void OnUpdateLaunchXSE_RA2_YR(CCmdUI* pCmdUI);
 	afx_msg void OnLaunchXSE_Open();
-	afx_msg void OnViewPalet(UINT ID);
-	afx_msg void OnUpdateViewPalet(CCmdUI* pCmdUI);
+	afx_msg void OnViewPalette(UINT ID);
+	afx_msg void OnUpdateViewPalette(CCmdUI* pCmdUI);
 	afx_msg void OnConversionRemapTeamColors();
 	afx_msg void OnUpdateConversionRemapTeamColors(CCmdUI* pCmdUI);
 

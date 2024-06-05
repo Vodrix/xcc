@@ -47,9 +47,9 @@ public:
 		return 0;
 	}
 
-	const t_palet_entry* palet() const
+	const t_palette_entry* palette() const
 	{
-		return m_f.palet();
+		return m_f.palette();
 	}
 
 	int seek(int f)
@@ -110,5 +110,5 @@ Cvirtual_image Cwsa_file::vimage() const
 {
 	Cvirtual_binary image;
 	decode(image.write_start(cb_video()));
-	return Cvirtual_image(image, cx(), cf() * cy(), cb_pixel(), palet(), true);
+	return Cvirtual_image(image, cx(), cf() * cy(), cb_pixel(), palette(), true);
 }

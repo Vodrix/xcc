@@ -1,6 +1,6 @@
 #pragma once
 
-#include "palet.h"
+#include "palette.h"
 
 enum t_game
 {
@@ -104,7 +104,7 @@ struct t_cps_header
 	__int16 unknown;
 	unsigned __int16 image_size;
 	__int16 zero;
-	__int16 palet_size;
+	__int16 palette_size;
 };
 
 struct t_csf_header
@@ -461,7 +461,7 @@ struct t_vxl_header
 	unsigned __int32 c_section_tailers;
 	unsigned __int32 size;
 	__int16 unknown;
-	t_palet palet;
+	t_palette palette;
 };
 
 struct t_vxl_section_header

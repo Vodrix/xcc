@@ -218,7 +218,7 @@ void Cvqa_decode::decode_vqfl_chunk(const Cvirtual_binary& s)
 	decode_vqfl_chunk(s.data(), s.size());
 }
 
-void Cvqa_decode::decode_vqfr_chunk(const byte* in_raw, byte* out, t_palet palet)
+void Cvqa_decode::decode_vqfr_chunk(const byte* in_raw, byte* out, t_palette palette)
 {
 	if (!in_raw)
 		return;
@@ -255,8 +255,8 @@ void Cvqa_decode::decode_vqfr_chunk(const byte* in_raw, byte* out, t_palet palet
 			decode_cbf_chunk(in, cb_in);
 		else if (id == vqa_cpl_id)
 		{
-			memcpy(palet, in, cb_in);
-			convert_palet_18_to_24(palet);
+			memcpy(palette, in, cb_in);
+			convert_palette_18_to_24(palette);
 		}
 		else if (id == vqa_vpr_id || id == vqa_vpt_id)
 		{

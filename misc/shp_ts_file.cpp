@@ -57,9 +57,9 @@ public:
 		return 0;
 	}
 
-	const t_palet_entry* palet() const
+	const t_palette_entry* palette() const
 	{
-		return m_palet;
+		return m_palette;
 	}
 
 	int seek(int f)
@@ -68,21 +68,21 @@ public:
 		return 0;
 	}
 
-	Cshp_ts_decoder(const Cshp_ts_file& f, const t_palet_entry* palet)
+	Cshp_ts_decoder(const Cshp_ts_file& f, const t_palette_entry* palette)
 	{
 		m_f.load(f);
 		m_frame_i = 0;
-		memcpy(m_palet, palet, sizeof(t_palet));
+		memcpy(m_palette, palette, sizeof(t_palette));
 	}
 private:
 	Cshp_ts_file m_f;
 	int m_frame_i;
-	t_palet m_palet;
+	t_palette m_palette;
 };
 
-Cvideo_decoder* Cshp_ts_file::decoder(const t_palet_entry* palet)
+Cvideo_decoder* Cshp_ts_file::decoder(const t_palette_entry* palette)
 {
-	return new Cshp_ts_decoder(*this, palet);
+	return new Cshp_ts_decoder(*this, palette);
 }
 
 bool Cshp_ts_file::is_valid() const
@@ -123,10 +123,10 @@ int get_ofs(int x, int y, int cx, int cy)
 	return x + cx * y;
 }
 
-int Cshp_ts_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_palet _palet, bool combine_shadows) const
+int Cshp_ts_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_palette _palette, bool combine_shadows) const
 {
-	t_palet palet;
-	convert_palet_18_to_24(_palet, palet);
+	t_palette palette;
+	convert_palette_18_to_24(_palette, palette);
 	int error = 0;
 	const int global_cx = cx();
 	const int global_cy = cy();
@@ -182,7 +182,7 @@ int Cshp_ts_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_pal
 			{
 				Cfname t = name;
 				t.set_title(name.get_ftitle() + " " + nwzl(4, i - (c_images >> 1)));
-				error = image_file_write(t, ft, w_start, palet, global_cx, global_cy);
+				error = image_file_write(t, ft, w_start, palette, global_cx, global_cy);
 				if (error)
 					break;
 			}
@@ -218,7 +218,7 @@ int Cshp_ts_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_pal
 			// xcc_log::write_line("<tr><td>" + name.get_ftitle() + "</td><td><img src=" + name.get_fname() + "></td></tr>");
 			Cfname t = name;
 			t.set_title(name.get_ftitle() + " " + nwzl(4, i));
-			error = image_file_write(t, ft, s, palet, global_cx, global_cy);
+			error = image_file_write(t, ft, s, palette, global_cx, global_cy);
 			if (error)
 				break;
 		}
@@ -228,10 +228,10 @@ int Cshp_ts_file::extract_as_pcx(const Cfname& name, t_file_type ft, const t_pal
 	return error;
 }
 
-Cvirtual_image Cshp_ts_file::extract_as_pcx_single(const t_palet _palet, bool combine_shadows) const
+Cvirtual_image Cshp_ts_file::extract_as_pcx_single(const t_palette _palette, bool combine_shadows) const
 {
-	t_palet palet;
-	convert_palet_18_to_24(_palet, palet);
+	t_palette palette;
+	convert_palette_18_to_24(_palette, palette);
 	const int global_cx = cx();
 	const int global_cy = cy();
 	int c_images = cf();
@@ -307,7 +307,7 @@ Cvirtual_image Cshp_ts_file::extract_as_pcx_single(const t_palet _palet, bool co
 			}
 		}
 	}
-	return Cvirtual_image(s, cx_s, cy_s, 1, palet);
+	return Cvirtual_image(s, cx_s, cy_s, 1, palette);
 }
 
 void shp_split_frames(Cvirtual_image& image, int cblocks_x, int cblocks_y)
@@ -333,7 +333,7 @@ void shp_split_frames(Cvirtual_image& image, int cblocks_x, int cblocks_y)
 		}
 		r_line += image.cx() * cy;
 	}
-	image.load(d, cx_d, cy_d, image.cb_pixel(), image.palet());
+	image.load(d, cx_d, cy_d, image.cb_pixel(), image.palette());
 	delete[] d;
 }
 
@@ -357,7 +357,7 @@ void shp_split_shadows(Cvirtual_image& image)
 		else
 			*w++ = 0;
 	}
-	image.load(d, cx, cy << 1, image.cb_pixel(), image.palet());
+	image.load(d, cx, cy << 1, image.cb_pixel(), image.palette());
 	delete[] d;
 }
 

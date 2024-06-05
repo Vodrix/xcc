@@ -155,11 +155,11 @@ void CXCCFileView::draw_image24(const byte* s, int cx_s, int cy_s, CDC* pDC)
 		mh_dib = CreateDIBSection(*pDC, &bmi, DIB_RGB_COLORS, reinterpret_cast<void**>(&mp_dib), 0, 0);
 	}
 	old_bitmap = mem_dc.SelectObject(mh_dib);
+	t_palette32bgr_entry v{};
 	for (int y = 0; y < cy_s; y++)
 	{
 		for (int x = 0; x < cx_s; x++)
 		{
-			t_palet32bgr_entry v;
 			v.r = *s++;
 			v.g = *s++;
 			v.b = *s++;
@@ -192,11 +192,11 @@ void CXCCFileView::draw_image32(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	}
 	old_bitmap = mem_dc.SelectObject(mh_dib);
 	const byte* r = s;
+	t_palette32bgr_entry v{};
 	for (int y = 0; y < cy_s; y++)
 	{
 		for (int x = 0; x < cx_s; x++)
 		{
-			t_palet32bgr_entry v;
 			v.r = *s++;
 			v.g = *s++;
 			v.b = *s++;
@@ -229,11 +229,11 @@ void CXCCFileView::draw_image48(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	}
 	old_bitmap = mem_dc.SelectObject(mh_dib);
 	auto r = reinterpret_cast<const unsigned short*>(s);
+	t_palette32bgr_entry v{};
 	for (int y = 0; y < cy_s; y++)
 	{
 		for (int x = 0; x < cx_s; x++)
 		{
-			t_palet32bgr_entry v;
 			v.r = linear2sRGB(*r++);
 			v.g = linear2sRGB(*r++);
 			v.b = linear2sRGB(*r++);
@@ -265,11 +265,11 @@ void CXCCFileView::draw_image64(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	}
 	old_bitmap = mem_dc.SelectObject(mh_dib);
 	auto r = reinterpret_cast<const unsigned short*>(s);
+	t_palette32bgr_entry v{};
 	for (int y = 0; y < cy_s; y++)
 	{
 		for (int x = 0; x < cx_s; x++)
 		{
-			t_palet32bgr_entry v;
 			v.r = linear2sRGB(*r++);
 			v.g = linear2sRGB(*r++);
 			v.b = linear2sRGB(*r++);
@@ -288,28 +288,28 @@ static CMainFrame* GetMainFrame()
 	return reinterpret_cast<CMainFrame*>(AfxGetMainWnd());
 }
 
-const t_palet_entry* CXCCFileView::get_default_palet()
+const t_palette_entry* CXCCFileView::get_default_palette()
 {
-	const t_palet_entry* p = GetMainFrame()->get_pal_data();
+	const t_palette_entry* p = GetMainFrame()->get_pal_data();
 	if (p)
 		return p;
-	if (m_palet)
-		return m_palet;
-	return GetMainFrame()->get_game_palet(m_game);
+	if (m_palette)
+		return m_palette;
+	return GetMainFrame()->get_game_palette(m_game);
 }
 
-void CXCCFileView::load_color_table(const t_palet palet, bool convert_palet)
+void CXCCFileView::load_color_table(const t_palette palette, bool convert_palette)
 {
-	t_palet p;
-	if (!palet)
+	t_palette p;
+	if (!palette)
 	{
-		convert_palet = true;
-		palet = get_default_palet();
+		convert_palette = true;
+		palette = get_default_palette();
 	}
-	memcpy(p, palet, sizeof(t_palet));
-	if (convert_palet)
-		convert_palet_18_to_24(p);
-	t_palet32bgr_entry* color_table = reinterpret_cast<t_palet32bgr_entry*>(m_color_table);
+	memcpy(p, palette, sizeof(t_palette));
+	if (convert_palette)
+		convert_palette_18_to_24(p);
+	t_palette32bgr_entry* color_table = reinterpret_cast<t_palette32bgr_entry*>(m_color_table);
 	for (unsigned short i = 0; i < 256; i++)
 	{
 		color_table[i].r = p[i].r;
@@ -511,9 +511,9 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			{
 				Ccps_file f;
 				f.load(m_data);
-				draw_info("Palette:", f.palet() ? "yes" : "no");
+				draw_info("Palette:", f.palette() ? "yes" : "no");
 				m_y += m_y_inc;
-				load_color_table(f.palet(), true);
+				load_color_table(f.palette(), true);
 				Cvirtual_image image = f.vimage();
 				draw_image8(image.image(), image.cx(), image.cy(), pDC, offset);
 				m_y += 200 + m_y_inc;
@@ -568,7 +568,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				draw_info("Size:", n(f.get_cmax_x()) + " x " + n(cy_test));
 				m_y += m_y_inc;
 				byte* d = new byte[f.get_cmax_x() * f.get_cy()];
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				for (int i = 0; i < c_chars; i++)
 				{
 					const int cx = f.get_cx(i);
@@ -606,7 +606,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					switch (image.cb_pixel())
 					{
 					case 1:
-						load_color_table(image.palet(), false);
+						load_color_table(image.palette(), false);
 						draw_image8(image.image(), cx, cy, pDC, offset);
 						break;
 					case 3:
@@ -771,13 +771,13 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Cpal_file f;
 				f.load(m_data);
 				int y = m_y;
-				const t_palet_entry* palet = f.get_palet();
+				const t_palette_entry* palette = f.get_palette();
 				for (int i = 0; i < 256; i++)
 				{
 					CBrush box;
 					CBrush brush;
 					box.CreateSolidBrush(RGB(0, 0, 0));
-					brush.CreateSolidBrush(RGB(palet[i].r * 255 / 63, palet[i].g * 255 / 63, palet[i].b * 255 / 63));
+					brush.CreateSolidBrush(RGB(palette[i].r * 255 / 63, palette[i].g * 255 / 63, palette[i].b * 255 / 63));
 					y += m_y_inc;
 					pDC->FillRect(CRect(CPoint(99, y + 4), CSize(26, m_y_inc * 2 / 3 + 2)), &box);
 					pDC->FillRect(CRect(CPoint(100, y + 5), CSize(24, m_y_inc * 2 / 3)), &brush);
@@ -798,7 +798,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				f.decode(image.write_start(c_planes * cx * cy));
 				if (c_planes == 1)
 				{
-					load_color_table(*f.get_palet(), false);
+					load_color_table(*f.get_palette(), false);
 					draw_image8(image.data(), cx, cy, pDC, offset);
 				}
 				else
@@ -814,7 +814,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				draw_info("Count images:", n(c_images));
 				draw_info("Offset size:", n(f.get_cb_ofs()));
 				m_y += m_y_inc;
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				for (int i = 0; i < c_images; i++)
 				{
 					const int cx = f.get_cx(i);
@@ -823,11 +823,11 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					if (f.is_compressed(i))
 					{
 						byte* d = new byte[f.get_image_header(i)->size_out];
-						decode2(d, image, LCWDecompress(f.get_image(i), d), f.get_reference_palet(i));
+						decode2(d, image, LCWDecompress(f.get_image(i), d), f.get_reference_palette(i));
 						delete[] d;
 					}
 					else
-						decode2(f.get_image(i), image, f.get_image_header(i)->size_out, f.get_reference_palet(i));
+						decode2(f.get_image(i), image, f.get_image_header(i)->size_out, f.get_reference_palette(i));
 					draw_image8(image, cx, cy, pDC, offset);
 					delete[] image;
 					m_y += cy + m_y_inc;
@@ -845,7 +845,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				draw_info("Delta Size:", n(f.header().delta));
 				draw_info("Flags:", n(f.header().flags));
 				m_y += m_y_inc;
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				Cvirtual_image image = f.vimage();
 				const byte* r = image.image();
 				for (int i = 0; i < f.cf(); i++)
@@ -868,7 +868,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				draw_info("Size:", n(cx) + " x " + n(cy));
 				draw_info("Unknown:", nh(8, zero));
 				m_y += m_y_inc;
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				for (int i = 0; i < c_images; i++)
 				{
 #ifndef NDEBUG	//this doesn't display right and i don't know if it's useful information at all
@@ -915,7 +915,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					m_y += m_y_inc;
 					if (image.cb_pixel() == 1)
 					{
-						load_color_table(image.palet(), false);
+						load_color_table(image.palette(), false);
 						draw_image8(image.image(), cx, cy, pDC, offset);
 					}
 					else if (image.cb_pixel() == 3)
@@ -931,7 +931,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				const int c_tiles = f.get_c_tiles();
 				draw_info("Count tiles:", n(c_tiles));
 				m_y += m_y_inc;
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				for (int i = 0; i < c_tiles; i++)
 				{
 					if (f.get_index1()[i] != 0xff)
@@ -960,7 +960,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				draw_info("Count tiles:", n(c_tiles));
 				draw_info("Size:", n(cx) + " x " + n(cy));
 				m_y += m_y_inc;
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				if (cx == 1 && cy == 1)
 				{
 					for (int i = 0; i < c_tiles; i++)
@@ -1001,7 +1001,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				draw_info("Count tiles:", n(c_tiles));
 				draw_info("Size:", n(f.get_cblocks_x()) + " x " + n(f.get_cblocks_y()));
 				m_y += m_y_inc;
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				int x, y, cx, cy;
 				f.get_rect(x, y, cx, cy);
 				byte* d = new byte[cx * cy];
@@ -1072,7 +1072,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Cvxl_file f;
 				f.load(m_data);
 				int vxl_mode = GetMainFrame()->get_vxl_mode();
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				for (int i = 0; i < f.get_c_section_headers(); i++)
 				{
 					const t_vxl_section_tailer& section_tailer = *f.get_section_tailer(i);
@@ -1164,18 +1164,18 @@ void CXCCFileView::OnDraw(CDC* pDC)
 									break;
 								case 1:
 									{
-										t_palet gray_palet;
+										t_palette gray_palette;
 										if (section_tailer.unknown == 2)
 										{
 											for (int i = 0; i < 256; i++)
-												gray_palet[i].r = gray_palet[i].g = gray_palet[i].b = i * 255 / 35;
+												gray_palette[i].r = gray_palette[i].g = gray_palette[i].b = i * 255 / 35;
 										}
 										else
 										{
 											for (int i = 0; i < 256; i++)
-												gray_palet[i].r = gray_palet[i].g = gray_palet[i].b = i;
+												gray_palette[i].r = gray_palette[i].g = gray_palette[i].b = i;
 										}
-										load_color_table(gray_palet, false);
+										load_color_table(gray_palette, false);
 										draw_image8(image_s, cl, cl, pDC, xr * (cl + m_y_inc) + offset);
 									}
 									break;
@@ -1202,13 +1202,13 @@ void CXCCFileView::OnDraw(CDC* pDC)
 												image_z[o] -= min_z;
 										}
 										max_z -= min_z;
-										t_palet gray_palet;
+										t_palette gray_palette;
 										for (int p = 0; p < max_z; p++)
-											gray_palet[p].r = gray_palet[p].g = gray_palet[p].b = p * 255 / max_z;
-										gray_palet[0xff].r = 0;
-										gray_palet[0xff].g = 0;
-										gray_palet[0xff].b = 0xff;
-										load_color_table(gray_palet, false);
+											gray_palette[p].r = gray_palette[p].g = gray_palette[p].b = p * 255 / max_z;
+										gray_palette[0xff].r = 0;
+										gray_palette[0xff].g = 0;
+										gray_palette[0xff].b = 0xff;
+										load_color_table(gray_palette, false);
 										draw_image8(reinterpret_cast<const byte*>(image_z), cl, cl, pDC, xr * (cl + m_y_inc) + offset);
 										break;
 									}
@@ -1243,7 +1243,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				draw_info("Count frames:", n(f.cf()));
 				draw_info("Size:", n(f.cx()) + " x " + n(f.cy()));
 				m_y += m_y_inc;
-				load_color_table(get_default_palet(), true);
+				load_color_table(get_default_palette(), true);
 				Cvirtual_image image = f.vimage();
 				const byte* r = image.image();
 				for (int i = 0; i < f.cf(); i++)
@@ -1259,11 +1259,11 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Cwsa_file f;
 				f.load(m_data);
 				draw_info("Count frames:", n(f.cf()));
-				draw_info("Palette:", f.palet() ? "yes" : "no");
+				draw_info("Palette:", f.palette() ? "yes" : "no");
 				draw_info("Position:", n(f.get_x()) + "," + n(f.get_y()));
 				draw_info("Size:", n(f.cx()) + " x " + n(f.cy()));
 				m_y += m_y_inc;
-				load_color_table(f.palet(), true);
+				load_color_table(f.palette(), true);
 				Cvirtual_image image = f.vimage();
 				const byte* r = image.image();
 				for (int i = 0; i < f.cf(); i++)
@@ -1286,9 +1286,9 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					Cpal_file f;
 					f.load(m_data);
 					m_y += m_y_inc;
-					const t_palet_entry* palet = f.get_palet();
+					const t_palette_entry* palette = f.get_palette();
 					for (int i = 0; i < 256; i++)
-						draw_info((nh(2, i) + " - " + nwzl(2, palet[i].r) + ' '+ nwzl(2, palet[i].g) + ' ' + nwzl(2, palet[i].b)), "");
+						draw_info((nh(2, i) + " - " + nwzl(2, palette[i].r) + ' '+ nwzl(2, palette[i].g) + ' ' + nwzl(2, palette[i].b)), "");
 					break;
 				}
 			case ft_pkt_ts:
@@ -1403,7 +1403,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 	}
 }
 
-void CXCCFileView::open_f(int id, Cmix_file& mix_f, t_game game, t_palet palet)
+void CXCCFileView::open_f(int id, Cmix_file& mix_f, t_game game, t_palette palette)
 {
 	close_f();
 	Ccc_file f(false);
@@ -1412,7 +1412,7 @@ void CXCCFileView::open_f(int id, Cmix_file& mix_f, t_game game, t_palet palet)
 		m_fname = mix_f.get_name(id);
 		m_game = game;
 		m_id = id;
-		m_palet = palet;
+		m_palette = palette;
 	}
 	post_open(f);
 }
@@ -1426,7 +1426,7 @@ void CXCCFileView::open_f(const string& name)
 		m_fname = Cfname(name).get_fname();
 		m_game = GetMainFrame()->get_game();
 		m_id = Cmix_file::get_id(m_game, Cfname(name).get_ftitle());
-		m_palet = NULL;
+		m_palette = NULL;
 	}
 	post_open(f);
 }
@@ -1465,15 +1465,15 @@ void CXCCFileView::auto_select()
 {
 	if (!m_can_pick)
 	{
-		m_palet_filter.select(m_ft, m_cx, m_cy, m_fname);
+		m_palette_filter.select(m_ft, m_cx, m_cy, m_fname);
 		m_can_pick = true;
 	}
 	t_game game;
 	int i = 4;
 	while (i--)
 	{
-		string palet = m_palet_filter.pick(game);
-		if (!palet.empty() && GetMainFrame()->auto_select(game, palet))
+		string palette = m_palette_filter.pick(game);
+		if (!palette.empty() && GetMainFrame()->auto_select(game, palette))
 			break;
 	}
 }

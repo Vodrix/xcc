@@ -2,7 +2,7 @@
 
 #include <virtual_binary.h>
 
-int decode2(const byte* s, byte* d, int cb_s, const byte* reference_palet);
+int decode2(const byte* s, byte* d, int cb_s, const byte* reference_palette);
 int RLEZeroTSDecompress(const byte* s, byte* d, int cx, int cy);
 int RLEZeroTSCompress(const byte* s, byte* d, int cx, int cy);
 int decode5(const byte* s, byte* d, int cb_s, int format);

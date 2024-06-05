@@ -90,10 +90,10 @@ BEGIN
     END
     POPUP "&Conversion"
     BEGIN
-        MENUITEM "Combine shadows",											ID_CONVERSION_COMBINE_SHADOWS
-        MENUITEM "Enable compression",									ID_CONVERSION_ENABLE_COMPRESSION
-        MENUITEM "Fix shadows",													ID_CONVERSION_FIX_SHADOWS
-        MENUITEM "Split shadows",												ID_CONVERSION_SPLIT_SHADOWS
+        MENUITEM "Combine Shadows",											ID_CONVERSION_COMBINE_SHADOWS
+        MENUITEM "Enable Compression",									ID_CONVERSION_ENABLE_COMPRESSION
+        MENUITEM "Fix Shadows",													ID_CONVERSION_FIX_SHADOWS
+        MENUITEM "Split Shadows",												ID_CONVERSION_SPLIT_SHADOWS
     END
     POPUP "&View"
     BEGIN
@@ -106,20 +106,20 @@ BEGIN
         END
         POPUP "&Palette"
         BEGIN
-            MENUITEM "Update",													ID_VIEW_PALET_UPDATE
-            MENUITEM "Auto",														ID_VIEW_PALET_AUTO
-            MENUITEM "Auto select\tCtrl+Q",							ID_VIEW_PALET_AUTO_SELECT
-            MENUITEM "&Select...\tCtrl+R",							ID_VIEW_PALET_SELECT
-            MENUITEM "Previous\tCtrl+[",								ID_VIEW_PALET_PREV
-            MENUITEM "Next\tCtrl+]",										ID_VIEW_PALET_NEXT
-            MENUITEM "Convert from TD",									ID_VIEW_PALET_CONVERT_FROM_TD
-            MENUITEM "Convert from RA",									ID_VIEW_PALET_CONVERT_FROM_RA
-            MENUITEM "Use for conversion",							ID_VIEW_PALET_USE_FOR_CONVERSION
+            MENUITEM "Update",													ID_VIEW_PALETTE_UPDATE
+            MENUITEM "Auto",														ID_VIEW_PALETTE_AUTO
+            MENUITEM "Auto select\tCtrl+Q",							ID_VIEW_PALETTE_AUTO_SELECT
+            MENUITEM "&Select...\tCtrl+R",							ID_VIEW_PALETTE_SELECT
+            MENUITEM "Previous\tCtrl+[",								ID_VIEW_PALETTE_PREV
+            MENUITEM "Next\tCtrl+]",										ID_VIEW_PALETTE_NEXT
+            MENUITEM "Convert from TD",									ID_VIEW_PALETTE_CONVERT_FROM_TD
+            MENUITEM "Convert from RA",									ID_VIEW_PALETTE_CONVERT_FROM_RA
+            MENUITEM "Use for Conversion",							ID_VIEW_PALETTE_USE_FOR_CONVERSION
         END
         POPUP "&Voxel"
         BEGIN
             MENUITEM "&Colors",													ID_VIEW_VOXEL_NORMAL
-            MENUITEM "Surface &normals",								ID_VIEW_VOXEL_SURFACE_NORMALS
+            MENUITEM "Surface &Normals",								ID_VIEW_VOXEL_SURFACE_NORMALS
             MENUITEM "&Depth information",							ID_VIEW_VOXEL_DEPTH_INFORMATION
         END
         MENUITEM "Directories...",											ID_VIEW_DIRECTORIES
@@ -215,15 +215,15 @@ END
 
 IDR_MAINFRAME ACCELERATORS
 BEGIN
-    27,             ID_VIEW_PALET_PREV,     ASCII,  NOINVERT
-    29,             ID_VIEW_PALET_NEXT,     ASCII,  NOINVERT
+    27,             ID_VIEW_PALETTE_PREV,     ASCII,  NOINVERT
+    29,             ID_VIEW_PALETTE_NEXT,     ASCII,  NOINVERT
     "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
     "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
     "F",            ID_FILE_SEARCH,         VIRTKEY, CONTROL, NOINVERT
     "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
     "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
-    "R",            ID_VIEW_PALET_SELECT,   VIRTKEY, CONTROL, NOINVERT
-    "Q",            ID_VIEW_PALET_AUTO_SELECT, VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_VIEW_PALETTE_SELECT,   VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_VIEW_PALETTE_AUTO_SELECT, VIRTKEY, CONTROL, NOINVERT
     VK_BACK,        ID_FILE_CLOSE,          VIRTKEY, NOINVERT
     VK_DELETE,      ID_POPUP_DELETE,        VIRTKEY, NOINVERT
     VK_DELETE,      ID_POPUP_DELETE,        VIRTKEY, SHIFT, NOINVERT
@@ -562,7 +562,7 @@ LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
 // Dialog
 //
 
-IDD_SELECT_PALET DIALOGEX 0, 0, 119, 58
+IDD_SELECT_PALETTE DIALOGEX 0, 0, 119, 58
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Select Palette"
 FONT 8, "MS Shell Dlg", 0, 0, 0x0
@@ -582,7 +582,7 @@ END
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO
 BEGIN
-    IDD_SELECT_PALET, DIALOG
+    IDD_SELECT_PALETTE, DIALOG
     BEGIN
         LEFTMARGIN, 7
         RIGHTMARGIN, 112
@@ -598,7 +598,7 @@ END
 // AFX_DIALOG_LAYOUT
 //
 
-IDD_SELECT_PALET AFX_DIALOG_LAYOUT
+IDD_SELECT_PALETTE AFX_DIALOG_LAYOUT
 BEGIN
     0
 END

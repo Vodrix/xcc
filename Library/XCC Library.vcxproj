@@ -245,7 +245,7 @@
     </ClCompile>
     <ClCompile Include="..\misc\pal_file.cpp">
     </ClCompile>
-    <ClCompile Include="..\misc\palet.cpp">
+    <ClCompile Include="..\misc\palette.cpp">
     </ClCompile>
     <ClCompile Include="..\misc\pcx_decode.cpp">
     </ClCompile>
@@ -393,7 +393,7 @@
     <ClInclude Include="..\misc\ogg_file.h" />
     <ClInclude Include="..\misc\pak_file.h" />
     <ClInclude Include="..\misc\pal_file.h" />
-    <ClInclude Include="..\misc\palet.h" />
+    <ClInclude Include="..\misc\palette.h" />
     <ClInclude Include="..\misc\pcx_decode.h" />
     <ClInclude Include="..\misc\pcx_file.h" />
     <ClInclude Include="..\misc\pcx_file_write.h" />

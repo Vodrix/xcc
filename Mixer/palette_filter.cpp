@@ -1,9 +1,9 @@
 #include "stdafx.h"
-#include "palet_filter.h"
+#include "palette_filter.h"
 
 #include "fname.h"
 
-int Cpalet_filter::Clist_entry::q(t_file_type ft, int cx, int cy, string fname) const
+int Cpalette_filter::Clist_entry::q(t_file_type ft, int cx, int cy, string fname) const
 {
 	int r = 0;
 	if (m_ft == ft)
@@ -23,7 +23,7 @@ int Cpalet_filter::Clist_entry::q(t_file_type ft, int cx, int cy, string fname) 
 	return r;
 }
 
-Cpalet_filter::Cpalet_filter()
+Cpalette_filter::Cpalette_filter()
 {
 	m_list.push_back(Clist_entry(game_td, "desert.pal", ft_shp, "*.des"));
 	m_list.push_back(Clist_entry(game_td, "temperat.pal", ft_shp, "*.tem"));
@@ -183,7 +183,7 @@ Cpalet_filter::Cpalet_filter()
 
 }
 
-void Cpalet_filter::select(t_file_type ft, int cx, int cy, string fname)
+void Cpalette_filter::select(t_file_type ft, int cx, int cy, string fname)
 {
 	m_vector.clear();
 	int best_q = INT_MIN;
@@ -201,7 +201,7 @@ void Cpalet_filter::select(t_file_type ft, int cx, int cy, string fname)
 }
 
 
-string Cpalet_filter::pick(t_game& game)
+string Cpalette_filter::pick(t_game& game)
 {
 	if (m_vector.empty())
 		return "";
@@ -209,5 +209,5 @@ string Cpalet_filter::pick(t_game& game)
 	if (m_vector_i == m_vector.end())
 		m_vector_i = m_vector.begin();
 	game = i->game();
-	return i->palet();
+	return i->palette();
 }

@@ -24,10 +24,10 @@ int Cpng_file::decode(Cvirtual_image& d) const
 	switch (img.format)
 	{
 	case PNG_FORMAT_RGB_COLORMAP:
-		t_palet palet;
-		if (!png_image_finish_read(&img, NULL, t.write_start(cx * cy), cx, palet))
+		t_palette palette;
+		if (!png_image_finish_read(&img, NULL, t.write_start(cx * cy), cx, palette))
 			return 1;
-		d.load(t, cx, cy, 1, palet);
+		d.load(t, cx, cy, 1, palette);
 		return 0;
 	case PNG_FORMAT_RGB:
 		if (!png_image_finish_read(&img, NULL, t.write_start(3 * cx * cy), 3 * cx, NULL))
@@ -55,10 +55,10 @@ int Cpng_file::decode(Cvirtual_image& d) const
 	}
 }
 
-int png_file_write(Cvirtual_file& f, const byte* image, const t_palet_entry* palet, int cx, int cy, int pixel)
+int png_file_write(Cvirtual_file& f, const byte* image, const t_palette_entry* palette, int cx, int cy, int pixel)
 {
 	string temp_fname = get_temp_fname();
-	int error = png_file_write(temp_fname, image, palet, cx, cy, pixel);
+	int error = png_file_write(temp_fname, image, palette, cx, cy, pixel);
 	if (!error)
 	{
 		error = f.load(temp_fname);
@@ -67,18 +67,18 @@ int png_file_write(Cvirtual_file& f, const byte* image, const t_palet_entry* pal
 	return error;
 }
 
-int png_file_write(const string& name, const byte* image, const t_palet_entry* palet, int cx, int cy, int pixel)
+int png_file_write(const string& name, const byte* image, const t_palette_entry* palette, int cx, int cy, int pixel)
 {
 	png_image img;
 	memset(&img, 0, sizeof(img));
 	img.version = PNG_IMAGE_VERSION;
 	img.width = cx;
 	img.height = cy;
-	if (palet)
+	if (palette)
 	{
 		img.format = PNG_FORMAT_RGB_COLORMAP;
 		img.colormap_entries = 256;
-		return !png_image_write_to_file(&img, name.c_str(), false, image, cx, palet);
+		return !png_image_write_to_file(&img, name.c_str(), false, image, cx, palette);
 	}
 	else
 	{

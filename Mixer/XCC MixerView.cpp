@@ -445,7 +445,7 @@ void CXCCMixerView::update_list()
 	DragAcceptFiles(can_edit());
 	clear_list();
 	t_index_entry e;
-	m_palet_loaded = false;
+	m_palette_loaded = false;
 
 	if (m_mix_f)
 	{
@@ -468,8 +468,8 @@ void CXCCMixerView::update_list()
 			m_index[id] = e;
 			if (e.ft == ft_pal)
 			{
-				m_mix_f->get_vdata(id).read(m_palet);
-				m_palet_loaded = true;
+				m_mix_f->get_vdata(id).read(m_palette);
+				m_palette_loaded = true;
 			}
 		}
 	}
@@ -644,7 +644,7 @@ void CXCCMixerView::OnItemchanged(NMHDR* pNMHDR, LRESULT* pResult)
 		lvi.iItem = pNMListView->iItem;
 		GetListCtrl().GetItem(&lvi);
 		if (m_mix_f)
-			m_file_view_pane->open_f(lvi.lParam, *m_mix_f, m_game, m_palet_loaded ? m_palet : NULL);
+			m_file_view_pane->open_f(lvi.lParam, *m_mix_f, m_game, m_palette_loaded ? m_palette : NULL);
 		else
 		{
 			const t_index_entry& index = m_index[lvi.lParam];
@@ -767,7 +767,7 @@ Cvirtual_image CXCCMixerView::get_vimage_id(int id) const
 		{
 			Cshp_ts_file f;
 			f.load(get_vdata_id(id));
-			d = f.extract_as_pcx_single(get_default_palet(), GetMainFrame()->combine_shadows());
+			d = f.extract_as_pcx_single(get_default_palette(), GetMainFrame()->combine_shadows());
 		}
 		break;
 	case ft_tmp_ra:
@@ -799,8 +799,8 @@ Cvirtual_image CXCCMixerView::get_vimage_id(int id) const
 		}
 		break;
 	}
-	if (d.cb_pixel() == 1 && !d.palet())
-		d.palet(get_default_palet(), true);
+	if (d.cb_pixel() == 1 && !d.palette())
+		d.palette(get_default_palette(), true);
 	return d;
 }
 
@@ -828,10 +828,10 @@ void CXCCMixerView::OnUpdatePopupExtract(CCmdUI* pCmdUI)
 	pCmdUI->Enable(get_current_id() != -1);
 }
 
-const t_palet_entry* CXCCMixerView::get_default_palet() const
+const t_palette_entry* CXCCMixerView::get_default_palette() const
 {
-	const t_palet_entry* p = GetMainFrame()->get_pal_data();
-	return p ? p : m_palet;
+	const t_palette_entry* p = GetMainFrame()->get_pal_data();
+	return p ? p : m_palette;
 }
 
 bool CXCCMixerView::can_accept() const
@@ -1153,17 +1153,17 @@ int CXCCMixerView::copy_as_cps(int i, Cfname fname) const
 	Cvirtual_image image = get_vimage(i);
 	if (image.cx() != 320 || image.cy() != 200)
 		return 257;
-	t_palet palet;
-	if (image.palet())
+	t_palette palette;
+	if (image.palette())
 	{
-		memcpy(palet, image.palet(), sizeof(t_palet));
-		convert_palet_24_to_18(palet);
+		memcpy(palette, image.palette(), sizeof(t_palette));
+		convert_palette_24_to_18(palette);
 	}
 	else
-		memcpy(palet, get_default_palet(), sizeof(t_palet));
+		memcpy(palette, get_default_palette(), sizeof(t_palette));
 	if (image.cb_pixel() != 1)
-		image.decrease_color_depth(1, palet);
-	return cps_file_write(image.image(), palet).save(fname);
+		image.decrease_color_depth(1, palette);
+	return cps_file_write(image.image(), palette).save(fname);
 }
 
 int CXCCMixerView::copy_as_csv(int i, Cfname fname) const
@@ -1252,13 +1252,13 @@ int CXCCMixerView::copy_as_map_ts_preview(int i, Cfname fname) const
 int CXCCMixerView::copy_as_pal(int i, Cfname fname) const
 {
 	Cvirtual_image image = get_vimage(i);
-	if (!image.palet())
+	if (!image.palette())
 		return 1;
-	t_palet palet;
-	memcpy(palet, image.palet(), sizeof(t_palet));
-	convert_palet_24_to_18(palet);
+	t_palette palette;
+	memcpy(palette, image.palette(), sizeof(t_palette));
+	convert_palette_24_to_18(palette);
 	fname.set_ext(".pal");
-	return file32_write(fname, palet, sizeof(t_palet));
+	return file32_write(fname, palette, sizeof(t_palette));
 }
 
 int CXCCMixerView::copy_as_pal_jasc(int i, Cfname fname) const
@@ -1266,8 +1266,8 @@ int CXCCMixerView::copy_as_pal_jasc(int i, Cfname fname) const
 	Cpal_file f;
 	bool shift_left = false;
 	Cvirtual_image image = get_vimage(i);
-	if (image.palet())
-		f.load(Cvirtual_binary(image.palet(), sizeof(t_palet)));
+	if (image.palette())
+		f.load(Cvirtual_binary(image.palette(), sizeof(t_palette)));
 	else if (open_f_index(f, i))
 		return 1;
 	else
@@ -1279,16 +1279,16 @@ int CXCCMixerView::copy_as_pal_jasc(int i, Cfname fname) const
 
 static int copy_as_image(Cvideo_decoder* v, string fname, t_file_type ft)
 {
-	t_palet palet;
-	memcpy(palet, v->palet(), sizeof(t_palet));
-	convert_palet_18_to_24(palet);
+	t_palette palette;
+	memcpy(palette, v->palette(), sizeof(t_palette));
+	convert_palette_18_to_24(palette);
 	Cvirtual_binary frame;
 	Cfname t = fname;
 	for (int i = 0; i < v->cf(); i++)
 	{
 		v->decode(frame.write_start(v->cb_image()));
 		t.set_title(Cfname(fname).get_ftitle() + " " + nwzl(4, i));
-		if (int error = image_file_write(t, ft, frame.data(), palet, v->cx(), v->cy(), v->cb_pixel()))
+		if (int error = image_file_write(t, ft, frame.data(), palette, v->cx(), v->cy(), v->cb_pixel()))
 			return error;
 	}
 	delete v;
@@ -1329,13 +1329,13 @@ int CXCCMixerView::copy_as_pcx(int i, Cfname fname, t_file_type ft) const
 		{
 			Cshp_dune2_file f;
 			int error = open_f_index(f, i);
-			return error ? error : f.extract_as_pcx(fname, ft, get_default_palet());
+			return error ? error : f.extract_as_pcx(fname, ft, get_default_palette());
 		}
 	case ft_shp:
 		{
 			Cshp_file f;
 			int error = open_f_index(f, i);
-			return error ? error : copy_as_image(f.decoder(get_default_palet()), fname, ft);
+			return error ? error : copy_as_image(f.decoder(get_default_palette()), fname, ft);
 		}
 	case ft_shp_ts:
 		{
@@ -1352,7 +1352,7 @@ int CXCCMixerView::copy_as_pcx(int i, Cfname fname, t_file_type ft) const
 			}
 			Cshp_ts_file f;
 			f.load(get_vdata(i));
-			return f.extract_as_pcx(fname, ft, get_default_palet(), GetMainFrame()->combine_shadows());
+			return f.extract_as_pcx(fname, ft, get_default_palette(), GetMainFrame()->combine_shadows());
 		}
 	case ft_vqa:
 		{
@@ -1364,13 +1364,13 @@ int CXCCMixerView::copy_as_pcx(int i, Cfname fname, t_file_type ft) const
 		{
 			Cvxl_file f;
 			int error = open_f_index(f, i);
-			return error ? error : f.extract_as_pcx(fname, ft, get_default_palet());
+			return error ? error : f.extract_as_pcx(fname, ft, get_default_palette());
 		}
 	case ft_wsa_dune2:
 		{
 			Cwsa_dune2_file f;
 			int error = open_f_index(f, i);
-			return error ? error : f.extract_as_pcx(fname, ft, get_default_palet());
+			return error ? error : f.extract_as_pcx(fname, ft, get_default_palette());
 		}
 	case ft_wsa:
 		{
@@ -1403,7 +1403,7 @@ static int get_index_from_name(const string& base_name, const string& fname)
 		: atoi(t.substr(base_name.length()).c_str());
 }
 
-static void create_rp(const t_palet s1, const t_palet s2, byte* d, t_game game)
+static void create_rp(const t_palette s1, const t_palette s2, byte* d, t_game game)
 {
 	d[0] = 0;
 	for (int i = 1; i < 256; i++)
@@ -1414,16 +1414,16 @@ static void create_rp(const t_palet s1, const t_palet s2, byte* d, t_game game)
 			if (i >= 0xb0 && i < 0xc0)
 				d[i] = i - 0xa0;
 			else
-				d[i] = find_color_t(s1[i].r, s1[i].g, s1[i].b, s2);
+				d[i] = find_color(s1[i].r, s1[i].g, s1[i].b, s2);
 			break;
 		case game_ra:
 			if (i >= 0x50 && i < 0x60)
 				d[i] = i - 0x40;
 			else
-				d[i] = find_color_t(s1[i].r, s1[i].g, s1[i].b, s2);
+				d[i] = find_color(s1[i].r, s1[i].g, s1[i].b, s2);
 			break;
 		default:
-			d[i] = find_color_t(s1[i].r, s1[i].g, s1[i].b, s2);
+			d[i] = find_color(s1[i].r, s1[i].g, s1[i].b, s2);
 		}
 	}
 }
@@ -1432,17 +1432,17 @@ int CXCCMixerView::copy_as_shp(int _i, Cfname fname) const
 {
 	fname.set_ext(".shp");
 	Cvirtual_binary s;
-	t_palet s_palet;
+	t_palette s_palette;
 	string base_name = get_base_name(fname);
 	if (get_index_from_name(base_name, fname))
 		return em_bad_fname;
 	Cvirtual_image image = get_vimage(_i);
-	if (image.palet())
-		memcpy(s_palet, image.palet(), sizeof(t_palet));
+	if (image.palette())
+		memcpy(s_palette, image.palette(), sizeof(t_palette));
 	else
 	{
-		memcpy(s_palet, get_default_palet(), sizeof(t_palet));
-		convert_palet_18_to_24(s_palet);
+		memcpy(s_palette, get_default_palette(), sizeof(t_palette));
+		convert_palette_18_to_24(s_palette);
 	}
 	int cx = image.cx();
 	int cy = image.cy();
@@ -1465,20 +1465,20 @@ int CXCCMixerView::copy_as_shp(int _i, Cfname fname) const
 		image = get_vimage_id(id);
 		if (image.cx() != cx || image.cy() != cy)
 			return em_bad_size;
-		image.cb_pixel(1, s_palet);
+		image.cb_pixel(1, s_palette);
 		if (!s.data())
 			c_images = i + 1;
 		memcpy(s.write_start(cx * cy * c_images) + cx * cy * i, image.image(), cx * cy);
 	}
 	if (!s.data())
 		return 1;
-	if (GetMainFrame()->use_palet_for_conversion())
+	if (GetMainFrame()->use_palette_for_conversion())
 	{
 		byte rp[256];
-		t_palet p;
-		memcpy(p, get_default_palet(), sizeof(t_palet));
-		convert_palet_18_to_24(p);
-		create_rp(s_palet, p, rp);
+		t_palette p;
+		memcpy(p, get_default_palette(), sizeof(t_palette));
+		convert_palette_18_to_24(p);
+		create_rp(s_palette, p, rp);
 		apply_rp(s.data_edit(), cx * cy * c_images, rp);
 	}
 	trim(base_name);
@@ -1496,7 +1496,7 @@ int CXCCMixerView::copy_as_shp_ts(int i, Cfname fname) const
 	int c_images;
 	fname.set_ext(".shp");
 	Cvirtual_binary s;
-	t_palet s_palet;
+	t_palette s_palette;
 	string base_name = fname.get_ftitle();
 	switch (find_ref(m_index, get_id(i)).ft)
 	{
@@ -1506,8 +1506,8 @@ int CXCCMixerView::copy_as_shp_ts(int i, Cfname fname) const
 			int error = open_f_index(f, i);
 			if (error)
 				return error;
-			memcpy(s_palet, GetMainFrame()->get_game_palet(convert_from_td ? game_td : game_ra), sizeof(t_palet));
-			convert_palet_18_to_24(s_palet);
+			memcpy(s_palette, GetMainFrame()->get_game_palette(convert_from_td ? game_td : game_ra), sizeof(t_palette));
+			convert_palette_18_to_24(s_palette);
 			cx = f.cx();
 			cy = f.cy();
 			c_images = f.cf() << 1;
@@ -1529,12 +1529,12 @@ int CXCCMixerView::copy_as_shp_ts(int i, Cfname fname) const
 		if (get_index_from_name(base_name, fname))
 			return em_bad_fname;
 		Cvirtual_image image = get_vimage(i);
-		if (image.palet())
-			memcpy(s_palet, image.palet(), sizeof(t_palet));
+		if (image.palette())
+			memcpy(s_palette, image.palette(), sizeof(t_palette));
 		else
 		{
-			memcpy(s_palet, get_default_palet(), sizeof(t_palet));
-			convert_palet_18_to_24(s_palet);
+			memcpy(s_palette, get_default_palette(), sizeof(t_palette));
+			convert_palette_18_to_24(s_palette);
 		}
 		cx = image.cx();
 		cy = image.cy();
@@ -1557,7 +1557,7 @@ int CXCCMixerView::copy_as_shp_ts(int i, Cfname fname) const
 			image = get_vimage_id(id);
 			if (image.cx() != cx || image.cy() != cy)
 				return em_bad_size;
-			image.cb_pixel(1, s_palet);
+			image.cb_pixel(1, s_palette);
 			if (!s.data())
 			{
 				c_images = i + 1;
@@ -1587,18 +1587,18 @@ int CXCCMixerView::copy_as_shp_ts(int i, Cfname fname) const
 				*w++ = 0;
 		}
 	}
-	if (GetMainFrame()->use_palet_for_conversion())
+	if (GetMainFrame()->use_palette_for_conversion())
 	{
 		byte rp[256];
-		t_palet p;
-		memcpy(p, get_default_palet(), sizeof(t_palet));
-		convert_palet_18_to_24(p);
+		t_palette p;
+		memcpy(p, get_default_palette(), sizeof(t_palette));
+		convert_palette_18_to_24(p);
 		if (convert_from_td)
-			create_rp(s_palet, p, rp, game_td);
+			create_rp(s_palette, p, rp, game_td);
 		else if (convert_from_ra)
-			create_rp(s_palet, p, rp, game_ra);
+			create_rp(s_palette, p, rp, game_ra);
 		else
-			create_rp(s_palet, p, rp);
+			create_rp(s_palette, p, rp);
 		apply_rp(s.data_edit(), cx * cy * c_images >> convert_shadow, rp);
 	}
 	if (GetMainFrame()->fix_shadows() && ~c_images & 1)
@@ -2441,14 +2441,14 @@ int CXCCMixerView::resize(int id)
 			if (IDOK != dlg.DoModal())
 				return 1;
 			int cb_pixel = s.cb_pixel();
-			Cvirtual_image s_palet = s;
+			Cvirtual_image s_palette = s;
 			s.cb_pixel(4);
-			Cvirtual_image d(NULL, dlg.get_cx(), dlg.get_cy(), 4, s_palet.palet());
+			Cvirtual_image d(NULL, dlg.get_cx(), dlg.get_cy(), 4, s_palette.palette());
 			if (s.cx() < d.cx())
-				resize_image_up(reinterpret_cast<const t_palet32entry*>(s.image()), reinterpret_cast<t_palet32entry*>(d.image_edit()), s.cx(), s.cy(), d.cx(), d.cy());
+				resize_image_up(reinterpret_cast<const t_palette32_entry*>(s.image()), reinterpret_cast<t_palette32_entry*>(d.image_edit()), s.cx(), s.cy(), d.cx(), d.cy());
 			else
-				resize_image_down(reinterpret_cast<const t_palet32entry*>(s.image()), reinterpret_cast<t_palet32entry*>(d.image_edit()), s.cx(), s.cy(), d.cx(), d.cy());
-			d.cb_pixel(cb_pixel, s_palet.palet());
+				resize_image_down(reinterpret_cast<const t_palette32_entry*>(s.image()), reinterpret_cast<t_palette32_entry*>(d.image_edit()), s.cx(), s.cy(), d.cx(), d.cy());
+			d.cb_pixel(cb_pixel, s_palette.palette());
 			return d.save(fname, find_ref(m_index, id).ft);
 		}
 	case ft_shp_ts:
@@ -2466,17 +2466,17 @@ int CXCCMixerView::resize(int id)
 			const int global_cx_d = dlg.get_cx();
 			const int global_cy_d = dlg.get_cy();
 			const int c_images = f.cf();
-			t_palet palet;
-			convert_palet_18_to_24(get_default_palet(), palet);
-			palet[0].r = palet[0].b = 0xff;
-			palet[0].g = 0;
+			t_palette palette;
+			convert_palette_18_to_24(get_default_palette(), palette);
+			palette[0].r = palette[0].b = 0xff;
+			palette[0].g = 0;
 			Cvirtual_binary rp;
 			if (global_cx_d * global_cy_d * c_images > 1 << 18)
-				create_downsample_table(palet, rp.write_start(1 << 18));
+				create_downsample_table(palette, rp.write_start(1 << 18));
 			Cvirtual_binary d8(NULL, global_cx_d * global_cy_d * c_images);
-			t_palet32entry* d32 = new t_palet32entry[global_cx_d * global_cy_d];
+			t_palette32_entry* d32 = new t_palette32_entry[global_cx_d * global_cy_d];
 			Cvirtual_binary image8(NULL, global_cx * global_cy);
-			t_palet32entry* image32 = new t_palet32entry[global_cx * global_cy];
+			t_palette32_entry* image32 = new t_palette32_entry[global_cx * global_cy];
 			for (int i = 0; i < c_images; i++)
 			{
 				set_msg("Resize: " + n(i * 100 / c_images) + "%");
@@ -2504,7 +2504,7 @@ int CXCCMixerView::resize(int id)
 					memcpy(d8.data_edit() + global_cx_d * global_cy_d * i, image8.data(), global_cx * global_cy);
 				else
 				{
-					upsample_image(image8.data(), image32, global_cx, global_cy, palet);
+					upsample_image(image8.data(), image32, global_cx, global_cy, palette);
 					if (global_cx < global_cx_d)
 						resize_image_up(image32, d32, global_cx, global_cy, global_cx_d, global_cy_d);
 					else
@@ -2512,7 +2512,7 @@ int CXCCMixerView::resize(int id)
 					if (rp.size())
 						downsample_image(d32, d8.data_edit() + global_cx_d * global_cy_d * i, global_cx_d, global_cy_d, rp.data());
 					else
-						downsample_image(d32, d8.data_edit() + global_cx_d * global_cy_d * i, global_cx_d, global_cy_d, palet);
+						downsample_image(d32, d8.data_edit() + global_cx_d * global_cy_d * i, global_cx_d, global_cy_d, palette);
 				}
 			}
 			if (dlg.m_fix_shadows && ~c_images & 1)
@@ -2630,22 +2630,22 @@ void CXCCMixerView::OnPopupClipboardPasteAsShpTs()
 	int error = image.get_clipboard();
 	if (!error)
 	{
-		if (image.cb_pixel() == 3 || GetMainFrame()->use_palet_for_conversion())
+		if (image.cb_pixel() == 3 || GetMainFrame()->use_palette_for_conversion())
 		{
-			t_palet p;
-			memcpy(p, get_default_palet(), sizeof(t_palet));
-			convert_palet_18_to_24(p);
+			t_palette p;
+			memcpy(p, get_default_palette(), sizeof(t_palette));
+			convert_palette_18_to_24(p);
 			if (image.cb_pixel() == 3)
 				image.decrease_color_depth(1, p);
 			else
 			{
 				byte rp[256];
 				if (GetMainFrame()->convert_from_td())
-					create_rp(image.palet(), p, rp, game_td);
+					create_rp(image.palette(), p, rp, game_td);
 				else if (GetMainFrame()->convert_from_ra())
-					create_rp(image.palet(), p, rp, game_ra);
+					create_rp(image.palette(), p, rp, game_ra);
 				else
-					create_rp(image.palet(), p, rp);
+					create_rp(image.palette(), p, rp);
 				apply_rp(image.image_edit(), image.cx() * image.cy(), rp);
 			}
 		}
@@ -2906,14 +2906,14 @@ void CXCCMixerView::open_item(int id)
 				{
 					Cshp_file f;
 					f.load(get_vdata_id(id));
-					decoder = f.decoder(get_default_palet());
+					decoder = f.decoder(get_default_palette());
 				}
 				break;
 			case ft_shp_ts:
 				{
 					Cshp_ts_file f;
 					f.load(get_vdata_id(id));
-					decoder = f.decoder(get_default_palet());
+					decoder = f.decoder(get_default_palette());
 				}
 				break;
 			case ft_vqa:
@@ -2927,7 +2927,7 @@ void CXCCMixerView::open_item(int id)
 				{
 					Cwsa_dune2_file f;
 					f.load(get_vdata_id(id));
-					decoder = f.decoder(get_default_palet());
+					decoder = f.decoder(get_default_palette());
 				}
 				break;
 			case ft_wsa:
