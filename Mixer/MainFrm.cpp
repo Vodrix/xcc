@@ -444,12 +444,12 @@ void CMainFrame::initialize_lists()
 	find_mixs(xcc_dirs::get_dir(game_rg) + "data\\", game_rg, "*.pkg");
 	find_mixs(xcc_dirs::get_dir(game_gr), game_gr, "*.big");
 	find_mixs(xcc_dirs::get_dir(game_gr_zh), game_gr_zh, "*.big");
-	find_mixs(xcc_dirs::get_dir(game_bfme), game_bfme, "*.big");
-	find_mixs(xcc_dirs::get_dir(game_tw), game_tw, "*.big");
-	find_mixs(xcc_dirs::get_dir(game_bfme2), game_bfme2, "*.big");
-	find_mixs(xcc_dirs::get_dir(game_nox), game_nox, "*.mix");
 	find_mixs("", game_ebfd, ""); //i don't think mixer supports the files
-	find_mixs("", game_ts_fs, "");	//for some reason the order of these matter and i don't care enough to fix it properly
+	find_mixs(xcc_dirs::get_dir(game_nox), game_nox, "*.mix");
+	find_mixs(xcc_dirs::get_dir(game_bfme), game_bfme, "*.big");
+	find_mixs(xcc_dirs::get_dir(game_bfme2), game_bfme2, "*.big");
+	find_mixs(xcc_dirs::get_dir(game_tw), game_tw, "*.big");
+	find_mixs("", game_ts_fs, "");	//for some reason the order of these matter and i don't care enough to fix it properly, it's probably the wacky order of how the games are defined
 
 
 	t_pal_list pal_list = m_pal_list;

@@ -310,7 +310,7 @@ void CXCCFileView::load_color_table(const t_palet palet, bool convert_palet)
 	if (convert_palet)
 		convert_palet_18_to_24(p);
 	t_palet32bgr_entry* color_table = reinterpret_cast<t_palet32bgr_entry*>(m_color_table);
-	for (long i = 0; i < 256; i++)
+	for (unsigned short i = 0; i < 256; i++)
 	{
 		color_table[i].r = p[i].r;
 		color_table[i].g = p[i].g;
@@ -871,8 +871,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				load_color_table(get_default_palet(), true);
 				for (int i = 0; i < c_images; i++)
 				{
-#ifndef NDEBUG
-					//draw_info("Radar Color:", "R:" + n(f.get_image_header(i)->red) + " G:" + n(f.get_image_header(i)->green) + " B:" + n(f.get_image_header(i)->blue) + " A:" + n(f.get_image_header(i)->alpha));
+#ifndef NDEBUG	//this doesn't display right and i don't know if it's useful information at all
 					draw_info("Radar Color:", "R:" + nwzl(3, f.get_image_header(i)->red) + " G:" + nwzl(3, f.get_image_header(i)->green) + " B:" + nwzl(3, f.get_image_header(i)->blue) + " A:" + nwzl(3, f.get_image_header(i)->alpha));
 					CBrush box;
 					CBrush color;
