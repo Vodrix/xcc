@@ -170,7 +170,6 @@ void CXCCFileView::draw_image24(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	mem_dc.SelectObject(old_bitmap);
 	DeleteObject(mh_dib);
 	m_x = max(m_x, offset + cx_s);
-
 }
 
 void CXCCFileView::draw_image32(const byte* s, int cx_s, int cy_s, CDC* pDC)
@@ -473,8 +472,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			{
 				Caud_file f;
 				f.load(m_data);
-				draw_info("Audio:", n(f.get_samplerate()) + " hz, " + n(f.get_cb_sample() << 3) + " bit, " + (f.get_c_channels() == 1 ? "mono" : "stereo"));
-				draw_info("Count samples:", n(f.get_c_samples()));
+				draw_info("Audio:", n(f.get_samplerate()) + " hz, " + n(f.get_cb_sample() << 3) + " bit, " + (f.get_c_channels() == 1 ? "Mono" : "Stereo"));
+				draw_info("Samples:", n(f.get_c_samples()));
 				draw_info("Compression:", nh(2, f.header().compression));
 				break;
 			}
@@ -483,7 +482,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Cbig_file f;
 				f.load(m_data, m_size);
 				const int c_files = f.get_c_files();
-				draw_info("Count files:", n(c_files));
+				draw_info("Files:", n(c_files));
 				m_y += m_y_inc;
 				for (int i = 0; i < c_files; i++)
 				{
@@ -498,7 +497,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			f.load(m_data, m_size);
 			const int c_strs = f.header().count1;
 			auto& c_strmaps = f.get_map();
-			draw_info("Count strings:", n(c_strs));
+			draw_info("Strings:", n(c_strs));
 			m_y += m_y_inc;
 			draw_info("Name", "Value\t\tExtra Value");
 			for (auto i : c_strmaps)
@@ -511,7 +510,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			{
 				Ccps_file f;
 				f.load(m_data);
-				draw_info("Palette:", f.palette() ? "yes" : "no");
+				draw_info("Paletted:", f.palette() ? "Yes" : "No");
 				m_y += m_y_inc;
 				load_color_table(f.palette(), true);
 				Cvirtual_image image = f.vimage();
@@ -533,11 +532,13 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				if (ddsd.dwFlags & DDSD_DEPTH)
 					draw_info("Depth: ", n(ddsd.dwDepth));
 				if (ddsd.dwFlags & DDSD_MIPMAPCOUNT)
-					draw_info("Mip map count: ", n(ddsd.dwMipMapCount));
+					draw_info("Mipmaps: ", n(ddsd.dwMipMapCount));
 				if (ddsd.ddpfPixelFormat.dwFlags & DDPF_FOURCC)
-					draw_info("Pixel format: ", dump_four_cc(ddsd.ddpfPixelFormat.dwFourCC));
+					draw_info("Pixel Format: ", dump_four_cc(ddsd.ddpfPixelFormat.dwFourCC));
 				if (ddsd.ddpfPixelFormat.dwFlags & DDPF_RGB)
-					draw_info("Pixel format: ", n(ddsd.ddpfPixelFormat.dwRGBBitCount) + " bits (" + nwzl(4, 1000 * get_size(ddsd.ddpfPixelFormat.dwRGBAlphaBitMask) + 100 * get_size(ddsd.ddpfPixelFormat.dwRBitMask) + 10 * get_size(ddsd.ddpfPixelFormat.dwGBitMask) + get_size(ddsd.ddpfPixelFormat.dwBBitMask)) + ')');		
+					draw_info("Pixel Format: ", n(ddsd.ddpfPixelFormat.dwRGBBitCount) +
+						" bits (" + nwzl(4, 1000 * get_size(ddsd.ddpfPixelFormat.dwRGBAlphaBitMask) + 100 * get_size(ddsd.ddpfPixelFormat.dwRBitMask) + 10
+							* get_size(ddsd.ddpfPixelFormat.dwGBitMask) + get_size(ddsd.ddpfPixelFormat.dwBBitMask)) + ')');		
 				if (ddsd.ddpfPixelFormat.dwFlags & DDPF_FOURCC)
 				{					
 					Cvirtual_image image = f.vimage();
@@ -564,7 +565,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				const int c_chars = f.get_c_chars();
 				const int cy_test = f.get_cy();
 				const t_fnt_header& header = f.header();
-				draw_info("Count chars:", n(c_chars));
+				draw_info("Characters:", n(c_chars));
 				draw_info("Size:", n(f.get_cmax_x()) + " x " + n(cy_test));
 				m_y += m_y_inc;
 				byte* d = new byte[f.get_cmax_x() * f.get_cy()];
@@ -588,8 +589,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			{
 				Chva_file f;
 				f.load(m_data, m_size);
-				draw_info("Count frames:", n(f.get_c_frames()));
-				draw_info("Count sections:", n(f.get_c_sections()));
+				draw_info("Frames:", n(f.get_c_frames()));
+				draw_info("Sections:", n(f.get_c_sections()));
 				break;
 			}
 		case ft_jpeg:
@@ -600,7 +601,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				{
 					const int cx = image.cx();
 					const int cy = image.cy();
-					draw_info("Bits/pixel:", n(8 * image.cb_pixel()));
+					draw_info("Bits/Pixel:", n(8 * image.cb_pixel()));
 					draw_info("Size:", n(cx) + " x " + n(cy));
 					m_y += m_y_inc;
 					switch (image.cb_pixel())
@@ -681,7 +682,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				draw_info("Name:", ir.get_basic_data().name);
 				draw_info("Size:", n(md.size_right) + " x " + n(md.size_bottom));
 				draw_info("Theater:", ir.get_map_data().theater);
-				draw_info("Max players:", n(ir.max_players()));
+				draw_info("Max Players:", n(ir.max_players()));
 
 				if (pd.cx && pd.cy && ppd != "BIACcgAEwBtAMnRABAAaQCSANMAVQASAAnIABMAbQDJ0QAQAGkAkgDTAFUAEgAJyAATAG0yAsAIAXQ5PDQ5PDQ6JQATAEE6PDQ4PDI4JgBTAFEAkgAJyAATAG0AydEAEABpAJIA0wBVA")
 				{
@@ -719,7 +720,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				f.load(m_data, m_size);
 				const int c_files = f.get_c_files();
 				const t_game game = f.get_game();
-				draw_info("Count files:", n(c_files));
+				draw_info("Files:", n(c_files));
 				draw_info("Checksum:", n(f.has_checksum()));
 				draw_info("Encrypted:", n(f.is_encrypted()));
 				draw_info("Game:", game_name[game]);
@@ -740,7 +741,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Cpak_file f;
 				f.load(m_data, m_size);
 				const int c_files = f.get_c_files();
-				draw_info("Count files:", n(c_files));
+				draw_info("Files:", n(c_files));
 				m_y += m_y_inc;
 				for (int i = 0; i < c_files; i++)
 				{
@@ -754,15 +755,15 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				f.load(m_data, m_size);
 				const Cmp3_frame_header& header = f.header();
 				draw_info("Bitrate:", n(header.bitrate()));
-				draw_info("Channel mode:", mpcm_name[header.channel_mode()]);
-				draw_info("Copyright:", header.copyright() ? "yes" : "no");
-				draw_info("CRC:", header.crc() ? "yes" : "no");
+				draw_info("Channel Mode:", mpcm_name[header.channel_mode()]);
+				draw_info("Copyright:", header.copyright() ? "Yes" : "No");
+				draw_info("CRC:", header.crc() ? "Yes" : "no");
 				draw_info("Emphasis:", n(header.emphasis()));
 				draw_info("Layer:", n(header.layer()));
-				draw_info("Mode extension:", n(header.mode_extension()));
-				draw_info("Original:", header.original() ? "yes" : "no");
-				draw_info("Padding:", header.padding() ? "yes" : "no");
-				draw_info("Samplerate:", n(header.samplerate()));
+				draw_info("Mode Extension:", n(header.mode_extension()));
+				draw_info("Original:", header.original() ? "Yes" : "No");
+				draw_info("Padding:", header.padding() ? "Yes" : "No");
+				draw_info("Sample Rate:", n(header.samplerate()));
 				draw_info("Version:", mpv_name[header.version()]);
 				break;
 			}
@@ -791,7 +792,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				const int c_planes = f.cb_pixel();
 				const int cx = f.cx();
 				const int cy = f.cy();
-				draw_info("Bits/pixel:", n(8 * c_planes));
+				draw_info("Bits/Pixel:", n(8 * c_planes));
 				draw_info("Size:", n(cx) + " x " + n(cy));
 				m_y += m_y_inc;
 				Cvirtual_binary image;
@@ -811,8 +812,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Cshp_dune2_file f;
 				f.load(m_data);
 				const int c_images = f.get_c_images();
-				draw_info("Count images:", n(c_images));
-				draw_info("Offset size:", n(f.get_cb_ofs()));
+				draw_info("Images:", n(c_images));
+				draw_info("Offset Size:", n(f.get_cb_ofs()));
 				m_y += m_y_inc;
 				load_color_table(get_default_palette(), true);
 				for (int i = 0; i < c_images; i++)
@@ -838,10 +839,10 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			{
 				Cshp_file f;
 				f.load(m_data);
-				draw_info("Frame Count:", n(f.cf()));
+				draw_info("Frames:", n(f.cf()));
 				draw_info("Size:", n(f.cx()) + " x " + n(f.cy()));
-				draw_info("XPos:", n(f.header().xpos));
-				draw_info("YPos:", n(f.header().ypos));
+				draw_info("X:", n(f.header().xpos));
+				draw_info("Y:", n(f.header().ypos));
 				draw_info("Delta Size:", n(f.header().delta));
 				draw_info("Flags:", n(f.header().flags));
 				m_y += m_y_inc;
@@ -864,7 +865,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				const int cx = m_cx = f.cx();
 				const int cy = m_cy = f.cy();
 				const int zero = f.zero();
-				draw_info("Count images:", n(c_images));
+				draw_info("Images:", n(c_images));
 				draw_info("Size:", n(cx) + " x " + n(cy));
 				draw_info("Unknown:", nh(8, zero));
 				m_y += m_y_inc;
@@ -910,7 +911,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				{
 					const int cx = image.cx();
 					const int cy = image.cy();
-					draw_info("Bits/pixel:", n(8 * image.cb_pixel()));
+					draw_info("Bits/Pixel:", n(8 * image.cb_pixel()));
 					draw_info("Size:", n(cx) + " x " + n(cy));
 					m_y += m_y_inc;
 					if (image.cb_pixel() == 1)
@@ -929,7 +930,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Ctmp_file f;
 				f.load(m_data);
 				const int c_tiles = f.get_c_tiles();
-				draw_info("Count tiles:", n(c_tiles));
+				draw_info("Icons:", n(c_tiles));
 				m_y += m_y_inc;
 				load_color_table(get_default_palette(), true);
 				for (int i = 0; i < c_tiles; i++)
@@ -957,7 +958,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					cx = 1;
 					cy = c_tiles;
 				}
-				draw_info("Count tiles:", n(c_tiles));
+				draw_info("Icons:", n(c_tiles));
 				draw_info("Size:", n(cx) + " x " + n(cy));
 				m_y += m_y_inc;
 				load_color_table(get_default_palette(), true);
@@ -998,7 +999,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				const int c_tiles = f.get_c_tiles();
 				m_cx = f.get_cx();
 				m_cy = f.get_cy();
-				draw_info("Count tiles:", n(c_tiles));
+				draw_info("Tiles:", n(c_tiles));
 				draw_info("Size:", n(f.get_cblocks_x()) + " x " + n(f.get_cblocks_y()));
 				m_y += m_y_inc;
 				load_color_table(get_default_palette(), true);
@@ -1050,8 +1051,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			{
 				Cvoc_file f;
 				f.load(m_data);
-				draw_info("Audio:", n(f.get_samplerate()) + " hz, 8 bit, mono");
-				draw_info("Count samples:", n(f.get_c_samples()));
+				draw_info("Audio:", n(f.get_samplerate()) + " hz, 8 bit, Mono");
+				draw_info("Samples:", n(f.get_c_samples()));
 				break;
 			}
 		case ft_vqa:
@@ -1059,11 +1060,11 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				Cvqa_file f;
 				f.load(m_data);
 				draw_info("Version:", n(f.header().version));
-				draw_info("Video flags:", nh(4, f.header().video_flags));
-				draw_info("Count frames:", n(f.get_c_frames()));
+				draw_info("Video Flags:", nh(4, f.header().video_flags));
+				draw_info("Frames:", n(f.get_c_frames()));
 				draw_info("Size:", n(f.get_cx()) + " x " + n(f.get_cy()));
-				draw_info("Block size:", n(f.get_cx_block()) + " x " + n(f.get_cy_block()));
-				draw_info("Audio:", n(f.get_samplerate()) + " hz, " + n(f.get_cbits_sample()) + " bit, " + (f.get_c_channels() == 1 ? "mono" : "stereo"));
+				draw_info("Block Size:", n(f.get_cx_block()) + " x " + n(f.get_cy_block()));
+				draw_info("Audio:", n(f.get_samplerate()) + " hz, " + n(f.get_cbits_sample()) + " bit, " + (f.get_c_channels() == 1 ? "Mono" : "Stereo"));
 				break;
 			}
 		case ft_vxl:
@@ -1098,12 +1099,12 @@ void CXCCFileView::OnDraw(CDC* pDC)
 						draw_info(n(ty), s);
 					}
 					draw_info("Scale:", _gcvt(section_tailer.scale, 10, fb));
-					draw_info("Scale X min:", _gcvt(section_tailer.x_min_scale, 10, fb));
-					draw_info("Scale Y min:", _gcvt(section_tailer.y_min_scale, 10, fb));
-					draw_info("Scale Z min:", _gcvt(section_tailer.z_min_scale, 10, fb));
-					draw_info("Scale X max:", _gcvt(section_tailer.x_max_scale, 10, fb));
-					draw_info("Scale Y max:", _gcvt(section_tailer.y_max_scale, 10, fb));
-					draw_info("Scale Z max:", _gcvt(section_tailer.z_max_scale, 10, fb));
+					draw_info("X min:", _gcvt(section_tailer.x_min_scale, 10, fb));
+					draw_info("Y min:", _gcvt(section_tailer.y_min_scale, 10, fb));
+					draw_info("Z min:", _gcvt(section_tailer.z_min_scale, 10, fb));
+					draw_info("X max:", _gcvt(section_tailer.x_max_scale, 10, fb));
+					draw_info("Y max:", _gcvt(section_tailer.y_max_scale, 10, fb));
+					draw_info("Z max:", _gcvt(section_tailer.z_max_scale, 10, fb));
 					draw_info("Normal Type:", n(section_tailer.unknown));
 					byte* image = new byte[c_pixels];
 					byte* image_s = new byte[c_pixels];
@@ -1231,7 +1232,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				{
 					const t_riff_wave_format_chunk& format_chunk = f.get_format_chunk();
 					draw_info("Audio:", n(format_chunk.samplerate) + " hz, " + n(format_chunk.cbits_sample) + " bit, " + (format_chunk.c_channels == 1 ? "mono" : "stereo"));
-					draw_info("Count samples:", n(format_chunk.tag == 1 ? f.get_data_header().size * 8 / (format_chunk.cbits_sample * format_chunk.c_channels) : f.get_fact_chunk().c_samples));
+					draw_info("Samples:", n(format_chunk.tag == 1 ? f.get_data_header().size * 8 / (format_chunk.cbits_sample * format_chunk.c_channels) : f.get_fact_chunk().c_samples));
 					draw_info("Format:", nh(4, format_chunk.tag));
 				}
 				break;
@@ -1240,7 +1241,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			{
 				Cwsa_dune2_file f;
 				f.load(m_data);
-				draw_info("Count frames:", n(f.cf()));
+				draw_info("Frames:", n(f.cf()));
 				draw_info("Size:", n(f.cx()) + " x " + n(f.cy()));
 				m_y += m_y_inc;
 				load_color_table(get_default_palette(), true);
@@ -1258,8 +1259,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			{
 				Cwsa_file f;
 				f.load(m_data);
-				draw_info("Count frames:", n(f.cf()));
-				draw_info("Palette:", f.palette() ? "yes" : "no");
+				draw_info("Frames:", n(f.cf()));
+				draw_info("Paletted:", f.palette() ? "Yes" : "No");
 				draw_info("Position:", n(f.get_x()) + "," + n(f.get_y()));
 				draw_info("Size:", n(f.cx()) + " x " + n(f.cy()));
 				m_y += m_y_inc;
@@ -1296,7 +1297,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					Cpkt_ts_ini_reader ir;
 					ir.process(m_data);
 					const Cpkt_ts_ini_reader::t_map_list& ml = ir.get_map_list();
-					draw_info("Count maps:", n(ml.size()));
+					draw_info("Maps:", n(ml.size()));
 					m_y += m_y_inc;
 					for (auto& i : ml)
 						draw_info(i.first, i.second.m_description + ", " + i.second.m_gamemode);
@@ -1307,7 +1308,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					Cst_file f;
 					f.load(m_data);
 					const int c_strings = f.get_c_strings();
-					draw_info("Count strings", n(c_strings));
+					draw_info("Strings", n(c_strings));
 					m_y += m_y_inc;
 					for (int i = 0; i < c_strings; i++)
 						draw_info(nwzl(5, i) + ' ' + f.get_string(i), "");
@@ -1351,7 +1352,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					f.load(m_data, m_size);
 					const int c_files = f.get_c_files();
 					const t_game game = f.get_game();
-					draw_info("Count files:", n(c_files));
+					draw_info("Files:", n(c_files));
 					draw_info("Checksum:", n(f.has_checksum()));
 					draw_info("Encrypted:", n(f.is_encrypted()));
 					draw_info("Game:", game_name[game]);
