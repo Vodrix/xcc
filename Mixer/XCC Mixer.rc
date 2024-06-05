@@ -157,8 +157,8 @@ BEGIN
     POPUP "_POPUP_"
     BEGIN
         MENUITEM "Open\tEnter",													ID_POPUP_OPEN
-        MENUITEM "&Explore",														ID_POPUP_EXPLORE
-				MENUITEM "&New Archive",												ID_FILE_NEW
+        MENUITEM "&Explore..",													ID_POPUP_EXPLORE
+				MENUITEM "&New Archive..",											ID_FILE_NEW
         MENUITEM SEPARATOR
         POPUP "Clipboard"
         BEGIN
@@ -192,7 +192,7 @@ BEGIN
             MENUITEM "Copy as SHP (TS)",								ID_POPUP_COPY_AS_SHP_TS
             MENUITEM "Copy as TGA (Single)",						ID_POPUP_COPY_AS_TGA_SINGLE
             MENUITEM "Copy as TGA",											ID_POPUP_COPY_AS_TGA
-            MENUITEM "Copy as TXT",											ID_POPUP_COPY_AS_TEXT
+            MENUITEM "Copy as TEXT",										ID_POPUP_COPY_AS_TEXT
             MENUITEM "Copy as VOXEL",										ID_POPUP_COPY_AS_VXL
             MENUITEM "Copy as WAV (IMA ADPCM)",					ID_POPUP_COPY_AS_WAV_IMA_ADPCM
             MENUITEM "Copy as WAV (PCM)",								ID_POPUP_COPY_AS_WAV_PCM
@@ -200,10 +200,10 @@ BEGIN
             MENUITEM "Copy as XIF",											ID_POPUP_COPY_AS_XIF
         END
         MENUITEM SEPARATOR
-        MENUITEM "Refresh\tF5",                 ID_POPUP_REFRESH
-        MENUITEM "Resize...",                   ID_POPUP_RESIZE
-        MENUITEM "Compact",                     ID_POPUP_COMPACT
-        MENUITEM "Delete\tDel",                 ID_POPUP_DELETE
+        MENUITEM "Refresh\tF5",													ID_POPUP_REFRESH
+        MENUITEM "Resize Image...",											ID_POPUP_RESIZE
+        MENUITEM "Compact",															ID_POPUP_COMPACT
+        MENUITEM "Delete\tDel",													ID_POPUP_DELETE
     END
 END
 
@@ -217,18 +217,18 @@ IDR_MAINFRAME ACCELERATORS
 BEGIN
     27,             ID_VIEW_PALETTE_PREV,     ASCII,  NOINVERT
     29,             ID_VIEW_PALETTE_NEXT,     ASCII,  NOINVERT
-    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
-    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
-    "F",            ID_FILE_SEARCH,         VIRTKEY, CONTROL, NOINVERT
-    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
-    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
-    "R",            ID_VIEW_PALETTE_SELECT,   VIRTKEY, CONTROL, NOINVERT
-    "Q",            ID_VIEW_PALETTE_AUTO_SELECT, VIRTKEY, CONTROL, NOINVERT
-    VK_BACK,        ID_FILE_CLOSE,          VIRTKEY, NOINVERT
-    VK_DELETE,      ID_POPUP_DELETE,        VIRTKEY, NOINVERT
-    VK_DELETE,      ID_POPUP_DELETE,        VIRTKEY, SHIFT, NOINVERT
-    VK_F5,          ID_POPUP_REFRESH,       VIRTKEY, NOINVERT
-    VK_RETURN,      ID_POPUP_OPEN,          VIRTKEY, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,						VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,									VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_FILE_SEARCH,								VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,									VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,									VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_VIEW_PALETTE_SELECT,				VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_VIEW_PALETTE_AUTO_SELECT,	VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_FILE_CLOSE,								VIRTKEY, NOINVERT
+    VK_DELETE,      ID_POPUP_DELETE,							VIRTKEY, NOINVERT
+    VK_DELETE,      ID_POPUP_DELETE,							VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_POPUP_REFRESH,							VIRTKEY, NOINVERT
+    VK_RETURN,      ID_POPUP_OPEN,								VIRTKEY, NOINVERT
 END
 
 
@@ -295,7 +295,7 @@ END
 
 IDD_SEARCH_FILE DIALOGEX 0, 0, 123, 143
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Search file"
+CAPTION "Search"
 FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
     EDITTEXT        IDC_FILENAME,45,7,77,14,ES_AUTOHSCROLL
@@ -400,7 +400,7 @@ END
 
 IDD_SEARCH_STRING DIALOGEX 0, 0, 186, 95
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Search String"
+CAPTION "Search"
 FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
     EDITTEXT        IDC_NAME,7,7,172,14,ES_AUTOHSCROLL

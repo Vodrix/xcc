@@ -6,6 +6,7 @@
 class Cmix_file : public Ccc_file  
 {
 public:
+	ostream& extract_as_text(ostream&) const;
 	virtual int post_open();
 	string get_name(int id);
 	static int get_id(t_game game, string name);

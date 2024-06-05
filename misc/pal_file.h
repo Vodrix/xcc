@@ -7,6 +7,7 @@ class Cpal_file : public Ccc_file_small
 {
 public:
 	ostream& extract_as_pal_jasc(ostream&, bool shift_left = true) const;
+	ostream& extract_as_text(ostream&) const;
 	bool is_valid() const;
 
 	void decode(t_palette& palette) const

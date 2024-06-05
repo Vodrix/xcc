@@ -887,7 +887,9 @@ static bool can_convert(t_file_type s, t_file_type d)
 	case ft_hva:
 		return d == ft_csv;
 	case ft_pal:
-		return d == ft_pal_jasc;
+		return d == ft_pal_jasc
+			|| d == ft_text;
+	case ft_mix:
 	case ft_st:
 		return d == ft_text;
 	case ft_shp_dune2:
@@ -1635,7 +1637,7 @@ int CXCCMixerView::copy_as_text(int i, Cfname fname) const
 				return error;
 			ofstream os(fname);
 			return f.extract_as_text(os).fail();
-	}
+		}
 	case ft_xif:
 		{
 			Cxif_file f;
@@ -1647,6 +1649,22 @@ int CXCCMixerView::copy_as_text(int i, Cfname fname) const
 			ofstream os(fname);
 			key.dump(os, true);
 			return 0;
+		}
+	case ft_pal:
+		{
+			Cpal_file f;
+			if (int error = open_f_index(f, i))
+				return error;
+			ofstream os(fname);
+			return f.extract_as_text(os).fail();
+		}
+	case ft_mix:
+		{
+			Cmix_file f;
+			if (int error = open_f_index(f, i))
+				return error;
+			ofstream os(fname);
+			return f.extract_as_text(os).fail();
 		}
 	}
 	return 0;

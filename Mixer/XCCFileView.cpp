@@ -721,8 +721,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				const int c_files = f.get_c_files();
 				const t_game game = f.get_game();
 				draw_info("Files:", n(c_files));
-				draw_info("Checksum:", n(f.has_checksum()));
-				draw_info("Encrypted:", n(f.is_encrypted()));
+				draw_info("Checksum:", f.has_checksum() ? "Yes" : "No");
+				draw_info("Encrypted:", f.is_encrypted() ? "Yes" : "No");
 				draw_info("Game:", game_name[game]);
 				if (game > game_td)
 				{
@@ -1353,8 +1353,8 @@ void CXCCFileView::OnDraw(CDC* pDC)
 					const int c_files = f.get_c_files();
 					const t_game game = f.get_game();
 					draw_info("Files:", n(c_files));
-					draw_info("Checksum:", n(f.has_checksum()));
-					draw_info("Encrypted:", n(f.is_encrypted()));
+					draw_info("Checksum:", f.has_checksum() ? "Yes" : "No");
+					draw_info("Encrypted:", f.is_encrypted() ? "Yes" : "No");
 					draw_info("Game:", game_name[game]);
 					if (game > game_td)
 					{

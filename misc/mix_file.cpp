@@ -11,6 +11,7 @@
 #include "pak_file.h"
 #include "string_conversion.h"
 #include "xcc_lmd_file.h"
+#include <fstream>
 
 bool Cmix_file::m_ft_support = false;
 
@@ -404,4 +405,20 @@ Cvirtual_binary Cmix_file::get_vdata(int id)
 Cvirtual_binary Cmix_file::get_vdata(const string& name)
 {
 	return get_vdata(get_id(m_game, name));
+}
+
+ostream& Cmix_file::extract_as_text(ostream& os) const
+{
+	const int c_files = get_c_files();
+	const t_game game = get_game();
+	os << "Checksum: " << (has_checksum() ? "Yes" : "No") << endl;
+	os << "Encrypted: " << (is_encrypted() ? "Yes" : "No") << endl;
+	os << "Game: " << game_name[game] << endl;
+	os << endl;
+	for (int i = 0; i < c_files; i++)
+	{
+		int id = get_id(i);
+		os << nwzl(4, i) << " - " << nh(8, id) << nwsl(11, get_size(id)) << " " << mix_database::get_name(game, id) << endl;
+	}
+	return os;
 }
