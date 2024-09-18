@@ -126,9 +126,9 @@ void CXCCFileView::draw_image8(const byte* s, int cx_s, int cy_s, CDC* pDC, int 
 		mh_dib = CreateDIBSection(*pDC, &bmi, DIB_RGB_COLORS, reinterpret_cast<void**>(&mp_dib), 0, 0);
 	}
 	old_bitmap = mem_dc.SelectObject(mh_dib);
-	for (int y = 0; y < cy_s; y++)
+	for (unsigned int y = 0; y < cy_s; y++)
 	{
-		for (int x = 0; x < cx_s; x++)
+		for (unsigned int x = 0; x < cx_s; x++)
 			mp_dib[x + cx_s * y] = m_color_table[s[x + cx_s * y]];
 	}
 	pDC->BitBlt(x_d, m_y, cx_s, cy_s, &mem_dc, 0, 0, SRCCOPY);
@@ -156,9 +156,9 @@ void CXCCFileView::draw_image24(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	}
 	old_bitmap = mem_dc.SelectObject(mh_dib);
 	t_palette32bgr_entry v{};
-	for (int y = 0; y < cy_s; y++)
+	for (unsigned int y = 0; y < cy_s; y++)
 	{
-		for (int x = 0; x < cx_s; x++)
+		for (unsigned int x = 0; x < cx_s; x++)
 		{
 			v.r = *s++;
 			v.g = *s++;
@@ -192,9 +192,9 @@ void CXCCFileView::draw_image32(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	old_bitmap = mem_dc.SelectObject(mh_dib);
 	const byte* r = s;
 	t_palette32bgr_entry v{};
-	for (int y = 0; y < cy_s; y++)
+	for (unsigned int y = 0; y < cy_s; y++)
 	{
-		for (int x = 0; x < cx_s; x++)
+		for (unsigned int x = 0; x < cx_s; x++)
 		{
 			v.r = *s++;
 			v.g = *s++;
@@ -229,9 +229,9 @@ void CXCCFileView::draw_image48(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	old_bitmap = mem_dc.SelectObject(mh_dib);
 	auto r = reinterpret_cast<const unsigned short*>(s);
 	t_palette32bgr_entry v{};
-	for (int y = 0; y < cy_s; y++)
+	for (unsigned int y = 0; y < cy_s; y++)
 	{
-		for (int x = 0; x < cx_s; x++)
+		for (unsigned int x = 0; x < cx_s; x++)
 		{
 			v.r = linear2sRGB(*r++);
 			v.g = linear2sRGB(*r++);
@@ -265,9 +265,9 @@ void CXCCFileView::draw_image64(const byte* s, int cx_s, int cy_s, CDC* pDC)
 	old_bitmap = mem_dc.SelectObject(mh_dib);
 	auto r = reinterpret_cast<const unsigned short*>(s);
 	t_palette32bgr_entry v{};
-	for (int y = 0; y < cy_s; y++)
+	for (unsigned int y = 0; y < cy_s; y++)
 	{
-		for (int x = 0; x < cx_s; x++)
+		for (unsigned int x = 0; x < cx_s; x++)
 		{
 			v.r = linear2sRGB(*r++);
 			v.g = linear2sRGB(*r++);

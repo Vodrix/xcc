@@ -64,16 +64,16 @@ void Cvirtual_image::load(const void* image, int cx, int cy, int cb_pixel, const
 
 int Cvirtual_image::load(const Cvirtual_binary& s)
 {
-	Cdds_file dds_f;
-	Cpcx_file pcx_f;
 	Cpng_file png_f;
+	Cpcx_file pcx_f;
+	Cdds_file dds_f;
 	Ctga_file tga_f;
-	if (dds_f.load(s), dds_f.is_valid())
-		*this = dds_f.vimage();
+	if (png_f.load(s), png_f.is_valid())
+		return png_f.decode(*this);
 	else if (pcx_f.load(s), pcx_f.is_valid())
 		*this = pcx_f.vimage();
-	else if (png_f.load(s), png_f.is_valid())
-		return png_f.decode(*this);
+	else if(dds_f.load(s), dds_f.is_valid())
+		* this = dds_f.vimage();
 	else if (tga_f.load(s), tga_f.is_valid())
 		return tga_f.decode(*this);
 	else

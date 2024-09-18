@@ -228,7 +228,7 @@ void CXCCMixerView::OnInitialUpdate()
 
 void CXCCMixerView::OnFileNew()
 {
-	const char* save_filter = "Red Alert MIX (*.mix)|*.mix|Tiberian Sun MIX (*.mix)|*.mix|Renegade MIX (*.mix)|*.mix|Generals BIG (*.big)|*.big|";
+	const char* save_filter = "TD/RA MIX (*.mix)|*.mix|TS/RA2 MIX (*.mix)|*.mix|Renegade MIX (*.mix)|*.mix|Generals BIG (*.big)|*.big|";
 
 	close_all_locations();
 	CFileDialog dlg(false, NULL, NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT | OFN_PATHMUSTEXIST, save_filter, this);
@@ -2199,6 +2199,7 @@ void CXCCMixerView::OnDropFiles(HDROP hDropInfo)
 			}
 		}
 		open_location_mix(m_mix_fname);
+		OnPopupCompact();
 	}
 	else
 	{
@@ -2358,6 +2359,7 @@ void CXCCMixerView::OnPopupDelete()
 			}
 		}
 		open_location_mix(m_mix_fname);
+		OnPopupCompact();
 	}
 	else
 	{

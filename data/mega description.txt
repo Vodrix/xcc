@@ -1,35 +1,36 @@
-00-0000.Aud
+0000.Aud
+00-8740e.Aud
+00-8735e.Aud
+00-8620e.Aud
+00-8529e.Aud
+00-8525e.Aud
+00-4665e.Aud
+00-4650e.Aud
+00-4645e.Aud
+00-4615e.Aud
+00-4610e.Aud
+00-4595e.Aud
+00-4590e.Aud
+00-4585e.Aud
+00-4580e.Aud
+00-4570e.Aud
+00-4565e.Aud
+00-4555e.Aud
+00-4550e.Aud
+00-4545e.Aud
+00-4515e.Aud
+00-4500e.Aud
 00-00000.Aud
+00-0000.Aud
 00-0000e.Aud
 00-0000r.Aud
-00-4500e.Aud
-00-4515e.Aud
-00-4545e.Aud
-00-4550e.Aud
-00-4555e.Aud
-00-4565e.Aud
-00-4570e.Aud
-00-4580e.Aud
-00-4585e.Aud
-00-4590e.Aud
-00-4595e.Aud
-00-4610e.Aud
-00-4615e.Aud
-00-4645e.Aud
-00-4650e.Aud
-00-4665e.Aud
-00-8525e.Aud
-00-8529e.Aud
-00-8620e.Aud
-00-8735e.Aud
-00-8740e.Aud
 00-I008.Aud	GDI Structure Destroyed
 00-I012.Aud	Battle Control Offline
 00-I014.Aud	Building Infiltrated
 00-I016.Aud	Cannot Deploy Here
 00-I018.Aud	Construction Complete
-00-I020.Aud	Incomming Transmission
-00-I022.Aud	Insufficant Funds
+00-I020.Aud	Incoming Transmission
+00-I022.Aud	insufficient Funds
 00-I024.Aud	Low Power
 00-I026.Aud	Mission Accomplished
 00-I028.Aud	Mission Failed
@@ -55,7 +56,7 @@
 00-I100.Aud	Primary Objective Achieved
 00-I102.Aud	Secondary Objective Achieved
 00-I104.Aud	Tertiary Objective Achieved
-00-I106.Aud	Quaternery Objective Achieved
+00-I106.Aud	Quaternary Objective Achieved
 00-I118.Aud	Bridge Repaired
 00-I122.Aud	Twenty Minutes Remaining
 00-I124.Aud	Ten Minutes Remaining
@@ -72,9 +73,9 @@
 00-I162.Aud	Fire Storm Defense Ready
 00-I170.Aud	Fire Storm Defense Offline
 00-I172.Aud	Cloaked Unit Detected
-00-I174.Aud	Subterrainian Unit Detected
+00-I174.Aud	Subterranean Unit Detected
 00-I176.Aud	Ion Storm Approaching
-00-I178.Aud	Metior Storm Approaching
+00-I178.Aud	Meteor Storm Approaching
 00-I180.Aud	Base Defenses Offline
 00-I194.Aud	Critical Unit Lost
 00-I196.Aud	Critical Structure Lost
@@ -84,7 +85,7 @@
 00-I210.Aud	Commandos En Route
 00-I216.Aud	Building
 00-I218.Aud	On Hold
-00-I220.Aud	Canceled
+00-I220.Aud	Cancelled
 00-I226.Aud	Unit Sold
 00-I228.Aud	Structure Sold
 00-I230.Aud	Building Offline
@@ -108,10 +109,10 @@
 00-I348.Aud	Surrender Is Your Only Logical Option
 00-I352.Aud	Your Defeat Is At Hand
 00-I356.Aud	You Have Been Marked For Termination
-00-I360.Aud	Time To Erase The Human Factor From This Equasion
-00-I370.Aud	Your Probobility Of Sucess Is Dropping
+00-I360.Aud	Time To Erase The Human Factor From This Equation
+00-I370.Aud	Your Probability Of Success Is Dropping
 00-I372.Aud	Surrender Is Preferable Against The Odds You Are Facing
-00-I374.Aud	Data Recieved Indicates That You Are A Threat
+00-I374.Aud	Data Received Indicates That You Are A Threat
 00-I376.Aud	Defeat Of Enemy Predicted
 00-I500.Aud	Objective Complete
 00-I502.Aud	Final Objective Complete
@@ -121,24 +122,24 @@
 00-N002.Aud	Harvester Will Begin Harvesting
 00-N004.Aud	Build A Barracks
 00-N006.Aud	Destroy All Nod Forces In The Area
-00-N018.Aud	Civillian Killed
+00-N018.Aud	Civilian Killed
 00-N020.Aud	Nod Sam Sites Destroyed
 00-N022.Aud	GDI Transports En Route
-00-N024.Aud	Civillians Evacuated, Objective Complete
+00-N024.Aud	Civilians Evacuated, Objective Complete
 00-N032.Aud	Site Secure, Objective Complete
 00-N034.Aud	Technology Centre Captured, Objective Complete
 00-N040.Aud	Base Destroyed, Objective Complete
 00-N042.Aud	It Would Be Advantages To Destroy Bridges
 00-N044.Aud	Bridges Destroyed, Objective Complete
-00-N052.Aud	Ufo Under Attack
-00-N054.Aud	Ufo Destroyed, Mission Failed
+00-N052.Aud	UFO Under Attack
+00-N054.Aud	UFO Destroyed, Mission Failed
 00-N055.Aud	Array Destroyed, Objective Complete
-00-N056.Aud	Incomming Transmission
+00-N056.Aud	Incoming Transmission
 00-N058.Aud	Tratos Evacuated, Primary Objective Complete
 00-N059.Aud	Transport Destroyed, Mission Failed
 00-N068.Aud	Ion Storm Approaching, Eta 5 Minutes
 00-N070.Aud	Ion Storm Abating
-00-N072.Aud	Air Power Innefective During Ion Storms
+00-N072.Aud	Air Power Ineffective During Ion Storms
 00-N074.Aud	Dam Destroyed, Mission Complete
 00-N075.Aud	Dam Sighted, Target Confirmed
 00-N084.Aud	Enemy Sam Sites Detected
@@ -166,33 +167,33 @@
 00-N182.Aud	Ghost Stalker Terminated, Mission Failed
 00-N188.Aud	Missile Complex Destroyed, Mission Complete
 00-N190.Aud	Tiberium Missile Inbound
-00-N192.Aud	Ion Storn Will Disable Fighters
+00-N192.Aud	Ion Storm Will Disable Fighters
 00-N206.Aud	Mutants Detected, Enemy Forces En Route
-00-N208.Aud	Fighter Production Facillity Located, Dropships En Route
-00-N210.Aud	Fighter Production Facillity Destroyed, Mission Complete
+00-N208.Aud	Fighter Production Facility Located, Dropships En Route
+00-N210.Aud	Fighter Production Facility Destroyed, Mission Complete
 00-N236.Aud	Kodiak Under Attack
 00-N238.Aud	Storm Abating, Commence Attack On Nod Forces
 00-N239.Aud	Kodiak In Critical Condition
 00-N240.Aud	Kodiak Destroyed, Mission Failed
-00-N241.Aud	Eye Of The Storm Has Been Entered, Equpiment At Maximum Efficency
+00-N241.Aud	Eye Of The Storm Has Been Entered, Equipment At Maximum Efficiency
 00-N243.Aud	Tiberium Life Form Detected
 00-N245.Aud	Re-Entering Ion Storm, Caution Is Advised
 00-N247.Aud	Clear The Zone For MCV Dropship Deployment
-00-N248.Aud	Philladelphia In Range, Icbm Launch Detected, Mission Failed
+00-N248.Aud	Philadelphia In Range, ICBM Launch Detected, Mission Failed
 00-N249.Aud	Tiberium Life Form Detected
 00-N250.Aud	Tiberium Missile Launched, Mission Failed
-00-N251.Aud	Icbms Destroyed, Philadelphia Is Out Of Danger
-00-N252.Aud	Nod Has Installed Several Icbms To Take Out The Philladelphia
+00-N251.Aud	ICBMs Destroyed, Philadelphia Is Out Of Danger
+00-N252.Aud	Nod Has Installed Several ICBMs To Take Out The Philadelphia
 00-N254.Aud	To Stop Them, Take Out The Other 3 Launchers
-00-N255.Aud	Civillian City Is Under Attack
+00-N255.Aud	Civilian City Is Under Attack
 00-N400.Aud	Kodiak Located
-00-N402.Aud	Tascitus Aquired, Proced To Beacon For Extraction
-00-N404.Aud	Tascitus Lost
-00-N406.Aud	Tascitus Found
-00-N408.Aud	Nod Has Captured The Tascitus, Recover It At All Costs
-00-N410.Aud	Find & Evacuate Any Civillians In The Area
-00-N412.Aud	Maintain All Factories Untill Reinforcements Arrive
-00-N414.Aud	Escort The Civillians To The Orca Transport For Immediate Airlift
+00-N402.Aud	Tacitus Acquired, Proceed To Beacon For Extraction
+00-N404.Aud	Tacitus Lost
+00-N406.Aud	Tacitus Found
+00-N408.Aud	Nod Has Captured The Tacitus, Recover It At All Costs
+00-N410.Aud	Find & Evacuate Any Civilians In The Area
+00-N412.Aud	Maintain All Factories Until Reinforcements Arrive
+00-N414.Aud	Escort The Civilians To The Orca Transport For Immediate Airlift
 00-N416.Aud	Human Leader Neutralized
 00-N418.Aud	Mutant Leader Neutralized
 00-N420.Aud	Food Centre Under Attack
@@ -200,7 +201,7 @@
 00-N424.Aud	Water Purifiers Under Attack
 00-N426.Aud	Water Purifiers Destroyed
 00-N428.Aud	The Riots Were Incited By 2 Members Of Each Side
-00-N430.Aud	Neutralize The Leaders To End Hostillities
+00-N430.Aud	Neutralize The Leaders To End Hostilities
 00-N432.Aud	Riot Leader Neutralized
 00-N434.Aud	First Riot Leader Neutralized
 00-N436.Aud	Second Riot Leader Neutralized
@@ -215,14 +216,14 @@
 00-N454.Aud	Destroy All CABAL Forces
 00-N456.Aud	Return To The Outpost & Evacuate Doctor Budro
 00-N458.Aud	GDI Base Is Located Due East Of Your Position
-00-N460.Aud	Procede With Caution
+00-N460.Aud	Proceed With Caution
 00-N462.Aud	Inform The Villages
-00-N464.Aud	Village Sucessfully Warned
-00-N466.Aud	All Villages Sucessfully Warned
-00-N468.Aud	We Have Lost Contatc With The GDI Base In This Sector
-00-N470.Aud	We Have Lost Contact With The GDI Base In This Reigon
+00-N464.Aud	Village Successfully Warned
+00-N466.Aud	All Villages Successfully Warned
+00-N468.Aud	We Have Lost Contact With The GDI Base In This Sector
+00-N470.Aud	We Have Lost Contact With The GDI Base In This Region
 00-N472.Aud	GDI Base In This Sector Under Siege
-00-N474.Aud	3 Small Civillian Enclaves In This Area Must Be Warned
+00-N474.Aud	3 Small Civilian Enclaves In This Area Must Be Warned
 00-N478.Aud	Two More Outposts To Warn
 00-N479.Aud	One Final Village Must Be Warned
 00-N480.Aud	The City Of Trondheim Must Be Warned
@@ -239,8 +240,8 @@
 00-N502.Aud	There Are 3 Control Stations In This Area
 00-N504.Aud	Capture These Stations & Retrieve The Codes
 00-N506.Aud	Destroy The Bridges
-00-N508.Aud	Locating The Civillians Might Help In Disabling The Laser Fencing
-00-N510.Aud	Proboble Location Within Civillian Outpost To The North
+00-N508.Aud	Locating The Civilians Might Help In Disabling The Laser Fencing
+00-N510.Aud	Probable Location Within Civilian Outpost To The North
 00-W000.V00
 00-W002.V00
 00-W004.V00
@@ -267,48 +268,48 @@
 00-W040.V00
 00-W042.V00
 00-W044.V00
-0000.Aud
+0abb14bc-G.Pak
 01-I342.Aud	Inferior Tactics Detected
 01-I350.Aud	Observe Superior Tactics While You Still Have Human Eyes
 01-I352.Aud	Your Defeat Is At Hand
 01-I356.Aud	You Have Been Marked For Termination
-01-I360.Aud	Time To Erase The Human Factor From This Equasion
-01-I362.Aud	Prepair For Decimation
+01-I360.Aud	Time To Erase The Human Factor From This Equation
+01-I362.Aud	Prepare For Decimation
 01-I364.Aud	You Make This Easy, Fleshbag
-01-I366.Aud	We Tire Of Your Insignificant Defience
+01-I366.Aud	We Tire Of Your Insignificant Defiance
 01-I368.Aud	The Sacrifice Of The Many Is The Pleasure Of The Few
 01-I378.Aud	Terminator Protocols Initiated
 01-N000.Aud	Harvest The Tiberium To The North
-01-N002.Aud	Destroy Hassans Elite Guard
+01-N002.Aud	Destroy Hassan's Elite Guard
 01-N004.Aud	To Get Production On Line, Build A Tiberium Refinery
-01-N005.Aud	Base Perimiter Has Been Breached
+01-N005.Aud	Base Perimeter Has Been Breached
 01-N006.Aud	Establishing Battle Controls, Stand By
 01-N007.Aud	To Build Or Train...
 01-N008.Aud	Battle Controls Established
-01-N009.Aud	Tiberium Is Hazzardus To Unprotected Infantry
+01-N009.Aud	Tiberium Is Hazardous To Unprotected Infantry
 01-N010.Aud	Power Levels Are Low, Construct More Power Plants
 01-N011.Aud	To Repair A Structure...
-01-N020.Aud	Capture The Tv Station To The East
+01-N020.Aud	Capture The TICBM Station To The East
 01-N022.Aud	To Repair A Bridge...
-01-N024.Aud	Destroy Hassans Remaining Guard
+01-N024.Aud	Destroy Hassan's Remaining Guard
 01-N026.Aud	To Capture A Building...
-01-N027.Aud	To Deploy A Vechile...
+01-N027.Aud	To Deploy A Vehicle...
 01-N032.Aud	Move To An Open Area And Build Your Base
-01-N034.Aud	Destroy Hassans Pyramid
+01-N034.Aud	Destroy Hassan's Pyramid
 01-N036.Aud	When Hassan Flees Like A Dog, Capture Him
 01-N038.Aud	Capturing The Local Radar Towers
 01-N040.Aud	MCV Has Arrived To The South East
-01-N054.Aud	It Seams That Cretain Structures Attract Lighting
+01-N054.Aud	It Seems That Certain Structures Attract Lightning
 01-N055.Aud	Use Them To Your Advantage
 01-N064.Aud	GDI Base Operational
-01-N066.Aud	Tascitus Has Been Aquired
+01-N066.Aud	Tacitus Has Been Acquired
 01-N068.Aud	Tiberium Life Form Detected
 01-N070.Aud	Mutant Vermin Detected
 01-N072.Aud	GDI Dropship Detected
 01-N074.Aud	Bullet Train Departing
 01-N076.Aud	Prevent That Train From Leaving
 01-N086.Aud	Protect Your Engineers
-01-N088.Aud	Congratulations On Your Sucess
+01-N088.Aud	Congratulations On Your Success
 01-N090.Aud	I Will Send An APC Now To The GDI Base
 01-N100.Aud	Your Forces Have Been Detected
 01-N102.Aud	Prevent GDIs Evacuation At All Costs
@@ -316,8 +317,8 @@
 01-N116.Aud	Mutant Life Form Detected On Board
 01-N128.Aud	Mutants Located
 01-N130.Aud	MCV En Route
-01-N132.Aud	Research Facillity Located
-01-N134.Aud	Research Facillity Destroyed
+01-N132.Aud	Research Facility Located
+01-N134.Aud	Research Facility Destroyed
 01-N136.Aud	Biotoxin Convoy Approaching
 01-N144.Aud	Biotoxin Tankers Located
 01-N156.Aud	GDI Bullet Train Arriving At Outpost
@@ -334,27 +335,27 @@
 01-N196.Aud	Convoy Inbound
 01-N208.Aud	Stealth Is Key
 01-N210.Aud	Spy Lost, Mission Failed
-01-N212.Aud	Com Centre Infiltrated, Location Detected
+01-N212.Aud	CommCenter Infiltrated, Location Detected
 01-N227.Aud	If He Detects The Trap, Capture Him Before He Can Flee
 01-N228.Aud	Convoy Sighted
-01-N229.Aud	Do Not Let Mcneal Escape
-01-N230.Aud	Mcneal Killed, Mission Failed
+01-N229.Aud	Do Not Let McNeal Escape
+01-N230.Aud	McNeal Killed, Mission Failed
 01-N231.Aud	All Toxin Soldiers Killed, Mission Failed
-01-N232.Aud	Mcneal Captured, Mission Complete
-01-N233.Aud	Production Facillity Destroyed
-01-N234.Aud	Mcneal Escaped, Mission Failed
+01-N232.Aud	McNeal Captured, Mission Complete
+01-N233.Aud	Production Facility Destroyed
+01-N234.Aud	McNeal Escaped, Mission Failed
 01-N256.Aud	Orbit 1 Complete
 01-N258.Aud	Orbit 2 Complete
 01-N260.Aud	Orbit 3 Complete, Mission Failed
-01-N262.Aud	Perimiter Deactivated, Commence Attack
-01-N264.Aud	Icbm Launcher Lost, Mission Failed
-01-N266.Aud	Icbm Launcher Under Attack
+01-N262.Aud	Perimeter Deactivated, Commence Attack
+01-N264.Aud	ICBM Launcher Lost, Mission Failed
+01-N266.Aud	ICBM Launcher Under Attack
 01-N268.Aud	Ion Cannon Firing, Resending Control Codes
 01-N270.Aud	The Ion Cannon Is Ours
 01-N284.Aud	Spy Killed, Mission Failed
 01-N286.Aud	Proceed To Evac Location, Transport En Route
 01-N320.Aud	Intruders Detected
-01-N322.Aud	Proboble Objective Is Rescue Of Mutant Prisoners
+01-N322.Aud	Probable Objective Is Rescue Of Mutant Prisoners
 01-N324.Aud	Kill All Prisoners
 01-N326.Aud	All Forces Converge
 01-N328.Aud	Main Power Offline
@@ -363,28 +364,28 @@
 01-N402.Aud	Perhaps You Should Attempt To Kill Their Leader
 01-N404.Aud	Ghost Stalker Killed
 01-N406.Aud	Juggernaut Destroyed
-01-N408.Aud	Find The Temple & Recover The Tascitus
+01-N408.Aud	Find The Temple & Recover The Tacitus
 01-N410.Aud	Cyborg Replication Error, Reset System
 01-N412.Aud	System Reset, Normal Parameters Restored
 01-N414.Aud	GDI Patrol Near
 01-N416.Aud	Tiberium Life Form Detected
 01-N418.Aud	GDI Has Detected You
 01-N420.Aud	Remain Hidden From The GDI Forces
-01-N422.Aud	Destroy All Civillian Structures Without Being Detected
-01-N424.Aud	Eliminate All GDI & Civillians
-01-N426.Aud	Use The Toxin Soldiers To Capture Civillians
-01-N428.Aud	Bait The Tiberium Life Forms By Using The Drugged Civillians
-01-N430.Aud	Lead The Tiberium Life Forms To The GDI & Civillian Areas
-01-N432.Aud	Once The Tiberium Life Form Has Devoured The Civillians
+01-N422.Aud	Destroy All Civilian Structures Without Being Detected
+01-N424.Aud	Eliminate All GDI & Civilians
+01-N426.Aud	Use The Toxin Soldiers To Capture Civilians
+01-N428.Aud	Bait The Tiberium Life Forms By Using The Drugged Civilians
+01-N430.Aud	Lead The Tiberium Life Forms To The GDI & Civilian Areas
+01-N432.Aud	Once The Tiberium Life Form Has Devoured The Civilians
 01-N434.Aud	Use This Location As A Staging Point For Your Operation
 01-N436.Aud	GDI Cannot Reach You Here
 01-N438.Aud	Outpost Located
-01-N440.Aud	Tascitus Found
-01-N442.Aud	The Tascitus Is Safetly In Our Hands
+01-N440.Aud	Tacitus Found
+01-N442.Aud	The Tacitus Is Safely In Our Hands
 01-N444.Aud	Exterminate The Mutant Vermin
 01-N446.Aud	Locate The Mutant Outpost
-01-N448.Aud	Find The Truck Containing The Tascitus & Return It To The Beacon
-01-N450.Aud	Emininate All Mutant Forces
+01-N448.Aud	Find The Truck Containing The Tacitus & Return It To The Beacon
+01-N450.Aud	Eliminate All Mutant Forces
 01-N452.Aud	Run Humans
 01-N462.Aud	Activating Defence Protocol, Firestorm, Now
 01-N468.Aud	You Amuse Me
@@ -420,16 +421,713 @@
 01-W042.V01
 01-W044.V01
 01-W046.V01
+1e.Vqa
+1ice6.Ini
+1ice6.Map
+1lworld7.Ini
+1lworld7.Map
+1minr.Aud	1 Minute Left
+1objmet1.Aud	1st Objective Met
+1pres.Shp
+1tnk.Hva
+1tnk.Shp	Light Tank
+1tnk.Vxl
+1tnkbarl.Hva
+1tnkbarl.Vxl
+1tnkicon.Shp	Light Tank
+1tnktur.Hva
+1tnktur.Vxl
+1tnktur.Vxl	Light Tank Turret
+2dangr1.Aud
+2minr.Aud	2 Minutes Left
+2nd_Hand.Aud	2nd_Hand
+2objmet1.Aud	2nd Objective Met
+2peaks.Map
+2pres.Shp
+2roachd2.Aud
+2temp7.Ini
+2temp7.Map
+2tnk.Hva
+2tnk.Shp	Medium Tank
+2tnk.Vxl
+2tnk.Vxl	Medium Tank
+2tnkbarl.Hva
+2tnkbarl.Vxl
+2tnkbarl.Vxl	Medium Tank Barrel
+2tnkicon.Shp	Medium Tank
+2tnktur.Hva
+2tnktur.Vxl
+2tnktur.Vxl	Medium Tank Turret
+2woodwlk2.Aud
+3.Aud
+3.Vqa
+3minr.Aud	3 Minutes Left
+3objmet1.Aud	3rd Objective Met
+3point.Fnt
+3pres.Shp
+3tnk.Hva
+3tnk.Shp	Heavy Tank
+3tnk.Vxl	Heavy Tank
+3tnkbarl.Hva
+3tnkbarl.Vxl	Heavy Tank Barrel
+3tnkicon.Shp	Heavy Tank
+3tnktur.Hva
+3tnktur.Vxl	Heavy Tank Turret
+3tweak10.Ini
+3tweak10.Map
+04pebble1.Aud
+4.Aud
+4e.Aud
+4e.Vqa
+4minr.Aud	4 Minutes Left
+4pres.Shp
+4tnk.Hva
+4tnk.Shp	Mammoth Tank
+4tnk.Vxl	Mammoth Tank
+4tnkbarl.Hva
+4tnkbarl.Vxl	Mammoth Tank Barrel
+4tnkicon.Shp	Mammoth Tank
+4tnktur.Hva
+4tnktur.Vxl	Mammoth Tank Turret
+5minr.Aud	5 Minutes Left
+6.Fnt
+6e.Vqa
+6point.Fnt
+6pres.Shp
+07-0020e.Aud
+07_0020e.Aud
+07e.Aud
+7amb1.Aud
+7amb2.Aud
+7amb3.Aud
+7amb4.Aud
+7amb5.Aud
+7amb6.Aud
+7amb7.Aud
+7amb8.Aud
+7amb9.Aud
+7amb10.Aud
+7amb11.Aud
+7amb12.Aud
+7amb13.Aud
+7amb14.Aud
+7behind1.Aud
+7behind2.Aud
+7behind3.Aud
+7coming1.Aud
+7coming2.Aud
+7e.Aud
+7glass1.Aud
+7glass2.Aud
+7glass3.Aud
+7glass4.Aud
+7joinus1.Aud
+7joinus2.Aud
+7laff1.Aud
+7laff2.Aud
+7laff3.Aud
+7laff4.Aud
+7look1.Aud
+7look2.Aud
+7luth1.Aud
+7luth2.Aud
+7luth3.Aud
+7luth4.Aud
+7luth5.Aud
+7nogo1.Aud
+7nogo2.Aud
+7nogo3.Aud
+7nogo4.Aud
+7over1.Aud
+7over2.Aud
+7over3.Aud
+7over4.Aud
+7please1.Aud
+7please2.Aud
+7please3.Aud
+7urours1.Aud
+7urours2.Aud
+7yell1.Aud
+7yell2.Aud
+7yell3.Aud
+7yell4.Aud
+8.Fnt
+8fat.Fnt
+8point.Fnt
+09-I000.Aud	Yes
+09-I002.Aud	Okay
+09-I004.Aud	Oh
+09-I006.Aud	Ah
+10-I000.Aud	Give Me An Order
+10-I002.Aud	What Do You Want
+10-I004.Aud	You Talking To Me
+10-I006.Aud	What
+10-I016.Aud	Stay Low
+10-I020.Aud	Okay
+10-I022.Aud	Already There
+10-I024.Aud	Right Between The Eyes
+10-I026.Aud	I Only Need 1 Shot
+10-I028.Aud	This Is Too Easy
+10-I030.Aud	Good As Done
+10-N032.Aud	The Medical Facility Is Located To The East
+10-N034.Aud	The Medical Facility Is Located To The West
+10-N036.Aud	We Must Get Tratos Out Of That Facility
+10-N038.Aud	So Much For Subtlety
+10-N040.Aud	Tratos, No
+10-N042.Aud	We Must Get Tratos To The Transport
+10-N044.Aud	Our Work Here Is Done, Were Out Of Here
+10-N046.Aud	They'Ve Seen Us, Fall Back
+10minr.Aud	10 Minutes Left
+10pt.Fon
+11-I000.Aud	Yes
+11-I002.Aud	Direct Me
+11-I004.Aud	Awaiting Orders
+11-I006.Aud	I'm Ready
+11-I008.Aud	Of Course
+11-I010.Aud	Immediately
+11-I012.Aud	Yes
+11-I014.Aud	For Kane
+11-I016.Aud	They Will Pay For This
+11-I018.Aud	For The Brotherhood
+12-I000.Aud	Yes CABAL
+12-I002.Aud	Where To
+12-I004.Aud	Yes
+12-I006.Aud	Yes
+12-I008.Aud	For Kane
+12-I010.Aud	I Will
+12-I012.Aud	We Must Find Oxanna
+12-I014.Aud	Leave No Enemy Standing
+12-I016.Aud	Kill Them
+12green.Fnt
+12grngrd.Fnt
+12metfnt.Fnt
+13-I000.Aud	Huh
+13-I002.Aud	What
+13-I004.Aud	Ah
+13-I006.Aud	Lead Me
+13-I008.Aud	Arrows From The Sky
+13-I010.Aud	Green Becomes Brown
+13-I012.Aud	Tah
+13-I014.Aud	Yes
+13-I016.Aud	Be Careful
+13-I018.Aud	Nod Is Everywhere
+13-I020.Aud	Where Is The Tacitus
+13cutdwn.Vqa
+14-I000.Aud	Yes
+14-I002.Aud	Over Here
+14-I004.Aud	Give Me A Target
+14-I008.Aud	It Will Be Done
+14-I010.Aud	Very Well
+14-I012.Aud	Any Time
+14-I014.Aud	You Got It
+14-I016.Aud	There Could Be Trouble
+14kbeep1.Aud
+15-1700e.Aud
+15-0530e.Aud
+15-0360e.Aud
+15-0320e.Aud
+15-0290e.Aud
+15-0280e.Aud
+15-0270e.Aud
+15-0260e.Aud
+15-0180e.Aud
+15-0170e.Aud
+15-0160e.Aud
+15-0150e.Aud
+15-0140e.Aud
+15-0130e.Aud
+15-0120e.Aud
+15-0110e.Aud
+15-0070e.Aud
+15-0060e.Aud
+15-0050e.Aud
+15-0040e.Aud
+15-0030e.Aud
+15-0020e.Aud
+15-0010e.Aud
+15-0000e.Aud
+15-I000.Aud	Infantry Reporting
+15-I002.Aud	Unit Ready
+15-I004.Aud	Awaiting Order
+15-I006.Aud	Sir
+15-I008.Aud	Sir Yes Sir
+15-I010.Aud	Ready
+15-I012.Aud	Yes Sir
+15-I014.Aud	Yes Sir
+15-I016.Aud	Orders Received
+15-I018.Aud	Moving Out
+15-I020.Aud	Advancing
+15-I022.Aud	On My Way
+15-I024.Aud	You Got It
+15-I026.Aud	No Problem
+15-I032.Aud	Ready For Action
+15-I038.Aud	Standing By
+15-I040.Aud	Yeah
+15-I042.Aud	Orders
+15-I044.Aud	Loud & Clear
+15-I046.Aud	I'M On It
+15-I048.Aud	Sir
+15-I050.Aud	Good As Done
+15-I058.Aud	I'm Taking Heavy Fire
+15-I060.Aud	Move Move Move
+15-I064.Aud	Medic
+16.Fnt
+18jbird1.Aud
+19-I000.Aud	Engineer
+19-I002.Aud	Yes Sir
+19-I006.Aud	Awaiting Orders
+19-I010.Aud	Affirmative
+19-I016.Aud	No Problem
+19-I018.Aud	I Can Fix That
+19-N100.Aud	Looks Like The Kodiak Is A Loss
+19-N102.Aud	Ive Got The EVA Unit, Lets Get Out Of Here
+20-I000.Aud	Medic Reporting
+20-I004.Aud	Yes Sir
+20-I006.Aud	Awaiting Orders
+20-I008.Aud	Affirmative
+20-I010.Aud	Acknowledged
+20-I012.Aud	Moving Out
+20-I016.Aud	Stat
+20-I018.Aud	Clear
+20-I020.Aud	Give Me Some Room
+20minr.Aud	20 Minutes Left
+21-I000.Aud	Hehehe
+21-I002.Aud	Over Here
+21-I004.Aud	Shh
+21-I010.Aud	Yes
+21-I012.Aud	Excellent
+21-I016.Aud	Moving
+21-I022.Aud	Its Yours
+22-I000.Aud	Input Directive
+22-I002.Aud	Comlink Open
+22-I006.Aud	Unit Ready
+22-I008.Aud	Affirmative
+22-I010.Aud	By Your Command
+22-I012.Aud	Target Acquired
+22-I014.Aud	Scan Initiated
+22-I016.Aud	Proceeding
+22-I018.Aud	Unit Engaged
+22-I020.Aud	Processing
+22-N100.Aud	Terminate All Biological Lifeforms
+22-N102.Aud	The Will Of CABAL Must Be Enforced
+22-N104.Aud	Error
+22-N106.Aud	System Failure
+22-N108.Aud	Malfunction
+22-N110.Aud	Hit Him
+22-N112.Aud	Intruder Alert
+22-N114.Aud	You Are Not One Of Us
+22-N116.Aud	Fire In The Hole
+22-N118.Aud	Proceeding To Target
+22-N120.Aud	Sequence Engaged
+23-0330e.Aud
+23-0250e.Aud
+23-0040e.Aud
+23-0010e.Aud
+23-I000.Aud	Your Command
+23-I002.Aud	Standing By
+23-I004.Aud	Directive
+23-I006.Aud	Status
+23-I008.Aud	I Obey
+23-I010.Aud	Affirmative
+23-I012.Aud	Executing
+23-I014.Aud	Terminated
+23-I016.Aud	Stand Clear
+23-I018.Aud	They Will Know Fear
+23-I020.Aud	For The Brotherhood
+23-I022.Aud	I Can Smell Their Fear
+24-0510e.Aud
+24-0380e.Aud
+24-I000.Aud	Need A Ride
+24-I002.Aud	Sir
+24-I004.Aud	Yeah
+24-I006.Aud	What
+24-I008.Aud	Hot Wired
+24-I010.Aud	Hit It
+24-I012.Aud	Four On The Floor
+24-I014.Aud	Cool
+24-I016.Aud	Where Do You Want It
+24-I018.Aud	Going My Way
+24-I020.Aud	No Keys, No Problem
+24-I022.Aud	Jacking Them Up
+24-I024.Aud	I Always Wanted One Of These
+24e.Aud
+25-I000.Aud	Unit Reporting
+25-I002.Aud	Unit Ready
+25-I004.Aud	Awaiting Orders
+25-I006.Aud	Sir
+25-I012.Aud	Yes Sir
+25-I014.Aud	Yes Sir
+25-I016.Aud	Orders Received
+25-I018.Aud	Moving Out
+25-I022.Aud	On My Way
+25-I024.Aud	You Got It
+25-I026.Aud	No Problem
+27-I002.Aud	Unit Deploy Response
+30-I000.Aud	Pilot Reporting
+30-I002.Aud	Ready
+30-I004.Aud	Awaiting Orders
+30-I006.Aud	Sir
+30-I014.Aud	Yes Sir
+30-I016.Aud	Orders Received
+30-I018.Aud	Over And Out
+30-I022.Aud	On My Way
+30-I030.Aud	Death From Above
+30-I034.Aud	Form Up
+30-I036.Aud	Away We Go
+30minr.Aud	30 Minutes Left
+32-I000.Aud	Affirmative
+32-I002.Aud	Target Sighted
+32-I004.Aud	Orders Received
+32-I006.Aud	Engaging
+32-I008.Aud	Woops
+33-N000.Aud	Where The Hell Are Those Reinforcements
+33-N002.Aud	Its Nod Sir, They Came Out Of Nowhere
+33-N004.Aud	Looks Like They Tore This Place Apart Already
+33-N008.Aud	Here They Come
+33-N010.Aud	Is There Any Tech Left At The Nod Base
+33-N012.Aud	These Critters Don'T Look Too Friendly
+33-N014.Aud	The Cavalry Has Arrived
+33-N020.Aud	I Believe There Is An Old GDI Base Near
+33-N022.Aud	Here Comes Kane's Welcoming Committee
+33-N024.Aud	What's The ETA On That MCV
+35-N000.Aud	Get Tratos Over Here, Asap
+35-N002.Aud	With All Due Respect, Move Your Ass
+35-N004.Aud	Eta For Airstrike Is 5 Minutes
+35-N008.Aud	Pickup Service
+35-N010.Aud	Negative, I Can Make It
+35-N012.Aud	I Said, I Can Make It
+35-N014.Aud	I Can Aaah
+35mm.Aud
+35mmbrk1.Aud
+35mmgo1.Aud
+36-N000.Aud	That Train Goes To The Power Grid We Told You About, Get Us On Board
+36-N002.Aud	Thanks, Well Enjoy This
+36-N004.Aud	Somethings Wrong, We Should Have Been There By Now
+36-N008.Aud	We Have Been Betrayed, GDI Kidnapped Tratos
+37-N000.Aud	Thanks For Your Help
+37-N002.Aud	They May Be On To Us
+38-0160e.Aud
+38-0080e.Aud
+38-N000.Aud	Get Back To The Base
+38-N002.Aud	Tiberium Is Lethal To Unprotected Infantry
+38-N004.Aud	We Need More Men, Train Them From The Hand Of Nod
+38-N006.Aud	Laser Turrets, Run For It
+38-N008.Aud	The Traitors Are Coming, Blow The Bridge
+38-N010.Aud	Hassan Is Escaping
+38-N012.Aud	Hassan Has Been Captured
+38-N014.Aud	We Got An Old Stock Pile Here Sir
+38-N016.Aud	The Mutants Have Turned On Us
+38-N018.Aud	There Everywhere
+38-N020.Aud	Lets Get Him To The Convoy Point
+38-N022.Aud	Take Point, Soldier
+38-N024.Aud	Glad To See You Free, Sir
+38-N026.Aud	Being Held In An Outpost To The East
+38-N028.Aud	The Ice Wont Support The Weight Of Multiple Vehicles Crossing
+38-N100.Aud	Something Crashed Near Here, Spread Out & Report
+38-N102.Aud	Sir We've Found Something, I Think It Is The Tacitus
+38-N104.Aud	Well Fall Back To The Old Airfield & Wait Out The Storm
+38-N106.Aud	We Have Recovered A Piece Of CABALs Core
+38-N108.Aud	I Think We Have Been Spotted
+38-N110.Aud	GDI Forces Are Nearby
+38-N112.Aud	We Have Recovered Another Piece Of The Core
+38-N114.Aud	Third Piece Recovered, Lets Get Out Of Here
+38-N116.Aud	Recon Reports A Heavy Concentration Of Tiberium Poisoning
+38-N118.Aud	We Have To Find That Airfield Or Were Finished
+38-N120.Aud	Message Transmitted, Montauk Is En Route
+38-N122.Aud	This Is The Montauk, We Are Standing By For Your Evac
+38-N124.Aud	We Need To Create A Distraction To Clear The GDI Base Of Air Support
+38-N126.Aud	I Bet If We Attack These Civilians, GDI Will Come To The Rescue
+38-N128.Aud	GDI Planes Are Away From The Base, Now'S Our Chance
+38-N130.Aud	The Core Is Undefended
+38-N132.Aud	The Core Isn'T Here, We Have Been Tricked
+38-N134.Aud	Looks Like This Was Just A Remotely Operated Substation
+38-N136.Aud	Reinforcements Can Be Brought In If We Repair The Bridge
+38-N138.Aud	GDI Has Requested That We Help The Civilians First
+38-N140.Aud	Once They'Re Safe, We Can Concentrate On CABALs Harvesters
+38-N142.Aud	GDI Is Sending Us Additional Funding For Aiding The Civilians
+38-N144.Aud	Forget The Civilians, There Dead
+38-N146.Aud	This Should Be Easy Enough
+38-N148.Aud	Lets Get Those Harvesters
+38-N150.Aud	GDI Is Uploading The Final Pieces Of The Code Now, Stand By
+38-N152.Aud	Fire Storm Coming Down
+38-N154.Aud	Fire Storm Is Offline
+38-N156.Aud	Code Fragment Retrieved
+39-N000.Aud	I Am Free, Now Its Payback Time, Hassan
+40.Aud
+40-N000.Aud	We Have Been Touched By The Spirit Hand Of Kane
+40minr.Aud	40 Minutes Left
+41-N000.Aud	Stand And Identify Yourself In The Name Of Kane
+41-N002.Aud	Sound The Alarm
+41-N004.Aud	Base Command, This Is Post Tk421, We Have Got
+41-N006.Aud	We Just Got Word From General Hassan, He's Moving Up North To Cairo
+42-I000.Aud	Toxin Soldier
+42-I002.Aud	Yes
+42-I004.Aud	I'm All Ears
+42-I006.Aud	Of Course
+42-I008.Aud	I Think I Can Be Persuaded
+42-I010.Aud	On It
+42-I012.Aud	Knockout
+42-I266.Aud
+43-N000.Aud	I Have The Codes
+44-N000.Aud	We Are Here & Waiting For Your Arrival
+47-N000.Aud	Don't Shoot, I Can Tell You GDIs Evac Locations
+47garble.Vqa
+50cal.Shp
+52-N000.Aud	Welcome Stranger
+52-N002.Aud	Can I Offer You A Cool Beverage
+52-N004.Aud	What Do You Think You Are Doing
+53-I000.Aud	What
+53-I002.Aud	Ready To Go
+53-I004.Aud	Shall We Go
+53-I006.Aud	Yes
+53-I008.Aud	On My Way
+53-I010.Aud	That Seems Logical
+53-I012.Aud	Oooh
+53-I102.Aud
+53-I104.Aud
+53-I106.Aud
+53-I108.Aud	On My Way
+53-I110.Aud
+53-I112.Aud
+54-N000.Aud	No Tacitus Piece In Here
+54-N002.Aud	Nothing In This One Either, You Sure Were In The Right Place
+54-N004.Aud	Got It, Lets Get Out Of Here
+54-N006.Aud	Nothing In There
+54-N008.Aud	The Hieroglyphics On This Temple Read
+54-N010.Aud	Temple Of Time
+54-N012.Aud	Temple Of Thunder
+54-N014.Aud	Temple Of The Tacitus
+54-N016.Aud	I Got The Tacitus
+54-N018.Aud	The Blue Tiberium Is Highly Explosive, Maybe
+54-N020.Aud	Maybe We Can Blast A Path Through There
+54-N022.Aud	Understood
+54-N024.Aud	Going In
+54-N026.Aud	Yes Sir
+54-N028.Aud	Moving Out
+54-N030.Aud	On My Way
+55-N000.Aud	Help
+55-N002.Aud	Save Us
+55-N004.Aud	Its Coming Right At Us
+55-N006.Aud	Get Us Out, Please
+55-N008.Aud	Its After Us
+55-N010.Aud	Look Out
+55-N012.Aud	What Is GDI Doing. Nothing
+55-N014.Aud	Why Are We In This God Forsaken Place
+55-N016.Aud	Are We Going To Let Those Shiners Take Our Food & Water
+55-N018.Aud	Can't We All Just Get Along
+55-N020.Aud	Riot Troops, Run
+55-N022.Aud	Thanks For The Warning, Here Is A Reward For Your Help
+55-N024.Aud	Here Commander, Please Take These 2 Disruptors
+55-N026.Aud	Please Take This MCV
+55-N028.Aud	Ill Never Turn
+55-N030.Aud	Piece Through Power
+55-N032.Aud	For The Technology Of Piece
+55-N034.Aud	We Got One
+55-N036.Aud	Fish Is On The Hook
+55-N038.Aud	Here Creature Creature
+55-N040.Aud	We Are Under Siege
+55-N042.Aud	Thanks For The Help
+55-N044.Aud	We Can Shut That Fencing Down For You
+56-N000.Aud	Lets Show GDI Were Not Going To Take This
+56-N002.Aud	Kill The Shiners
+56-N004.Aud	Down With GDI
+56-N006.Aud	Thanks For The Warning, Take These Units
+56-N008.Aud	Take This For Your Troubles
+56-N010.Aud	Help Us
+56-N012.Aud	Save Us
+56-N014.Aud	There Coming
+56-N016.Aud	Get Us Out
+56-N018.Aud	Don't Leave Us
+56-N020.Aud	Wait
+57-N100.Aud	You Picked The Wrong Place To Surface, Nod Scum
+57-N102.Aud	GDI Promised Us Piece & Now Tratos Is Dead
+57-N104.Aud	GDI Lied To Us
+57-N106.Aud	Destroy Them
+57-N108.Aud	Show Them This Is Our Land
+57-N110.Aud	Make Them Remember Us
+57-N112.Aud	They Poisoned Our Food & Water
+57-N114.Aud	They'Re Trying To Kill Us
+57-N116.Aud	Take This Harvester For Your Troubles
+57-N118.Aud	Release The Hounds
+57-N120.Aud	Halt & Prepare For Vehicle Inspection
+57-N122.Aud	Ok, Looks Good, Head On In
+57-N124.Aud	Its Bugged, Destroy It Now
+58-N100.Aud	No Civilian Or Mutant Casualties
+58-N102.Aud	The Riot Should End Quickly, But Stay Vigilant
+58-N104.Aud	Copy That Valdes, Transport Is Dusting Off Now
+58-N106.Aud	You Get The Juggernaut
+58-N108.Aud	Get Your People To The Evac Point
+58-N110.Aud	Get Your People To The Transport
+58-N112.Aud	Valdez, We Recommend You Take Out Their Leader
+58-N114.Aud	Protect Doctor Budro With Your Life, Commander
+58-N116.Aud	Our Base Is Under Attack
+58-N118.Aud	What In The World
+58-N120.Aud	I Should Go Warn The Civilians In This Area
+58-N122.Aud	CABAL Is One Sick Bastard
+58-N124.Aud	CABAL Is Taking Prisoners, This Can't Be Good
+58-N126.Aud	CABAL Is Conscripting Humans
+58-N128.Aud	CABAL Intends To Turn You All Into Cyborgs
+58-N130.Aud	CABAL Is Harvesting Biological Components
+58-N132.Aud	You Must Evacuate The City Immediately
+58-N134.Aud	Civilians To Arms, Defend Your Town
+58-N136.Aud	This Must Be Their Base
+58-N138.Aud	What The
+58-N140.Aud	I Must Warn The Citizens Of Trondheim
+58-N142.Aud	People Of Trondheim, Get Out Now
+59-N100.Aud	We Can Ill Afford To Loose More Civilians To CABAL
+59-N102.Aud	Get In There & Protect Those Civilians
+59-N104.Aud	Well Done Commander, Reinforcements En Route
+60-0000e.Aud
+60-N100.Aud	System Ready
+60-N102.Aud	Instructions
+60-N104.Aud	Awaiting Navcom
+60-N106.Aud	Moving
+60-N108.Aud	Receiving Course
+60-N110.Aud	As Ordered
+60-N112.Aud	Exterminate
+60-N114.Aud	Target Locked
+60-N116.Aud	Weapons Armed
+61-N000.Aud	Dare You Defile Sacred Ground
+61-N002.Aud	Kill The Mutant
+61-N004.Aud	Stop Thief
+61-N006.Aud	Kill The Heretics
+61-N008.Aud	Do Not Let Them Escape
+61-N010.Aud	What, They Killed The Leader
+61-N012.Aud	We Join You In The Hereafter
+62-N000.Aud	Welcome Traveller
+62-N002.Aud	Join Us
+62-N004.Aud	Join Me
+62-N006.Aud	Existence Is Futile
+62-N008.Aud	I'm Coming To Join You
+62-N010.Aud	I Am A Messenger
+62-N012.Aud	Come To Me
+64-I965.Aud
+67-1100r.Aud
+67-0870r.Aud
+67-N100.Aud	You Talking To Me
+67-N102.Aud	Can I Help You
+67-N104.Aud	Whatever
+67-N106.Aud	I'm Going
+67-N108.Aud	Out Of My Way
+67_0470r.Aud
+67_0480r.Aud
+67_0500r.Aud
+67_0540r.Aud
+67_0560r.Aud
+67_0870r.Aud
+67_0880r.Aud
+67_0900r.Aud
+67_0940r.Aud
+67_0960r.Aud
+67_1070r.Aud
+67_1080r.Aud
+67_1100r.Aud
+67_1140r.Aud
+67_1160r.Aud
+67loit.Vqa
+68-N100.Aud	Yeah
+68-N102.Aud	Huh
+68-N104.Aud	What
+68-N106.Aud	Sure
+68-N108.Aud	Alright
+68-N110.Aud	Here I Go
+69-N100.Aud	Not Me
+69-N102.Aud	Oooh
+69-N104.Aud	Yeah
+69-N106.Aud	Do I Gotta
+69-N108.Aud	I Gotta Walk
+69-N110.Aud	Are You Sure
+70-N000.Aud	Yes Sir
+70-N002.Aud	Need Assistance
+70-N004.Aud	I'm Your Man
+70-N006.Aud	Be Glad To
+70-N008.Aud	On The Job
+70-N010.Aud	Okay
+70-N012.Aud	Looks Like Overtime
+70-N014.Aud	Looks Like Overtime
+70-N016.Aud	Take That
+70-N018.Aud	Hope I'm Covered
+71-N000.Aud	Open Fire, Open Fire
+71-N100.Aud	What, The Civilians Are Shooting At Us
+71-N102.Aud	So Are The Shiners, Retreat To The Factory
+71-N104.Aud	Command Station Has Been Captured, Defences Offline
+71-N106.Aud	We Need Reinforcements Now
+71-N108.Aud	What Was That
+71-N110.Aud	Lets Check That Out
+71-N112.Aud	Did You Hear Something
+71-N114.Aud	She Ant Going Anywhere
+71-N116.Aud	I'll Head Back To Base & Get Help
+71-N118.Aud	Shoot It
+71-N120.Aud	Lets Get These Civilians Out Of Here Now
+71-N122.Aud	Were Under Attack
+71-N124.Aud	What The Hell Are Those Things
+71-N126.Aud	Where Are Those Things Coming From
+71-N128.Aud	Nod Is Uploading The Final Pieces Of The Code Now, Stand By
+71-N130.Aud	Code Received, Firestorm Wall Coming Down
+71-N132.Aud	Firestorm Is Offline
+71-N134.Aud	Code Fragment Retrieved
+71-N136.Aud	These Laser Posts Are Stronger Than Normal
+80mx226m.Aud	C&C 80s Mix
+87v3barl.Hva
+92-I269.Aud
+99-2010e.Aud
+99-1990e.Aud
+99-1980e.Aud
+99-1970e.Aud
+99-1920e.Aud
+99-1910e.Aud
+99-1890e.Aud
+99-1820e.Aud
+99-0220e.Aud
+99-0210e.Aud
+99-N454.Aud	You Dare To Attack Me
+99-N456.Aud	Cybernetic Intelligence Will Always Be Superior
+99-N458.Aud	By The Way, Missile Launch Detected
+99-N460.Aud	CABAL Laugh
+99-N464.Aud	Activating Defence Protocol, Defender, Now
+99-N466.Aud	Miscalculation In Enemy Ability, Compensation Initiated
+0100jbird3.Aud
+100mnkydie1.Aud
+100wetstep4.Aud
+0110gloop5.Aud
+0110human10.Aud
+120mm.Shp
+120mmf.Aud	Artillery Sound
+120mmx9.Aud	Artillery Sound Two-Shooter
+200meter.Wav
+0204ftwood1.Aud
+524eftwood5.Aud
+0907e.Aud
+0907egloop2.Aud
+0907egloop8.Aud
+0907ehuman2.Aud
+0907ehuman7.Aud
+4195tle.Vqa
+5724e.Aud
+9306e.Vqa
+9500mudwlk1.Aud
+9810mudwlk4.Aud
+9825mudwlk6.Aud
+9843mudwlk3.Aud
+9860mudwlk7.Aud
+9888mudwlk2.Aud
+9910mudwlk5.Aud
+14152z3e.Aud
+40103emnky1.Aud
+86224e.Aud
+86604e.Aud
+86604e.Vqa
+88424e.Aud
 0100124e.Aud
 0100224e.Aud
 0100324e.Aud
+100324e.Aud
 0100424e.Aud
 0100524e.Aud
 0100624e.Aud
 0100724e.Aud
 0100824e.Aud
 0100924e.Aud
-0100jbird3.Aud
 0101024e.Aud
 0101124e.Aud
 0101224e.Aud
@@ -443,8 +1141,7 @@
 0110104e.Aud
 0110607e.Aud
 0110907e.Aud
-0110gloop5.Aud
-0110human10.Aud
+110907e.Aud
 0111008e.Aud
 0111408e.Aud
 0111508e.Aud
@@ -505,6 +1202,7 @@
 0172511e.Aud
 0186304e.Aud
 0186504e.Aud
+186504e.Aud
 0190003e.Aud
 0190103e.Aud
 0190108e.Aud
@@ -527,21 +1225,18 @@
 0203424e.Aud
 0203524e.Aud
 0203624e.Aud
-02037240.Aud
 0203724e.Aud
 0203824e.Aud
 0203924e.Aud
 0204024e.Aud
 0204124e.Aud
 0204224e.Aud
-02043240.Aud
 0204324e.Aud
 0204424e.Aud
 0204524e.Aud
 0204624e.Aud
 0204724e.Aud
 0204824e.Aud
-0204ftwood1.Aud
 0205024e.Aud
 0205124e.Aud
 0205224e.Aud
@@ -620,7 +1315,6 @@
 0377804e_L.Pcx
 0377804e_L.Vqa
 0410401e.Vqa
-04pebble1.Aud
 0656001e.Csv
 0656001e.Lsv
 0656001e.Vqa
@@ -630,81 +1324,8 @@
 0656001e_H.Vqa
 0656001e_L.Pcx
 0656001e_L.Vqa
-07-0020e.Aud
-07_0020e.Aud
-07e.Aud
-09-I000.Aud	Yes
-09-I002.Aud	Okay
-09-I004.Aud	Oh
-09-I006.Aud	Ah
-0907e.Aud
-0907egloop2.Aud
-0907egloop8.Aud
-0907ehuman2.Aud
-0907ehuman7.Aud
 0935001e.Aud
-0abb14bc-G.Pak
-10-I000.Aud	Give Me An Order
-10-I002.Aud	What Do You Want
-10-I004.Aud	You Talking To Me
-10-I006.Aud	What
-10-I016.Aud	Stay Low
-10-I020.Aud	Okay
-10-I022.Aud	Already There
-10-I024.Aud	Right Between The Eyes
-10-I026.Aud	I Only Need 1 Shot
-10-I028.Aud	This Is Too Easy
-10-I030.Aud	Good As Done
-10-N032.Aud	The Medical Facillity Is Located To The East
-10-N034.Aud	The Medical Facillity Is Located To The West
-10-N036.Aud	We Must Get Tratos Out Of That Facillity
-10-N038.Aud	So Much For Sutlty
-10-N040.Aud	Tratos, No
-10-N042.Aud	We Must Get Tratos To The Transport
-10-N044.Aud	Our Work Here Is Done, Were Out Of Here
-10-N046.Aud	They'Ve Seen Us, Fall Back
-100324e.Aud
-100mnkydie1.Aud
-100wetstep4.Aud
-10minr.Aud	10 Minutes Left
-10pt.Fon
-11-I000.Aud	Yes
-11-I002.Aud	Direct Me
-11-I004.Aud	Awaiting Orders
-11-I006.Aud	I'M Ready
-11-I008.Aud	Of Course
-11-I010.Aud	Immediatly
-11-I012.Aud	Yes
-11-I014.Aud	For Kane
-11-I016.Aud	They Will Pay For This
-11-I018.Aud	For The Brotherhood
-110907e.Aud
-12-I000.Aud	Yes CABAL
-12-I002.Aud	Where To
-12-I004.Aud	Yes
-12-I006.Aud	Yes
-12-I008.Aud	For Kane
-12-I010.Aud	I Will
-12-I012.Aud	We Must Find Oxanna
-12-I014.Aud	Leave No Enemy Standing
-12-I016.Aud	Kill Them
-120mm.Shp
-120mmf.Aud	Artillery Sound
-120mmx9.Aud	Artillery Sound Two-Shooter
-12green.Fnt
-12grngrd.Fnt
-12metfnt.Fnt
-13-I000.Aud	Huh
-13-I002.Aud	What
-13-I004.Aud	Ah
-13-I006.Aud	Lead Me
-13-I008.Aud	Arrows From The Sky
-13-I010.Aud	Green Becomes Brown
-13-I012.Aud	Tah
-13-I014.Aud	Yes
-13-I016.Aud	Be Careful
-13-I018.Aud	Nod Is Everywhere
-13-I020.Aud	Where Is The Tascitus
+984524e.Aud
 1320016e.Vqa
 1320516e.Csv
 1320516e.Lsv
@@ -762,22 +1383,12 @@
 1386904e_L.Pcx
 1386904e_L.Vqa
 1399906e.Vqa
-13cutdwn.Vqa
-14-I000.Aud	Yes
-14-I002.Aud	Over Here
-14-I004.Aud	Give Me A Target
-14-I008.Aud	It Will Be Done
-14-I010.Aud	Very Well
-14-I012.Aud	Any Time
-14-I014.Aud	You Got It
-14-I016.Aud	There Could Be Trouble
 1410003e.Aud
 1410103e.Aud
 1410203e.Aud
 1415003e.Aud
 1415103e.Aud
 1415203e.Aud
-14152z3e.Aud
 1415303e.Aud
 1415403e.Aud
 1420003e.Aud
@@ -820,172 +1431,12 @@
 1480103e.Aud
 1485003e.Aud
 1485103e.Aud
-14kbeep1.Aud
-15-0000e.Aud
-15-0010e.Aud
-15-0020e.Aud
-15-0030e.Aud
-15-0040e.Aud
-15-0050e.Aud
-15-0060e.Aud
-15-0070e.Aud
-15-0110e.Aud
-15-0120e.Aud
-15-0130e.Aud
-15-0140e.Aud
-15-0150e.Aud
-15-0160e.Aud
-15-0170e.Aud
-15-0180e.Aud
-15-0260e.Aud
-15-0270e.Aud
-15-0280e.Aud
-15-0290e.Aud
-15-0320e.Aud
-15-0360e.Aud
-15-0530e.Aud
-15-1700e.Aud
-15-I000.Aud	Infantry Reporting
-15-I002.Aud	Unit Ready
-15-I004.Aud	Awaiting Order
-15-I006.Aud	Sir
-15-I008.Aud	Sir Yes Sir
-15-I010.Aud	Ready
-15-I012.Aud	Yes Sir
-15-I014.Aud	Yes Sir
-15-I016.Aud	Orders Received
-15-I018.Aud	Moving Out
-15-I020.Aud	Advancing
-15-I022.Aud	On My Way
-15-I024.Aud	You Got It
-15-I026.Aud	No Problem
-15-I032.Aud	Ready For Action
-15-I038.Aud	Standing By
-15-I040.Aud	Yeah
-15-I042.Aud	Orders
-15-I044.Aud	Loud & Clear
-15-I046.Aud	I'M On It
-15-I048.Aud	Sir
-15-I050.Aud	Good As Done
-15-I058.Aud	I'M Taking Heavy Fire
-15-I060.Aud	Move Move Move
-15-I064.Aud	Medic
-151440203e.Aud
-16.Fnt
 1790004e.Aud
-186504e.Aud
-18jbird1.Aud
-19-I000.Aud	Engineer
-19-I002.Aud	Yes Sir
-19-I006.Aud	Awaiting Orders
-19-I010.Aud	Affirmative
-19-I016.Aud	No Problem
-19-I018.Aud	I Can Fix That
-19-N100.Aud	Looks Like The Kodiak Is A Loss
-19-N102.Aud	Ive Got The EVA Unit, Lets Get Out Of Here
-1e.Vqa
-1ice6.Ini
-1ice6.Map
-1lworld7.Ini
-1lworld7.Map
-1minr.Aud	1 Minute Left
-1objmet1.Aud	1st Objective Met
-1pres.Shp
-1tnk.Hva
-1tnk.Shp	Light Tank
-1tnk.Vxl
-1tnkbarl.Hva
-1tnkbarl.Vxl
-1tnkicon.Shp	Light Tank
-1tnktur.Hva
-1tnktur.Vxl
-1tnktur.Vxl	Light Tank Turret
-20-I000.Aud	Medic Reporting
-20-I004.Aud	Yes Sir
-20-I006.Aud	Awaiting Orders
-20-I008.Aud	Affirmative
-20-I010.Aud	Acknowledged
-20-I012.Aud	Moving Out
-20-I016.Aud	Stat
-20-I018.Aud	Clear
-20-I020.Aud	Give Me Some Room
-200meter.Wav
-20minr.Aud	20 Minutes Left
-21-I000.Aud	Hehehe
-21-I002.Aud	Over Here
-21-I004.Aud	Shh
-21-I010.Aud	Yes
-21-I012.Aud	Excellent
-21-I016.Aud	Moving
-21-I022.Aud	Its Yours
-22-I000.Aud	Input Directive
-22-I002.Aud	Comlink Open
-22-I006.Aud	Unit Ready
-22-I008.Aud	Affirmative
-22-I010.Aud	By Your Command
-22-I012.Aud	Target Aquired
-22-I014.Aud	Scan Initiated
-22-I016.Aud	Proceding
-22-I018.Aud	Unit Engaged
-22-I020.Aud	Processing
-22-N100.Aud	Terminate All Biological Lifeforms
-22-N102.Aud	The Will Of CABAL Must Be Enforced
-22-N104.Aud	Error
-22-N106.Aud	System Failure
-22-N108.Aud	Malfunction
-22-N110.Aud	Hit Him
-22-N112.Aud	Intruder Alert
-22-N114.Aud	You Are Not One Of Us
-22-N116.Aud	Fire In The Hole
-22-N118.Aud	Proceding To Target
-22-N120.Aud	Sequence Engaged
-23-0010e.Aud
-23-0040e.Aud
-23-0250e.Aud
-23-0330e.Aud
-23-I000.Aud	Your Command
-23-I002.Aud	Standing By
-23-I004.Aud	Directive
-23-I006.Aud	Status
-23-I008.Aud	I Obay
-23-I010.Aud	Affirmative
-23-I012.Aud	Executing
-23-I014.Aud	Terminated
-23-I016.Aud	Stand Clear
-23-I018.Aud	They Will Know Fear
-23-I020.Aud	For The Brotherhood
-23-I022.Aud	I Can Smell Their Fear
-24-0380e.Aud
-24-0510e.Aud
-24-I000.Aud	Need A Ride
-24-I002.Aud	Sir
-24-I004.Aud	Yeah
-24-I006.Aud	What
-24-I008.Aud	Hot Wired
-24-I010.Aud	Hit It
-24-I012.Aud	Four On The Floor
-24-I014.Aud	Cool
-24-I016.Aud	Where Do You Want It
-24-I018.Aud	Going My Way
-24-I020.Aud	No Keys, No Problem
-24-I022.Aud	Jacking Them Up
-24-I024.Aud	I Always Wanted One Of These
-24e.Aud
-25-I000.Aud	Unit Reporting
-25-I002.Aud	Unit Ready
-25-I004.Aud	Awaiting Orders
-25-I006.Aud	Sir
-25-I012.Aud	Yes Sir
-25-I014.Aud	Yes Sir
-25-I016.Aud	Orders Recieved
-25-I018.Aud	Moving Out
-25-I022.Aud	On My Way
-25-I024.Aud	You Got It
-25-I026.Aud	No Problem
+02037240.Aud
+02043240.Aud
 2550004e.Vqa
 2599804e.Vqa
 2599904e.Vqa
-27-I002.Aud	Unit Deploy Response
 2730706e.Csv
 2730706e.Lsv
 2730706e.Vqa
@@ -995,139 +1446,8 @@
 2730706e_H.Vqa
 2730706e_L.Pcx
 2730706e_L.Vqa
-2dangr1.Aud
-2minr.Aud	2 Minutes Left
-2nd_Hand.Aud	2nd_Hand
-2objmet1.Aud	2nd Objective Met
-2peaks.Map
-2pres.Shp
-2roachd2.Aud
-2temp7.Ini
-2temp7.Map
-2tnk.Hva
-2tnk.Shp	Medium Tank
-2tnk.Vxl
-2tnk.Vxl	Medium Tank
-2tnkbarl.Hva
-2tnkbarl.Vxl
-2tnkbarl.Vxl	Medium Tank Barrel
-2tnkicon.Shp	Medium Tank
-2tnktur.Hva
-2tnktur.Vxl
-2tnktur.Vxl	Medium Tank Turret
-2woodwlk2.Aud
-3.Aud
-3.Vqa
-30-I000.Aud	Pilot Reporting
-30-I002.Aud	Ready
-30-I004.Aud	Awaiting Orders
-30-I006.Aud	Sir
-30-I014.Aud	Yes Sir
-30-I016.Aud	Orders Recieved
-30-I018.Aud	Over And Out
-30-I022.Aud	On My Way
-30-I030.Aud	Death From Above
-30-I034.Aud	Form Up
-30-I036.Aud	Away We Go
 3000988e.Vqa
-30minr.Aud	30 Minutes Left
-32-I000.Aud	Affirmative
-32-I002.Aud	Target Sighted
-32-I004.Aud	Orders Recieved
-32-I006.Aud	Engaging
-32-I008.Aud	Woops
-33-N000.Aud	Where The Hell Are Those Reinforcements
-33-N002.Aud	Its Nod Sir, They Came Out Of Nowhere
-33-N004.Aud	Looks Like They Tore This Place Appart Already
-33-N008.Aud	Here They Come
-33-N010.Aud	Is There Any Tech Left At The Nod Base
-33-N012.Aud	These Critters Don'T Look Too Friendly
-33-N014.Aud	The Cavelry Has Arrived
-33-N020.Aud	I Believe There Is An Old GDI Base Near
-33-N022.Aud	Here Comes Kanes Welcoming Comittee
-33-N024.Aud	Whats The Eta On That MCV
 3340820e.Vqa
-35-N000.Aud	Get Tratos Over Here, Asap
-35-N002.Aud	With All Due Respect, Move Your Ass
-35-N004.Aud	Eta For Airstrike Is 5 Minutes
-35-N008.Aud	Pickup Service
-35-N010.Aud	Negative, I Can Make It
-35-N012.Aud	I Said, I Can Make It
-35-N014.Aud	I Can Aaah
-35mm.Aud
-35mmbrk1.Aud
-35mmgo1.Aud
-36-N000.Aud	That Train Goes To The Power Grid We Told You About, Get Us On Board
-36-N002.Aud	Thanks, Well Enjoy This
-36-N004.Aud	Somethings Wrong, We Should Have Been There By Now
-36-N008.Aud	We Have Been Betrayed, GDI Kidnapped Tratos
-37-N000.Aud	Thanks For Your Help
-37-N002.Aud	They May Be On To Us
-38-0080e.Aud
-38-0160e.Aud
-38-N000.Aud	Get Back To The Base
-38-N002.Aud	Tiberiam Is Lethal To Unprotected Infantry
-38-N004.Aud	We Need More Men, Train Them From The Hand Of Nod
-38-N006.Aud	Laser Turrets, Run For It
-38-N008.Aud	The Traitors Are Comming, Blow The Bridge
-38-N010.Aud	Hassan Is Escaping
-38-N012.Aud	Hassan Has Been Captured
-38-N014.Aud	We Got An Old Stock Pile Here Sir
-38-N016.Aud	The Mutants Have Turned On Us
-38-N018.Aud	There Everywhere
-38-N020.Aud	Lets Get Him To The Convoy Point
-38-N022.Aud	Take Point, Soldier
-38-N024.Aud	Glad To See You Free, Sir
-38-N026.Aud	Being Held In An Outpost To The East
-38-N028.Aud	The Ice Wont Support The Weight Of Multiple Vechicles Crossing
-38-N100.Aud	Something Crashed Near Here, Spread Out & Report
-38-N102.Aud	Sir Weve Found Something, I Think It Is The Tascitus
-38-N104.Aud	Well Fall Back To The Old Airfield & Wait Out The Storm
-38-N106.Aud	We Have Recovered A Piece Of CABALs Core
-38-N108.Aud	I Think We Have Been Spotted
-38-N110.Aud	GDI Forces Are Nearby
-38-N112.Aud	We Have Recovered Another Piece Of The Core
-38-N114.Aud	Third Piece Recovered, Lets Get Out Of Here
-38-N116.Aud	Recon Reports A Heavy Concentration Of Tiberium Poisining
-38-N118.Aud	We Have To Find That Airfield Or Were Finished
-38-N120.Aud	Message Transmitted, Montauk Is En Route
-38-N122.Aud	This Is The Montauk, We Are Standing By For Your Evac
-38-N124.Aud	We Need To Create A Distraction To Clear The GDI Base Of Air Support
-38-N126.Aud	I Bet If We Attack These Civillians, GDI Will Come To The Rescue
-38-N128.Aud	GDI Planes Are Away From The Base, Now'S Our Chance
-38-N130.Aud	The Core Is Undefended
-38-N132.Aud	The Core Isn'T Here, We Have Been Tricked
-38-N134.Aud	Looks Like This Was Just A Remotly Operated Substation
-38-N136.Aud	Reinforcements Can Be Brought In If We Repair The Bridge
-38-N138.Aud	GDI Has Requested That We Help The Civillians First
-38-N140.Aud	Once They'Re Safe, We Can Concentrate On CABALs Harvesters
-38-N142.Aud	GDI Is Sending Us Additional Funding For Aiding The Civillians
-38-N144.Aud	Forget The Civillians, There Dead
-38-N146.Aud	This Should Be Easy Enough
-38-N148.Aud	Lets Get Those Harvesters
-38-N150.Aud	GDI Is Uploading The Final Pieces Of The Code Now, Stand By
-38-N152.Aud	Fire Storm Coming Down
-38-N154.Aud	Fire Storm Is Offline
-38-N156.Aud	Code Fragment Retrieved
-39-N000.Aud	I Am Free, Now Its Paback Time, Hassan
-3minr.Aud	3 Minutes Left
-3objmet1.Aud	3rd Objective Met
-3point.Fnt
-3pres.Shp
-3tnk.Hva
-3tnk.Shp	Heavy Tank
-3tnk.Vxl	Heavy Tank
-3tnkbarl.Hva
-3tnkbarl.Vxl	Heavy Tank Barrel
-3tnkicon.Shp	Heavy Tank
-3tnktur.Hva
-3tnktur.Vxl	Heavy Tank Turret
-3tweak10.Ini
-3tweak10.Map
-4.Aud
-40-N000.Aud	We Have Been Touched By The Spirit Hand Of Kane
-40.Aud
-40103emnky1.Aud
 4025108e.Csv
 4025108e.Lsv
 4025108e.Vqa
@@ -1137,40 +1457,8 @@
 4025108e_H.Vqa
 4025108e_L.Pcx
 4025108e_L.Vqa
-40minr.Aud	40 Minutes Left
-41-N000.Aud	Stand And Identify Yourself In The Name Of Kane
-41-N002.Aud	Sound The Alarm
-41-N004.Aud	Base Command, This Is Post Tk421, We Have Got
-41-N006.Aud	We Just Got Word From General Hassan, Hes Moving Up North To Cairo
-411440103e.Aud
-41450203e.Aud
-4195tle.Vqa
-42-I000.Aud	Toxin Soldier
-42-I002.Aud	Yes
-42-I004.Aud	Im All Ears
-42-I006.Aud	Of Course
-42-I008.Aud	I Think I Can Be Pursuaded
-42-I010.Aud	On It
-42-I012.Aud	Knockout
-42-I266.Aud
 4297911e.Vqa
-43-N000.Aud	I Have The Codes
-44-N000.Aud	We Are Here & Waiting For Your Arrival
-47-N000.Aud	Dont Shoot, I Can Tell You GDIs Evac Locations
 4720710e.Vqa
-47garble.Vqa
-4e.Aud
-4e.Vqa
-4minr.Aud	4 Minutes Left
-4pres.Shp
-4tnk.Hva
-4tnk.Shp	Mammoth Tank
-4tnk.Vxl	Mammoth Tank
-4tnkbarl.Hva
-4tnkbarl.Vxl	Mammoth Tank Barrel
-4tnkicon.Shp	Mammoth Tank
-4tnktur.Hva
-4tnktur.Vxl	Mammoth Tank Turret
 5010007e.Aud
 5010107e.Aud
 5010207e.Aud
@@ -1199,145 +1487,11 @@
 5012507e.Aud
 5012607e.Aud
 5012707e.Aud
-50cal.Shp
-52-N000.Aud	Welcome Stranger
-52-N002.Aud	Can I Offer You A Cool Beverage
-52-N004.Aud	What Do You Think You Are Doing
-524eftwood5.Aud
-53-I000.Aud	What
-53-I002.Aud	Ready To Go
-53-I004.Aud	Shall We Go
-53-I006.Aud	Yes
-53-I008.Aud	On My Way
-53-I010.Aud	That Seems Logical
-53-I012.Aud	Oooh
-53-I102.Aud
-53-I104.Aud
-53-I106.Aud
-53-I108.Aud	On My Way
-53-I110.Aud
-53-I112.Aud
-54-N000.Aud	No Tascitus Piece In Here
-54-N002.Aud	Nothing In This One Either, You Sure Were In The Right Place
-54-N004.Aud	Got It, Lets Get Out Of Here
-54-N006.Aud	Nothing In There
-54-N008.Aud	The Hieroglyphics On This Temple Read
-54-N010.Aud	Temple Of Time
-54-N012.Aud	Temple Of Thunder
-54-N014.Aud	Temple Of The Tascitus
-54-N016.Aud	I Got The Tascitus
-54-N018.Aud	The Blue Tiberium Is Highly Explosive, Maybe
-54-N020.Aud	Maybe We Can Blast A Path Through There
-54-N022.Aud	Understood
-54-N024.Aud	Going In
-54-N026.Aud	Yes Sir
-54-N028.Aud	Moving Out
-54-N030.Aud	On My Way
-55-N000.Aud	Help
-55-N002.Aud	Save Us
-55-N004.Aud	Its Coming Right At Us
-55-N006.Aud	Get Us Out, Please
-55-N008.Aud	Its After Us
-55-N010.Aud	Look Out
-55-N012.Aud	What Is GDI Doing. Nothing
-55-N014.Aud	Why Are We In This God Forsaken Place
-55-N016.Aud	Are We Going To Let Those Shiners Take Our Food & Water
-55-N018.Aud	Cant We All Just Get Allong
-55-N020.Aud	Riot Troops, Run
-55-N022.Aud	Thanks For The Warning, Here Is A Reward For Your Help
-55-N024.Aud	Here Commander, Please Take These 2 Disruptors
-55-N026.Aud	Please Take This MCV
-55-N028.Aud	Ill Never Turn
-55-N030.Aud	Piece Through Power
-55-N032.Aud	For The Technology Of Piece
-55-N034.Aud	We Got One
-55-N036.Aud	Fish Is On The Hook
-55-N038.Aud	Here Creature Creature
-55-N040.Aud	We Are Under Siege
-55-N042.Aud	Thanks For The Help
-55-N044.Aud	We Can Shut That Fencing Down For You
 5597513e.Vqa
 5597613e.Vqa
-56-N000.Aud	Lets Show GDI Were Not Going To Take This
-56-N002.Aud	Kill The Shiners
-56-N004.Aud	Down With GDI
-56-N006.Aud	Thanks For The Warning, Take These Units
-56-N008.Aud	Take This For Your Troubles
-56-N010.Aud	Help Us
-56-N012.Aud	Save Us
-56-N014.Aud	There Comming
-56-N016.Aud	Get Us Out
-56-N018.Aud	Dont Leave Us
-56-N020.Aud	Wait
 5601215e.Vqa
-57-N100.Aud	You Picked The Wrong Place To Surface, Nod Scum
-57-N102.Aud	GDI Promised Us Piece & Now Tratos Is Dead
-57-N104.Aud	GDI Lied To Us
-57-N106.Aud	Destroy Them
-57-N108.Aud	Show Them This Is Our Land
-57-N110.Aud	Make Them Remember Us
-57-N112.Aud	They Poisened Our Food & Water
-57-N114.Aud	They'Re Trying To Kill Us
-57-N116.Aud	Take This Harvester For Your Troubles
-57-N118.Aud	Release The Hounds
-57-N120.Aud	Halt & Prepare For Vehicle Inspection
-57-N122.Aud	Ok, Looks Good, Head On In
-57-N124.Aud	Its Bugged, Destroy It Now
-5724e.Aud
-58-N100.Aud	No Civillian Or Mutant Casualties
-58-N102.Aud	The Riot Should End Quickly, But Stay Vigilent
-58-N104.Aud	Copy That Valdes, Transport Is Dusting Off Now
-58-N106.Aud	You Get The Juggernaut
-58-N108.Aud	Get Your People To The Evac Point
-58-N110.Aud	Get Your Poeple To The Transport
-58-N112.Aud	Valdez, We Recommend You Take Out Their Leader
-58-N114.Aud	Protect Doctor Budro With Your Life, Commander
-58-N116.Aud	Our Base Is Under Attack
-58-N118.Aud	What In The World
-58-N120.Aud	I Should Go Warn The Civillians In This Area
-58-N122.Aud	CABAL Is One Sick Bastard
-58-N124.Aud	CABAL Is Taking Prisoners, This Cant Be Good
-58-N126.Aud	CABAL Is Conscripting Humans
-58-N128.Aud	CABAL Intends To Turn You All Into Cyborgs
-58-N130.Aud	CABAL Is Harvesting Biological Components
-58-N132.Aud	You Must Evacuate The City Immediatly
-58-N134.Aud	Civillians To Arms, Defend Your Town
-58-N136.Aud	This Must Be Their Base
-58-N138.Aud	What The
-58-N140.Aud	I Must Warn The Citicens Of Tronhime
-58-N142.Aud	People Of Tronhime, Get Out Now
-59-N100.Aud	We Can Ill Afford To Loose More Civillians To CABAL
-59-N102.Aud	Get In There & Protect Those Civillians
-59-N104.Aud	Well Done Commander, Reinforcements En Route
 5970320e.Vqa
-5minr.Aud	5 Minutes Left
-6.Fnt
-60-0000e.Aud
-60-N100.Aud	System Ready
-60-N102.Aud	Instructions
-60-N104.Aud	Awaiting Navcom
-60-N106.Aud	Moving
-60-N108.Aud	Recieving Course
-60-N110.Aud	As Ordered
-60-N112.Aud	Exterminate
-60-N114.Aud	Target Locked
-60-N116.Aud	Weapons Armed
-61-N000.Aud	Dare You Defile Sacred Ground
-61-N002.Aud	Kill The Mutant
-61-N004.Aud	Stop Thief
-61-N006.Aud	Kill The Heretics
-61-N008.Aud	Do Not Let Them Escape
-61-N010.Aud	What, They Killed The Leader
-61-N012.Aud	We Join You In The Hereafter
-62-N000.Aud	Welcome Traveler
-62-N002.Aud	Join Us
-62-N004.Aud	Join Me
-62-N006.Aud	Existance Is Futile
-62-N008.Aud	Im Coming To Join You
-62-N010.Aud	I Am A Messenger
-62-N012.Aud	Come To Me
 6230112e.Vqa
-64-I965.Aud
 6410024e.Aud
 6410124e.Aud
 6410224e.Aud
@@ -1352,178 +1506,21 @@
 6411124e.Aud
 6411224e.Aud
 6411324e.Aud
-67-0870r.Aud
-67-1100r.Aud
-67-N100.Aud	You Talking To Me
-67-N102.Aud	Can I Help You
-67-N104.Aud	Whatever
-67-N106.Aud	Im Going
-67-N108.Aud	Out Of My Way
 6730009e.Vqa
-67_0470r.Aud
-67_0480r.Aud
-67_0500r.Aud
-67_0540r.Aud
-67_0560r.Aud
-67_0870r.Aud
-67_0880r.Aud
-67_0900r.Aud
-67_0940r.Aud
-67_0960r.Aud
-67_1070r.Aud
-67_1080r.Aud
-67_1100r.Aud
-67_1140r.Aud
-67_1160r.Aud
-67loit.Vqa
-68-N100.Aud	Yeah
-68-N102.Aud	Huh
-68-N104.Aud	What
-68-N106.Aud	Shur
-68-N108.Aud	Alright
-68-N110.Aud	Here I Go
 6890503e.Vqa
 6890603e.Vqa
 6890703e.Vqa
 6890903e.Vqa
-69-N100.Aud	Not Me
-69-N102.Aud	Oooh
-69-N104.Aud	Yeah
-69-N106.Aud	Do I Gotta
-69-N108.Aud	I Gotta Walk
-69-N110.Aud	Are You Sure
-6e.Vqa
-6point.Fnt
-6pres.Shp
-70-N000.Aud	Yes Sir
-70-N002.Aud	Need Assistance
-70-N004.Aud	Im Your Man
-70-N006.Aud	Be Glad To
-70-N008.Aud	On The Job
-70-N010.Aud	Ok
-70-N012.Aud	Looks Like Overtime
-70-N014.Aud	Looks Like Overtime
-70-N016.Aud	Take That
-70-N018.Aud	Hope I'M Covered
-71-N000.Aud	Open Fire, Open Fire
-71-N100.Aud	What, The Civillians Are Shooting At Us
-71-N102.Aud	So Are The Shiners, Retreat To The Factory
-71-N104.Aud	Command Station Has Been Captured, Defences Offline
-71-N106.Aud	We Need Reinforcements Now
-71-N108.Aud	What Was That
-71-N110.Aud	Lets Check That Out
-71-N112.Aud	Did You Hear Something
-71-N114.Aud	She Ant Going Anywhere
-71-N116.Aud	Ill Head Back To Base & Get Help
-71-N118.Aud	Shoot It
-71-N120.Aud	Lets Get These Civillians Out Of Here Now
-71-N122.Aud	Were Under Attack
-71-N124.Aud	What The Hell Are Those Things
-71-N126.Aud	Where Are Those Things Comming From
-71-N128.Aud	Nod Is Uploading The Final Pieces Of The Code Now, Stand By
-71-N130.Aud	Code Recieved, Firestorm Wall Coming Down
-71-N132.Aud	Firestorm Is Offline
-71-N134.Aud	Code Fragment Retrieved
-71-N136.Aud	These Laser Posts Are Stronger Than Normal
-7amb1.Aud
-7amb10.Aud
-7amb11.Aud
-7amb12.Aud
-7amb13.Aud
-7amb14.Aud
-7amb2.Aud
-7amb3.Aud
-7amb4.Aud
-7amb5.Aud
-7amb6.Aud
-7amb7.Aud
-7amb8.Aud
-7amb9.Aud
-7behind1.Aud
-7behind2.Aud
-7behind3.Aud
-7coming1.Aud
-7coming2.Aud
-7e.Aud
-7glass1.Aud
-7glass2.Aud
-7glass3.Aud
-7glass4.Aud
-7joinus1.Aud
-7joinus2.Aud
-7laff1.Aud
-7laff2.Aud
-7laff3.Aud
-7laff4.Aud
-7look1.Aud
-7look2.Aud
-7luth1.Aud
-7luth2.Aud
-7luth3.Aud
-7luth4.Aud
-7luth5.Aud
-7nogo1.Aud
-7nogo2.Aud
-7nogo3.Aud
-7nogo4.Aud
-7over1.Aud
-7over2.Aud
-7over3.Aud
-7over4.Aud
-7please1.Aud
-7please2.Aud
-7please3.Aud
-7urours1.Aud
-7urours2.Aud
-7yell1.Aud
-7yell2.Aud
-7yell3.Aud
-7yell4.Aud
-8.Fnt
-80mx226m.Aud	C&C 80s Mix
-86224e.Aud
-86604e.Aud
-86604e.Vqa
-87v3barl.Hva
-88424e.Aud
-8fat.Fnt
-8point.Fnt
 9150024e.Aud
 9150124e.Aud
-92-I269.Aud
 9252524e.Aud
 9252624e.Aud
-9306e.Vqa
 9355024e.Aud
 9355124e.Aud
 9457524e.Aud
 9457624e.Aud
-9500mudwlk1.Aud
 9520820e.Aud
 9520920e.Aud
-9810mudwlk4.Aud
-9825mudwlk6.Aud
-9843mudwlk3.Aud
-984524e.Aud
-9860mudwlk7.Aud
-9888mudwlk2.Aud
-99-0210e.Aud
-99-0220e.Aud
-99-1820e.Aud
-99-1890e.Aud
-99-1910e.Aud
-99-1920e.Aud
-99-1970e.Aud
-99-1980e.Aud
-99-1990e.Aud
-99-2010e.Aud
-99-N454.Aud	You Dare To Attack Me
-99-N456.Aud	Cybernetic Intellegence Will Allways Be Superior
-99-N458.Aud	By The Way, Missile Launch Detected
-99-N460.Aud	CABAL Laugh
-99-N464.Aud	Activating Defence Protocol, Defender, Now
-99-N466.Aud	Miscalculation In Enemy Ability, Compensation Initiated
-9910mudwlk5.Aud
 9930050e.Aud
 9930050f.Aud
 9930150e.Aud
@@ -1747,7 +1744,9 @@
 9993524e.Aud
 9993624e.Aud
 9993724e.Aud
-A.Aud
+41450203e.Aud
+151440203e.Aud
+411440103e.Aud
 A00_F00e.Bik
 A01_F00e.Bik
 A01_F04e.Bik
@@ -1813,6 +1812,7 @@ A12_P02e.Bik
 A13_F00e.Bik
 A13_F01e.Bik
 A13_F02e.Bik
+A.Aud
 A_Cam.Csv
 A_Cam.Lsv
 A_Cam.Vqa
@@ -1825,12 +1825,12 @@ A_Cam_L.Vqa
 Aacanon3.Aud	Solid Turret
 Aagun.Vqa	AA Gun Shooting Yak
 Aagun.Vqp	AA Gun Shooting Yak
-Aappro1.Aud	Allied Forces Apporaching
-Aarive1.Aud	Allied Reinforcements Comming From East
+Aappro1.Aud	Allied Forces Approaching
+Aarive1.Aud	Allied Reinforcements Coming From East
 Aarrive1.Aud	Allied Reinforcements Have Arrived
-Aarrivn1.Aud	Allied Reinforcements Comming From North
-Aarrivs1.Aud	Allied Reinforcements Comming From South
-Aarrivw1.Aud	Allied Reinforcements Comming From West
+Aarrivn1.Aud	Allied Reinforcements Coming From North
+Aarrivs1.Aud	Allied Reinforcements Coming From South
+Aarrivw1.Aud	Allied Reinforcements Coming From West
 Aavail1.Aud	A-Bomb Available
 Aban01.Shp
 Aban02.Shp
@@ -1857,23 +1857,25 @@ Accom1.Aud	Mission Accomplished
 Acdsplt3.Aud
 Acid3.Aud
 Acidspew.Aud
-Ackno.R00	Soviet 1 Acknowledged
-Ackno.R01	Soviet 2 Acknowledged
-Ackno.R02	Soviet 3 Acknowledged
-Ackno.R03	Soviet 4 Acknowledged
-Ackno.V00	1 Acknowledged
-Ackno.V01	2 Acknowledged
-Ackno.V02	3 Acknowledged
-Ackno.V03	4 Acknowledged
-Acmtbg.Shp
+Ackno.R00	Soviet Acknowledged
+Ackno.R01	Soviet Acknowledged
+Ackno.R02	Soviet Acknowledged
+Ackno.R03	Soviet Acknowledged
+Ackno.V00	Acknowledged
+Ackno.V01	Acknowledged
+Ackno.V02	Acknowledged
+Ackno.V03	Acknowledged
 Acmtbg2.Shp
-Acmtmd.Shp
+Acmtbg.Shp
 Acmtmd2.Shp
-Acmtsm.Shp
+Acmtmd.Shp
 Acmtsm2.Shp
+Acmtsm.Shp
 Acrate.Shp
-Acrdt.Shp
 Acrdt2.Shp
+Acrdt.Shp
+Acrop.Vqa
+Acrop.Vqp
 Actions.Csv
 Actors.Tre
 Actors.Trf
@@ -1890,14 +1892,14 @@ Aegis.Vxl
 Aengicon.Shp
 Aenguico.Shp
 Afallen1.Aud	Allied Forces Have Fallen
-Affirm1.R00	Soviet 1 Affirmative
-Affirm1.R01	Soviet 2 Affirmative
-Affirm1.R02	Soviet 3 Affirmative
-Affirm1.R03	Soviet 4 Affirmative
-Affirm1.V00	1 Affirmative
-Affirm1.V01	2 Affirmative
-Affirm1.V02	3 Affirmative
-Affirm1.V03	4 Affirmative
+Affirm1.R00	Soviet Affirmative
+Affirm1.R01	Soviet Affirmative
+Affirm1.R02	Soviet Affirmative
+Affirm1.R03	Soviet Affirmative
+Affirm1.V00	Affirmative
+Affirm1.V01	Affirmative
+Affirm1.V02	Affirmative
+Affirm1.V03	Affirmative
 Afld.Shp	Airfield
 Afldicnh.Des	Airfield
 Afldicnh.Tem	Airfield
@@ -1911,13 +1913,17 @@ Aftrmath.Ini	Aftermath Game Settings
 Aftrmath.Vqa	Iron Curtain Destroyed
 Aftrmath.Vqp	Iron Curtain Destroyed
 Agapgen.Shp
+Aghq.Vqa
+Aghq.Vqp
+Aghqnt.Vqa
+Aghqnt.Vqp
 Agisicon.Shp
-Agktbg.Shp
 Agktbg2.Shp
-Agktmd.Shp
+Agktbg.Shp
 Agktmd2.Shp
-Agktsm.Shp
+Agktmd.Shp
 Agktsm2.Shp
+Agktsm.Shp
 Agun.Shp	AA Gun
 Agunicon.Shp	AA Gun
 Agunmake.Shp	AA Gun
@@ -1941,8 +1947,6 @@ Alias.Vqa
 Alibackh.Pcx	Allies Score Screen Picture
 Alipaper.Cps	Allies Logo
 Alipaper.Pcx	Allies Logo
-All.Inf	Filenames And Descriptions
-All.Shp
 All01t.Map
 All01umd.Map
 All02s.Map
@@ -1962,22 +1966,14 @@ All09t.Map
 All10s.Map
 All11t.Map
 All12s.Map
+All.Inf	Filenames And Descriptions
+All.Shp
 Alliedlogo.Shp
 Alliedmcv.Bmp
 Alliedtanksrussia.Bmp
 Allies.Mix
 Ally1.Vqa	Get Einstien
 Ally1.Vqp	Get Einstien
-Ally10.Vqa	Stop Nukes
-Ally10.Vqp	Stop Nukes
-Ally10b.Vqa	Deactivate Launch Terminals
-Ally10b.Vqp	Deactivate Launch Terminals
-Ally11.Vqa	Clear The River
-Ally11.Vqp	Clear The River
-Ally12.Vqa	Infiltrate Tech Centers
-Ally12.Vqp	Infiltrate Tech Centers
-Ally14.Vqa	Final Assault On Moscow
-Ally14.Vqp	Final Assault On Moscow
 Ally2.Vqa	Clear The Way For The Convoy
 Ally2.Vqp	Clear The Way For The Convoy
 Ally4.Vqa	Close The Mountain Pass
@@ -1990,6 +1986,16 @@ Ally8.Vqa	Protect The Tech Centre
 Ally8.Vqp	Protect The Tech Centre
 Ally9.Vqa	Rescue Kosygin
 Ally9.Vqp	Rescue Kosygin
+Ally10.Vqa	Stop Nukes
+Ally10.Vqp	Stop Nukes
+Ally10b.Vqa	Deactivate Launch Terminals
+Ally10b.Vqp	Deactivate Launch Terminals
+Ally11.Vqa	Clear The River
+Ally11.Vqp	Clear The River
+Ally12.Vqa	Infiltrate Tech Centers
+Ally12.Vqp	Infiltrate Tech Centers
+Ally14.Vqa	Final Assault On Moscow
+Ally14.Vqp	Final Assault On Moscow
 Allyend.Vqa	Stalin Is Dead
 Allyend.Vqp	Stalin Is Dead
 Allymorf.Vqa	Allied Logo
@@ -2000,8 +2006,8 @@ Aloadsm.Pcx
 Alogo.Pal
 Alphatst.Shp
 Altar_.Wom
-Aly1-Lo.Cps	Allies First Briefing
 Aly1.Pcx	Allies First Briefing
+Aly1-Lo.Cps	Allies First Briefing
 Amanimation_S.Bik
 Amazon01.Map
 Ambloop2.Aud
@@ -2049,11 +2055,11 @@ Amterr28.Shp
 Amterr29.Shp
 Ancient.Flc
 And3.Aud
-Anim.Pal
 Anim0001.Wsa	Welcome To The EVA Install Program
+Anim01.Wsa	Welcome To The EVA Install Program Covert Ops
 Anim0002.Wsa	Mouth Moving
 Anim0006.Wsa	Animated Window Bits
-Anim01.Wsa	Welcome To The EVA Install Program Covert Ops
+Anim.Pal
 Animal1.Aud
 Animal2.Aud
 Anmagic.Aud
@@ -2071,13 +2077,16 @@ Antend.Vqp	Queen Ant Dying In Fire
 Antintro.Vqa	It Came From Red Alert
 Antintro.Vqp	It Came From Red Alert
 Ants.Vqa
+Ants.Vqp
 Anvil1.Aud
 Anvil2.Aud
 Anvil3.Aud
 Aoi.Aud	Act On Instinct
-Aoi.Var	Act On Instinct SFX
+Aoi.Var	Act On Instinct Remix
 Ap01.Vqa
 Apache.Hva
+Apache.Vqa
+Apache.Vqp
 Apache.Vxl
 Apachebarl.Hva
 Apachetur.Hva
@@ -2110,7 +2119,7 @@ Apehurt2.Aud
 Apeloit1.Aud
 Apeloit2.Aud
 Aphi0049.Pcx	Helicopters
-Aplo0049.Cps	Helicpoters
+Aplo0049.Cps	Helicopters
 Apmuzzle.Shp
 Apocexp.Shp
 Appear1.Aud
@@ -2121,28 +2130,28 @@ Aprtamb5.Aud
 Aprtfan1.Aud
 Apwr.Shp	Advanced Power Plant
 Apwricon.Shp	Advanced Power Plant
-Apwrmake.Shp	Advaced Power Plant
-Ar01-Min.Set
+Apwrmake.Shp	Advanced Power Plant
 Ar01.Vqa
+Ar01-Min.Set
 Ar01_0.Vqa
 Ar01_1.Vqa
 Ar01_2.Vqa
 Ar01_3.Vqa
-Ar02-Min.Set
 Ar02.Vqa
+Ar02-Min.Set
 Ar02_0.Vqa
 Ar02_1.Vqa
 Ar02_2.Vqa
 Ar02_3.Vqa
 Arabloop.Aud
-Araziod.Aud	Arazoid
+Araziod.Aud
 Arbi.Pcx
 Arbi.Shp
 Arcbed1.Aud
 Arco.Shp	Arcology
 Arcoicon.Shp	Arcology
-Ardrt.Shp
 Ardrt2.Shp
+Ardrt.Shp
 Aready1.Aud	A-Bomb Ready
 Arena33forever.Map
 Arena_.Wom
@@ -2185,10 +2194,10 @@ Arro0012.Int	Red Stripe On Green
 Arro0013.Int	Red Stripe On Green
 Arro0014.Int	Red Stripe On Green
 Arro0015.Int	Red Stripe On Green
-Arrow.Shp
 Arrow4.Aud
 Arrow7.Aud
 Arrow8.Aud
+Arrow.Shp
 Arrow_Dd.Pcx
 Arrow_Du.Pcx
 Arrow_Ud.Pcx
@@ -2208,13 +2217,13 @@ Arrwse.Shp
 Arrwsw.Shp
 Arrww.Shp
 Art-Exp1.Shp	Explosion
-Art.Ini
 Art2.Hva
 Art2.Vxl
 Art2barl.Hva
 Art2barl.Vxl
 Art2tur.Hva
 Art2tur.Vxl
+Art.Ini
 Artfs.Ini
 Artmd.Ini
 Arty.Hva
@@ -2274,22 +2283,25 @@ Asterr29.Shp
 Asw.Hva
 Asw.Vxl
 Atarget.Shp
-Atek.Shp	Allied Techcenter
-Atekicon.Shp	Techcenter
+Atek.Shp	Allied Tech Center
+Atekicon.Shp	Tech Center
 Atekmake.Shp	Allied Tech Center
-Atlnch1.Aud	A-Bomb Launch Detcted
+Atlnch1.Aud	A-Bomb Launch Detected
 AtomSFX.Shp	Nuclear Blast
 Atomdoor.Shp	Nuke Firing Smoke
-Atomicdn.Shp	Nuclear Missle Landing
+Atomicdn.Shp	Nuclear Missile Landing
 Atomicnh.Des	Nuclear Strike
 Atomicnh.Tem	Nuclear Strike
 Atomicnh.Win	Nuclear Strike
 Atomicon.Shp	Atom Bomb
 Atomicon.Shp	Nuclear Strike
-Atomicup.Shp	Nuclear Missle Launching
+Atomicup.Shp	Nuclear Missile Launching
 Atomicup.Shp	Nuke Launching
 Atprep1.Aud	A-Bomb Preping
 Attract2.Cps	Coming Attractions
+Attrceng.Cps
+Attrcfre.Cps
+Attrcger.Cps
 Atwr.Shp	Advanced Guard Tower
 Atwricnh.Des	Advanced Guard Tower
 Atwricnh.Tem	Advanced Guard Tower
@@ -2327,7 +2339,6 @@ Autosave.Tri
 Autosave.Trs
 Averted.Vqa	Meltdown Averted
 Averted.Vqp	Meltdown Averted
-Await.Aud	Awaiting
 Await1.R00	Soviet 1 Awaiting Orders
 Await1.R01	Soviet 2 Awaiting Orders
 Await1.R02	Soviet 3 Awaiting Orders
@@ -2336,6 +2347,7 @@ Await1.V00	1 Awaiting Orders
 Await1.V01	2 Awaiting Orders
 Await1.V02	3 Awaiting Orders
 Await1.V03	4 Awaiting Orders
+Await.Aud	Awaiting
 Await_R.Aud	Awaiting
 Away01_E.Vqa
 Away02_E.Vqa
@@ -2348,42 +2360,42 @@ Axle.Vxl
 Ayaricon.Shp
 B01nc-H.Pcx
 B01nc.Pcx
+B1.Des	Rock
+B1.Sno	Rocks
+B1.Tem	Rock
+B1.Win	Rock
 B02lm-G.Pcx
 B02lm-H.Pcx
 B02lm.Pcx
+B2.Des	Rocks
+B2.Sno	Rocks
+B2.Tem	Rocks
+B2.Win	Rocks
 B03l-H.Pcx
 B03l.Pcx
+B3.Sno	Rocks
+B3.Tem	Rocks
+B3.Win	Large Rocks
 B04i-H.Pcx
 B04i.Pcx
+B4.Des	Small Rocks
 B05sm-H.Pcx
 B05sm.Pcx
+B5.Des	Small Rocks
 B06s-H.Pcx
 B06s.Pcx
+B6.Des	Small Rocks
 B07wdt-H.Pcx
 B07wdt.Pcx
 B08o-H.Pcx
 B08o.Pcx
 B09b-H.Pcx
 B09b.Pcx
-B1.Des	Rock
-B1.Sno	Rocks
-B1.Tem	Rock
-B1.Win	Rock
 B10e-H.Pcx
 B10e.Pcx
 B12e-H.Pcx
 B12e.Pcx
-B2.Des	Rocks
-B2.Sno	Rocks
-B2.Tem	Rocks
-B2.Win	Rocks
 B231411e.Vqa
-B3.Sno	Rocks
-B3.Tem	Rocks
-B3.Win	Large Rocks
-B4.Des	Small Rocks
-B5.Des	Small Rocks
-B6.Des	Small Rocks
 B_B1.Flc
 B_B2.Flc
 B_Cam.Csv
@@ -2440,13 +2452,12 @@ Badger.Aud
 Badr.Shp	Badger Bomber
 Badricon.Shp	Badger Bomber
 Bagclose.Aud
-Bagopen.Aud
 Bagopen1.Aud
+Bagopen.Aud
 Balcony_.Wom
 Ball.Shp
 Ballrm1.Aud
 Ballrm2.Aud
-Ban.Shp
 Ban1atk1.Aud
 Ban1atk2.Aud
 Ban1deth.Aud
@@ -2454,6 +2465,7 @@ Ban1hit1.Aud
 Ban1hit2.Aud
 Ban1htsh.Aud
 Ban1kilb.Aud
+Ban.Shp
 Bana.Hva
 Bana.Vxl
 Bang1.Aud
@@ -2525,72 +2537,72 @@ Batricon.Shp
 Bats1.Aud
 Batscat2.Aud
 Battle.Ini
-Battle.Vqa	Destroyed Vechicles
-Battle.Vqp	Destroyed Vechicles
+Battle.Vqa	Destroyed Vehicles
+Battle.Vqp	Destroyed Vehicles
 Battlefs.Ini
 Battlemd.Ini
 Bazook1.Aud
 Bazook1.Juv
-Bb01-Min.Set
 Bb01.Vqa
+Bb01-Min.Set
 Bb01_0.Vqa
 Bb01_1.Vqa
 Bb01_2.Vqa
 Bb01_3.Vqa
-Bb02-Min.Set
 Bb02.Vqa
+Bb02-Min.Set
 Bb02_0.Vqa
 Bb02_1.Vqa
 Bb02_2.Vqa
 Bb02_3.Vqa
-Bb03-Min.Set
 Bb03.Vqa
+Bb03-Min.Set
 Bb03_0.Vqa
 Bb03_1.Vqa
 Bb03_2.Vqa
 Bb03_3.Vqa
-Bb04-Min.Set
 Bb04.Vqa
+Bb04-Min.Set
 Bb04_0.Vqa
 Bb04_1.Vqa
 Bb04_2.Vqa
 Bb04_3.Vqa
-Bb05-Min.Set
 Bb05.Vqa
+Bb05-Min.Set
 Bb05_0.Vqa
 Bb05_1.Vqa
 Bb05_2.Vqa
 Bb05_3.Vqa
 Bb05over.Vqa
-Bb06-Min.Set
 Bb06.Vqa
+Bb06-Min.Set
 Bb06_0.Vqa
 Bb06_1.Vqa
 Bb06_2.Vqa
 Bb06_3.Vqa
 Bb06over.Vqa
-Bb07-Min.Set
 Bb07.Vqa
+Bb07-Min.Set
 Bb07_0.Vqa
 Bb07_1.Vqa
 Bb07_2.Vqa
 Bb07_3.Vqa
 Bb07over.Vqa
-Bb08-Min.Set
 Bb08.Vqa
+Bb08-Min.Set
 Bb08_0.Vqa
 Bb08_1.Vqa
 Bb08_2.Vqa
 Bb08_3.Vqa
 Bb08over.Vqa
-Bb09-Min.Set
 Bb09.Vqa
+Bb09-Min.Set
 Bb09_0.Vqa
 Bb09_1.Vqa
 Bb09_2.Vqa
 Bb09_3.Vqa
-Bb10-Min.Set
 Bb10.Vqa
+Bb10-Min.Set
 Bb10_0.Vqa
 Bb10_1.Vqa
 Bb10_2.Vqa
@@ -2600,20 +2612,20 @@ Bb10ovr2.Vqa
 Bb10ovr3.Vqa
 Bb10ovr4.Vqa
 Bb10ovr5.Vqa
-Bb11-Min.Set
 Bb11.Vqa
+Bb11-Min.Set
 Bb11_0.Vqa
 Bb11_1.Vqa
 Bb11_2.Vqa
 Bb11_3.Vqa
-Bb12-Min.Set
 Bb12.Aud
+Bb12-Min.Set
 Bb12_0.Vqa
 Bb12_1.Vqa
 Bb12_2.Vqa
 Bb12over.Vqa
-Bb51-Min.Set
 Bb51.Vqa
+Bb51-Min.Set
 Bb51_0.Vqa
 Bb51_1.Vqa
 Bb51_2.Vqa
@@ -2724,7 +2736,7 @@ Beethit2.Aud
 Beetloi1.Aud
 Beetloi2.Aud
 Befeared.Aud	Enemies To Be Feared
-Befeared.Var	Enemies To Be Feared SFX
+Befeared.Var	Enemies To Be Feared Remix
 Behind.Shp
 Belbatl1.Aud
 Belbatl1.Hmi
@@ -2782,13 +2794,13 @@ Bib3.Sno	Bib
 Bib3.Tem	Bib 3
 Bib3.Win	Bib 3
 Bicorp-1.Vqa
+Bigblue3.Tem
 Bigblue.Des
 Bigblue.Lun
 Bigblue.Sno
 Bigblue.Tem
 Bigblue.Ubn
 Bigblue.Urb
-Bigblue3.Tem
 Bigboom1.Aud
 Bigboom2.Aud
 Bigboom3.Aud
@@ -2805,7 +2817,7 @@ Bigfoot2.Wav
 Bigfoot3.Aud
 Bigfoot3.Wav
 Bigfoot4.Aud
-Bigggun1.Aud	Railgun
+Bigggun1.Aud	Rail gun
 Bighurt1.Aud
 Bighurt2.Aud
 Bigpot3.Aud
@@ -2911,20 +2923,20 @@ Bldfeud.Map
 Bldg1.Aud	Unable To Comply Building In Progress
 Bldginf1.Aud
 Bldgprg1.Aud	Building In Progress
-Bldsplt.Flc
 Bldsplt1.Flc
 Bldsplt2.Flc
 Bldsplt3.Flc
+Bldsplt.Flc
 Bleep1.Aud	Generic Beep
-Bleep11.Aud	Map Sound 3
-Bleep12.Aud	Map Sound 4
-Bleep13.Aud	Map Sound 5
-Bleep17.Aud	Map Sound 6
 Bleep2.Aud	Bleep 2
 Bleep2.Juv	Bleep 2
 Bleep5.Aud	Alarm
 Bleep6.Aud	Radar Map Alert
 Bleep9.Aud	Radar Map Power On
+Bleep11.Aud	Map Sound 3
+Bleep12.Aud	Map Sound 4
+Bleep13.Aud	Map Sound 5
+Bleep17.Aud	Map Sound 6
 Blip.Aud
 Blizaxe1.Aud
 Blizwnd1.Aud
@@ -2972,9 +2984,9 @@ Bodybags.Vqp	Dead Bodies In Body Bags
 Bog.Aud	Bog
 Boilpot2.Aud
 Bolticon.Shp
-Bomb.Shp
 Bomb1.Aud	Bomb
 Bomb1.Juv	Bomb
+Bomb.Shp
 Bombaway.Vqa	Planes Airstriking Base
 Bombaway.Vqp	Planes Airstriking Base
 Bombcurs.Shp
@@ -3004,10 +3016,10 @@ Booklow.Cps
 Booloop2.Aud
 Boop.Aud	Stub Sound
 Borderb.Shp
-Borderh.Shp
 Borderh0.Shp
 Borderh1.Shp
 Borderh2.Shp
+Borderh.Shp
 Borderl.Shp
 Borderm.Shp
 Borders.Pal
@@ -3040,8 +3052,46 @@ Boxes09.Int
 Bpln.Hva
 Bpln.Vxl
 Bplnicon.Shp
+Br1.Des	Bush 1
+Br1a.Sno	Bridge
+Br1a.Tem	Bridge
+Br1b.Sno	Bridge
+Br1b.Tem	Bridge
+Br1c.Sno	Bridge
+Br1c.Tem	Bridge
+Br1x.Sno	Bridge Segment
+Br1x.Tem	Bridge Segment
+Br2.Des	Bush 2
+Br2a.Sno	Bridge
+Br2a.Tem	Bridge
+Br2b.Sno	Bridge
+Br2b.Tem	Bridge
+Br2c.Sno	Bridge
+Br2c.Tem	Bridge
+Br2x.Sno	Bridge Segment
+Br2x.Tem	Bridge Segment
 Br003_1a.Aud
+Br3.Des	Cactus 1
+Br3a.Sno	Bridge
+Br3a.Tem	Bridge
+Br3b.Sno	Bridge
+Br3b.Tem	Bridge
+Br3c.Sno	Bridge
+Br3c.Tem	Bridge
+Br3d.Sno	Bridge
+Br3d.Tem	Bridge
+Br3e.Sno	Bridge
+Br3e.Tem	Bridge
+Br3f.Sno	Bridge
+Br3f.Tem	Bridge
+Br4.Des	Cactus 2
+Br5.Des	Purple Square
+Br6.Des	Bushes 1
+Br7.Des	Bushes 2
+Br8.Des	Bushes 3
+Br9.Des	Bushes 4
 Br010_4a.Aud
+Br10.Des	Purple Squares
 Br011_2a.Aud
 Br012_3b.Aud
 Br013_3d.Aud
@@ -3064,44 +3114,6 @@ Br032_7b.Aud
 Br033_4b.Aud
 Br034_1a.Aud
 Br035_7b.Aud
-Br1.Des	Bush 1
-Br10.Des	Purple Squares
-Br1a.Sno	Bridge
-Br1a.Tem	Bridge
-Br1b.Sno	Bridge
-Br1b.Tem	Bridge
-Br1c.Sno	Bridge
-Br1c.Tem	Bridge
-Br1x.Sno	Bridge Segment
-Br1x.Tem	Bridge Segment
-Br2.Des	Bush 2
-Br2a.Sno	Bridge
-Br2a.Tem	Bridge
-Br2b.Sno	Bridge
-Br2b.Tem	Bridge
-Br2c.Sno	Bridge
-Br2c.Tem	Bridge
-Br2x.Sno	Bridge Segment
-Br2x.Tem	Bridge Segment
-Br3.Des	Cactus 1
-Br3a.Sno	Bridge
-Br3a.Tem	Bridge
-Br3b.Sno	Bridge
-Br3b.Tem	Bridge
-Br3c.Sno	Bridge
-Br3c.Tem	Bridge
-Br3d.Sno	Bridge
-Br3d.Tem	Bridge
-Br3e.Sno	Bridge
-Br3e.Tem	Bridge
-Br3f.Sno	Bridge
-Br3f.Tem	Bridge
-Br4.Des	Cactus 2
-Br5.Des	Purple Square
-Br6.Des	Bushes 1
-Br7.Des	Bushes 2
-Br8.Des	Bushes 3
-Br9.Des	Bushes 4
 Br_Blues.Aud
 Brainfre.Wav
 Brainfry.Aud
@@ -3125,12 +3137,6 @@ Bridgb.Sno
 Bridgb.Tem
 Bridgb.Ubn
 Bridgb.Urb
-Bridge.Des
-Bridge.Lun
-Bridge.Sno
-Bridge.Tem
-Bridge.Ubn
-Bridge.Urb
 Bridge1.Sno	Bridge
 Bridge1.Tem	Bridge
 Bridge1.Win	Bridge Sw-Ne
@@ -3151,10 +3157,17 @@ Bridge2h.Sno	Bridge
 Bridge2h.Tem	Bridge
 Bridge2x.Sno	Bridge Segment
 Bridge2x.Tem	Bridge Segment
+Bridge3.Aud
 Bridge3.Des	Bridge Sw-Ne Desert
 Bridge3d.Des	Bridge Sw-Ne Destroyed Desert
 Bridge4.Des	Bridge Nw-Se Desert
 Bridge4d.Des	Bridge Nw-Se Destroyed Desert
+Bridge.Des
+Bridge.Lun
+Bridge.Sno
+Bridge.Tem
+Bridge.Ubn
+Bridge.Urb
 Bridgegap.Map
 Briefing.Aud
 Brigbrk2.Aud
@@ -3357,11 +3370,6 @@ Butn4r.Aud
 Butn5p.Aud
 Butn5r.Aud
 Butn6.Aud
-Button.Aud
-Button.Aud	Button
-Button.Juv	Button
-Button.Shp
-Button.Wav
 Button00.Shp
 Button01.Shp
 Button02.Shp
@@ -3374,6 +3382,11 @@ Button08.Shp
 Button09.Shp
 Button10.Shp
 Button11.Shp
+Button.Aud
+Button.Aud	Button
+Button.Juv	Button
+Button.Shp
+Button.Wav
 Buttonin.Shp
 Buttonmv.Aud
 Buttons.Shp
@@ -3381,10 +3394,6 @@ Buzzy1.Aud	Alarm
 Bwdt.Pcx
 Bwdth.Pcx
 C1.Shp
-C10.Shp
-C1480103e.Aud
-C17.Shp	Antonov Cargo Plane
-C17icon.Shp	Antonov Cargo Plane
 C1a01md.Map
 C1a02md.Map
 C1a03md.Map
@@ -3394,7 +3403,6 @@ C1m3b.Map
 C1m4c.Map
 C1m5c.Map
 C2.Shp
-C221455203e.Aud
 C2m1c.Map
 C2m2b.Map
 C2m3c.Map
@@ -3429,6 +3437,11 @@ C6.Shp
 C7.Shp
 C8.Shp
 C9.Shp
+C10.Shp
+C17.Shp	Antonov Cargo Plane
+C17icon.Shp	Antonov Cargo Plane
+C1480103e.Aud
+C221455203e.Aud
 C_Armgd1.Aud
 C_Armor1.Aud
 C_Drk1.Aud
@@ -3449,8 +3462,6 @@ C_Nap3.Aud
 C_Nuke1.Aud
 C_Radar1.Aud
 C_Ran1.Aud
-C_Ran10.Aud
-C_Ran11.Aud
 C_Ran2.Aud
 C_Ran3.Aud
 C_Ran4.Aud
@@ -3459,6 +3470,8 @@ C_Ran6.Aud
 C_Ran7.Aud
 C_Ran8.Aud
 C_Ran9.Aud
+C_Ran10.Aud
+C_Ran11.Aud
 C_Range1.Aud
 C_Rapid1.Aud
 C_Shadow.Shp
@@ -3470,7 +3483,6 @@ C_Stlthd.Aud
 C_Telep1.Aud
 C_Unit1.Aud
 C_Weapn1.Aud
-Ca.Shp	Cruiser
 Ca0001.Shp
 Ca0002.Shp
 Ca0003.Shp
@@ -3492,6 +3504,7 @@ Ca0018.Shp
 Ca0019.Shp
 Ca0020.Shp
 Ca0021.Shp
+Ca.Shp	Cruiser
 Caairp.Shp
 Caairp_A.Shp
 Caairp_F.Shp
@@ -3542,9 +3555,9 @@ Caeast02.Shp
 Caegyp01.Shp
 Caegyp02.Shp
 Caegyp03.Shp
-Caeur04.Shp
 Caeur1.Shp
 Caeur2.Shp
+Caeur04.Shp
 Caeuro05.Shp
 Cafarm01.Shp
 Cafarm02.Shp
@@ -3874,11 +3887,11 @@ Cavega.Shp
 Cavein2.Aud
 Cavein3.Aud
 Cavein4.Aud
-Cawa19_A.Shp
 Cawa2a.Shp
 Cawa2b.Shp
 Cawa2c.Shp
 Cawa2d.Shp
+Cawa19_A.Shp
 Cawash03.Shp
 Cawash04.Shp
 Cawash05.Shp
@@ -3901,9 +3914,9 @@ CbalSFX1.Aud
 Cbalopn1.Aud
 Cblc.Hva
 Cblc.Vxl
-Cc.Col	Setup Program Palette
 Cc2tease.Vqa	C&C 2 Teaser
 Cc2tease.Vqp	C&C 2 Teaser
+Cc.Col	Setup Program Palette
 Ccd_I.Pcx
 Ccdemo.Vqa
 Cce_I.Pcx
@@ -3917,8 +3930,10 @@ Ccliff04.Tem
 Ccliff05.Tem
 Ccliff06.Tem
 Cclocal.Inf
+Cclogo.Vqa
 Cclogo.Vqp
 Ccm.Col
+Ccmenu.Pal
 Ccomand.Shp
 Ccomicon.Shp
 Ccomuico.Shp
@@ -3944,8 +3959,8 @@ Cdbunk01.Shp
 Cdbunk02.Shp
 Cdbunk03.Shp
 Cdbunk04.Shp
-Cdcache.Smf
 Cdcache2.Smf
+Cdcache.Smf
 Cdchig01.Shp
 Cdchig02.Shp
 Cdchig03.Shp
@@ -3964,9 +3979,9 @@ Cdest.Hva
 Cdest.Vxl
 Cdestwo.Hva
 Cdestwo.Vxl
-Cdeur04.Shp
 Cdeur1.Shp
 Cdeur2.Shp
+Cdeur04.Shp
 Cdeuro05.Shp
 Cdfarm01.Shp
 Cdfarm02.Shp
@@ -3981,8 +3996,8 @@ Cdfrma.Shp
 Cdfrmb.Shp
 Cdgard01.Shp
 Cdgard03.Shp
-Cdgas.Shp
 Cdgas01.Shp
+Cdgas.Shp
 Cdgefgl.Shp
 Cdgefgl_A.Shp
 Cdgrd1_A.Shp
@@ -4165,11 +4180,11 @@ Cdurb01.Shp
 Cdurb02.Shp
 Cdusfgl.Shp
 Cdusfgl_A.Shp
-Cdwa19_A.Shp
 Cdwa2a.Shp
 Cdwa2b.Shp
 Cdwa2c.Shp
 Cdwa2d.Shp
+Cdwa19_A.Shp
 Cdwash03.Shp
 Cdwash04.Shp
 Cdwash05.Shp
@@ -4221,9 +4236,9 @@ Cemwetr5.Aud
 Cemwndr1.Aud
 Cemwndr1.Hmi
 Cemwndr1.Xmi
-Center.Wsa	Mouth Moving
 Center1.Wsa	Center Mouth Moving
 Center16.Aud	Center
+Center.Wsa	Mouth Moving
 Ceva001.Wav
 Ceva002.Wav
 Ceva003.Wav
@@ -4554,6 +4569,7 @@ Chant3.Aud
 Chant4.Aud
 Chant5.Aud
 Chaos2.Aud
+Charge2.Aud
 Charmtl7.Aud
 Charmtl8.Aud
 Charmtl9.Aud
@@ -4589,7 +4605,12 @@ Choose.Wsa	Side Selection Animation
 Chrg226m.Aud	Charge
 Chrochr1.Aud	Chronosphere Charging
 Chroicon.Shp
+Chronapr.Vqa
+Chronapr.Vqp
 Chronbox.Shp	Chronosphere
+Chrondsp.Vqa
+Chrondsp.Vqp
+Chrono1.Aud
 Chrono2.Aud	Chronosphere Sound
 Chronoar.Shp
 Chronobm.Shp
@@ -4655,14 +4676,17 @@ Civ01.Des
 Civ01.Sno
 Civ01.Tem
 Civ01a.Des
+Civ1.Shp
 Civ02.Des
 Civ02.Sno
 Civ02.Tem
 Civ02a.Des
+Civ2.Shp
 Civ03.Des
 Civ03.Sno
 Civ03.Tem
 Civ03a.Des
+Civ3.Shp
 Civ04.Des
 Civ04.Sno
 Civ04.Tem
@@ -4683,9 +4707,6 @@ Civ08.Des
 Civ08.Sno
 Civ08.Tem
 Civ08a.Des
-Civ1.Shp
-Civ2.Shp
-Civ3.Shp
 Civa.Shp
 Civan.Shp
 Civb.Shp
@@ -5008,9 +5029,9 @@ Clerx01d.Ubn
 Clerx01e.Ubn
 Clerx01f.Ubn
 Clerx01g.Ubn
-Cleur04.Shp
 Cleur1.Shp
 Cleur2.Shp
+Cleur04.Shp
 Cleuro05.Shp
 Clfarm01.Shp
 Clfarm02.Shp
@@ -5489,10 +5510,10 @@ Clnwy23.Shp
 Clnwy24.Shp
 Clnwy25.Shp
 Clnwy26.Shp
-Cloak.Shp
 Cloak5.Aud	Cloaking Sound
-Clock.Shp	Time Dial
+Cloak.Shp
 Clock1.Aud
+Clock.Shp	Time Dial
 Cloild.Shp
 Cloild_A.Shp
 Cloild_F.Shp
@@ -5610,11 +5631,11 @@ Clukfgl.Shp
 Clukfgl_A.Shp
 Clusfgl.Shp
 Clusfgl_A.Shp
-Clwa19_A.Shp
 Clwa2a.Shp
 Clwa2b.Shp
 Clwa2c.Shp
 Clwa2d.Shp
+Clwa19_A.Shp
 Clwash03.Shp
 Clwash04.Shp
 Clwash05.Shp
@@ -5631,12 +5652,12 @@ Clwash18.Shp
 Clwash19.Shp
 Clwsh18a.Shp
 Clwt01.Shp
-Cmdcntr1.Aud	Command Centre Under Attack
+Cmdcntr1.Aud	Command Center Under Attack
 Cmin.Hva
 Cmin.Vxl
+Cmon1.Aud
 Cmon.Hva
 Cmon.Vxl
-Cmon1.Aud
 Cmptalk2.Aud
 Cmptalk3.Aud
 Cmptalk4.Aud
@@ -5674,9 +5695,9 @@ Cncufgl_A.Shp
 Cneast01.Shp
 Cneast01dm.Shp
 Cneast02.Shp
-Cneur04.Shp
 Cneur1.Shp
 Cneur2.Shp
+Cneur04.Shp
 Cneuro05.Shp
 Cnfarm01.Shp
 Cnfarm02.Shp
@@ -5896,7 +5917,7 @@ Cntexs06.Shp
 Cntexs07.Shp
 Cntexs08.Shp
 Cnthosp.Shp
-Cntlded1.Aud	Control Centre Deactivated
+Cntlded1.Aud	Control Center Deactivated
 Cntr03dm.Shp
 Cntran01.Shp
 Cntran02.Shp
@@ -5908,11 +5929,11 @@ Cnurb01.Shp
 Cnurb02.Shp
 Cnusfgl.Shp
 Cnusfgl_A.Shp
-Cnwa19_A.Shp
 Cnwa2a.Shp
 Cnwa2b.Shp
 Cnwa2c.Shp
 Cnwa2d.Shp
+Cnwa19_A.Shp
 Cnwash01.Shp
 Cnwash03.Shp
 Cnwash04.Shp
@@ -5958,6 +5979,14 @@ Compbed1.Aud
 Compdwn4.Aud
 Compon1.Aud
 Compy1.Aud
+Compy2.Aud
+Compy3.Aud
+Compy4.Aud
+Compy5.Aud
+Compy6.Aud
+Compy7.Aud
+Compy8.Aud
+Compy9.Aud
 Compy11.Aud
 Compy12.Aud
 Compy13.Aud
@@ -5967,7 +5996,6 @@ Compy16.Aud
 Compy17.Aud
 Compy18.Aud
 Compy19.Aud
-Compy2.Aud
 Compy20.Aud
 Compy21.Aud
 Compy22.Aud
@@ -5977,20 +6005,15 @@ Compy26.Aud
 Compy27.Aud
 Compy28.Aud
 Compy29.Aud
-Compy3.Aud
 Compy30.Aud
 Compy31.Aud
-Compy4.Aud
-Compy5.Aud
-Compy6.Aud
-Compy7.Aud
-Compy8.Aud
-Compy9.Aud
 Cona.Hva
 Cona.Vxl
 Conc.Shp	Concrete Tiles
 Conqmd.Mix
 Conquer.Eng	Ingame Strings
+Conquer.Fre
+Conquer.Ger
 Conquer.Inf
 Conquer.Mix
 Cons.Shp
@@ -6032,9 +6055,9 @@ Country4.Aud	Country Sound 2
 Countrya.Shp	Map Of Each African Country
 Countrye.Shp	Map Of Each European Country
 Coup.Vqa
-Cow.Shp
 Cow1.Aud
 Cow2.Aud
+Cow.Shp
 Cplane.Hva
 Cplane.Vxl
 Cr1.Des	Crater
@@ -6071,21 +6094,21 @@ Crash04.Tem
 Crash05.Tem
 Crash06.Tem
 Crash07.Tem
+Crat0a.Shp
+Crat0b.Shp
+Crat0c.Shp
 Crat01.Shp
 Crat02.Shp
 Crat03.Shp
 Crat04.Shp
-Crat0a.Shp
-Crat0b.Shp
-Crat0c.Shp
+Crate4.Aud
+Crate4.Juv
 Crate.Des
 Crate.Lun
 Crate.Sno
 Crate.Tem
 Crate.Ubn
 Crate.Urb
-Crate4.Aud
-Crate4.Juv
 Crater01.Des
 Crater01.Lun
 Crater01.Sno
@@ -6181,15 +6204,33 @@ Creaky8.Aud
 Creaky9.Aud
 Creddwn1.Aud	Credit Negative
 Credit01.Vqa
-Credit02.Vqa
-Credit03.Vqa
-Credit04.Vqa
-Credit05.Vqa
-Credit06.Vqa
-Credit07.Vqa
-Credit08.Vqa
-Credit09.Vqa
 Credit1.Aud	Credits Stolen
+Credit1.Cps
+Credit1.Pcx
+Credit02.Vqa
+Credit2.Cps
+Credit2.Pcx
+Credit03.Vqa
+Credit3.Cps
+Credit3.Pcx
+Credit04.Vqa
+Credit4.Cps
+Credit4.Pcx
+Credit05.Vqa
+Credit5.Cps
+Credit5.Pcx
+Credit06.Vqa
+Credit6.Cps
+Credit6.Pcx
+Credit07.Vqa
+Credit7.Cps
+Credit7.Pcx
+Credit08.Vqa
+Credit8.Cps
+Credit8.Pcx
+Credit09.Vqa
+Credit9.Cps
+Credit9.Pcx
 Credit10.Vqa
 Credit11.Vqa
 Credit12.Vqa
@@ -6207,7 +6248,7 @@ Credit41.Vqa
 Credit42.Vqa
 Credits.Aud
 Credits.Aud	End Credits
-Credits.Eng	
+Credits.Eng
 Credits.Hmi
 Credits.Shp
 Credits.Tre
@@ -6249,14 +6290,14 @@ Crimes.Trf
 Crimes.Trg
 Crimes.Tri
 Crimes.Trs
-Crivexp.Shp
 Crivexp2.Shp
+Crivexp.Shp
 Crmble2.Aud	Building Crumbling
 Crmble2.Aud	Wall Crumbling
 Cronfail.Vqa	Chronosphere Test Failed
 Cronfail.Vqp	Chronosphere Test Failed
-Crontest.Vqa	Chronosphere Test Ok
-Crontest.Vqp	Chronosphere Test Ok
+Crontest.Vqa	Chronosphere Test Okay
+Crontest.Vqp	Chronosphere Test Okay
 Crosbow9.Aud
 Croslock.Aud
 Crosslt1.Aud
@@ -6536,17 +6577,93 @@ Csofu94.Wav
 Csphicon.Shp
 Cstrike.Pkt	Counterstrike Multiplayer Map File Names
 Ct0001.Shp
+Ct01.Vqa
+Ct01-Min.Set
+Ct01_0.Vqa
+Ct01_1.Vqa
+Ct01_2.Vqa
+Ct01_3.Vqa
+Ct01spnr.Vqa
+Ct01vo1a.Aud
 Ct0002.Shp
+Ct02.Vqa
+Ct02-Min.Set
+Ct02_0.Vqa
+Ct02_1.Vqa
+Ct02_2.Vqa
+Ct02_3.Vqa
+Ct02over.Vqa
 Ct0003.Shp
+Ct03.Vqa
+Ct03-Min.Set
+Ct03_0.Vqa
+Ct03_1.Vqa
+Ct03_2.Vqa
+Ct03_3.Vqa
 Ct0004.Shp
+Ct04.Vqa
+Ct04-Min.Set
+Ct04_0.Vqa
+Ct04_1.Vqa
+Ct04_2.Vqa
+Ct04_3.Vqa
 Ct0005.Shp
+Ct05.Vqa
+Ct05-Min.Set
+Ct05_0.Vqa
+Ct05_1.Vqa
+Ct05_2.Vqa
+Ct05_3.Vqa
+Ct05over.Vqa
 Ct0006.Shp
+Ct06.Vqa
+Ct06-Min.Set
+Ct06_0.Vqa
+Ct06_1.Vqa
+Ct06_2.Vqa
+Ct06_3.Vqa
 Ct0007.Shp
+Ct07.Vqa
+Ct07-Min.Set
+Ct07_0.Vqa
+Ct07_1.Vqa
+Ct07_2.Vqa
+Ct07_3.Vqa
 Ct0008.Shp
+Ct08.Vqa
+Ct08-Min.Set
+Ct08_0.Vqa
+Ct08_1.Vqa
+Ct08_2.Vqa
+Ct08_3.Vqa
 Ct0009.Shp
+Ct09.Vqa
+Ct09-Min.Set
+Ct09_0.Vqa
+Ct09_1.Vqa
+Ct09_2.Vqa
+Ct09_3.Vqa
 Ct0010.Shp
+Ct10.Vqa
+Ct10-Min.Set
+Ct10_0.Vqa
+Ct10_1.Vqa
+Ct10_2.Vqa
+Ct10_3.Vqa
 Ct0011.Shp
+Ct11.Vqa
+Ct11-Min.Set
+Ct11_0.Vqa
+Ct11_1.Vqa
+Ct11_2.Vqa
+Ct11_3.Vqa
 Ct0012.Shp
+Ct12.Vqa
+Ct12-Min.Set
+Ct12_0.Vqa
+Ct12_1.Vqa
+Ct12_2.Vqa
+Ct12_3.Vqa
 Ct0013.Shp
 Ct0014.Shp
 Ct0015.Shp
@@ -6556,84 +6673,8 @@ Ct0018.Shp
 Ct0019.Shp
 Ct0020.Shp
 Ct0021.Shp
-Ct01-Min.Set
-Ct01.Vqa
-Ct01_0.Vqa
-Ct01_1.Vqa
-Ct01_2.Vqa
-Ct01_3.Vqa
-Ct01spnr.Vqa
-Ct01vo1a.Aud
-Ct02-Min.Set
-Ct02.Vqa
-Ct02_0.Vqa
-Ct02_1.Vqa
-Ct02_2.Vqa
-Ct02_3.Vqa
-Ct02over.Vqa
-Ct03-Min.Set
-Ct03.Vqa
-Ct03_0.Vqa
-Ct03_1.Vqa
-Ct03_2.Vqa
-Ct03_3.Vqa
-Ct04-Min.Set
-Ct04.Vqa
-Ct04_0.Vqa
-Ct04_1.Vqa
-Ct04_2.Vqa
-Ct04_3.Vqa
-Ct05-Min.Set
-Ct05.Vqa
-Ct05_0.Vqa
-Ct05_1.Vqa
-Ct05_2.Vqa
-Ct05_3.Vqa
-Ct05over.Vqa
-Ct06-Min.Set
-Ct06.Vqa
-Ct06_0.Vqa
-Ct06_1.Vqa
-Ct06_2.Vqa
-Ct06_3.Vqa
-Ct07-Min.Set
-Ct07.Vqa
-Ct07_0.Vqa
-Ct07_1.Vqa
-Ct07_2.Vqa
-Ct07_3.Vqa
-Ct08-Min.Set
-Ct08.Vqa
-Ct08_0.Vqa
-Ct08_1.Vqa
-Ct08_2.Vqa
-Ct08_3.Vqa
-Ct09-Min.Set
-Ct09.Vqa
-Ct09_0.Vqa
-Ct09_1.Vqa
-Ct09_2.Vqa
-Ct09_3.Vqa
-Ct10-Min.Set
-Ct10.Vqa
-Ct10_0.Vqa
-Ct10_1.Vqa
-Ct10_2.Vqa
-Ct10_3.Vqa
-Ct11-Min.Set
-Ct11.Vqa
-Ct11_0.Vqa
-Ct11_1.Vqa
-Ct11_2.Vqa
-Ct11_3.Vqa
-Ct12-Min.Set
-Ct12.Vqa
-Ct12_0.Vqa
-Ct12_1.Vqa
-Ct12_2.Vqa
-Ct12_3.Vqa
-Ct51-Min.Set
 Ct51.Vqa
+Ct51-Min.Set
 Ct51_0.Vqa
 Ct51_1.Vqa
 Ct51_2.Vqa
@@ -6686,9 +6727,9 @@ Ctdrone1.Aud
 Cteast01.Shp
 Cteast01dm.Shp
 Ctech.Shp
-Cteur04.Shp
 Cteur1.Shp
 Cteur2.Shp
+Cteur04.Shp
 Cteuro05.Shp
 Ctfarm01.Shp
 Ctfarm02.Shp
@@ -6929,11 +6970,11 @@ Cturb03.Shp
 Ctusfgl.Shp
 Ctusfgl_A.Shp
 Ctvega.Shp
-Ctwa19_A.Shp
 Ctwa2a.Shp
 Ctwa2b.Shp
 Ctwa2c.Shp
 Ctwa2d.Shp
+Ctwa19_A.Shp
 Ctwash03.Shp
 Ctwash04.Shp
 Ctwash05.Shp
@@ -6982,9 +7023,9 @@ Cue_I.Pcx
 Cueast01.Shp
 Cueast01dm.Shp
 Cueast02.Shp
-Cueur04.Shp
 Cueur1.Shp
 Cueur2.Shp
+Cueur04.Shp
 Cueuro05.Shp
 Cufarm01.Shp
 Cufarm02.Shp
@@ -7217,6 +7258,8 @@ Cutexs06.Shp
 Cutexs07.Shp
 Cutexs08.Shp
 Cuthosp.Shp
+Cutout.Vqa
+Cutout.Vqp
 Cutr03dm.Shp
 Cuts01.Shp
 Cuttin.Aud
@@ -7227,11 +7270,11 @@ Cuurb02.Shp
 Cuurb03.Shp
 Cuusfgl.Shp
 Cuusfgl_A.Shp
-Cuwa19_A.Shp
 Cuwa2a.Shp
 Cuwa2b.Shp
 Cuwa2c.Shp
 Cuwa2d.Shp
+Cuwa19_A.Shp
 Cuwash03.Shp
 Cuwash04.Shp
 Cuwash05.Shp
@@ -7423,7 +7466,6 @@ Cyur143.Wav
 Cyur151.Wav
 Cyur152.Wav
 Cyur153.Wav
-D.Shp
 D01.Des	Road Bottom End
 D01.Sno	Road
 D01.Tem	Road
@@ -7601,6 +7643,7 @@ D44.Sno	Road
 D44.Tem	Road
 D45.Sno	Road
 D45.Tem	Road
+D.Shp
 Da01vh43.Aud
 Da01vh44.Aud
 Da01vh51.Aud
@@ -8502,8 +8545,6 @@ Dbak6440.Pcx
 Dbri-Wm1.Shp
 Dbri-Wm2.Shp
 Dbri-Wm3.Shp
-Dbris10lg.Shp
-Dbris10sm.Shp
 Dbris1lg.Shp
 Dbris1sm.Shp
 Dbris2lg.Shp
@@ -8522,6 +8563,8 @@ Dbris8lg.Shp
 Dbris8sm.Shp
 Dbris9lg.Shp
 Dbris9sm.Shp
+Dbris10lg.Shp
+Dbris10sm.Shp
 Dbrs10lg.Shp
 Dbrs10sm.Shp
 Dchi0040.Pcx	Allied Destroyers
@@ -8544,7 +8587,6 @@ Dd-Edge.Shp	Left/Right Edges
 Dd-Left.Shp	Left Edge
 Dd-Right.Shp	Right Edge
 Dd-Top.Shp	Top Edge
-Dd.Shp	Destroyer
 Dd01.Vqa
 Dd15cr00.Aud
 Dd15cr10.Aud
@@ -8565,6 +8607,7 @@ Dd28cr31.Aud
 Dd28d231.Aud
 Dd29cr41.Aud
 Dd29d241.Aud
+Dd.Shp	Destroyer
 Ddb1ca47.Aud
 Ddb1ca48.Aud
 Ddb1ca49.Aud
@@ -8598,7 +8641,6 @@ Dedgirl2.Aud
 Dedgirl3.Aud
 Dedgirl4.Aud
 Dedman1.Aud
-Dedman10.Aud
 Dedman2.Aud
 Dedman3.Aud
 Dedman4.Aud
@@ -8606,6 +8648,7 @@ Dedman5.Aud
 Dedman6.Aud
 Dedman7.Aud
 Dedman8.Aud
+Dedman10.Aud
 Defd.Shp
 Defd_Exp.Shp
 Defdmk.Shp
@@ -8622,7 +8665,6 @@ Demtexp.Shp
 Dense_R.Aud	Dense
 Deploy1.Aud	Cannot Deploy Here
 Depthchg.Aud
-Des.Mix
 Des0101.Des
 Des0101.Tem
 Des0102.Des
@@ -8815,6 +8857,7 @@ Des0247.Des
 Des0247.Tem
 Des0248.Des
 Des0248.Tem
+Des.Mix
 Deseicnh.Inf
 Desert.Inf
 Desert.Mix
@@ -8847,11 +8890,11 @@ Detnicon.Shp
 Devent.Trr
 Deviator.Shp	Air Strike
 Device.Bmp
-Dgreen.Mrf
 Dgreen1.Shp
 Dgreen2.Shp
 Dgreen3.Shp
 Dgreen4.Shp
+Dgreen.Mrf
 Dhal226m.Aud
 Dhallp1.Aud
 Dhallp1.Hmi
@@ -8862,8 +8905,13 @@ Dialog.Shp
 Dialogn.Pal
 Dialogy.Pal
 Dialout3.Aud
-Die.Aud	Die
+Dib_Acp2.Bmp
+Dib_Acpt.Bmp
+Dib_Own.Bmp
+Dib_Sqel.Bmp
+Dib_User.Bmp
 Die1.Aud
+Die.Aud	Die
 Dieyell1.Aud
 Dieyell2.Aud
 Dieyel~1.Aud
@@ -9177,15 +9225,15 @@ Domeicon.Shp	Radar Dome
 Domemake.Shp	Radar Dome
 Domficon.Shp	Radar Dome Fake
 Donkey1.Aud
-Door.Csv
-Door.Lsv
-Door.Vqa
 Door1ac.Aud
 Door1ao.Aud
 Door1bc.Aud
 Door1bo.Aud
 Door1cc.Aud
 Door1co.Aud
+Door.Csv
+Door.Lsv
+Door.Vqa
 Door_E.Vqa
 Door_E.Vqt
 Door_H.Pcx
@@ -9211,8 +9259,8 @@ Dorslid2.Aud
 Double.Vqa	2 Construction Yards
 Double.Vqp	2 Construction Yards
 Doubletrouble.Map
-Downbtn.Shp
 Downbtn2.Shp
+Downbtn.Shp
 Downtown.Map
 Dpod.Hva
 Dpod.Vxl
@@ -9220,40 +9268,40 @@ Dpodbarl.Hva
 Dpodtur.Hva
 Dpthchrg.Vqa	Boat Blows Up Sub
 Dpthchrg.Vqp	Boat Blows Up Sub
-Dr01-Min.Set
 Dr01.Vqa
+Dr01-Min.Set
 Dr01_0.Vqa
 Dr01_1.Vqa
 Dr01_2.Vqa
 Dr01_3.Vqa
-Dr02-Min.Set
 Dr02.Vqa
+Dr02-Min.Set
 Dr02_0.Vqa
 Dr02_1.Vqa
 Dr02_2.Vqa
 Dr02_3.Vqa
-Dr03-Min.Set
 Dr03.Vqa
+Dr03-Min.Set
 Dr03_0.Vqa
 Dr03_1.Vqa
 Dr03_2.Vqa
 Dr03_3.Vqa
-Dr04-Min.Set
 Dr04.Vqa
+Dr04-Min.Set
 Dr04_0.Vqa
 Dr04_1.Vqa
 Dr04_2.Vqa
 Dr04_3.Vqa
 Dr04over.Vqa
-Dr05-Min.Set
 Dr05.Vqa
+Dr05-Min.Set
 Dr05_0.Vqa
 Dr05_1.Vqa
 Dr05_2.Vqa
 Dr05_3.Vqa
 Dr05over.Vqa
-Dr06-Min.Set
 Dr06.Vqa
+Dr06-Min.Set
 Dr06_0.Vqa
 Dr06_1.Vqa
 Dr06_2.Vqa
@@ -9261,7 +9309,6 @@ Dr06_3.Vqa
 Dr06over.Vqa
 Dr06ovr2.Vqa
 Dracdag1.Aud
-Dragon.Shp
 Dragon5.Csv
 Dragon5.Lsv
 Dragon5.Vqa
@@ -9289,6 +9336,7 @@ Dragon8_H.Pcx
 Dragon8_H.Vqa
 Dragon8_L.Pcx
 Dragon8_L.Vqa
+Dragon.Shp
 Dragon_.Aud
 Dragon_.Vqa
 Dragon_.Wom
@@ -9363,9 +9411,9 @@ Drgstir2.Aud
 Drgstir3.Aud
 Drgstir4.Aud
 Dril226m.Aud	Drill
-Drill.Aud
 Drill7.Aud
 Drill9.Aud
+Drill.Aud
 Drilmov3.Aud
 Drilmov4.Aud
 Drip2.Aud
@@ -9389,11 +9437,11 @@ Dripcav7.Aud
 Dripcav8.Aud
 Dripps1.Aud
 Drippy1.Aud
-Drippy10.Aud
 Drippy2.Aud
 Drippy4.Aud
 Drippy6.Aud
 Drippy7.Aud
+Drippy10.Aud
 Drkness2.Aud
 Drmrmapr.Csv
 Drmrmapr.Lsv
@@ -9911,8 +9959,8 @@ Droads66.Tem
 Droads66.Ubn
 Droads66.Urb
 Drok.Wav
-Dron.Shp
 Dron226m.Aud	Drone
+Dron.Shp
 Dronicon.Shp
 Dronp.Shp
 Drop0001.Shp
@@ -9924,17 +9972,17 @@ Dropdwn1.Aud	Dropship Lands
 Dropexp.Shp
 Dropglas.Aud
 Dropland.Shp
-Droppod.Shp
 Droppod2.Shp
-Droppody.Shp
+Droppod.Shp
 Droppody2.Shp
+Droppody.Shp
 Dropship.Pal
-Dropup.Shp
 Dropup1.Aud	Dropship Takes Off
-Drown.Flc
+Dropup.Shp
 Drown1.Aud
 Drown2.Aud
 Drown3.Aud
+Drown.Flc
 Drownsnd.Flc
 Drrain1.Aud
 Drslpe01.Des
@@ -9978,9 +10026,9 @@ Drslpe08.Tem
 Drslpe08.Ubn
 Drslpe08.Urb
 Drugout.Aud
-Drum.Bnk
 Drum01.Shp
 Drum02.Shp
+Drum.Bnk
 Dryheat.Map
 Dryheatmw.Map
 Dsaping1.Aud	Deployable Sensor Array Ping
@@ -10041,12 +10089,48 @@ Dwhite.Mrf
 Dyellow.Mrf
 E-Bwtocl.Wsa	Spinning Earth
 E-Esper.Vqa
-E.Aud
-E.Vqa
 E01sc01.Mix
 E01sc02.Mix
 E01vox01.Mix
 E01vox02.Mix
+E1.Shp
+E1icnh.Des	Minigunner
+E1icnh.Tem	Minigunner
+E1icnh.Win	Minigunner
+E1icon.Shp
+E1rot.Shp	Minigunner Death
+E1uico.Shp
+E2.Shp
+E2icnh.Des	Grenadier
+E2icnh.Tem	Grenadier
+E2icnh.Win	Grenadier
+E2icon.Shp
+E2rot.Shp	Grenadier Death
+E2uico.Shp
+E3.Shp
+E3icnh.Des	Rocket Soldier
+E3icnh.Tem	Rocket Soldier
+E3icnh.Win	Rocket Soldier
+E3icon.Shp	Rocket Soldier
+E3rot.Shp	Rocket Soldier Death
+E4.Shp
+E4icnh.Des	Flamer
+E4icnh.Tem	Flamer
+E4icnh.Win	Flamer
+E4icon.Shp
+E4rot.Shp	Flamer Death
+E5.Shp
+E5icnh.Des	Chem Warrior
+E5icnh.Tem	Chem Warrior
+E5icnh.Win	Chem Warrior
+E5icon.Shp	Chem Warrior
+E6.Shp	Engineer
+E6icnh.Des	Engineer
+E6icnh.Tem	Engineer
+E6icnh.Win	Engineer
+E6icon.Shp	Engineer
+E7.Shp	Tanya
+E7icon.Shp	Tanya
 E029e.Csv
 E029e.Lsv
 E029e.Vqa
@@ -10074,6 +10158,7 @@ E031e_H.Pcx
 E031e_H.Vqa
 E031e_L.Pcx
 E031e_L.Vqa
+E31.Map
 E032e.Csv
 E032e.Lsv
 E032e.Vqa
@@ -10083,6 +10168,7 @@ E032e_H.Pcx
 E032e_H.Vqa
 E032e_L.Pcx
 E032e_L.Vqa
+E32.Map
 E033e.Csv
 E033e.Lsv
 E033e.Vqa
@@ -10133,7 +10219,6 @@ E077e.Vqa
 E080e.Vqa
 E081e.Vqa
 E085e.Vqa
-E1.Shp
 E103e.Vqa
 E122e.Vqa
 E123e.Vqa
@@ -10160,13 +10245,6 @@ E198e_H.Vqa
 E198e_L.Pcx
 E198e_L.Vqa
 E199e.Vqa
-E1icnh.Des	Minigunner
-E1icnh.Tem	Minigunner
-E1icnh.Win	Minigunner
-E1icon.Shp
-E1rot.Shp	Minigunner Death
-E1uico.Shp
-E2.Shp
 E200e.Vqa
 E201e.Vqa
 E202e.Vqa
@@ -10219,38 +10297,8 @@ E244e_H.Vqa
 E244e_L.Pcx
 E244e_L.Vqa
 E245e.Vqa
-E2icnh.Des	Grenadier
-E2icnh.Tem	Grenadier
-E2icnh.Win	Grenadier
-E2icon.Shp
-E2rot.Shp	Grenadier Death
-E2uico.Shp
-E3.Shp
-E31.Map
-E32.Map
-E3icnh.Des	Rocket Soldier
-E3icnh.Tem	Rocket Soldier
-E3icnh.Win	Rocket Soldier
-E3icon.Shp	Rocket Soldier
-E3rot.Shp	Rocket Soldier Death
-E4.Shp
-E4icnh.Des	Flamer
-E4icnh.Tem	Flamer
-E4icnh.Win	Flamer
-E4icon.Shp
-E4rot.Shp	Flamer Death
-E5.Shp
-E5icnh.Des	Chem Warrior
-E5icnh.Tem	Chem Warrior
-E5icnh.Win	Chem Warrior
-E5icon.Shp	Chem Warrior
-E6.Shp	Engineer
-E6icnh.Des	Engineer
-E6icnh.Tem	Engineer
-E6icnh.Win	Engineer
-E6icon.Shp	Engineer
-E7.Shp	Tanya
-E7icon.Shp	Tanya
+E.Aud
+E.Vqa
 E_03.Flc
 E_Armgd1.Aud
 E_Armor1.Aud
@@ -10426,10 +10474,10 @@ Elebutn1.Aud
 Elecbp1.Aud
 Eleclab1.Aud
 Electdog.Shp	Attack Dog Electro Death
+Electro1.Aud	Electrocution
 Electro.Shp	Infantry Being Electrocuted
 Electro.Sno	Soldier Electro Death
 Electro.Tem	Soldier Electro Death
-Electro1.Aud	Electrocution
 Eledown1.Aud
 Element1.Aud
 Element2.Aud
@@ -10561,7 +10609,7 @@ English.Vqa	Red Alert Intro Sequence
 English.Vqp	Red Alert Intro Sequence
 Engnicon.Shp
 Enmyapp1.Aud	Enemy Approaching
-Enmyunit.Aud	Enemy Units Approching
+Enmyunit.Aud	Enemy Units Approaching
 Ergylop1.Aud
 Errormsg.Tre
 Errormsg.Trf
@@ -10620,18 +10668,7 @@ Euterr26.Shp
 Euterr27.Shp
 Euterr28.Shp
 Euterr29.Shp
-Eva.Ini
-Eva.Vqa
-Eva.Wsa	EVA Logo
 Eva1.Aud
-Eva10.Aud
-Eva11.Aud
-Eva12.Aud
-Eva13.Aud
-Eva14.Aud
-Eva15.Aud
-Eva16.Aud
-Eva17.Aud
 Eva2.Aud
 Eva3.Aud
 Eva4.Aud
@@ -10640,6 +10677,17 @@ Eva6.Aud
 Eva7.Aud
 Eva8.Aud
 Eva9.Aud
+Eva10.Aud
+Eva11.Aud
+Eva12.Aud
+Eva13.Aud
+Eva14.Aud
+Eva15.Aud
+Eva16.Aud
+Eva17.Aud
+Eva.Ini
+Eva.Vqa
+Eva.Wsa	EVA Logo
 Evamd.Ini
 Ewod1.Img
 Ewod1.Lmf
@@ -10665,7 +10713,7 @@ Exitopen.Shp
 Exlghrt1.Aud
 Exnest1.Aud
 Exp.Shp
-Expand.Dat	Empty File
+Expand.Dat
 Expdirt1.Aud	Dirt Explosion
 Expel1.Aud
 Experm~1.Aud
@@ -10673,9 +10721,9 @@ Experm~2.Aud
 Experm~3.Aud
 Experm~4.Aud
 Expfire1.Aud
-Explode.Vqa
 Explode1.Aud
 Explode2.Aud
+Explode.Vqa
 Explolb.Shp
 Explolrg.Shp
 Explolrg.Shp	Big Explosion
@@ -10723,6 +10771,18 @@ Eyeminhp.Wsa
 Eyenorm.Wsa
 Eyenormp.Wsa
 Eyessir1.Aud	Yes Sir!
+F01.Sno	Crossing
+F01.Tem	Bridge
+F02.Sno	Crossing
+F02.Tem	Bridge
+F03.Sno	Crossing
+F03.Tem	Bridge
+F04.Sno	Crossing
+F04.Tem	Bridge
+F05.Sno	Crossing
+F05.Tem	Bridge
+F06.Sno	Crossing
+F06.Tem	Bridge
 F007747e.Vqa
 F007748e.Vqa
 F008798e.Vqa
@@ -10740,8 +10800,6 @@ F009848e.Vqa
 F009849e.Vqa
 F009856e.Vqa
 F009857e.Vqa
-F01.Sno	Crossing
-F01.Tem	Bridge
 F010898e.Vqa
 F010899e.Vqa
 F018798e.Vqa
@@ -10749,21 +10807,11 @@ F018799e.Vqa
 F019748e.Vqa
 F019848e.Vqa
 F019849e.Vqa
-F02.Sno	Crossing
-F02.Tem	Bridge
 F028798e.Vqa
 F029748e.Vqa
 F029848e.Vqa
 F029849e.Vqa
-F03.Sno	Crossing
-F03.Tem	Bridge
 F038798e.Vqa
-F04.Sno	Crossing
-F04.Tem	Bridge
-F05.Sno	Crossing
-F05.Tem	Bridge
-F06.Sno	Crossing
-F06.Tem	Bridge
 F238750e.Vqa
 F_Compas.Shp
 F_Int.Shp
@@ -11004,12 +11052,11 @@ Ffon1.Aud
 Field1.Aud
 Fiend1.Aud	Tiberium Fiend
 Fiend2.Aud	Tiberium Fiend
-Fight.Map
 Fight1.Aud
 Fight2.Aud
 Fight3.Aud
+Fight.Map
 Fighter.Aud
-File.Wws
 File1.Vqa
 File2.Vqa
 File3.Vqa
@@ -11019,13 +11066,14 @@ File6.Vqa
 File7.Vqa
 File8.Vqa
 File9.Vqa
+File.Wws
 Findpage.Shp
 Finish1.Aud
 Fire01.Shp
-Fire02.Shp
-Fire03.Shp
 Fire1.Shp
+Fire02.Shp
 Fire2.Shp
+Fire03.Shp
 Fire3.Shp
 Fire4.Shp
 Fireamb1.Aud
@@ -11102,10 +11150,10 @@ Flamer2.Juv	Flame Sound
 Flamthro.Shp
 Flamtnk1.Aud	Flame Tank Fire
 Flapsout.Aud
+Flare1.Aud	Signal Flare Detected
 Flare.Flc
 Flare.Vqa	Flare Man
 Flare.Vqp	Flare Man
-Flare1.Aud	Signal Flare Detected
 Flaree1.Aud	Signal Flare Detected To The East
 Flaren1.Aud	Signal Flare Detected To The North
 Flares1.Aud	Signal Flare Detected To The South
@@ -11174,8 +11222,8 @@ Fona12.Tem
 Fona13.Tem
 Fona14.Tem
 Fona15.Tem
-Font.Pal
 Font6.Fnt
+Font.Pal
 Font_Ned.Fnt
 Forcicon.Shp
 Forcshld.Shp
@@ -11337,20 +11385,8 @@ Fullfnt3.Shp
 Fv.Hva
 Fv.Vxl
 Fvicon.Shp
-Fvtur.Hva
-Fvtur.Vxl
 Fvtur1.Hva
 Fvtur1.Vxl
-Fvtur10.Hva
-Fvtur10.Vxl
-Fvtur11.Hva
-Fvtur11.Vxl
-Fvtur12.Hva
-Fvtur12.Vxl
-Fvtur13.Hva
-Fvtur13.Vxl
-Fvtur14.Hva
-Fvtur14.Vxl
 Fvtur2.Hva
 Fvtur2.Vxl
 Fvtur3.Hva
@@ -11367,62 +11403,54 @@ Fvtur8.Hva
 Fvtur8.Vxl
 Fvtur9.Hva
 Fvtur9.Vxl
+Fvtur10.Hva
+Fvtur10.Vxl
+Fvtur11.Hva
+Fvtur11.Vxl
+Fvtur12.Hva
+Fvtur12.Vxl
+Fvtur13.Hva
+Fvtur13.Vxl
+Fvtur14.Hva
+Fvtur14.Vxl
+Fvtur.Hva
+Fvtur.Vxl
 Fvuico.Shp
 Fwp.Aud	Fight Win Prevail
 Fyell1.Aud
 Fyell2.Aud
 Fyell3.Aud
 Fyell4.Aud
-GDI-01.Aud
-GDI-02.Aud
-GDI-03a.Aud
-GDI-03b.Aud
-GDI-04.Aud
-GDI-05a.Aud
-GDI-05b.Aud
-GDI-06a.Aud
-GDI-06b.Aud
-GDI-07.Aud
-GDI-08.Aud
+GDI-12.Aud
+GDI-11.Aud
+GDI-10a.Aud
+GDI-10b.Aud
 GDI-09a.Aud
 GDI-09b.Aud
 GDI-09c.Aud
 GDI-09d.Aud
-GDI-10a.Aud
-GDI-10b.Aud
-GDI-11.Aud
-GDI-12.Aud
+GDI-08.Aud
+GDI-07.Aud
+GDI-06a.Aud
+GDI-06b.Aud
+GDI-05a.Aud
+GDI-05b.Aud
+GDI-04.Aud
+GDI-03a.Aud
+GDI-03b.Aud
+GDI-02.Aud
+GDI-01.Aud
 GDI01_Sb.Vqa
-GDI02_Sb.Vqa
-GDI03_Sb.Vqa
-GDI1.Vqa	Capture The Beachead
-GDI1.Vqp	Capture The Beachead
-GDI10.Vqa	Play With The Orcas
-GDI10.Vqp	Play With The Orcas
-GDI10a.Ini
-GDI10a.Map
-GDI10b.Ini
-GDI10b.Map
-GDI11.Vqa	Find Delphi
-GDI11.Vqp	Find Delphi
-GDI11a.Ini
-GDI11a.Map
-GDI12.Vqa	Get Mobius
-GDI12.Vqp	Get Mobius
-GDI12a.Ini
-GDI12a.Map
-GDI13.Vqa	Destroy Bio Lab
-GDI13.Vqp	Destroy Bio Lab
-GDI14.Vqa	Destroy Nod Forces
-GDI14.Vqp	Destroy Nod Forces
-GDI15.Vqa	Destroy Nod Base
-GDI15.Vqp	Destroy Nod Base
+GDI1.Vqa	Capture The Beachhead
+GDI1.Vqp	Capture The Beachhead
 GDI1a.Ini
 GDI1a.Map
+GDI02_Sb.Vqa
 GDI2.Vqa	Destroy Nod Refinery
 GDI2.Vqp	Destroy Nod Refinery
 GDI2a.Ini
 GDI2a.Map
+GDI03_Sb.Vqa
 GDI3.Vqa	Destroy Sam Sites
 GDI3.Vqp	Destroy Sam Sites
 GDI3a.Ini
@@ -11471,6 +11499,26 @@ GDI9c.Ini
 GDI9c.Map
 GDI9d.Ini
 GDI9d.Map
+GDI10.Vqa	Play With The Orcas
+GDI10.Vqp	Play With The Orcas
+GDI10a.Ini
+GDI10a.Map
+GDI10b.Ini
+GDI10b.Map
+GDI11.Vqa	Find Delphi
+GDI11.Vqp	Find Delphi
+GDI11a.Ini
+GDI11a.Map
+GDI12.Vqa	Get Mobius
+GDI12.Vqp	Get Mobius
+GDI12a.Ini
+GDI12a.Map
+GDI13.Vqa	Destroy Bio Lab
+GDI13.Vqp	Destroy Bio Lab
+GDI14.Vqa	Destroy Nod Forces
+GDI14.Vqp	Destroy Nod Forces
+GDI15.Vqa	Destroy Nod Base
+GDI15.Vqp	Destroy Nod Base
 GDI_Finl.Vqa
 GDI_Flag.Vqa
 GDI_Logo.Vqa
@@ -11532,8 +11580,8 @@ GDImap05.Pcx
 GDImap05.Vqa
 GDImov.Inf
 GDIopen.Aud
-GDItarget.Pal
 GDItarget2.Shp
+GDItarget.Pal
 GPSbox.Shp	GPS
 GPSlnch.Vqa
 GPSsicon.Shp	GPS Satellite
@@ -11662,8 +11710,8 @@ Gaprismk.Shp
 Garadr.Shp
 Garadr_A.Shp
 Garadrmk.Shp
-Garbage.Aud
 Garbage4.Aud
+Garbage.Aud
 Garble.Vqa
 Garden1.Aud
 Garefn.Shp
@@ -11766,6 +11814,8 @@ Gclockw1.Aud
 Gclockw2.Aud
 Gcmuzzle.Shp
 Gdaircmk.Shp
+Gdansk.Vqa
+Gdansk.Vqp
 Gdcnstmk.Shp
 Gdcommmk.Shp
 Gdcsphmk.Shp
@@ -11775,6 +11825,8 @@ Gdgate_A.Shp
 Gdgcanmk.Shp
 Gdgiicon.Shp
 Gdgiuico.Shp
+Gdilose2.Vqa
+Gdilose2.Vqp
 Gdnarrowp.Pcx
 Gdnarrowr.Pcx
 Gdorepmk.Shp
@@ -12214,7 +12266,7 @@ Gldeptmk.Shp
 Glgapmk.Shp
 Glgate_A.Shp
 Glgcanmk.Shp
-Glnch4.Aud	Rpg Launch
+Glnch4.Aud	RPG Launch
 Global.Img
 Global.Odf
 Global.Tex
@@ -12223,8 +12275,6 @@ Globalai.Csv
 Globe.Shp
 Gloom.Aud	Gloom
 Gloop1.Aud
-Gloop10.Aud
-Gloop11.Aud
 Gloop2.Aud
 Gloop3.Aud
 Gloop4.Aud
@@ -12233,6 +12283,8 @@ Gloop6.Aud
 Gloop7.Aud
 Gloop8.Aud
 Gloop9.Aud
+Gloop10.Aud
+Gloop11.Aud
 Glorepmk.Shp
 Glowpot.Lbm
 Glpilemk.Shp
@@ -12307,8 +12359,10 @@ Gothic2.Aud
 Gothic3.Aud
 Gotit1.Aud
 Gotshot1.Aud
-Grad12fn.Fnt
+Gpslnch.Vqa
+Gpslnch.Vqp
 Grad6fnt.Fnt
+Grad12fn.Fnt
 Granite1.Aud
 Grdfoot1.Aud
 Grdfoot2.Aud
@@ -12580,21 +12634,21 @@ Gugapmk.Shp
 Gugate_A.Shp
 Gugcanmk.Shp
 Gulp1.Aud
-Gun.Shp	Gun Turret
-Gun.Shp	Turret
+Gun5.Aud	Pistol 2
+Gun5.Juv	Pistol 2
+Gun8.Aud	Gunshot
+Gun8.Juv	Gunshot
 Gun11.Aud	Minigunner Shot
 Gun13.Aud	Pillbox Shot
-Gun18.Aud	
+Gun18.Aud
 Gun18.Juv	Gunshot
 Gun19.Aud	Gunshot
 Gun19.Juv	Gunshot
 Gun20.Aud	Gunshot
 Gun20.Juv	Gunshot
 Gun27.Aud	Pistol 1
-Gun5.Aud	Pistol 2
-Gun5.Juv	Pistol 2
-Gun8.Aud	Gunshot
-Gun8.Juv	Gunshot
+Gun.Shp	Gun Turret
+Gun.Shp	Turret
 Gunaim1.Aud
 Gunboat.Vqa	Gunboat Blowing Up Turret
 Gunboat.Vqp	Gunboat Blowing Up Turret
@@ -12673,16 +12727,11 @@ Guyardmk.Shp
 Guyokay1.Aud	Okay
 Guyyeah1.Aud	Yeah?
 Gwepicon.Shp
-H18tur.Hva
 H1bite1.Aud
 H1die1.Aud
 H1hurt1.Aud
 H1hurt2.Aud
 H1loitr1.Aud
-H201.Vqa
-H204.Vqa
-H20pipe1.Aud
-H20pipe2.Aud
 H2atk1.Aud
 H2die1.Aud
 H2hurt1.Aud
@@ -12704,7 +12753,6 @@ H2oin2.Aud
 H2oin3.Aud
 H2oloop1.Aud
 H2oout1.Aud
-H301.Vqa
 H3atk1.Aud
 H3atk2.Aud
 H3die1.Aud
@@ -12712,6 +12760,12 @@ H3hurt1.Aud
 H3hurt2.Aud
 H3loit1.Aud
 H3loit2.Aud
+H18tur.Hva
+H20pipe1.Aud
+H20pipe2.Aud
+H201.Vqa
+H204.Vqa
+H301.Vqa
 Hacker.Aud
 Halbast1.Aud
 Hand.Shp	Hand Of Nod
@@ -12741,12 +12795,12 @@ Hboxicon.Shp	Camo Pillbox
 Hboxmake.Sno
 Hboxmake.Tem
 Hboxmake.Urb
-Hbtn-Dn.Shp	Down
 Hbtn-Dn2.Shp	Down
-Hbtn-Up.Shp	Up
+Hbtn-Dn.Shp	Down
 Hbtn-Up2.Shp	Up
-Hc01-Min.Set
+Hbtn-Up.Shp	Up
 Hc01.Vqa
+Hc01-Min.Set
 Hc01_0.Vqa
 Hc01_1.Vqa
 Hc01_2.Vqa
@@ -12757,8 +12811,8 @@ Hc01esp1.Vqa
 Hc01esp2.Vqa
 Hc01esp3.Vqa
 Hc01vo1a.Aud
-Hc02-Min.Set
 Hc02.Vqa
+Hc02-Min.Set
 Hc02_0.Vqa
 Hc02_1.Vqa
 Hc02_2.Vqa
@@ -12769,14 +12823,14 @@ Hc02esp2.Vqa
 Hc02esp3.Vqa
 Hc02esp4.Vqa
 Hc02esp5.Vqa
-Hc03-Min.Set
 Hc03.Vqa
+Hc03-Min.Set
 Hc03_0.Vqa
 Hc03_1.Vqa
 Hc03_2.Vqa
 Hc03_3.Vqa
-Hc04-Min.Set
 Hc04.Vqa
+Hc04-Min.Set
 Hc04_0.Vqa
 Hc04_1.Vqa
 Hc04_2.Vqa
@@ -12812,18 +12866,19 @@ Hdstn01.Ubn
 Hdstn01.Urb
 Headhit2.Aud
 Headon1.Aud
-Heal.Flc
 Heal1.Aud
 Heal2.Aud	Medic Heal Sound
+Heal.Flc
 Healall.Shp
 Healer1.Aud	Healing Units
 Heallev1.Aud
 Healone.Shp
 Healthd.Shp
-Heart.Var	Heartbreak SFX
 Heart1a.Aud
 Heart1b.Aud
 Heart1c.Aud
+Heart.Aud	Heartbreak
+Heart.Var	Heartbreak Remix
 Hearth_A.Wsa	Zoom On Africa
 Hearth_E.Wsa	Zoom On Europe
 Heavyg.Aud	Demolition
@@ -12858,44 +12913,44 @@ Herb_.Wom
 Heroism.Aud	Heroism
 Hextreme.Ini
 Hextreme.Map
-Hf01-Min.Set
 Hf01.Vqa
+Hf01-Min.Set
 Hf01_0.Vqa
 Hf01_1.Vqa
 Hf01_2.Vqa
 Hf01_3.Vqa
-Hf02-Min.Set
 Hf02.Vqa
+Hf02-Min.Set
 Hf02_0.Vqa
 Hf02_1.Vqa
 Hf02_2.Vqa
 Hf02_3.Vqa
-Hf03-Min.Set
 Hf03.Vqa
+Hf03-Min.Set
 Hf03_0.Vqa
 Hf03_1.Vqa
 Hf03_2.Vqa
 Hf03_3.Vqa
-Hf04-Min.Set
 Hf04.Vqa
+Hf04-Min.Set
 Hf04_0.Vqa
 Hf04_1.Vqa
 Hf04_2.Vqa
 Hf04_3.Vqa
-Hf05-Min.Set
 Hf05.Vqa
+Hf05-Min.Set
 Hf05_0.Vqa
 Hf05_1.Vqa
 Hf05_2.Vqa
 Hf05_3.Vqa
-Hf06-Min.Set
 Hf06.Vqa
+Hf06-Min.Set
 Hf06_0.Vqa
 Hf06_1.Vqa
 Hf06_2.Vqa
 Hf06_3.Vqa
-Hf07-Min.Set
 Hf07.Vqa
+Hf07-Min.Set
 Hf07_0.Vqa
 Hf07_1.Vqa
 Hf07_2.Vqa
@@ -13042,9 +13097,11 @@ Hqicnh.Tem	Comm. Center
 Hqicnh.Win	Comm. Center
 Hqicon.Shp	Comm. Center
 Hqmake.Shp	Comm. Center
+Hradar.Ea
 Hradar.GDI	GDI Radar And Logo
 Hradar.JP	JP Radar And Logo
 Hradar.Nod	Nod Radar And Logo
+Hradar.Ww
 Hrddirt1.Aud
 Hrddirt2.Aud
 Hrddirt3.Aud
@@ -13096,8 +13153,6 @@ Hujung1.Aud
 Hujung1.Hmi
 Hujung1.Xmi
 Human1.Aud
-Human10.Aud
-Human11.Aud
 Human2.Aud
 Human3.Aud
 Human4.Aud
@@ -13106,6 +13161,8 @@ Human6.Aud
 Human7.Aud
 Human8.Aud
 Human9.Aud
+Human10.Aud
+Human11.Aud
 Hummer1.Aud
 Hummer2.Aud
 Hummer3.Aud
@@ -13250,12 +13307,20 @@ Hyte15.Tem
 Hyte15.Urb
 I.Mix
 I_Am.Aud	I Am
+Icbm1.Aud	Big Huge ICBM Rocket
 Icbm.Hva
 Icbm.Vxl
-Icbm1.Aud	Big Huge Icbm Rocket
 Icbmlnch.Vqa
 Ice01.Sno
 Ice01.Tem
+Ice02.Sno
+Ice02.Tem
+Ice03.Sno
+Ice03.Tem
+Ice04.Sno
+Ice04.Tem
+Ice05.Sno
+Ice05.Tem
 Ice0101.Des
 Ice0101.Sno
 Ice0102.Des
@@ -13384,8 +13449,6 @@ Ice0163.Des
 Ice0163.Sno
 Ice0164.Des
 Ice0164.Sno
-Ice02.Sno
-Ice02.Tem
 Ice0201.Des
 Ice0201.Sno
 Ice0202.Des
@@ -13514,8 +13577,6 @@ Ice0263.Des
 Ice0263.Sno
 Ice0264.Des
 Ice0264.Sno
-Ice03.Sno
-Ice03.Tem
 Ice0301.Des
 Ice0301.Sno
 Ice0302.Des
@@ -13644,10 +13705,6 @@ Ice0363.Des
 Ice0363.Sno
 Ice0364.Des
 Ice0364.Sno
-Ice04.Sno
-Ice04.Tem
-Ice05.Sno
-Ice05.Tem
 Icecliff.Ini
 Icecliff.Map
 Icecrak1.Aud	Ice Crack
@@ -13673,8 +13730,8 @@ Impswd1.Aud
 In.Vqa
 In_Cavtwig1.Aud
 Income1.Aud	Incoming Missile
-Ind.Aud	Industrial
 Ind2.Aud	Canyon Chase
+Ind.Aud	Industrial
 Indeep.Aud
 Indeep.Wav
 Index.Dat
@@ -13697,7 +13754,6 @@ Insd01_E.Vqa
 Insd02_E.Vqa
 Insites.Vqa	SAM Site Shooting Plane
 Insites.Vqp	SAM Site Shooting Plane
-Inst.Vqa
 Inst00.Bmp
 Inst01.Bmp
 Inst01.Cps
@@ -13744,11 +13800,12 @@ Inst13.Aud
 Inst14.Aud
 Inst15.Aud
 Inst16.Aud
+Inst.Vqa
 Instal1.Aud
+Install2.Cps
 Install.Aud
 Install.Cps
 Install.Wsa
-Install2.Cps
 Int.Shp
 Interior.Mix
 Interior.Pal
@@ -13760,25 +13817,25 @@ Intrgt_F.Vqa
 Intrgt_G.Vqa
 Intrgt_I.Vqa
 Intrgt_S.Vqa
-Intro.Aud
-Intro.Vqa
 Intro2.Vqa	C&C Intro Movie
 Intro2.Vqp	C&C Intro Movie
+Intro.Aud
+Intro.Vqa
 Intro_E.Vqa
 Intro_F.Vqa
 Intro_G.Vqa
 Intro_I.Vqa
 Intro_S.Vqa
 Invasion.Map
-Inviso.Shp
 Inviso2.Aud
+Inviso.Shp
 Invul2.Aud	Flame Turret Up
 Invulbox.Shp	Iron Curtain
 Invun.Shp	Heal All Units
-Ion.Ini
 Ion1.Aud	Ion Cannon
 Ion1.Aud	Ion Cannon Strike
 Ion1.Juv	Ion Cannon
+Ion.Ini
 IonSFX.Shp	Ion Cannon Discharge
 Ionbeam.Shp
 Ionchrg1.Aud	Ion Cannon Charging
@@ -13787,6 +13844,8 @@ Ionicnh.Des	Ion Cannon
 Ionicnh.Tem	Ion Cannon
 Ionicnh.Win	Ion Cannon
 Ionicon.Shp	Ion Cannon
+Ionnod.Vqa
+Ionnod.Vqp
 Ionredy1.Aud	Ion Cannon Ready
 Ionstorm.Aud	Ion Storm Ambient
 Iontest.Vqa	Ion Cannon Test
@@ -14035,8 +14094,6 @@ Jat214.Des
 Jat215.Des
 Jat216.Des
 Jbird1.Aud
-Jbird10.Aud
-Jbird11.Aud
 Jbird2.Aud
 Jbird3.Aud
 Jbird4.Aud
@@ -14045,7 +14102,9 @@ Jbird6.Aud
 Jbird7.Aud
 Jbird8.Aud
 Jbird9.Aud
-Jburn1.Aud Burn Baby Burn
+Jbird10.Aud
+Jbird11.Aud
+Jburn1.Aud	Burn Baby Burn
 Jchrge1.Aud	Fully Charged
 Jcrisp1.Aud	Extra Crispy
 Jdance1.Aud	Lets Dance
@@ -14053,9 +14112,9 @@ Jdi_V2.Aud	Take Em' Out
 Jeep.Hva
 Jeep.Shp
 Jeep.Vxl
-Jeepicnh.Des	Hummvee
-Jeepicnh.Tem	Hummvee
-Jeepicnh.Win	Hummvee
+Jeepicnh.Des	Humvee
+Jeepicnh.Tem	Humvee
+Jeepicnh.Win	Humvee
 Jeepicon.Shp
 Jeeptur.Hva
 Jeeptur.Vxl
@@ -14071,13 +14130,13 @@ Journal1.Aud
 Journal2.Aud
 Jshock1.Aud	Shocking
 Jugcrash.Aud
-Jugger.Shp
 Jugger1.Aud	Juggernaut Firing Sound
+Jugger.Shp
 Juggicon.Shp
 Juggmove.Aud
 Jump1.Aud
-Jumpjet.Shp	Jumpjet Infantry
 Jumpjet1.Aud	Jump Jet Fires Gun
+Jumpjet.Shp	Jumpjet Infantry
 Jundr.Img
 Jundr.Lmf
 Jundr.Lsv
@@ -14089,7 +14148,7 @@ Jungle2.Aud
 Jungle3.Aud
 Jungle4.Aud
 Justdoit.Aud	Just Do It!
-Justdoit.Var
+Justdoit.Var	Just Do It! Remix
 Jyes1.Aud	Yes
 K_Light1.Shp
 K_Light2.Shp
@@ -14112,14 +14171,14 @@ Key.Ini
 Keyboard.Ini
 Keyboardmd.Ini
 Keystrok.Aud
+Kia6pt.Fnt
+Kia6pt.Fon
 Kia.Tre
 Kia.Trf
 Kia.Trg
 Kia.Tri
 Kia.Trs
 Kia.Vqa
-Kia6pt.Fnt
-Kia6pt.Fon
 Kia_Clue.Vqa
 Kia_Crim.Vqa
 Kia_Ingm.Vqa
@@ -14131,9 +14190,9 @@ Kiacred.Tri
 Kiacred.Trs
 Kiaopt.Shp
 Kiaover.Vqa
-Kick.Shp
 Kick1.Aud
 Kick2.Aud
+Kick.Shp
 Kickdoor.Aud
 Kill_GDI.Vqa
 Killmech.Vqa
@@ -14150,39 +14209,39 @@ Knife2a.Aud
 Knife2b.Aud
 Kosyfre1.Aud	Kosygin Freed
 Kosyres1.Aud	Kosygin Rescued
-Kp01-Min.Set
 Kp01.Vqa
+Kp01-Min.Set
 Kp01_0.Vqa
 Kp01_1.Vqa
 Kp01_2.Vqa
 Kp01_3.Vqa
-Kp02-Min.Set
 Kp02.Vqa
+Kp02-Min.Set
 Kp02_0.Vqa
 Kp02_1.Vqa
 Kp02_2.Vqa
 Kp02_3.Vqa
-Kp03-Min.Set
 Kp03.Vqa
+Kp03-Min.Set
 Kp03_0.Vqa
 Kp03_1.Vqa
 Kp03_2.Vqa
 Kp03_3.Vqa
-Kp04-Min.Set
 Kp04.Vqa
+Kp04-Min.Set
 Kp04_0.Vqa
 Kp04_1.Vqa
 Kp04_2.Vqa
 Kp04_3.Vqa
-Kp05-Min.Set
 Kp05.Vqa
+Kp05-Min.Set
 Kp05_0.Vqa
 Kp05_1.Vqa
 Kp05_2.Vqa
 Kp05_3.Vqa
-Kp06-Min.Set
 Kp06.Img
 Kp06.Vqa
+Kp06-Min.Set
 Kp06_0.Vqa
 Kp06_1.Vqa
 Kp06_2.Vqa
@@ -14191,8 +14250,8 @@ Kp06esp1.Vqa
 Kp06esp2.Vqa
 Kp06esp3.Vqa
 Kp06esp4.Vqa
-Kp07-Min.Set
 Kp07.Vqa
+Kp07-Min.Set
 Kp07_0.Vqa
 Kp07_1.Vqa
 Kp07_2.Vqa
@@ -14209,10 +14268,60 @@ Kvolc.Pcx
 Kvolc.Ver
 Kyoto.Aud
 L01.Vqa
+L1_Dc.Img
+L1_Dc.Map
+L1_Dc.Odf
+L1_Dc.Te_
+L1_Dc.Tex
+L1_Dc.Ver
+L1_Dc_H.Pcx
+L1_Dc_L.Pcx
+L3_Dh.Map
+L3_Dh.Odf
+L3_Dh.Te_
+L3_Dh.Tex
+L3_Dh.Ver
+L3_Dh_H.Pcx
+L3_Dh_L.Pcx
 L04.Vqa
+L4_Hj.Map
+L4_Hj.Odf
+L4_Hj.Te_
+L4_Hj.Tex
+L4_Hj.Ver
+L4_Hj_H.Pcx
+L4_Hj_L.Pcx
+L5_Hc.Map
+L5_Hc.Odf
+L5_Hc.Te_
+L5_Hc.Tex
+L5_Hc.Ver
+L5_Hc_H.Pcx
+L5_Hc_L.Pcx
 L07.Vqa
+L7_Dh.Map
+L7_Dh.Odf
+L7_Dh.Te_
+L7_Dh.Tex
+L7_Dh.Ver
+L7_Dh_H.Pcx
+L7_Dh_L.Pcx
 L08.Vqa
+L8_Sj.Map
+L8_Sj.Odf
+L8_Sj.Te_
+L8_Sj.Tex
+L8_Sj.Ver
+L8_Sj_H.Pcx
+L8_Sj_L.Pcx
 L09.Vqa
+L9_Dr.Map
+L9_Dr.Odf
+L9_Dr.Te_
+L9_Dr.Tex
+L9_Dr.Ver
+L9_Dr_H.Pcx
+L9_Dr_L.Pcx
 L10_Dc.Map
 L10_Dc.Odf
 L10_Dc.Te_
@@ -14262,14 +14371,6 @@ L19_Bc.Tex
 L19_Bc.Ver
 L19_Bc_H.Pcx
 L19_Bc_L.Pcx
-L1_Dc.Img
-L1_Dc.Map
-L1_Dc.Odf
-L1_Dc.Te_
-L1_Dc.Tex
-L1_Dc.Ver
-L1_Dc_H.Pcx
-L1_Dc_L.Pcx
 L20_Bb.Map
 L20_Bb.Odf
 L20_Bb.Te_
@@ -14277,48 +14378,6 @@ L20_Bb.Tex
 L20_Bb.Ver
 L20_Bb_H.Pcx
 L20_Bb_L.Pcx
-L3_Dh.Map
-L3_Dh.Odf
-L3_Dh.Te_
-L3_Dh.Tex
-L3_Dh.Ver
-L3_Dh_H.Pcx
-L3_Dh_L.Pcx
-L4_Hj.Map
-L4_Hj.Odf
-L4_Hj.Te_
-L4_Hj.Tex
-L4_Hj.Ver
-L4_Hj_H.Pcx
-L4_Hj_L.Pcx
-L5_Hc.Map
-L5_Hc.Odf
-L5_Hc.Te_
-L5_Hc.Tex
-L5_Hc.Ver
-L5_Hc_H.Pcx
-L5_Hc_L.Pcx
-L7_Dh.Map
-L7_Dh.Odf
-L7_Dh.Te_
-L7_Dh.Tex
-L7_Dh.Ver
-L7_Dh_H.Pcx
-L7_Dh_L.Pcx
-L8_Sj.Map
-L8_Sj.Odf
-L8_Sj.Te_
-L8_Sj.Tex
-L8_Sj.Ver
-L8_Sj_H.Pcx
-L8_Sj_L.Pcx
-L9_Dr.Map
-L9_Dr.Odf
-L9_Dr.Te_
-L9_Dr.Tex
-L9_Dr.Ver
-L9_Dr_H.Pcx
-L9_Dr_L.Pcx
 Lab-Lo.Cps	Time Machine
 Lab.Pcx	Time Machine
 Labamb1.Aud
@@ -14341,6 +14400,10 @@ Landing.Vqa
 Landing.Vqp
 Lands-Lo.Cps	Hitler Vanishing
 Landsbrg.Pcx	Hitler Vanishing
+Lang_Eng.Ini
+Lang_Fre.Ini
+Lang_Ger.Ini
+Lang_Jap.Ini
 Langrule.Ini
 Language.Eng
 Language.Fre
@@ -14404,6 +14467,7 @@ Lat213.Des
 Lat214.Des
 Lat215.Des
 Lat216.Des
+Latency.Bmp
 Lati.Pcx
 Lati.Shp
 Laugh1.Aud	Laugh
@@ -14460,11 +14524,11 @@ Libubn.Pal
 Liburb.Pal
 Lieutena.Pcx
 Light.Pal
-Lighton.Aud
 Lighton1.Aud
+Lighton.Aud
 Limo.Hva
 Limo.Vxl
-Limpbom1.Aud	Limpet Drone Attatch
+Limpbom1.Aud	Limpet Drone Attach
 Limpc3.Aud	Limpet Drone Move
 Limpc4.Aud	Limpet Drone Move
 Limped.Shp
@@ -14497,8 +14561,6 @@ Lldie1.Aud
 Llloitr1.Aud
 Llloitr2.Aud
 Llshapes.Shp
-Load.Mix
-Load.Pcx
 Load1.Aud	Mission Loaded
 Load400a.Pcx
 Load400b.Pcx
@@ -14512,6 +14574,8 @@ Load600a.Pcx
 Load600b.Pcx
 Load600c.Pcx
 Load600d.Pcx
+Load.Mix
+Load.Pcx
 Loading.Pcx
 Loadmd.Mix
 Loadout.Shp
@@ -14905,10 +14969,10 @@ Local.Mix
 Localmd.Mix
 Loginscreen.Pal
 Loginscreen.Shp
+Logo01.Shp
 Logo.Pcx
 Logo.Vqa	Westwood Logo
 Logo.Vqp	Westwood Logo
-Logo01.Shp
 Logos.Shp	Score Screen Logos
 Loit.Vqa
 Lokbrk1.Aud
@@ -14920,14 +14984,14 @@ Lolg_H.Pcx
 Lolg_H.Vqa
 Lolg_L.Pcx
 Lonetrop.Aud	Lone Troop
+Loop-4.Cps
+Loop-4.Wsa
+Loop-2.Cps
+Loop-2.Wsa
 Loop-1.Cps
 Loop-1.Wsa
 Loop-1w.Cps
 Loop-1w.Wsa
-Loop-2.Cps
-Loop-2.Wsa
-Loop-4.Cps
-Loop-4.Wsa
 Loop7.Aud
 Loopie6m.Aud	Satellite Sounds
 Lopower1.Aud	Low Power
@@ -14947,6 +15011,8 @@ Lqdie1.Aud
 Lqloitr1.Aud
 Lqloitr2.Aud
 Lredsmk1.Shp
+Lresizle.Vqa
+Lresizle.Vqp
 Lrotor.Shp
 Lrtest1.Aud
 Ls640a01.Shp
@@ -15229,49 +15295,13 @@ M_Stlthd.Aud
 M_Ubtel1.Aud
 M_Unit1.Aud
 M_Weapn1.Aud
-Ma01-Min.Set
 Ma01.Vqa
+Ma01-Min.Set
 Ma01_0.Vqa
 Ma01_1.Vqa
 Ma01_2.Vqa
 Ma01_3.Vqa
 Ma01spnr.Vqa
-Ma02-Min.Set
-Ma02.Vqa
-Ma02_0.Vqa
-Ma02_1.Vqa
-Ma02_2.Vqa
-Ma02_3.Vqa
-Ma02over.Vqa
-Ma04-Min.Set
-Ma04.Vqa
-Ma04_0.Vqa
-Ma04_1.Vqa
-Ma04_2.Vqa
-Ma04_3.Vqa
-Ma04over.Vqa
-Ma04ovr2.Vqa
-Ma04vo1a.Aud
-Ma05-Min.Set
-Ma05.Vqa
-Ma05_0.Vqa
-Ma05_1.Vqa
-Ma05_2.Vqa
-Ma05_3.Vqa
-Ma06-Min.Set
-Ma06.Vqa
-Ma06_0.Vqa
-Ma06_1.Vqa
-Ma06_2.Vqa
-Ma06_3.Vqa
-Ma06elev.Vqa
-Ma07-Min.Set
-Ma07.Vqa
-Ma07_0.Vqa
-Ma07_1.Vqa
-Ma07_2.Vqa
-Ma07_3.Vqa
-Ma08-Min.Set
 Ma1ev01.Wav
 Ma1ev02.Wav
 Ma1ev03.Wav
@@ -15284,7 +15314,29 @@ Ma1ev09.Wav
 Ma1ev10.Wav
 Ma1ev11.Wav
 Ma1ev12.Wav
+Ma02.Vqa
+Ma02-Min.Set
+Ma02_0.Vqa
+Ma02_1.Vqa
+Ma02_2.Vqa
+Ma02_3.Vqa
+Ma02over.Vqa
 Ma2ta01.Wav
+Ma04.Vqa
+Ma04-Min.Set
+Ma04_0.Vqa
+Ma04_1.Vqa
+Ma04_2.Vqa
+Ma04_3.Vqa
+Ma04over.Vqa
+Ma04ovr2.Vqa
+Ma04vo1a.Aud
+Ma05.Vqa
+Ma05-Min.Set
+Ma05_0.Vqa
+Ma05_1.Vqa
+Ma05_2.Vqa
+Ma05_3.Vqa
 Ma5ev01.Wav
 Ma5ev02.Wav
 Ma5ev03.Wav
@@ -15300,9 +15352,23 @@ Ma5ta01.Wav
 Ma5ta02.Wav
 Ma5ta03.Wav
 Ma5ta04.Wav
+Ma06.Vqa
+Ma06-Min.Set
+Ma06_0.Vqa
+Ma06_1.Vqa
+Ma06_2.Vqa
+Ma06_3.Vqa
+Ma06elev.Vqa
 Ma6ev01.Wav
 Ma6ev02.Wav
+Ma07.Vqa
+Ma07-Min.Set
+Ma07_0.Vqa
+Ma07_1.Vqa
+Ma07_2.Vqa
+Ma07_3.Vqa
 Ma7ev01.Wav
+Ma08-Min.Set
 Ma8ia01.Wav
 Ma8ia02.Wav
 Ma8ta01.Wav
@@ -15339,8 +15405,8 @@ Magchnk1.Aud
 Magdrop1.Aud
 Mage.Aud
 Mageamb1.Aud
-Magic!.Aud
 Magic1.Aud
+Magic!.Aud
 Magic_.Wom
 Magloop2.Aud
 Magloop3.Aud
@@ -15360,26 +15426,28 @@ Manfear1.Aud
 Manhatta.Map
 Manhole1.Aud
 Manpain1.Aud
+Map1.Aud	Map Theme
+Map1.Pal
 Map.Aud	Map Select Music
 Map.Fnt
 Map.Pal	Map
 Map.Shp	Earth
-Map1.Aud	Map Theme
-Map1.Pal
 Map_Gry2.Pal
 Map_Loc2.Pal
 Map_Loc3.Pal
+Map_Loc4.Pal
 Map_Locl.Pal
+Map_Prob.Pal
 Map_Prog.Pal
 Maps.Aud
+Mapsel01.Ini	FS Map Selection Settings
 Mapsel.Ini
 Mapsel.Pal
-Mapsel01.Ini	FS Map Selection Settings
 Mapselmd.Ini
 Mapwipe2.Aud
 Mapwipe5.Aud
-March.Aud	March To Doom
 March1.Aud
+March.Aud	March To Doom
 Masasslt.Vqa	Assault On Moscow
 Masasslt.Vqp	Assault On Moscow
 Matt.Shp
@@ -16167,10 +16235,10 @@ Metalr5.Aud
 Metdebri.Shp
 Meteor1.Aud	Large Meteor
 Meteor2.Aud	Small Meteor
-Meter.Aud
-Meter.Flc
 Meter000.Pcx
 Meter001.Pcx
+Meter.Aud
+Meter.Flc
 Methit1.Aud	Meteor Hits Ground
 Metlarge.Shp	Large Meteor
 Metlhit1.Aud
@@ -16200,11 +16268,11 @@ Mgun-S.Shp	Machine Gun Fire (South)
 Mgun-Se.Shp	Machine Gun Fire (Southeast)
 Mgun-Sw.Shp	Machine Gun Fire (Southwest)
 Mgun-W.Shp	Machine Gun Fire (West)
-Mgun.Shp	Gunboat Gun
-Mgun11.Aud	Gunshot
-Mgun11.Juv	Gunshot
 Mgun2.Aud	Gunshot
 Mgun2.Juv	Gunshot
+Mgun11.Aud	Gunshot
+Mgun11.Juv	Gunshot
+Mgun.Shp	Gunboat Gun
 Mguninf1.Aud	Rapid Shoot
 Mhear1.Aud	I Hear Ya
 Mhello1.Aud	Hello
@@ -16234,11 +16302,11 @@ Mindanim.Shp
 Mindanimr.Shp
 Mindicon.Shp
 Minduico.Shp
+Mine1.Aud	AP Mine
 Mine.Shp	Mine
 Mine.Sno
 Mine.Tem
 Mine.Urb
-Mine1.Aud	AP Mine
 Mineblo1.Aud	AT Mine
 Minelay1.Aud	Mine Placed
 Minigun.Shp	Muzzle Flash
@@ -16251,9 +16319,9 @@ Minv.Shp	AT Mine
 Minvmake.Shp	AT Mine
 Miragetank.Bmp
 Mirror1.Aud
+Misl1.Aud	Bike Missile
 Misl.Hva
 Misl.Vxl
-Misl1.Aud	Bike Missile
 Mislchem.Hva
 Mislchem.Vxl
 Mislmlti.Hva
@@ -16265,14 +16333,16 @@ Mislsam.Vxl
 Misnlst1.Aud	Your Mission Is A Failure
 Misnwon1.Aud	Mission Accomplished
 Miss.Shp	Tech Center
-Missile.Shp
 Missile1.Aud	Ground To Air Missile Shot
 Missile2.Shp	Nuclear Strike
 Missile6.Aud
 Missile7.Aud	Air To Air Missile
+Missile.Shp
 Missing.Aud
-Mission.Ini
 Mission1.Ini	FS Mission Briefings
+Mission.Fre
+Mission.Ger
+Mission.Ini
 Missionmd.Ini
 Missions.Mmx
 Missions.Pkt
@@ -16308,6 +16378,9 @@ Mlrstur.Vxl
 Mltiicon.Shp
 Mltimisl.Shp
 Mltiplyr.Wsa	Multiplayer Score Screen
+Mltsceng.Wsa
+Mltscfre.Wsa
+Mltscger.Wsa
 Mmch.Shp	Titan
 Mmchbarl.Hva
 Mmchbarl.Vxl
@@ -16374,8 +16447,8 @@ Morpat1c.Aud
 Morpatk2.Aud
 Morpdie1.Aud
 Morpdie2.Aud
-Morph.Flc
 Morph1.Aud
+Morph.Flc
 Morphfld.Flc
 Morphit1.Aud
 Morphit2.Aud
@@ -16397,10 +16470,10 @@ Motor4.Aud
 Motor8.Aud
 Motorize.Wav
 Mountmoras.Map
+Mouse3.Shp
 Mouse.Aud
 Mouse.Sha
 Mouse.Shp
-Mouse3.Shp
 Mouseh.Shp
 Mousel.Shp
 Mouseoff.Aud
@@ -16427,6 +16500,7 @@ Mp01du.Map
 Mp01t4.Map
 Mp02t2.Map
 Mp03t4.Map
+Mp3dec.Asi
 Mp04t8.Map
 Mp05du.Map
 Mp05mw.Map
@@ -16488,7 +16562,6 @@ Mp32mw.Map
 Mp32s8.Map
 Mp33u4.Map
 Mp34u4.Map
-Mp3dec.Asi
 Mpain1.Aud
 Mpain2.Aud
 Mpain3.Aud
@@ -16629,6 +16702,7 @@ Mrblwlk6.Aud
 Mrblwlk7.Aud
 Mrespon1.Aud	Medic Reporting
 Mrise1.Aud	Rise N Shine
+Mrj7.Aud
 Mrj.Hva
 Mrj.Shp	Radar Jammer
 Mrj.Vxl
@@ -16914,8 +16988,8 @@ Msbyu04.Wav
 Msbyu05.Wav
 Mscso03.Wav
 Mscso04.Wav
-Msg.Cps
 Msg1.Aud	Message
+Msg.Cps
 Msgleft.Shp
 Msgmid.Shp
 Msgrt.Shp
@@ -17533,8 +17607,8 @@ Mstl.Shp
 Mstl_A.Shp
 Mstlicon.Shp
 Mstlmk.Shp
-Msub.Shp	Missle Sub
-Msubicon.Shp	Missle Sub
+Msub.Shp	Missile Sub
+Msubicon.Shp	Missile Sub
 Mt1ds01.Wav
 Mt1ds02.Wav
 Mt1ds03.Wav
@@ -17581,6 +17655,7 @@ Mthnorm.Wsa
 Mthnormp.Wsa
 Mtiber1.Aud	Mind The Tiberium
 Mtimein1.Aud	Mission Timer Initialised
+Mtitle.Pcx
 Mtlcrek2.Aud
 Mtlcrek3.Aud
 Mtlcrek4.Aud
@@ -17628,8 +17703,8 @@ Mudwlk4.Aud
 Mudwlk5.Aud
 Mudwlk6.Aud
 Mudwlk7.Aud
-Multi.Pcx
 Multi01.Pkt
+Multi.Pcx
 Multiplayselection.Pal
 Multiplayselection.Shp
 Multscor.Pal
@@ -17675,9 +17750,9 @@ Mut2stn1.Aud
 Mut2stn2.Aud
 Mut2wlk1.Aud
 Mut2wlk2.Aud
-Mutant.Shp	Mutant
 Mutant2.Shp
-Mutant3.Shp	Mutant Sergent
+Mutant3.Shp	Mutant Sergeant
+Mutant.Shp	Mutant
 Mutants.Aud	Mutants
 Mutants.Ini
 Mutants.Map
@@ -17735,22 +17810,22 @@ Mw_D_F.Vqa
 Mw_D_G.Vqa
 Mw_D_I.Vqa
 Mw_D_S.Vqa
-Mwa-01.Des
-Mwa-01.Sno
-Mwa-01.Tem
-Mwa-01.Urb
-Mwa-02.Des
-Mwa-02.Sno
-Mwa-02.Tem
-Mwa-02.Urb
-Mwa-03.Des
-Mwa-03.Sno
-Mwa-03.Tem
-Mwa-03.Urb
 Mwa-04.Des
 Mwa-04.Sno
 Mwa-04.Tem
 Mwa-04.Urb
+Mwa-03.Des
+Mwa-03.Sno
+Mwa-03.Tem
+Mwa-03.Urb
+Mwa-02.Des
+Mwa-02.Sno
+Mwa-02.Tem
+Mwa-02.Urb
+Mwa-01.Des
+Mwa-01.Sno
+Mwa-01.Tem
+Mwa-01.Urb
 Mwar.Shp
 Mwar_1.Shp
 Mwar_2.Shp
@@ -17819,38 +17894,38 @@ Mwater14.Des
 Mwater14.Sno
 Mwater14.Tem
 Mwater14.Urb
-Mwb-01.Des
-Mwb-01.Sno
-Mwb-01.Tem
-Mwb-01.Urb
-Mwb-02.Des
-Mwb-02.Sno
-Mwb-02.Tem
-Mwb-02.Urb
-Mwb-03.Des
-Mwb-03.Sno
-Mwb-03.Tem
-Mwb-03.Urb
 Mwb-04.Des
 Mwb-04.Sno
 Mwb-04.Tem
 Mwb-04.Urb
-Mwc-01.Des
-Mwc-01.Sno
-Mwc-01.Tem
-Mwc-01.Urb
-Mwc-02.Des
-Mwc-02.Sno
-Mwc-02.Tem
-Mwc-02.Urb
-Mwc-03.Des
-Mwc-03.Sno
-Mwc-03.Tem
-Mwc-03.Urb
+Mwb-03.Des
+Mwb-03.Sno
+Mwb-03.Tem
+Mwb-03.Urb
+Mwb-02.Des
+Mwb-02.Sno
+Mwb-02.Tem
+Mwb-02.Urb
+Mwb-01.Des
+Mwb-01.Sno
+Mwb-01.Tem
+Mwb-01.Urb
 Mwc-04.Des
 Mwc-04.Sno
 Mwc-04.Tem
 Mwc-04.Urb
+Mwc-03.Des
+Mwc-03.Sno
+Mwc-03.Tem
+Mwc-03.Urb
+Mwc-02.Des
+Mwc-02.Sno
+Mwc-02.Tem
+Mwc-02.Urb
+Mwc-01.Des
+Mwc-01.Sno
+Mwc-01.Tem
+Mwc-01.Urb
 Mwcave01.Des
 Mwcave01.Tem
 Mwcave02.Des
@@ -18069,22 +18144,22 @@ Mwclif28.Des
 Mwclif28.Sno
 Mwclif28.Tem
 Mwclif28.Urb
-Mwd-01.Des
-Mwd-01.Sno
-Mwd-01.Tem
-Mwd-01.Urb
-Mwd-02.Des
-Mwd-02.Sno
-Mwd-02.Tem
-Mwd-02.Urb
-Mwd-03.Des
-Mwd-03.Sno
-Mwd-03.Tem
-Mwd-03.Urb
 Mwd-04.Des
 Mwd-04.Sno
 Mwd-04.Tem
 Mwd-04.Urb
+Mwd-03.Des
+Mwd-03.Sno
+Mwd-03.Tem
+Mwd-03.Urb
+Mwd-02.Des
+Mwd-02.Sno
+Mwd-02.Tem
+Mwd-02.Urb
+Mwd-01.Des
+Mwd-01.Sno
+Mwd-01.Tem
+Mwd-01.Urb
 Mwmn.Shp	Mutant
 Mwrench1.Aud	I'll Get My Wrench
 Mwslop01.Des
@@ -18230,11 +18305,11 @@ Naobel.Shp
 Naobel_A.Shp
 Naobel_B.Shp
 Naobelmk.Shp
-Napalm.Vqa	Planes Blowing Up Mobile HQ
-Napalm.Vqp	Planes Blowing Up Mobile HQ
 Napalm1.Shp	Small Fire
 Napalm2.Shp	Medium Fire
 Napalm3.Shp	Large Fire
+Napalm.Vqa	Planes Blowing Up Mobile HQ
+Napalm.Vqp	Planes Blowing Up Mobile HQ
 Napost.Shp
 Napost_A.Shp
 Napost_B.Shp
@@ -18318,7 +18393,6 @@ Nayard_C.Shp
 Nayard_D.Shp
 Nayard_S.Shp
 Nayardmk.Shp
-Naylook.Vqp
 Nc_Ran11.Aud
 Nchires.Mix
 Ndclon.Shp
@@ -18355,6 +18429,8 @@ Neon5.Aud
 Neon6.Aud
 Neon7.Aud
 Neutral.Mix
+Newlogo.Vqa
+Newlogo.Vqp
 Newmenu.Ini
 Newmorf1.Aud
 Newmorf2.Aud
@@ -18515,54 +18591,34 @@ Nobuild1.Aud	Unable To Build More
 Nocando.Aud
 Nocash1.Aud	Insufficient Funds
 Nocomp1.Aud
-Nod-01.Aud
-Nod-02.Aud
-Nod-03a.Aud
-Nod-03b.Aud
-Nod-04a.Aud
-Nod-04b.Aud
-Nod-05.Aud
-Nod-06a.Aud
-Nod-06b.Aud
-Nod-06c.Aud
+Nod-12a.Aud
+Nod-12b.Aud
+Nod-11.Aud
+Nod-10.Aud
+Nod-09a.Aud
+Nod-09b.Aud
+Nod-08.Aud
 Nod-07.Aud
 Nod-07a.Aud
 Nod-07b.Aud
-Nod-08.Aud
-Nod-09a.Aud
-Nod-09b.Aud
-Nod-10.Aud
-Nod-11.Aud
-Nod-12a.Aud
-Nod-12b.Aud
-Nod.Aud
+Nod-06a.Aud
+Nod-06b.Aud
+Nod-06c.Aud
+Nod-05.Aud
+Nod-04a.Aud
+Nod-04b.Aud
+Nod-03a.Aud
+Nod-03b.Aud
+Nod-02.Aud
+Nod-01.Aud
 Nod01_Sb.Vqa
-Nod02_Sb.Vqa
-Nod06abw.Vqa
 Nod1.Vqa	Kill Village Chief
 Nod1.Vqp	Kill Village Chief
-Nod10a.Ini
-Nod10a.Map
-Nod10a.Vqa	Kill Scientist
-Nod10a.Vqp	Kill Scientist
-Nod10b.Vqa	Destroy Mammoth Tank
-Nod10b.Vqp	Destroy Mammoth Tank
-Nod11.Vqa	Recapture Stealth Tank
-Nod11.Vqp	Recapture Stealth Tank
-Nod11a.Ini
-Nod11a.Map
-Nod12.Vqa	Capture Communications Center
-Nod12.Vqp	Capture Communications Center
-Nod12a.Ini
-Nod12a.Map
-Nod12b.Ini
-Nod12b.Map
-Nod13.Vqa	Remove GDI Bases
-Nod13.Vqp	Remove GDI Bases
 Nod1a.Ini
 Nod1a.Map
 Nod1pre.Vqa	Static To Nod Logo
 Nod1pre.Vqp	Static To Nod Logo
+Nod02_Sb.Vqa
 Nod2.Vqa	Setup A Base
 Nod2.Vqp	Setup A Base
 Nod2a.Ini
@@ -18585,6 +18641,7 @@ Nod5.Vqa	Destroy The Airbase
 Nod5.Vqp	Destroy The Airbase
 Nod5a.Ini
 Nod5a.Map
+Nod06abw.Vqa
 Nod6.Vqa	Get Detonator
 Nod6.Vqp	Get Detonator
 Nod6a.Ini
@@ -18611,6 +18668,25 @@ Nod9a.Ini
 Nod9a.Map
 Nod9b.Ini
 Nod9b.Map
+Nod10a.Ini
+Nod10a.Map
+Nod10a.Vqa	Kill Scientist
+Nod10a.Vqp	Kill Scientist
+Nod10b.Vqa	Destroy Mammoth Tank
+Nod10b.Vqp	Destroy Mammoth Tank
+Nod11.Vqa	Recapture Stealth Tank
+Nod11.Vqp	Recapture Stealth Tank
+Nod11a.Ini
+Nod11a.Map
+Nod12.Vqa	Capture Communications Center
+Nod12.Vqp	Capture Communications Center
+Nod12a.Ini
+Nod12a.Map
+Nod12b.Ini
+Nod12b.Map
+Nod13.Vqa	Remove GDI Bases
+Nod13.Vqp	Remove GDI Bases
+Nod.Aud
 Nod_Finl.Vqa
 Nod_Flag.Vqa
 Nod_M02.Vqa
@@ -18659,8 +18735,8 @@ Nodeurope.Pcx
 Nodeurope.Vqa
 Nodfinal.Vqa	Nod Getting The Ion Cannon
 Nodfinal.Vqp	Nod Getting The Ion Cannon
-Nodflees.Vqa	Nod Soldiers Runnning Away
-Nodflees.Vqp	Nod Soldiers Runnning Away
+Nodflees.Vqa	Nod Soldiers Running Away
+Nodflees.Vqp	Nod Soldiers Running Away
 Nodgen.Inf
 Nodi.Pcx
 Nodlogo.Pal
@@ -18680,13 +18756,13 @@ Nodmap05.Vqa
 Nodmov.Inf
 Nodsweep.Vqa	Nod Forces Assaulting Village
 Nodsweep.Vqp	Nod Forces Assaulting Village
-Nodtarget.Pal
 Nodtarget2.Shp
+Nodtarget.Pal
 Nofind1.Aud
 Nofind2.Aud
 Nofunds1.Aud	Insufficient Funds
 Nomercy.Aud	No Mercy
-Nomercy.Var
+Nomercy.Var	No Mercy Remix
 Nopower1.Aud	No Power
 Nopowr1.Aud	Insufficient Power
 Noprblm1.Aud	No Problem
@@ -18700,80 +18776,80 @@ Nowcnot.Vqa
 Nowimps.Map
 Npsiicon.Shp
 Npwricon.Shp
-Nr01-Min.Set
 Nr01.Vqa
+Nr01-Min.Set
 Nr01_0.Vqa
 Nr01_1.Vqa
 Nr01_2.Vqa
 Nr01_3.Vqa
-Nr02-Min.Set
 Nr02.Vqa
+Nr02-Min.Set
 Nr02_0.Vqa
 Nr02_1.Vqa
 Nr02_2.Vqa
 Nr02_3.Vqa
-Nr03-Min.Set
 Nr03.Vqa
+Nr03-Min.Set
 Nr03_0.Vqa
 Nr03_1.Vqa
 Nr03_2.Vqa
 Nr03_3.Vqa
-Nr04-Min.Set
 Nr04.Vqa
+Nr04-Min.Set
 Nr04_0.Vqa
 Nr04_1.Vqa
 Nr04_2.Vqa
 Nr04_3.Vqa
 Nr04over.Vqa
-Nr05-Min.Set
 Nr05.Vqa
+Nr05-Min.Set
 Nr05_0.Vqa
 Nr05_1.Vqa
 Nr05_2.Vqa
 Nr05_3.Vqa
-Nr06-Min.Set
 Nr06.Vqa
-Nr060000.Img
+Nr06-Min.Set
 Nr06_0.Vqa
 Nr06_1.Vqa
 Nr06_2.Vqa
 Nr06_3.Vqa
 Nr06esp1.Vqa
 Nr06esp2.Vqa
-Nr07-Min.Set
 Nr07.Vqa
-Nr070000.Img
+Nr07-Min.Set
 Nr07_0.Vqa
 Nr07_1.Vqa
 Nr07_2.Vqa
 Nr07_3.Vqa
 Nr07esp1.Vqa
 Nr07esp2.Vqa
-Nr08-Min.Set
 Nr08.Vqa
+Nr08-Min.Set
 Nr08_0.Vqa
 Nr08_1.Vqa
 Nr08_2.Vqa
 Nr08_3.Vqa
-Nr09-Min.Set
 Nr09.Vqa
+Nr09-Min.Set
 Nr09_0.Vqa
 Nr09_1.Vqa
 Nr09_2.Vqa
 Nr09_3.Vqa
-Nr10-Min.Set
 Nr10.Vqa
+Nr10-Min.Set
 Nr10_0.Vqa
 Nr10_1.Vqa
 Nr10_2.Vqa
 Nr10_3.Vqa
-Nr11-Min.Set
 Nr11.Vqa
+Nr11-Min.Set
 Nr11_0.Vqa
 Nr11_1.Vqa
 Nr11_2.Vqa
 Nr11_3.Vqa
 Nr11over.Vqa
+Nr060000.Img
+Nr070000.Img
 Nradar02.Shp
 Nradicon.Shp
 Nradrfrm.Shp	Allies Radarmap Background
@@ -18885,13 +18961,15 @@ Nuk2icnh.Win	Advanced Power Plant
 Nuk2icon.Shp	Advanced Power Plant
 Nuk2make.Shp	Advanced Power Plant
 Nukavail.Aud	Nuclear Missile Available
+Nuke1.Aud	Nuclear Warhead Approaching
 Nuke.Shp	Power Plant
 Nuke.Vqa	Nuclear Expolsion
 Nuke.Vqp	Nuclear Expolsion
-Nuke1.Aud	Nuclear Warhead Approaching
 Nukeanim.Shp
 Nukeball.Shp
 Nukedie.Shp
+Nukefact.Vqa
+Nukefact.Vqp
 Nukeicnh.Des	Power Plant
 Nukeicnh.Tem	Power Plant
 Nukeicnh.Win	Power Plant
@@ -18906,7 +18984,7 @@ Nukestok.Vqp	Nuclear Mushroom Cloud
 Nuketo.Shp
 Nukexplo.Aud	Nuke Explosion
 Nukexplo.Juv	Nuke Explosion
-Nuklnch1.Aud	Nuclear Missile Lauched
+Nuklnch1.Aud	Nuclear Missile Launched
 Nukswep1.Aud
 Nulasrmk.Shp
 Null.Shp
@@ -18938,14 +19016,14 @@ Nuwall.Shp
 Nuweapmk.Shp
 Nuyardmk.Shp
 Nuyell1.Aud	Death Scream 1
-Nuyell10.Aud	Death Scream 10
-Nuyell11.Aud	Death Scream 11
-Nuyell12.Aud	Death Scream 12
 Nuyell3.Aud	Death Scream 3
 Nuyell4.Aud	Death Scream 4
 Nuyell5.Aud	Death Scream 5
 Nuyell6.Aud	Death Scream 6
 Nuyell7.Aud	Death Scream 7
+Nuyell10.Aud	Death Scream 10
+Nuyell11.Aud	Death Scream 11
+Nuyell12.Aud	Death Scream 12
 Nwalicon.Shp
 Nwepicon.Shp
 Nwod2.Img
@@ -19016,6 +19094,8 @@ Olow3.Ver
 Onetime.Aud
 Onhold1.Aud	On Hold
 Onit1.Aud
+Onthprow.Vqa
+Onthprow.Vqp
 Onthprwl.Vqa	Sub Moving Underwater
 Onthprwl.Vqp	Sub Moving Underwater
 Ops.Shp
@@ -19072,6 +19152,8 @@ Orca.Shp	Orca
 Orca.Vxl
 Orcab.Hva
 Orcab.Vxl
+Orcabomb.Vqa
+Orcabomb.Vqp
 Orcadwn1.Aud	Orca Lands
 Orcaicnh.Des	Orca
 Orcaicnh.Tem	Orca
@@ -19083,17 +19165,19 @@ Orcatran.Hva
 Orcatran.Vxl
 Orcaup1.Aud	Orca Takes Off
 Oregath.Shp
+Oretruk1.Aud
 Organ1.Aud
 Organ2.Aud
 Otp.Aud	On The Prowl
+Otp.var
 Otrnicon.Shp
 Ottersrevenge.Map
 Oudatk1.Aud
 Out.Vqa
 Outp.Hva
 Outp.Vxl
-Outtakes
 Outtakes.Aud
+Outtakes.var
 Overout.R01	Soviet 2 As You Wish
 Overout.R03	Soviet 4 As You Wish
 Overout.V01
@@ -19402,31 +19486,31 @@ P_End04.Ubn
 P_End04.Urb
 P_Lizard.Wsa
 P_Luther.Wsa
-Page0001.Cps
-Page0002.Cps	Sound Card Selection
-Page0003.Cps	Sound Card Selection
-Page0004.Cps	Mouths
-Page0005.Cps	Bars
-Page0006.Cps	Port Irq Dma Window
 Page00a4.Cps	Mouth
+Page0001.Cps
 Page01.Cps
+Page1.Aud
+Page0002.Cps	Sound Card Selection
+Page02a4.Cps	Sound Card Selection
+Page2.Aud
+Page0003.Cps	Sound Card Selection
+Page3.Aud
+Page0004.Cps	Mouths
+Page04a2.Cps	Mouth
+Page04a3.Cps	Mouth
+Page0005.Cps	Bars
+Page05.Cps	Single Bar
+Page0006.Cps	Port Irq Dma Window
+Page06a4.Cps	Port Irq Dma Window
 Page0203.Cps	Sound Card Selection
 Page0204.Cps	Sound Card Selection
 Page0205.Cps	Sound Card Selection
 Page0206.Cps	Sound Card Selection
-Page02a4.Cps	Sound Card Selection
 Page0305.Cps	Sound Card Selection
 Page0402.Cps	Mouths
 Page0403.Cps	Mouths
-Page04a2.Cps	Mouth
-Page04a3.Cps	Mouth
-Page05.Cps	Single Bar
 Page0602.Cps	Port Irq Dma Window
 Page0604.Cps	Port Irq Dma Window
-Page06a4.Cps	Port Irq Dma Window
-Page1.Aud
-Page2.Aud
-Page3.Aud
 Pagetrn1.Aud
 Pagetrn2.Aud
 Pageturn.Aud
@@ -19620,8 +19704,8 @@ Petdead4.Aud
 Petdead5.Aud
 Phal.Hva
 Phal.Vxl
-Pharma.Trr
 Pharma1.Aud
+Pharma.Trr
 Pharotek.Aud
 Phatatta.Wav
 Phone1.Aud
@@ -19648,13 +19732,13 @@ Pintle.Vqa	Helicopter Being Shot Down
 Pintle.Vqp	Helicopter Being Shot Down
 Pipbrd.Shp
 Piper1.Aud
-Pips.Shp
 Pips2.Shp
+Pips.Shp
 Pitplats.Ini
 Pitplats.Map
 Placbldg.Aud	Building Placement Sound
-Place.Shp
 Place2.Aud	Place A Building Down
+Place.Shp
 Placenta.Vqa
 Plane01.Sno
 Planecra.Vqa	Transport Plane Crashing
@@ -19878,8 +19962,8 @@ Pod_Loi1.Aud
 Pod_Loi2.Aud
 Pod_Stnd.Aud
 Podasslt.Vqa
-Podium.Vqa	GDI Person At Press Confrence
-Podium.Vqp	GDI Person At Press Confrence
+Podium.Vqa	GDI Person At Press Conference
+Podium.Vqp	GDI Person At Press Conference
 Podring.Shp
 Podsicon.Shp
 Poi_Sh.Flc
@@ -19929,19 +20013,20 @@ Ppvhrddirt3.Aud
 Ppvhrddirt7.Aud
 Ppvppjbird9.Aud
 Prchunrl.Pcx
-Prepick.Cps	C&C Demo Info GDI
 Prepick2.Cps	C&C Demo Info Nod
+Prepick.Cps	C&C Demo Info GDI
 Pres.Shp
 Pribldg1.Aud	Primary Building Selected
 Prisamb1.Aud
 Prisamb3.Aud
 Prisicon.Shp
-Prism.Bmp
 Prism1.Aud
+Prism.Bmp
 Prisslm1.Aud
 Prisslm2.Aud
 Prisslm3.Aud
 Private.Pcx
+Privgame.Bmp
 Proad01.Des
 Proad01.Sno
 Proad01.Tem
@@ -20155,19 +20240,20 @@ Procicnh.Tem	Refinery
 Procicnh.Win	Refinery
 Procicon.Shp	Refinery
 Procmake.Shp	Refinery
-Progbar.Shp
 Progbar2.Shp
+Progbar.Shp
 Progbarm.Shp
 Progres1.Aud	Unable To Comply
 Proicon.Shp
 Prolog.Cps	Please Stand By
 Prolog.Pcx	Please Stand By
-Prolog.Vqa	Einstien Eliminating Hitler
-Prolog.Vqp	Einstien Eliminating Hitler
+Prolog.Vqa	Einstein Eliminating Hitler
+Prolog.Vqp	Einstein Eliminating Hitler
 Prompt.Trr
 Propa.Hva
 Propa.Vxl
 Prp.Aud	Prepare For Battle
+Prp.var
 Prslpe01.Des
 Prslpe01.Sno
 Prslpe01.Tem
@@ -20188,89 +20274,89 @@ Prslpe04.Sno
 Prslpe04.Tem
 Prslpe04.Ubn
 Prslpe04.Urb
-Ps01-Min.Set
 Ps01.Vqa
+Ps01-Min.Set
 Ps01_0.Vqa
 Ps01_1.Vqa
 Ps01_2.Vqa
 Ps01_3.Vqa
 Ps01spnr.Vqa
-Ps02-Min.Set
 Ps02.Vqa
+Ps02-Min.Set
 Ps02_0.Vqa
 Ps02_1.Vqa
 Ps02_2.Vqa
 Ps02_3.Vqa
 Ps02elev.Vqa
-Ps03-Min.Set
 Ps03.Vqa
+Ps03-Min.Set
 Ps03_0.Vqa
 Ps03_1.Vqa
 Ps03_2.Vqa
 Ps03_3.Vqa
-Ps04-Min.Set
 Ps04.Vqa
+Ps04-Min.Set
 Ps04_0.Vqa
 Ps04_1.Vqa
 Ps04_2.Vqa
 Ps04_3.Vqa
-Ps05-Min.Set
 Ps05.Vqa
+Ps05-Min.Set
 Ps05_0.Vqa
 Ps05_1.Vqa
 Ps05_2.Vqa
 Ps05_3.Vqa
 Ps05over.Vqa
-Ps06-Min.Set
 Ps06.Vqa
+Ps06-Min.Set
 Ps06_0.Vqa
 Ps06_1.Vqa
 Ps06_2.Vqa
 Ps06_3.Vqa
-Ps07-Min.Set
 Ps07.Vqa
+Ps07-Min.Set
 Ps07_0.Vqa
 Ps07_1.Vqa
 Ps07_2.Vqa
 Ps07_3.Vqa
-Ps09-Min.Set
 Ps09.Vqa
+Ps09-Min.Set
 Ps09_0.Vqa
 Ps09_1.Vqa
 Ps09_2.Vqa
 Ps09_3.Vqa
-Ps10-Min.Set
 Ps10.Vqa
+Ps10-Min.Set
 Ps10_0.Vqa
 Ps10_1.Vqa
 Ps10_2.Vqa
 Ps10_3.Vqa
-Ps11-Min.Set
 Ps11.Vqa
+Ps11-Min.Set
 Ps11_0.Vqa
 Ps11_1.Vqa
 Ps11_2.Vqa
 Ps11_3.Vqa
-Ps12-Min.Set
 Ps12.Vqa
+Ps12-Min.Set
 Ps12_0.Vqa
 Ps12_1.Vqa
 Ps12_2.Vqa
 Ps12_3.Vqa
-Ps13-Min.Set
 Ps13.Vqa
+Ps13-Min.Set
 Ps13_0.Vqa
 Ps13_1.Vqa
 Ps13_2.Vqa
 Ps13_3.Vqa
-Ps14-Min.Set
 Ps14.Vqa
+Ps14-Min.Set
 Ps14_0.Vqa
 Ps14_1.Vqa
 Ps14_2.Vqa
 Ps14_3.Vqa
-Ps15-Min.Set
 Ps15.Vqa
+Ps15-Min.Set
 Ps15_0.Vqa
 Ps15_1.Vqa
 Ps15_2.Vqa
@@ -20326,9 +20412,9 @@ Pudlgbgy.Shp
 Pulsball.Shp
 Pulscan.Hva
 Pulscan.Vxl
-Pulse.Shp	Sonar Pulse
-Pulse03.Flc
 Pulse1.Aud
+Pulse03.Flc
+Pulse.Shp	Sonar Pulse
 Pulsefx1.Shp	EMP Hits
 Pulsefx2.Shp	EMP Hits
 Pulsicon.Shp	EMP
@@ -20437,27 +20523,27 @@ Qwod0.Pcx
 Qwod0.Ver
 R-Dn.Shp
 R-Up.Shp
-Ra.Col
-Ra.Pal
+Ra2.Csf
 Ra2-Opt.Wav
 Ra2-Sco.Wav
-Ra2.Csf
 Ra2logo.Shp
 Ra2md.Csf
 Ra2ts_L.Bik
 Ra2ts_S.Bik
+Ra.Col
+Ra.Pal
 Rabeep1.Aud	Map Sound 7
 Rachel_E.Vqa
 Rad1icon.Shp
 Rad2icon.Shp
 Rad3icon.Shp
+Radar01.Shp
+Radar02.Shp
 Radar.GDI	GDI Radar And Logo
 Radar.JP	JP Radar And Logo
 Radar.Nod	Nod Radar And Logo
 Radar.Pal
 Radar.Shp
-Radar01.Shp
-Radar02.Shp
 Radard.Shp
 Radardn1.Aud	Communication Failure
 Radardn1.Aud	Power Down
@@ -20469,8 +20555,8 @@ Radiatr1.Aud
 Radiatr2.Aud
 Radiatr3.Aud
 Radiatr4.Aud
-Radio.Aud
 Radio2.Aud
+Radio.Aud
 Radios.Shp
 Radricon.Shp
 Radrraid.Vqa	Heavy Tanks Attacking Base
@@ -20483,8 +20569,8 @@ Railbrdg.Tem
 Railbrdg.Ubn
 Railbrdg.Urb
 Railuse5.Aud	Heavy Mech Railgun
-Rain.Aud	Rain In The Night
 Rain10.Aud
+Rain.Aud	Rain In The Night
 Rainaly1.Aud
 Rainawn1.Aud
 Rainnite.Aud
@@ -20623,19 +20709,19 @@ Rbfix08.Ubn
 Rbfix08.Urb
 Rboticon.Shp
 Rc0.Aud
-Rc01-Min.Set
 Rc01.Sno	River
 Rc01.Tem	River
 Rc01.Vqa
+Rc01-Min.Set
 Rc01_0.Vqa
 Rc01_1.Vqa
 Rc01_2.Vqa
 Rc01_3.Vqa
 Rc01spnr.Vqa
-Rc02-Min.Set
 Rc02.Sno	River
 Rc02.Tem	River
 Rc02.Vqa
+Rc02-Min.Set
 Rc02_0.Vqa
 Rc02_1.Vqa
 Rc02_2.Vqa
@@ -20649,24 +20735,24 @@ Rc02esp4.Vqa
 Rc02esp5.Vqa
 Rc02esp6.Vqa
 Rc02esp7.Vqa
-Rc03-Min.Set
 Rc03.Sno	River
 Rc03.Tem	River
 Rc03.Vqa
+Rc03-Min.Set
 Rc03_0.Vqa
 Rc03_1.Vqa
 Rc03_2.Vqa
 Rc03_3.Vqa
-Rc04-Min.Set
 Rc04.Sno	River
 Rc04.Tem	River
 Rc04.Vqa
+Rc04-Min.Set
 Rc04_0.Vqa
 Rc04_1.Vqa
 Rc04_2.Vqa
 Rc04_3.Vqa
-Rc51-Min.Set
 Rc51.Vqa
+Rc51-Min.Set
 Rc51_0.Vqa
 Rc51_1.Vqa
 Rc51_2.Vqa
@@ -20677,15 +20763,15 @@ Rccarby1.Aud
 Rccarby2.Aud
 Rccarby3.Aud
 Rclock2.Shp
-Rcmtbg.Shp
 Rcmtbg2.Shp
-Rcmtmd.Shp
+Rcmtbg.Shp
 Rcmtmd2.Shp
-Rcmtsm.Shp
+Rcmtmd.Shp
 Rcmtsm2.Shp
+Rcmtsm.Shp
 Rcrain1.Aud
-Rcrdt.Shp
 Rcrdt2.Shp
+Rcrdt.Shp
 Rctalk1.Aud
 Rctalk2.Aud
 Rctalk3.Aud
@@ -20698,7 +20784,7 @@ Ready.V03	Ready & Waiting
 Reaper.Shp
 Reapicon.Shp
 Recn226m.Aud	Recon
-Record.Bin	Info For Map Screens
+Record.Bin	Demo Recording
 Redintro.Vqa	Red Alert Intro Sequence
 Redintro.Vqp	Red Alert Intro Sequence
 Redlite.Shp
@@ -20710,23 +20796,23 @@ Refint.Vqa	Interior Of Tiberium Refinery
 Refint.Vqp	Interior Of Tiberium Refinery
 Refresh.Shp
 Reg_Sh.Flc
-Regcard.Aud
 Regcard1.Aud
+Regcard.Aud
 Registrationscreen.Pal
 Registrationscreen.Shp
 Reinfor1.Aud	Reinforcements Have Arrived
 Reload.Shp
 Rendcap.Shp
+Repair1.Aud	Repairing
+Repair11.Aud	Repair Vehicle
 Repair.Hva
 Repair.Shp
 Repair.Vxl
-Repair1.Aud	Repairing
-Repair11.Aud	Repair Vehicle
-Report1.R00 Reporting
-Report1.R01 Reporting
-Report1.R02 Reporting
-Report1.R03 Reporting
-Report1.V00 Reporting
+Report1.R00	Reporting
+Report1.R01	Reporting
+Report1.R02	Reporting
+Report1.R03	Reporting
+Report1.V00	Reporting
 Report1.V01	Reporting
 Report1.V02	Reporting
 Report1.V03	Reporting
@@ -20796,12 +20882,12 @@ Rg11a1.Shp
 Rg11a2.Shp
 Rg12a1.Shp
 Rg12a2.Shp
-Rgktbg.Shp
 Rgktbg2.Shp
-Rgktmd.Shp
+Rgktbg.Shp
 Rgktmd2.Shp
-Rgktsm.Shp
+Rgktmd.Shp
 Rgktsm2.Shp
+Rgktsm.Shp
 Rhit1.Aud
 Rhit2.Aud
 Rico1.Aud
@@ -20831,8 +20917,8 @@ Rimshot2.Aud
 Rimshot3.Aud
 Rimshot4.Aud
 Rimshot5.Aud
-Ring.Shp
 Ring1.Shp
+Ring.Shp
 Ritaway.R01	At Once
 Ritaway.R03	At Once
 Ritaway.V01
@@ -21240,7 +21326,6 @@ Robotmv1.Aud
 Robotur.Hva
 Robotur.Vxl
 Robouico.Shp
-Rock.Shp
 Rock01.Sno
 Rock01a.Sno
 Rock01b.Sno
@@ -21256,6 +21341,7 @@ Rock4.Des
 Rock5.Des
 Rock6.Des
 Rock7.Des
+Rock.Shp
 Rocket1.Aud
 Rocket1.Juv
 Rocket2.Aud
@@ -21332,11 +21418,12 @@ Rough10.Sno
 Rough10.Tem
 Rough10.Ubn
 Rough10.Urb
-Rout.Var	Reaching Out SFX
+Rout.Aud	Reaching Out
+Rout.Var	Reaching Out Remix
 Rpart2.Aud
 Rpt.Aud	Mech Man 2
-Rrdrt.Shp
 Rrdrt2.Shp
+Rrdrt.Shp
 Rrotor.Shp	Rotor Shadows
 Rt2stonwlk1.Aud
 Rt_Btn.Shp
@@ -21418,9 +21505,9 @@ Ruin_App_L.Pcx
 Ruin_App_L.Vqa
 Rule01.Ini
 Rule1.Ini
-Rules.Ini
 Rules01.Ini
 Rules1.Ini
+Rules.Ini
 Rulesmd.Ini
 Rulo226m.Aud
 Rumblel1.Aud
@@ -21895,10 +21982,11 @@ Sapc.Vxl
 Sapcicon.Shp
 Sapicon.Shp
 Satellitemap.Bmp
-Satlnch1.Aud	GPS Sattelite Launched
+Satlnch1.Aud	GPS Satellite Launched
 Satsel.Cps	Satellite Selection Screen
 Satsel.Pal
 Satselin.Pal
+Sattact2.Aud
 Savage.Aud
 Savage.Hmi
 Savage.Xmi
@@ -21917,8 +22005,8 @@ Sbagicon.Shp
 Sbgripb.Pcx
 Sbgripm.Pcx
 Sbgript.Pcx
-Sc-000.Inf
 Sc-001.Inf
+Sc-000.Inf
 Sc1.Des	Scorch Mark 1
 Sc1.Sno	Scorch Mark
 Sc1.Tem	Scorch Mark
@@ -21953,6 +22041,7 @@ Sca01ea.Ini	It Came From RA! 1
 Sca02ea.Ini	It Came From RA! 2
 Sca03ea.Ini	It Came From RA! 3
 Sca04ea.Ini	It Came From RA! 4
+Scandy1.Aud
 Scanner1.Aud
 Scanner2.Aud
 Scanner3.Aud
@@ -22086,22 +22175,18 @@ Scb37ea.Bin	Nod Death Squad
 Scb37ea.Ini	Nod Death Squad
 Scg01ea.Bin	GDI Mission 1
 Scg01ea.Cps
-Scg01ea.Ini	Allied Mission 1
-Scg01ea.Ini	GDI Mission 1
+Scg01ea.Ini	GDI/Allied Mission 1
 Scg02ea.Bin	GDI Mission 2
 Scg02ea.Cps
-Scg02ea.Ini	Allied Mission 2
-Scg02ea.Ini	GDI Mission 2
+Scg02ea.Ini	GDI/Allied Mission 2
 Scg03ea.Bin	GDI Mission 3
 Scg03ea.Cps
-Scg03ea.Ini	Allied Mission 3
-Scg03ea.Ini	GDI Mission 3
+Scg03ea.Ini	GDI/Allied Mission 3
 Scg03eb.Cps
 Scg03eb.Ini	Allied Mission 3b
 Scg04ea.Bin	GDI Mission 4
 Scg04ea.Cps
-Scg04ea.Ini	Allied Mission 4
-Scg04ea.Ini	GDI Mission 4
+Scg04ea.Ini	GDI/Allied Mission 4
 Scg04wa.Bin	GDI Mission 4wa
 Scg04wa.Cps
 Scg04wa.Ini	GDI Mission 4wa
@@ -22110,12 +22195,10 @@ Scg04wb.Cps
 Scg04wb.Ini	GDI Mission 4wb
 Scg05ea.Bin	GDI Mission 5
 Scg05ea.Cps
-Scg05ea.Ini	Allied Mission 5
-Scg05ea.Ini	GDI Mission 5
+Scg05ea.Ini	GDI/Allied Mission 5
 Scg05eb.Bin	GDI Mission 5b
 Scg05eb.Cps
-Scg05eb.Ini	Allied Mission 5b
-Scg05eb.Ini	GDI Mission 5b
+Scg05eb.Ini	GDI/Allied Mission 5b
 Scg05ec.Ini	Allied Mission 5c
 Scg05wa.Bin	GDI Mission 5wa
 Scg05wa.Cps
@@ -22125,57 +22208,47 @@ Scg05wb.Cps
 Scg05wb.Ini	GDI Mission 5wb
 Scg06ea.Bin	GDI Mission 6
 Scg06ea.Cps
-Scg06ea.Ini	Allied Mission 6
-Scg06ea.Ini	GDI Mission 6
+Scg06ea.Ini	GDI/Allied Mission 6
 Scg06eb.Ini	Allied Mission 6b
 Scg07ea.Bin	GDI Mission 7
 Scg07ea.Cps
-Scg07ea.Ini	Allied Mission 7
-Scg07ea.Ini	GDI Mission 7
+Scg07ea.Ini	GDI/Allied Mission 7
+Scg07wa.Ini	Game Map (Campaign)
 Scg08ea.Bin	GDI Mission 8
 Scg08ea.Cps
-Scg08ea.Ini	Allied Mission 8
-Scg08ea.Ini	GDI Mission 8
+Scg08ea.Ini	GDI/Allied Mission 8
 Scg08eb.Bin	GDI Mission 8b
 Scg08eb.Cps
-Scg08eb.Ini	Allied Mission 8b
-Scg08eb.Ini	GDI Mission 8b
+Scg08eb.Ini	GDI/Allied Mission 8b
 Scg09ea.Bin	GDI Mission 9
 Scg09ea.Cps
-Scg09ea.Ini	Allied Mission 9
-Scg09ea.Ini	GDI Mission 9
+Scg09ea.Ini	GDI/Allied Mission 9
 Scg09eb.Ini	Allied Mission 9b
 Scg10ea.Bin	GDI Mission 10
 Scg10ea.Cps
-Scg10ea.Ini	Allied Mission 10
-Scg10ea.Ini	GDI Mission 10
+Scg10ea.Ini	GDI/Allied Mission 10
 Scg10eb.Bin	GDI Mission 10b
 Scg10eb.Cps
-Scg10eb.Ini	Allied Mission 10b
-Scg10eb.Ini	GDI Mission 10b
+Scg10eb.Ini	GDI/Allied Mission 10b
 Scg11ea.Bin	GDI Mission 11
 Scg11ea.Cps
-Scg11ea.Ini	Allied Mission 11
-Scg11ea.Ini	GDI Mission 11
+Scg11ea.Ini	GDI/Allied Mission 11
 Scg11eb.Ini	Allied Mission 11b
 Scg12ea.Bin	GDI Mission 12
 Scg12ea.Cps
-Scg12ea.Ini	Allied Mission 12
-Scg12ea.Ini	GDI Mission 12
+Scg12ea.Ini	GDI/Allied Mission 12
 Scg12eb.Bin	GDI Mission 12b
 Scg12eb.Cps
 Scg12eb.Ini	GDI Mission 12b
 Scg13ea.Bin	GDI Mission 13
 Scg13ea.Cps
-Scg13ea.Ini	Allied Mission 13
-Scg13ea.Ini	GDI Mission 13
+Scg13ea.Ini	GDI/Allied Mission 13
 Scg13eb.Bin	GDI Mission 13b
 Scg13eb.Cps
 Scg13eb.Ini	GDI Mission 13b
 Scg14ea.Bin	GDI Mission 14
 Scg14ea.Cps
-Scg14ea.Ini	Allied Mission 14
-Scg14ea.Ini	GDI Mission 14
+Scg14ea.Ini	GDI/Allied Mission 14
 Scg15ea.Bin	GDI Mission 15
 Scg15ea.Cps
 Scg15ea.Ini	GDI Mission 15
@@ -22188,11 +22261,9 @@ Scg15ec.Ini	GDI Mission 15c
 Scg20ea.Ini	Sarin Gas 1
 Scg21ea.Ini	Sarin Gas 2
 Scg22ea.Bin	Blackout
-Scg22ea.Ini	Blackout
-Scg22ea.Ini	Sarin Gas 3
+Scg22ea.Ini	Blackout (TD) / Sarin Gas 3 (RA)
 Scg23ea.Bin	Hells Fury
-Scg23ea.Ini	Fall Of Greece 1
-Scg23ea.Ini	Hells Fury
+Scg23ea.Ini	Hells Fury (TD) / Fall Of Greece 1 (RA)
 Scg24ea.Ini	Fall Of Greece 2
 Scg26ea.Ini	Siberian Conflict 1
 Scg27ea.Ini	Siberian Conflict 2
@@ -22202,18 +22273,16 @@ Scg36ea.Ini	Infiltrated
 Scg38ea.Bin	Elemental Imperative
 Scg38ea.Ini	Elemental Imperative
 Scg40ea.Bin	Ground Zero
-Scg40ea.Ini	Caught In The Act
-Scg40ea.Ini	Ground Zero
+Scg40ea.Ini	Ground Zero (TD) / Caught In The Act (RA)
 Scg41ea.Bin	Twist Of Fate
-Scg41ea.Ini	In The Nick Of Time
-Scg41ea.Ini	Twist Of Fate
+Scg41ea.Ini	Twist Of Fate (TD) / In The Nick Of Time (RA)
 Scg42ea.Ini	Production Disruption
 Scg43ea.Ini	Harbor Reclamation
 Scg44ea.Ini	Time Flies
 Scg45ea.Ini	Monster Tank Madness
 Scg46ea.Ini	Pawn
-Scg47ea.Ini	Negotations
-Scg48ea.Ini	Absloute M.A.D.Ness
+Scg47ea.Ini	Negotiations
+Scg48ea.Ini	Absolute M.A.D.Ness
 Scg50ea.Bin	Blindsided
 Scg50ea.Ini	Blindsided
 Schd.Hva
@@ -22235,73 +22304,29 @@ Scj04ea.Bin	Jurassic Mission 4
 Scj04ea.Ini	Jurassic Mission 4
 Scj05ea.Bin	Jurassic Mission 5
 Scj05ea.Ini	Jurassic Mission 5
+Sclean1.Aud
 Scm01ea.Bin	Green Acres
-Scm01ea.Ini	Coastal Influence
-Scm01ea.Ini	Costal Influence
-Scm01ea.Ini	Green Acres
+Scm01ea.Ini	Green Acres (TD) / Coastal Influence (RA)
 Scm02ea.Bin	Sand Trap
-Scm02ea.Ini	Middle Mayhem
-Scm02ea.Ini	Sand Trap
+Scm02ea.Ini	Sand Trap (TD) / Middle Mayhem (RA)
 Scm03ea.Bin	Lost Arena
-Scm03ea.Ini	Equal Opertunity
-Scm03ea.Ini	Equal Opportunity
-Scm03ea.Ini	Lost Arena
+Scm03ea.Ini	Lost Arena (TD) / Equal Opportunity (RA)
 Scm04ea.Bin	River Raid
-Scm04ea.Ini	Marooned
-Scm04ea.Ini	River Raid
+Scm04ea.Ini	River Raid (TD) / Marooned (RA)
 Scm05ea.Bin	Eye Of The Storm
-Scm05ea.Ini	Eye Of The Storm
-Scm05ea.Ini	Keep Of The Grass
-Scm05ea.Ini	Keep Off The Grass
+Scm05ea.Ini	Eye Of The Storm (TD) / Keep Off The Grass (RA)
 Scm06ea.Bin	Lakefront Clash
-Scm06ea.Ini	Isle Of Fury
-Scm06ea.Ini	Istle Of Fury
-Scm06ea.Ini	Lakefront Clash
+Scm06ea.Ini	Lakefront Clash (TD) / Isle of Fury (RA)
 Scm07ea.Bin	Desert Madness
-Scm07ea.Ini	Desert Madness
-Scm07ea.Ini	Ivory Wastelands
+Scm07ea.Ini	Desert Madness (TD) / Ivory Wastelands (RA)
 Scm08ea.Bin	Pitfall
-Scm08ea.Ini	Pitfall
-Scm08ea.Ini	Shallow Grave
+Scm08ea.Ini	Pitfall (TD) / Shallow Grave
 Scm09ea.Bin	Moosehead Barrons
-Scm09ea.Ini	Moosehead Barrons
-Scm09ea.Ini	North By Northwest
-Scm100ea.Ini	Finger Lake
-Scm101ea.Ini	Tiger Core
-Scm102ea.Ini	Terrainspotting
-Scm103ea.Ini	Glenboig
-Scm104ea.Ini	Kabalo
-Scm105ea.Ini	Zambezi
-Scm106ea.Ini	So Near So Far
-Scm107ea.Ini	No Way Out
-Scm108ea.Ini	Tropical Storm
-Scm109ea.Ini	Pilgrim Fathers 2
+Scm09ea.Ini	Moosehead Barrons (TD) / North By Northwest (RA)
 Scm10ea.Bin	Red Sands
-Scm10ea.Ini	First Come First Serve
-Scm10ea.Ini	Red Sands
-Scm110ea.Ini	Pip'S Ice Tea
-Scm111ea.Ini	Docklands
-Scm112ea.Ini	Eastern Seaboard
-Scm113ea.Ini	Hell Frozen Over
-Scm114ea.Ini	4 Corners
-Scm115ea.Ini	Antarctica
-Scm116ea.Ini	Water Works
-Scm117ea.Ini	Flood Lands
-Scm118ea.Ini	World Map
-Scm119ea.Ini	All That Glitters...
+Scm10ea.Ini	Red Sands (TD) / First Come, First Serve (RA)
 Scm11ea.Ini	Island Hoppers
-Scm120ea.Ini	Forest Under Fire
-Scm121ea.Ini	Island Wars 2
-Scm122ea.Ini	King Of The Hills
-Scm123ea.Ini	Bullseye
-Scm124ea.Ini	Things To Come
-Scm125ea.Ini	Polar Panic
-Scm126ea.Ini	Barrier To Entry
-Scm127ea.Ini	Tundra Trouble
-Scm128ea.Ini	Disaster Central
-Scm129ea.Ini	Alaska Anarchy
 Scm12ea.Ini	Raraku
-Scm130ea.Ini	Lunar Battlefield
 Scm13ea.Ini	Central Conflict
 Scm14ea.Ini	Combat Alley
 Scm15ea.Ini	Island Wars
@@ -22341,12 +22366,11 @@ Scm47ea.Ini	Australia
 Scm48ea.Ini	Bearing Straits
 Scm49ea.Ini	Blow Holes
 Scm50ea.Bin	Emerald Highlands
-Scm50ea.Ini	Bonsai
+Scm50ea.Ini	Emerald Highlands (TD) / Bonsai (RA)
 Scm51ea.Bin	Four Corners
-Scm51ea.Ini	Camos Canyon
-Scm51ea.Ini	Four Corners
+Scm51ea.Ini	Four Corners (TD) / Camos Canyon (RA)
 Scm52ea.Bin	Cactus Valley
-Scm52ea.Ini	Cactus Valley
+Scm52ea.Ini	Cactus Valley (TD) / Camos Coves (RA)
 Scm53ea.Ini	Camos Crossing
 Scm54ea.Ini	Camos Cross
 Scm55ea.Ini	Crossroads
@@ -22354,13 +22378,12 @@ Scm56ea.Ini	Canyon River
 Scm57ea.Ini	East Coast
 Scm58ea.Ini	Fjords
 Scm59ea.Ini	India
-Scm59ea.Ini	Italy
 Scm60ea.Bin	Monkey In The Middle
-Scm60ea.Ini	Italy
+Scm60ea.Ini	Monkey In The Middle (TD) / Italy (RA)
 Scm61ea.Bin	King Of The Mountain
-Scm61ea.Ini	Natural Harbor
+Scm61ea.Ini	King Of The Mountain (TD) / Natural Harbor (RA)
 Scm62ea.Bin	Surgical Incision
-Scm62ea.Ini	Lake Divide
+Scm62ea.Ini	Surgical Incision (TD) / Lake Divide (RA)
 Scm63ea.Ini	Lakelands
 Scm64ea.Ini	Malibu Fields
 Scm65ea.Ini	Marshland
@@ -22369,20 +22392,20 @@ Scm67ea.Ini	Normandy Landings
 Scm68ea.Ini	Ore Wars
 Scm69ea.Ini	Ponds
 Scm70ea.Bin	Winter Waterland
-Scm70ea.Ini	Putney
+Scm70ea.Ini	Winter Waterland (TD) / Putney (RA)
 Scm71ea.Bin	One Pass Fits All
-Scm71ea.Ini	River Basin
+Scm71ea.Ini	One Pass Fits All (TD) / River Basin (RA)
 Scm72ea.Bin	Straight And Narrow
-Scm72ea.Ini	River Delta
+Scm72ea.Ini	Straight And Narrow (TD) / River Delta (RA)
 Scm73ea.Bin	King Takes Pawn
-Scm73ea.Ini	River Islands
+Scm73ea.Ini	King Takes Pawn (TD) / River Islands (RA)
 Scm74ea.Bin	Nowhere To Hide
-Scm74ea.Ini	River Maze
-Scm75ea.Bin	Vilage Of The Unfortunate
-Scm75ea.Ini	Rivers
+Scm74ea.Ini	Nowhere To Hide (TD) / River Maze (RA)
+Scm75ea.Bin	Village Of The Unfortunate
+Scm75ea.Ini	Village Of The Unfortunate (TD) / Rivers (RA)
 Scm76ea.Ini	Scappa Flow
 Scm77ea.Bin	Marooned
-Scm77ea.Ini	Snowball Fight
+Scm77ea.Ini	Marooned (TD) / Snowball Fight (RA)
 Scm78ea.Ini	South America
 Scm79ea.Ini	Spring Line
 Scm80ea.Ini	Straighter And Narrower
@@ -22396,19 +22419,50 @@ Scm87ea.Ini	Wastelands
 Scm88ea.Ini	Apre'S Peace
 Scm89ea.Ini	Return To Zion
 Scm90ea.Bin	A Long Way From Home
-Scm90ea.Ini	Africa
+Scm90ea.Ini	A Long Way From Home (TD) / Africa (RA)
 Scm91ea.Ini	Snow Wars
 Scm92ea.Ini	The Ice Arena
 Scm93ea.Ini	The Lake District
 Scm94ea.Ini	The Woods Today...
 Scm95ea.Ini	Be Shore
 Scm96ea.Bin	Tiberium Garden
-Scm96ea.Ini	The Garden
+Scm96ea.Ini	Tiberium Garden (TD) / The Garden (RA)
 Scm97ea.Bin	Northern Explosion
-Scm97ea.Ini	Devil Central Arena
-Scm98ea.Bin	Diverse Reigon
-Scm98ea.Ini	The Sticky Bit
+Scm97ea.Ini	Northern Explosion (TD) / Devil Central Arena (RA)
+Scm98ea.Bin	Diverse Region
+Scm98ea.Ini	Diverse Region (TD) / The Sticky Bit (RA)
 Scm99ea.Ini	Run The Gauntlet
+Scm100ea.Ini	Finger Lake
+Scm101ea.Ini	Tiger Core
+Scm102ea.Ini	Terrainspotting
+Scm103ea.Ini	Glenboig
+Scm104ea.Ini	Kabalo
+Scm105ea.Ini	Zambezi
+Scm106ea.Ini	So Near So Far
+Scm107ea.Ini	No Way Out
+Scm108ea.Ini	Tropical Storm
+Scm109ea.Ini	Pilgrim Fathers 2
+Scm110ea.Ini	Pip's Ice Tea
+Scm111ea.Ini	Docklands
+Scm112ea.Ini	Eastern Seaboard
+Scm113ea.Ini	Hell Frozen Over
+Scm114ea.Ini	4 Corners
+Scm115ea.Ini	Antarctica
+Scm116ea.Ini	Water Works
+Scm117ea.Ini	Flood Lands
+Scm118ea.Ini	World Map
+Scm119ea.Ini	All That Glitters...
+Scm120ea.Ini	Forest Under Fire
+Scm121ea.Ini	Island Wars 2
+Scm122ea.Ini	King Of The Hills
+Scm123ea.Ini	Bullseye
+Scm124ea.Ini	Things To Come
+Scm125ea.Ini	Polar Panic
+Scm126ea.Ini	Barrier To Entry
+Scm127ea.Ini	Tundra Trouble
+Scm128ea.Ini	Disaster Central
+Scm129ea.Ini	Alaska Anarchy
+Scm130ea.Ini	Lunar Battlefield
 Scmd0ea.Ini	Around The Rim
 Scmd1ea.Ini	Conflict Cove
 Scmd2ea.Ini	Elysium
@@ -22461,7 +22515,7 @@ Scmh8ea.Ini	Gold Rush
 Scmh9ea.Ini	Habitat
 Scmi0ea.Ini	Ice Queen
 Scmi1ea.Ini	Ice Station
-Scmi2ea.Ini	Island Platau
+Scmi2ea.Ini	Island Plateau
 Scmi3ea.Ini	Lakeland
 Scmi4ea.Ini	Land Locked
 Scmi5ea.Ini	Meander
@@ -22471,12 +22525,12 @@ Scmi8ea.Ini	River Rapids
 Scmi9ea.Ini	Rorkes Drift
 Scmj0ea.Ini	Smugglers Cove
 Scmj1ea.Ini	Strathearn Valley
-Scmj2ea.Ini	The Cauldren
+Scmj2ea.Ini	The Cauldron
 Scmj3ea.Ini	The Finger
 Scmj4ea.Ini	The Web
 Scmj5ea.Ini	To The Core
-Scmj6ea.Ini	Trafalger
-Scmj7ea.Ini	Umboto Gorge
+Scmj6ea.Ini	Trafalgar
+Scmj7ea.Ini	Umtumbo Gorge
 Scmj8ea.Ini	Waterfalls
 Scmj9ea.Ini	Waterloo Revisited
 Scmk0ea.Ini	Arena Valley
@@ -22489,7 +22543,7 @@ Scmk6ea.Ini	Damnation Alley
 Scmk7ea.Ini	Death Valley
 Scmk8ea.Ini	Deep Six
 Scmk9ea.Ini	Destruction Derby
-Scml0ea.Ini	Diamonds Arnt Forever
+Scml0ea.Ini	Diamonds Aren't Forever
 Scml1ea.Ini	Frostbitten
 Scml2ea.Ini	Hamburger Hill
 Scml3ea.Ini	Holy Grounds
@@ -22509,11 +22563,11 @@ Scmm6ea.Ini	The Berg
 Scmm7ea.Ini	The Hills Have Eyes
 Scmm8ea.Ini	Watch Your Step
 Scmm9ea.Ini	Water Werks
-Scold.Aud
 Scold1.Aud
 Scold2.Aud
 Scold2.Juv
 Scold8.Aud	Can't Push Button Sound
+Scold.Aud
 ScoldSFX.Aud
 Scoldy1.Aud	Map Sound
 Scomnd1.Aud	Commander?
@@ -22542,18 +22596,16 @@ Scout.Aud	Scout
 Scrate.Shp	Steel Crate
 Screen0.Bmp
 Screen01.Bmp
+Screen1.Bmp
 Screen02.Bmp
+Screen2b.Bmp
 Screen03.Bmp
+Screen3a.Bmp
+Screen3b.Bmp
 Screen04.Bmp
 Screen05.Bmp
 Screen06.Bmp
 Screen09.Bmp
-Screen1.Bmp
-Screen2b.Bmp
-Screen3a.Bmp
-Screen3b.Bmp
-Scrin.Hva
-Scrin.Vxl
 Scrin01.Des
 Scrin01.Tem
 Scrin02.Des
@@ -22564,9 +22616,11 @@ Scrin04.Des
 Scrin04.Tem
 Scrin05.Des
 Scrin05.Tem
+Scrin5b.Aud	Banshee Fires
 Scrin06.Des
 Scrin06.Tem
-Scrin5b.Aud	Banshee Fires
+Scrin.Hva
+Scrin.Vxl
 Scrnsh00.Pcx
 Scrolinv.Aud
 Scrscn1.Wsa	Nod Score Screen
@@ -22683,6 +22737,7 @@ Scs62ea.Ini
 Scs63ea.Bin
 Scs63ea.Ini
 Scu01ea.Ini	Soviet Mission 1
+Scu01eb.Ini	E3 Showcase Map
 Scu02ea.Ini	Soviet Mission 2
 Scu02eb.Ini	Soviet Mission 2b
 Scu03ea.Ini	Soviet Mission 3
@@ -22703,13 +22758,13 @@ Scu13ea.Ini	Soviet Mission 13
 Scu13eb.Ini	Soviet Mission 13b
 Scu14ea.Ini	Soviet Mission 14
 Scu31ea.Ini	Proving Grounds
-Scu32ea.Ini	Beseiged
+Scu32ea.Ini	Besieged
 Scu33ea.Ini	Mousetrap
 Scu34ea.Ini	Legacy Of Tesla
-Scu35ea.Ini	Sov. Sold'R Vol. & Chit.
+Scu35ea.Ini	Soviet Soldier Volkov & Chitzkoi
 Scu36ea.Ini	Top O' The World
 Scu37ea.Ini	Paradox Equation
-Scu38ea.Ini	Nulcear Escalation
+Scu38ea.Ini	Nuclear Escalation
 Scu40ea.Ini	Shock Therapy
 Scu41ea.Ini	Test Drive
 Scu42ea.Ini	Lets Make A Steal
@@ -22756,8 +22811,8 @@ Seala.Shp
 Sealicon.Shp
 Sealuico.Shp
 Search.Aud	Search
-Search.Vqa	Intruders Detceted
-Search.Vqp	Intruders Detceted
+Search.Vqa	Intruders Detected
+Search.Vqp	Intruders Detected
 Sedonapass.Map
 Sedonapassmw.Map
 Sedrgstir1.Aud
@@ -22769,8 +22824,8 @@ Seige.Vqp	Siege On Base
 Seismic.Ini
 Seismic.Map
 Seldrv1.Aud
-Select.Shp
 Select1.Aud
+Select.Shp
 Sell.Shp
 Sergeant.Pcx
 Servod1.Aud
@@ -22801,24 +22856,40 @@ Sgl_Spin.Shp
 Sgrysmk1.Shp
 Sh01.Sno	Coast
 Sh01.Tem	Coast
-Sh02.Sno	Coast
-Sh02.Tem	Coast
-Sh03.Sno	Coast
-Sh03.Tem	Coast
-Sh04.Sno	Coast
-Sh04.Tem	Coast
-Sh05.Sno	Coast
-Sh05.Tem	Coast
-Sh06.Sno	Coast
-Sh06.Tem	Coast
-Sh07.Sno	Coast
-Sh07.Tem	Coast
-Sh08.Sno	Coast
-Sh08.Tem	Coast
-Sh09.Sno	Coast
-Sh09.Tem	Coast
 Sh1.Tem	Coast Wd
 Sh1.Win	Coast Wd
+Sh02.Sno	Coast
+Sh02.Tem	Coast
+Sh2.Tem	Coast Wd
+Sh2.Win	Coast Wd
+Sh03.Sno	Coast
+Sh03.Tem	Coast
+Sh3.Tem	Rock In Water
+Sh3.Win	Rock In Water
+Sh04.Sno	Coast
+Sh04.Tem	Coast
+Sh4.Tem	Rock In Water
+Sh4.Win	Rock In Water
+Sh05.Sno	Coast
+Sh05.Tem	Coast
+Sh5.Tem	Coast Wd
+Sh5.Win	Coast Wd
+Sh06.Sno	Coast
+Sh06.Tem	Coast
+Sh6.Tem	Coast Wd
+Sh6.Win	Coast Wd
+Sh07.Sno	Coast
+Sh07.Tem	Coast
+Sh7.Tem	Coast Corner W-N Ext
+Sh7.Win	Coast Corner W-N Ext
+Sh08.Sno	Coast
+Sh08.Tem	Coast
+Sh8.Tem	Coast Corner S-E Ext
+Sh8.Win	Coast Corner S-E Ext
+Sh09.Sno	Coast
+Sh09.Tem	Coast
+Sh9.Tem	Coast Corner W-S Ext
+Sh9.Win	Coast Corner W-S Ext
 Sh10.Sno	Coast
 Sh10.Tem	Coast
 Sh10.Tem	Coast Corner N-E Ext
@@ -22860,8 +22931,6 @@ Sh18.Win	Water
 Sh19.Des	Coast Wd
 Sh19.Sno	Coast
 Sh19.Tem	Coast
-Sh2.Tem	Coast Wd
-Sh2.Win	Coast Wd
 Sh20.Des	Coast Wd
 Sh20.Sno	Coast
 Sh20.Tem	Coast
@@ -22892,8 +22961,6 @@ Sh28.Tem	Coast
 Sh29.Des	Coast Wu
 Sh29.Sno	Coast
 Sh29.Tem	Coast
-Sh3.Tem	Rock In Water
-Sh3.Win	Rock In Water
 Sh30.Des	Coast Wu
 Sh30.Sno	Coast
 Sh30.Tem	Coast
@@ -22928,8 +22995,6 @@ Sh38.Tem	Coast
 Sh39.Des	Coast Corner N-W Int
 Sh39.Sno	Coast
 Sh39.Tem	Coast
-Sh4.Tem	Rock In Water
-Sh4.Win	Rock In Water
 Sh40.Des	Coast Corner S-E Int
 Sh40.Sno	Coast
 Sh40.Tem	Coast
@@ -22960,8 +23025,6 @@ Sh48.Tem	Coast
 Sh49.Des	Coast Corner N-W Int
 Sh49.Sno	Coast
 Sh49.Tem	Coast
-Sh5.Tem	Coast Wd
-Sh5.Win	Coast Wd
 Sh50.Des	Coast Corner S-E Ext
 Sh50.Sno	Coast
 Sh50.Tem	Coast
@@ -22986,18 +23049,10 @@ Sh56.Tem	Coast
 Sh57.Des	Coast Wu
 Sh58.Des	Coast Wr
 Sh59.Des	Coast Wr
-Sh6.Tem	Coast Wd
-Sh6.Win	Coast Wd
 Sh60.Des	Coast Wl
 Sh61.Des	Coast Wl
 Sh62.Des	Coast Wd
 Sh63.Des	Coast Wd
-Sh7.Tem	Coast Corner W-N Ext
-Sh7.Win	Coast Corner W-N Ext
-Sh8.Tem	Coast Corner S-E Ext
-Sh8.Win	Coast Corner S-E Ext
-Sh9.Tem	Coast Corner W-S Ext
-Sh9.Win	Coast Corner W-S Ext
 Shad.Hva
 Shad.Vxl
 Shadicon.Shp
@@ -23005,14 +23060,14 @@ Shadow.Shp
 Shadow.Shp	Map Shadows
 Shaduico.Shp
 Shaman_.Wom
-Shapes.Pal
-Shapes.Shp
 Shapes1.Shp
 Shapes2.Shp
+Shapes.Pal
+Shapes.Shp
 Shardglo.Aud
 Shbak_.Wom
-Shell.Pal
 Shell2.Pal
+Shell.Pal
 Shellbttnoff.Pcx
 Shellbttnon.Pcx
 Shellbttnpress.Pcx
@@ -23020,7 +23075,9 @@ Shimmer1.Aud
 Ship.Shp
 Shipsink.Vqa	Ship Sinking
 Shipsink.Vqp	Ship Sinking
+Shipyard.Vqa
 Shipyard.Vqa	Ship Sinking
+Shipyard.Vqp
 Shipyard.Vqp	Ship Sinking
 Shk.Shp
 Shkicon.Shp
@@ -23031,12 +23088,12 @@ Shldgrn1.Aud
 Shldred1.Aud
 Shok.Shp	Shock Trooper
 Shokicon.Shp	Shock Trooper
-Shorbom1.Vqa	Ships Attatking Base
-Shorbom1.Vqp	Ships Attatking Base
-Shorbom2.Vqa	Ships Attatking Base Again
-Shorbom2.Vqp	Ships Attatking Base Again
-Shorbomb.Vqa	Ships Attatking Another Base
-Shorbomb.Vqp	Ships Attatking Another Base
+Shorbom1.Vqa	Ships Attacking Base
+Shorbom1.Vqp	Ships Attacking Base
+Shorbom2.Vqa	Ships Attacking Base Again
+Shorbom2.Vqp	Ships Attacking Base Again
+Shorbomb.Vqa	Ships Attacking Another Base
+Shorbomb.Vqp	Ships Attacking Another Base
 Shore01.Des
 Shore01.Sno
 Shore01.Tem
@@ -23252,7 +23309,7 @@ Shotgun1.Aud
 Shotgun9.Aud
 Shroud.Shp
 Shroudx.Shp
-Shut_It.Aud	Shut_It
+Shut_It.Aud
 Shutdown.Aud
 Sidbar1c.Aud	Sidebar 1
 Sidbar1c.Juv	Sidebar 1
@@ -23281,6 +23338,8 @@ Sidefnt3.Pal
 Sidenc01.Mix
 Sidenc02.Mix
 Sides.Pal
+Siege.Vqa
+Siege.Vqp
 Sign01.Des
 Sign01.Lun
 Sign01.Sno
@@ -23357,13 +23416,13 @@ Sinkhole.Map
 Siren2.Aud
 Sitduck.Vqa	Ship Blowing Up
 Sitduck.Vqp	Ship Blowing Up
-Sizzle.Csv
-Sizzle.Lsv
-Sizzle.Vqa
 Sizzle1.Vqa
 Sizzle1.Vqp
 Sizzle2.Vqa
 Sizzle2.Vqp
+Sizzle.Csv
+Sizzle.Lsv
+Sizzle.Vqa
 Sizzle_H.Pcx
 Sizzle_H.Vqa
 Sizzle_L.Pcx
@@ -23967,15 +24026,15 @@ Sminuico.Shp
 Smkpuff.Shp
 Smlhurt1.Aud
 Smlogo.Shp
-Smoke_M.Shp	
-Smokey.Shp
+Smoke_M.Shp
 Smokey2.Shp
+Smokey.Shp
 Smokland.Shp
 Smout1.Aud	Moving Out!
 Smsh226m.Aud	Smash
-Snake.Aud
 Snake1.Aud
 Snake9.Aud
+Snake.Aud
 Sndinit1.Aud
 Sndtst.Wsa
 Snipe.Shp
@@ -23985,9 +24044,6 @@ Sno.Mix
 Snodpal1.Pal
 Snore1.Aud
 Snotspew.Aud
-Snow.Ini
-Snow.Mix
-Snow.Pal
 Snow01.Des
 Snow01.Sno
 Snow01.Tem
@@ -24009,7 +24065,12 @@ Snow03.Tem
 Snow04.Des
 Snow04.Sno
 Snow04.Tem
+Snow.Ini
+Snow.Mix
+Snow.Pal
+Snowbase.Vqa
 Snowbase.Vqa	Base Being Blown Up In The Snow
+Snowbase.Vqp
 Snowbase.Vqp	Base Being Blown Up In The Snow
 Snowbomb.Vqa	Base Being Blown Up In The Snow
 Snowbomb.Vqp	Base Being Blown Up In The Snow
@@ -24021,9 +24082,9 @@ Snstrafe.Vqa	Planes Strafing Vilage
 Snstrafe.Vqp	Planes Strafing Vilage
 Sokay1.Aud	Ok!
 Sonarbox.Shp	Sonar Pulse
+Sonic4.Aud	Sonic Weapon Fire
 Sonic.Hva
 Sonic.Vxl
-Sonic4.Aud	Sonic Weapon Fire
 Sonicbarl.Hva
 Sonictur.Hva
 Sonictur.Vxl
@@ -24033,19 +24094,22 @@ Sonricon.Shp	Sonar Pulse
 Sonway1.Aud	On My Way
 Soulamb1.Aud
 Soulmix1.Aud
-Sound.Ini
 Sound01.Ini	FS Sound Settings
+Sound.Ini
 Soundmd.Ini
+Sounds01.Mix
 Sounds.Efx
 Sounds.Inf
 Sounds.Mix
 Sounds.Ver
-Sounds01.Mix
 Sov-Tran.Wsa	Soviet Score Screen
 Sov01t.Map
 Sov01umd.Map
+Sov1u.Map
 Sov02smd.Map
 Sov02t.Map
+Sov2.Pcx
+Sov2-Lo.Cps
 Sov03u.Map
 Sov03umd.Map
 Sov04dmd.Map
@@ -24061,14 +24125,11 @@ Sov09u.Map
 Sov10t.Map
 Sov11s.Map
 Sov12s.Map
-Sov1u.Map
-Sov2-Lo.Cps
-Sov2.Pcx
 Sovbackh.Pcx	Soviet Score Screen Picture
 Sovbase.Vqa	Soviet Base With Teslas Truck Drives In
 Sovbase.Vqp	Soviet Base With Teslas Truck Drives In
-Sovbatl.Vqa	Destroyed Soviet Vechicles
-Sovbatl.Vqp	Destroyed Soviet Vechicles
+Sovbatl.Vqa	Destroyed Soviet Vehicles
+Sovbatl.Vqp	Destroyed Soviet Vehicles
 Sovcemet.Vqa	Graveyard
 Sovcemet.Vqp	Graveyard
 Sovefal1.Aud	Soviet Empire Has Fallen
@@ -24077,18 +24138,8 @@ Sovfapp1.Aud	Soviet Forces Approaching
 Sovfinal.Vqa	Stalin In London
 Sovfinal.Vqp	Stalin In London
 Sovforc1.Aud	Soviet Forces Have Fallen
-Soviet1.Vqa	Kill The Civillians
-Soviet1.Vqp	Kill The Civillians
-Soviet10.Vqa	Keep The Convoy Safe
-Soviet10.Vqp	Keep The Convoy Safe
-Soviet11.Vqa	Cut Off The Boats
-Soviet11.Vqp	Cut Off The Boats
-Soviet12.Vqa	Capture The Chronosphere
-Soviet12.Vqp	Capture The Chronosphere
-Soviet13.Vqa	Do Not Loose The Chronosphere
-Soviet13.Vqp	Do Not Loose The Chronosphere
-Soviet14.Vqa	Final Assault On London
-Soviet14.Vqp	Final Assault On London
+Soviet1.Vqa	Kill The Civilians
+Soviet1.Vqp	Kill The Civilians
 Soviet2.Vqa	Guard The Base
 Soviet2.Vqp	Guard The Base
 Soviet3.Vqa	Kill The Spy
@@ -24105,6 +24156,16 @@ Soviet8.Vqa	Capture The Island
 Soviet8.Vqp	Capture The Island
 Soviet9.Vqa	Reclaim The Truck
 Soviet9.Vqp	Reclaim The Truck
+Soviet10.Vqa	Keep The Convoy Safe
+Soviet10.Vqp	Keep The Convoy Safe
+Soviet11.Vqa	Cut Off The Boats
+Soviet11.Vqp	Cut Off The Boats
+Soviet12.Vqa	Capture The Chronosphere
+Soviet12.Vqp	Capture The Chronosphere
+Soviet13.Vqa	Do Not Loose The Chronosphere
+Soviet13.Vqp	Do Not Loose The Chronosphere
+Soviet14.Vqa	Final Assault On London
+Soviet14.Vqp	Final Assault On London
 Sovietinvasion.Bmp
 Sovietlogo.Shp
 Sovietmcv.Bmp
@@ -24113,13 +24174,12 @@ Sovmcv.Vqa	Soviet MCV Drives Up
 Sovmcv.Vqp	Soviet MCV Drives Up
 Sovpaper.Cps	Soviet Logo
 Sovpaper.Pcx	Soviet Logo
-Sovrein1.Aud	Soviet Reinforcements Have Arived
+Sovrein1.Aud	Soviet Reinforcements Have Arrived
 Sovtstar.Vqa	Soviet Logo
 Sovtstar.Vqp	Soviet Logo
 Spark3a.Aud
 Sparks1.Aud
 Sparky1.Aud
-Sparky10.Aud
 Sparky2.Aud
 Sparky3.Aud
 Sparky4.Aud
@@ -24128,11 +24188,12 @@ Sparky6.Aud
 Sparky7.Aud
 Sparky8.Aud
 Sparky9.Aud
+Sparky10.Aud
 SpchSFX.Tlk
-Speech.Inf
-Speech.Mix
 Speech01.Mix
 Speech02.Mix
+Speech.Inf
+Speech.Mix
 Speed.Shp
 Speficon.Shp	Sub Pen Fake
 Spelgone.Aud
@@ -24165,8 +24226,8 @@ Spinopn4.Aud
 Spinup1.Aud
 Spirtalt.Aud
 Spkr01.Urb
-Splash.Img
 Splash9.Aud	Missile In Water
+Splash.Img
 Splat1.Aud
 Spldbr.Pal
 Spldbr.Shp
@@ -24210,12 +24271,16 @@ Sprkspl5.Aud
 Spsyread.Wav
 Sputdoor.Shp	GPS Satellite Launching
 Sputnik.Shp	GPS Satellite Flying
+Sputnik.Vqa
+Sputnik.Vqp
 Spy-Lo.Cps	Spy Infiltrating Building
 Spy.Pcx	Spy Infiltrating Building
 Spy.Shp
 Spy.Shp	Spy
 Spy.Vqa	Spy Infiltrating Building
 Spy.Vqp	Spy Infiltrating Building
+Spyc.Vqa
+Spyc.Vqp
 Spycrash.Vqa	Spy Plane Crash
 Spycrash.Vqp	Spy Plane Crash
 Spyicon.Shp
@@ -24251,31 +24316,31 @@ Squeak3.Aud
 Squeak4.Aud
 Squeak5.Aud
 Squelch.Shp
-Squish.Shp	Squished Body
 Squish2.Aud	Squish
 Squish2.Juv	Squish
-Squish6.Aud Squish
+Squish6.Aud	Squish
+Squish.Shp	Squished Body
 Squishy2.Aud	Squish
 Squrl1.Aud
 Squrl2.Aud
-Sr1.Tem	Dirt
-Sr1.Win	Dirt
-Sr2.Tem	Dirt
-Sr2.Win	Dirt
+Sr1.Tem	Bib
+Sr1.Win	Bib
+Sr2.Tem	Bib
+Sr2.Win	Bib
 Sradar.Shp
 Srchtlk1.Aud
 Sredsmk1.Shp
 Sref.Hva
 Sref.Vxl
 Sreficon.Shp
-Sreftur.Hva
-Sreftur.Vxl
 Sreftur1.Hva
 Sreftur1.Vxl
 Sreftur2.Hva
 Sreftur2.Vxl
 Sreftur3.Hva
 Sreftur3.Vxl
+Sreftur.Hva
+Sreftur.Vxl
 Srefuico.Shp
 Srock01.Des
 Srock01.Lun
@@ -24308,32 +24373,26 @@ Srock05.Tem
 Srock05.Ubn
 Srock05.Urb
 Srrwndchim1.Aud
-Ss-0310919e_E.Vqa
-Ss-0310919e_E.Vqt
-Ss-0311219e_E.Vqa
-Ss-0311219e_E.Vqt
-Ss-0377804e_E.Vqa
-Ss-0377804e_E.Vqt
+Ss-4025108e_E.Vqa
+Ss-4025108e_E.Vqt
+Ss-2730706e_E.Vqa
+Ss-2730706e_E.Vqt
+Ss-1386904e_E.Vqa
+Ss-1386904e_E.Vqt
+Ss-1380612e_E.Vqa
+Ss-1380612e_E.Vqt
+Ss-1372504e_E.Vqa
+Ss-1372504e_E.Vqt
+Ss-1320516e_E.Vqa
+Ss-1320516e_E.Vqt
 Ss-0656001e_E.Vqa
 Ss-0656001e_E.Vqt
-Ss-10e.Csv
-Ss-10e.Lsv
-Ss-10e.Vqa
-Ss-10e_E.Vqa
-Ss-10e_E.Vqt
-Ss-10e_H.Pcx
-Ss-10e_H.Vqa
-Ss-10e_L.Pcx
-Ss-10e_L.Vqa
-Ss-11e.Csv
-Ss-11e.Lsv
-Ss-11e.Vqa
-Ss-11e_E.Vqa
-Ss-11e_E.Vqt
-Ss-11e_H.Pcx
-Ss-11e_H.Vqa
-Ss-11e_L.Pcx
-Ss-11e_L.Vqa
+Ss-0377804e_E.Vqa
+Ss-0377804e_E.Vqt
+Ss-0311219e_E.Vqa
+Ss-0311219e_E.Vqt
+Ss-0310919e_E.Vqa
+Ss-0310919e_E.Vqt
 Ss-12e.Csv
 Ss-12e.Lsv
 Ss-12e.Vqa
@@ -24343,90 +24402,24 @@ Ss-12e_H.Pcx
 Ss-12e_H.Vqa
 Ss-12e_L.Pcx
 Ss-12e_L.Vqa
-Ss-1320516e_E.Vqa
-Ss-1320516e_E.Vqt
-Ss-1372504e_E.Vqa
-Ss-1372504e_E.Vqt
-Ss-1380612e_E.Vqa
-Ss-1380612e_E.Vqt
-Ss-1386904e_E.Vqa
-Ss-1386904e_E.Vqt
-Ss-1e.Csv
-Ss-1e.Lsv
-Ss-1e.Vqa
-Ss-1e_E.Vqa
-Ss-1e_E.Vqt
-Ss-1e_H.Pcx
-Ss-1e_H.Vqa
-Ss-1e_L.Pcx
-Ss-1e_L.Vqa
-Ss-2730706e_E.Vqa
-Ss-2730706e_E.Vqt
-Ss-2e.Csv
-Ss-2e.Lsv
-Ss-2e.Vqa
-Ss-2e_E.Vqa
-Ss-2e_E.Vqt
-Ss-2e_H.Pcx
-Ss-2e_H.Vqa
-Ss-2e_L.Pcx
-Ss-2e_L.Vqa
-Ss-3e.Csv
-Ss-3e.Lsv
-Ss-3e.Vqa
-Ss-3e_E.Vqa
-Ss-3e_E.Vqt
-Ss-3e_H.Pcx
-Ss-3e_H.Vqa
-Ss-3e_L.Pcx
-Ss-3e_L.Vqa
-Ss-4025108e_E.Vqa
-Ss-4025108e_E.Vqt
-Ss-4e.Csv
-Ss-4e.Lsv
-Ss-4e.Vqa
-Ss-4e_E.Vqa
-Ss-4e_E.Vqt
-Ss-4e_H.Pcx
-Ss-4e_H.Vqa
-Ss-4e_L.Pcx
-Ss-4e_L.Vqa
-Ss-5e.Csv
-Ss-5e.Lsv
-Ss-5e.Vqa
-Ss-5e_E.Vqa
-Ss-5e_E.Vqt
-Ss-5e_H.Pcx
-Ss-5e_H.Vqa
-Ss-5e_L.Pcx
-Ss-5e_L.Vqa
-Ss-6e.Csv
-Ss-6e.Lsv
-Ss-6e.Vqa
-Ss-6e_E.Vqa
-Ss-6e_E.Vqt
-Ss-6e_H.Pcx
-Ss-6e_H.Vqa
-Ss-6e_L.Pcx
-Ss-6e_L.Vqa
-Ss-7e.Csv
-Ss-7e.Lsv
-Ss-7e.Vqa
-Ss-7e_E.Vqa
-Ss-7e_E.Vqt
-Ss-7e_H.Pcx
-Ss-7e_H.Vqa
-Ss-7e_L.Pcx
-Ss-7e_L.Vqa
-Ss-8e.Csv
-Ss-8e.Lsv
-Ss-8e.Vqa
-Ss-8e_E.Vqa
-Ss-8e_E.Vqt
-Ss-8e_H.Pcx
-Ss-8e_H.Vqa
-Ss-8e_L.Pcx
-Ss-8e_L.Vqa
+Ss-11e.Csv
+Ss-11e.Lsv
+Ss-11e.Vqa
+Ss-11e_E.Vqa
+Ss-11e_E.Vqt
+Ss-11e_H.Pcx
+Ss-11e_H.Vqa
+Ss-11e_L.Pcx
+Ss-11e_L.Vqa
+Ss-10e.Csv
+Ss-10e.Lsv
+Ss-10e.Vqa
+Ss-10e_E.Vqa
+Ss-10e_E.Vqt
+Ss-10e_H.Pcx
+Ss-10e_H.Vqa
+Ss-10e_L.Pcx
+Ss-10e_L.Vqa
 Ss-9e.Csv
 Ss-9e.Lsv
 Ss-9e.Vqa
@@ -24436,6 +24429,78 @@ Ss-9e_H.Pcx
 Ss-9e_H.Vqa
 Ss-9e_L.Pcx
 Ss-9e_L.Vqa
+Ss-8e.Csv
+Ss-8e.Lsv
+Ss-8e.Vqa
+Ss-8e_E.Vqa
+Ss-8e_E.Vqt
+Ss-8e_H.Pcx
+Ss-8e_H.Vqa
+Ss-8e_L.Pcx
+Ss-8e_L.Vqa
+Ss-7e.Csv
+Ss-7e.Lsv
+Ss-7e.Vqa
+Ss-7e_E.Vqa
+Ss-7e_E.Vqt
+Ss-7e_H.Pcx
+Ss-7e_H.Vqa
+Ss-7e_L.Pcx
+Ss-7e_L.Vqa
+Ss-6e.Csv
+Ss-6e.Lsv
+Ss-6e.Vqa
+Ss-6e_E.Vqa
+Ss-6e_E.Vqt
+Ss-6e_H.Pcx
+Ss-6e_H.Vqa
+Ss-6e_L.Pcx
+Ss-6e_L.Vqa
+Ss-5e.Csv
+Ss-5e.Lsv
+Ss-5e.Vqa
+Ss-5e_E.Vqa
+Ss-5e_E.Vqt
+Ss-5e_H.Pcx
+Ss-5e_H.Vqa
+Ss-5e_L.Pcx
+Ss-5e_L.Vqa
+Ss-4e.Csv
+Ss-4e.Lsv
+Ss-4e.Vqa
+Ss-4e_E.Vqa
+Ss-4e_E.Vqt
+Ss-4e_H.Pcx
+Ss-4e_H.Vqa
+Ss-4e_L.Pcx
+Ss-4e_L.Vqa
+Ss-3e.Csv
+Ss-3e.Lsv
+Ss-3e.Vqa
+Ss-3e_E.Vqa
+Ss-3e_E.Vqt
+Ss-3e_H.Pcx
+Ss-3e_H.Vqa
+Ss-3e_L.Pcx
+Ss-3e_L.Vqa
+Ss-2e.Csv
+Ss-2e.Lsv
+Ss-2e.Vqa
+Ss-2e_E.Vqa
+Ss-2e_E.Vqt
+Ss-2e_H.Pcx
+Ss-2e_H.Vqa
+Ss-2e_L.Pcx
+Ss-2e_L.Vqa
+Ss-1e.Csv
+Ss-1e.Lsv
+Ss-1e.Vqa
+Ss-1e_E.Vqa
+Ss-1e_E.Vqt
+Ss-1e_H.Pcx
+Ss-1e_H.Vqa
+Ss-1e_L.Pcx
+Ss-1e_L.Vqa
 Ss-A_Cam_E.Vqa
 Ss-A_Cam_E.Vqt
 Ss-Arenaapr_E.Vqa
@@ -24528,30 +24593,30 @@ Ss-Ruin_App_E.Vqa
 Ss-Ruin_App_E.Vqt
 Ss-Sizzle_E.Vqa
 Ss-Sizzle_E.Vqt
-Ss-Ss-10e_E.Vqa
-Ss-Ss-10e_E.Vqt
-Ss-Ss-11e_E.Vqa
-Ss-Ss-11e_E.Vqt
 Ss-Ss-12e_E.Vqa
 Ss-Ss-12e_E.Vqt
-Ss-Ss-1e_E.Vqa
-Ss-Ss-1e_E.Vqt
-Ss-Ss-2e_E.Vqa
-Ss-Ss-2e_E.Vqt
-Ss-Ss-3e_E.Vqa
-Ss-Ss-3e_E.Vqt
-Ss-Ss-4e_E.Vqa
-Ss-Ss-4e_E.Vqt
-Ss-Ss-5e_E.Vqa
-Ss-Ss-5e_E.Vqt
-Ss-Ss-6e_E.Vqa
-Ss-Ss-6e_E.Vqt
-Ss-Ss-7e_E.Vqa
-Ss-Ss-7e_E.Vqt
-Ss-Ss-8e_E.Vqa
-Ss-Ss-8e_E.Vqt
+Ss-Ss-11e_E.Vqa
+Ss-Ss-11e_E.Vqt
+Ss-Ss-10e_E.Vqa
+Ss-Ss-10e_E.Vqt
 Ss-Ss-9e_E.Vqa
 Ss-Ss-9e_E.Vqt
+Ss-Ss-8e_E.Vqa
+Ss-Ss-8e_E.Vqt
+Ss-Ss-7e_E.Vqa
+Ss-Ss-7e_E.Vqt
+Ss-Ss-6e_E.Vqa
+Ss-Ss-6e_E.Vqt
+Ss-Ss-5e_E.Vqa
+Ss-Ss-5e_E.Vqt
+Ss-Ss-4e_E.Vqa
+Ss-Ss-4e_E.Vqt
+Ss-Ss-3e_E.Vqa
+Ss-Ss-3e_E.Vqt
+Ss-Ss-2e_E.Vqa
+Ss-Ss-2e_E.Vqt
+Ss-Ss-1e_E.Vqa
+Ss-Ss-1e_E.Vqt
 Ss-Stat_Wlk_E.Vqa
 Ss-Stat_Wlk_E.Vqt
 Ss-Tavern_E.Vqa
@@ -24568,8 +24633,8 @@ Ss-Wrm_Eat_E.Vqa
 Ss-Wrm_Eat_E.Vqt
 Ss-Wrm_Stat_E.Vqa
 Ss-Wrm_Stat_E.Vqt
-Ss.Shp	Submarine
 Ss01.Vqa
+Ss.Shp	Submarine
 Ssam.Shp	Destroyer Turret
 Ssarbat1.Aud
 Ssarbat1.Hmi
@@ -24599,6 +24664,7 @@ Ssplash2.Aud	Small Water Splash
 Ssplash3.Aud	Small Water Splash
 Ssrv.Shp
 Ssswndchim4.Aud
+Ssteal1.Aud
 Staffup1.Aud
 Staghit1.Aud
 Staghit2.Aud
@@ -24639,9 +24705,9 @@ Stavyes.Aud	Yes
 Std6p.Fnt
 Std8p.Fnt
 Stdmrb01.Urb
+Stealth2.Shp
 Stealth.Vqa	Stealth Tank
 Stealth.Vqp	Stealth Tank
-Stealth2.Shp
 Steam1.Aud
 Steam2.Aud
 Steam3.Aud
@@ -24682,8 +24748,6 @@ Stnkicon.Shp
 Stondor1.Aud
 Stondor2.Aud
 Stone1.Aud
-Stone10.Aud
-Stone11.Aud
 Stone2.Aud
 Stone3.Aud
 Stone4.Aud
@@ -24692,6 +24756,8 @@ Stone6.Aud
 Stone7.Aud
 Stone8.Aud
 Stone9.Aud
+Stone10.Aud
+Stone11.Aud
 Stoned1.Aud
 Stonel1.Aud
 Stonplt1.Aud
@@ -24706,7 +24772,7 @@ Stonwlk5.Aud
 Stonwlk6.Aud
 Stonwlk7.Aud
 Stopthem.Aud	Deception
-Stopthem.Var
+Stopthem.Var	Deception Remix
 Storm.Aud	Ion Storm
 Storms.Ini
 Storms.Map
@@ -24721,8 +24787,8 @@ Strike3.Aud
 Strike4.Aud
 Strike5.Aud
 Strike6.Aud
-Strip.Shp	Blank Tile
 Strip1.Aud
+Strip.Shp	Blank Tile
 Stripdn.Shp	Scroll Down
 Stripna.Shp	Allies Sidebar Background
 Stripup.Shp	Scroll Up
@@ -24762,10 +24828,11 @@ Strp0011.Int	Green With Yellow Stripe
 Strucap1.Aud	Structure Captured
 Struggle.Aud	Static Sounds
 Strusld1.Aud	Structure Sold
+Stup_Fix.Shp
 Sub.Bmp
 Sub.Hva
 Sub.Vxl
-Subdril1.Aud	Subterrian Drill
+Subdril1.Aud	Subterranean Drill
 Subicon.Shp
 Subshow1.Aud	Sub Uncloaking
 Subt.Hva
@@ -24816,16 +24883,16 @@ Swing1.Aud
 Swing2.Aud
 Swing4.Aud
 Swish1.Aud
+Swish2.Aud
+Swish3.Aud
+Swish4.Aud
 Swish12.Aud
 Swish15.Aud
 Swish17.Aud
 Swish18.Aud
-Swish2.Aud
 Swish25.Aud
 Swish29.Aud
-Swish3.Aud
 Swish34.Aud
-Swish4.Aud
 Switch9.Aud
 Switchy1.Aud
 Switchy2.Aud
@@ -24851,7 +24918,6 @@ Sycrtmd.Pal
 Sycrtmd.Shp
 Syeah1.Aud	Yeah!
 Syessir1.Aud	Yes Sir!
-Sylook.Vqp
 Syrd.Shp	Naval Yard
 Syrdicon.Shp	Naval Yard
 Syrdmake.Shp	Naval Yard
@@ -24859,24 +24925,50 @@ Syrficon.Shp	Naval Yard Fake
 T01.Sno	Tree 1
 T01.Tem	Tree 1
 T01.Win	Tree 1
+T1.Aud
+T1.Bmp
+T1.Wav
+T1a.Aud
+T1b.Aud
 T02.Sno	Tree 2
 T02.Tem	Tree 2
 T02.Win	Tree 2
+T2.Bmp
+T2a.Aud
+T2b.Aud
 T03.Sno	Tree 3
 T03.Tem	Tree 3
 T03.Win	Tree 3
+T3a.Aud
+T3a.Bmp
+T3b.Aud
+T3b.Bmp
+T3c.Aud
+T3c.Bmp
 T04.Des	Tree 4
 T04.Sno	Tree 4
 T04.Tem	Tree 4
+T4.Bmp
+T4.Wav
+T4_Ib.Shp
+T4a.Aud
+T4b.Aud
 T05.Sno	Tree 5
 T05.Tem	Tree 5
 T05.Win	Tree 5
+T5.Aud
+T5.Bmp
 T06.Sno	Tree 6
 T06.Tem	Tree 6
 T06.Win	Tree 6
+T6.Aud
+T6.Bmp
 T07.Sno	Tree 7
 T07.Tem	Tree 7
 T07.Win	Tree 7
+T7.Bmp
+T7a.Aud
+T7b.Aud
 T08.Des	Tree 8
 T08.Sno	Tree 8
 T08.Tem	Tree 8
@@ -24884,9 +24976,6 @@ T08.Win	Tree 8
 T09.Des	Tree 9
 T09.Sno	Tree 9
 T09.Tem	Tree 9
-T1.Aud
-T1.Bmp
-T1.Wav
 T10.Sno	Tree 10
 T10.Tem	Tree 10
 T10.Win	Tree 10
@@ -24912,29 +25001,6 @@ T17.Sno	Tree 17
 T17.Tem	Tree 17
 T17.Win	Tree 17
 T18.Des	Tree 18
-T1a.Aud
-T1b.Aud
-T2.Bmp
-T2a.Aud
-T2b.Aud
-T3a.Aud
-T3a.Bmp
-T3b.Aud
-T3b.Bmp
-T3c.Aud
-T3c.Bmp
-T4.Bmp
-T4.Wav
-T4_Ib.Shp
-T4a.Aud
-T4b.Aud
-T5.Aud
-T5.Bmp
-T6.Aud
-T6.Bmp
-T7.Bmp
-T7a.Aud
-T7b.Aud
 T_Garden.Ini
 T_Garden.Map
 Tab00.Shp
@@ -24982,6 +25048,8 @@ Tanker01.Des
 Tanker01.Sno
 Tanker01.Tem
 Tankfight.Bmp
+Tankgate.Vqa
+Tankgate.Vqp
 Tankgo.Vqa	Tanks Rolling Through The Desert
 Tankgo.Vqp	Tanks Rolling Through The Desert
 Tankkill.Vqa	Tank Being Blown Up
@@ -24998,12 +25066,14 @@ Tanyuico.Shp
 Tapstry1.Aud
 Tapstry2.Aud
 Tapstry3.Aud
-Target.Aud	Mechanical Man
 Target1.Aud	Target 1
 Target1.Shp
 Target2.Aud	Target 2
 Target2.Shp
 Target3.Aud	Target 3
+Target.Aud	Mechanical Man
+Target.Vqa
+Target.Vqp
 Targfre1.Aud	Target Freed
 Targres1.Aud	Target Rescued
 Targup1.Aud
@@ -25013,10 +25083,10 @@ Targup4.Aud
 Targup5.Aud
 Targup6.Aud
 Targup7.Aud
+Tavern1.Aud
 Tavern.Csv
 Tavern.Lsv
 Tavern.Vqa
-Tavern1.Aud
 Tavern_E.Vqa
 Tavern_E.Vqt
 Tavern_H.Pcx
@@ -25027,8 +25097,8 @@ Taxi.Hva
 Taxi.Vxl
 Tb01nc-H.Pcx
 Tb01nc.Pcx
-Tb02-Min.Set
 Tb02.Vqa
+Tb02-Min.Set
 Tb02_0.Vqa
 Tb02_1.Vqa
 Tb02_2.Vqa
@@ -25036,8 +25106,8 @@ Tb02_3.Vqa
 Tb02lm-G.Pcx
 Tb02lm-H.Pcx
 Tb02lm.Pcx
-Tb03-Min.Set
 Tb03.Vqa
+Tb03-Min.Set
 Tb03_0.Vqa
 Tb03_1.Vqa
 Tb03_2.Vqa
@@ -25046,17 +25116,18 @@ Tb03l-H.Pcx
 Tb03l.Pcx
 Tb04i-H.Pcx
 Tb04i.Pcx
-Tb05-Min.Set
 Tb05.Vqa
+Tb05-Min.Set
 Tb05_0.Vqa
 Tb05_1.Vqa
 Tb05_2.Vqa
 Tb05_3.Vqa
 Tb05sm-H.Pcx
 Tb05sm.Pcx
-Tb06-Min.Set
+Tb5loop1.Aud
+Tb5loop2.Aud
 Tb06.Vqa
-Tb060000.Img
+Tb06-Min.Set
 Tb06_0.Vqa
 Tb06_1.Vqa
 Tb06_2.Vqa
@@ -25067,8 +25138,8 @@ Tb06esp3.Vqa
 Tb06esp4.Vqa
 Tb06s-H.Pcx
 Tb06s.Pcx
-Tb07-Min.Set
 Tb07.Vqa
+Tb07-Min.Set
 Tb07_0.Vqa
 Tb07_1.Vqa
 Tb07_2.Vqa
@@ -25081,8 +25152,7 @@ Tb09e-H.Pcx
 Tb09e.Pcx
 Tb10isp-H.Pcx
 Tb10isp.Pcx
-Tb5loop1.Aud
-Tb5loop2.Aud
+Tb060000.Img
 Tb_Fly_E.Vqa
 Tb_Fly_F.Vqa
 Tb_Fly_G.Vqa
@@ -25150,13 +25220,13 @@ Terminat.Aud	Terminate
 Terrace.Ini
 Terrace.Map
 Terrordrone.Bmp
+Tesla1.Aud	Tesla Shot
 Tesla.Vqa	Tesla Coil Destroying Tank
 Tesla.Vqp	Tesla Coil Destroying Tank
-Tesla1.Aud	Tesla Shot
 Teslaicon.Shp
 Teslatank.Bmp
-Test.Ubn
 Test1.Hmi
+Test.Ubn
 Texs01.Urb
 Texs02.Urb
 Texs03.Urb
@@ -25208,8 +25278,8 @@ Tgroar3.Aud
 Tgroar4.Aud
 Tgroar5.Aud
 Thanku1.Aud
-Theme.Ini
 Theme01.Ini	FS Music Theme Settings
+Theme.Ini
 Thememd.Ini
 Thf.Shp	Thief
 Thficon.Shp	Thief
@@ -25230,15 +25300,6 @@ Thumb.Shp
 Ti1.Des	Tiberium 1
 Ti1.Tem	Tiberium 1
 Ti1.Win	Tiberium 1
-Ti10.Des	Tiberium 10
-Ti10.Tem	Tiberium 10
-Ti10.Win	Tiberium 10
-Ti11.Des	Tiberium 11
-Ti11.Tem	Tiberium 11
-Ti11.Win	Tiberium 11
-Ti12.Des	Tiberium 12
-Ti12.Tem	Tiberium 12
-Ti12.Win	Tiberium 12
 Ti2.Des	Tiberium 2
 Ti2.Tem	Tiberium 2
 Ti2.Win	Tiberium 2
@@ -25263,6 +25324,15 @@ Ti8.Win	Tiberium 8
 Ti9.Des	Tiberium 9
 Ti9.Tem	Tiberium 9
 Ti9.Win	Tiberium 9
+Ti10.Des	Tiberium 10
+Ti10.Tem	Tiberium 10
+Ti10.Win	Tiberium 10
+Ti11.Des	Tiberium 11
+Ti11.Tem	Tiberium 11
+Ti11.Win	Tiberium 11
+Ti12.Des	Tiberium 12
+Ti12.Tem	Tiberium 12
+Ti12.Win	Tiberium 12
 Tib01.Des
 Tib01.Lun
 Tib01.Sno
@@ -25410,10 +25480,10 @@ Tigtail1.Aud
 Tilefal1.Aud
 Tilefal2.Aud
 Tilefal3.Aud
-Time.Shp
 Time01.Shp
+Time.Shp
 Timebomb.Aud	Time Bomb
-Timehr.Shp	Score: Red Alert
+Timehr.Shp
 Timeqk2.Shp
 Timeqked.Shp
 Timergo1.Aud	Timer Started
@@ -25508,23 +25578,23 @@ Tnkfire6.Aud	Tank Fire
 Tnkfire6.Juv	Tank Fire
 Toggle.Shp
 Toilet1.Aud
-Tone15.Aud	Tone
-Tone15.Juv	Tone
-Tone16.Aud	Tone
-Tone16.Juv	Tone
 Tone2.Aud	Tone
 Tone2.Juv	Tone
 Tone5.Aud	Tone
 Tone5.Juv	Tone
-Toney10.Aud
-Toney10.Aud	Tone
-Toney11.Aud
+Tone15.Aud	Tone
+Tone15.Juv	Tone
+Tone16.Aud	Tone
+Tone16.Juv	Tone
 Toney4.Aud
 Toney4.Aud	Tone
 Toney5.Aud
 Toney6.Aud
 Toney7.Aud
 Toney7.Aud	Tone
+Toney10.Aud
+Toney10.Aud	Tone
+Toney11.Aud
 Toofar.Vqa	Bridge Being Blown Up
 Toofar.Vqp	Bridge Being Blown Up
 Tooltip.Shp
@@ -25536,11 +25606,12 @@ Torch1.Aud
 Torch2.Aud
 Torch2.Wav
 Torch3.Aud
-Torpedo.Shp
 Torpedo1.Aud	Torpedoes
-Toss.Aud
+Torpedo.Shp
 Toss1.Aud
 Toss1.Juv
+Toss.Aud
+Tourgame.Bmp
 Tourofegypt.Map
 Tovrps01.Des
 Tovrps01.Sno
@@ -25614,6 +25685,24 @@ Tower_Ap_L.Vqa
 Towricon.Shp
 Towrkey1.Aud
 Tquake.Shp	Time Quake
+Tr-6to5.Cps
+Tr-6to5.Wsa
+Tr-4to1.Cps
+Tr-4to1.Wsa
+Tr-4to1w.Cps
+Tr-4to1w.Wsa
+Tr-4to5.Cps
+Tr-4to5.Wsa
+Tr-3to2.Cps
+Tr-3to2.Wsa
+Tr-3to4.Cps
+Tr-3to4.Wsa
+Tr-2to1.Cps
+Tr-2to1.Wsa
+Tr-2to1w.Cps
+Tr-2to1w.Wsa
+Tr-2to3.Cps
+Tr-2to3.Wsa
 Tr-1to2.Cps
 Tr-1to2.Wsa
 Tr-1to2w.Cps
@@ -25622,24 +25711,6 @@ Tr-1to4.Cps
 Tr-1to4.Wsa
 Tr-1to4w.Cps
 Tr-1to4w.Wsa
-Tr-2to1.Cps
-Tr-2to1.Wsa
-Tr-2to1w.Cps
-Tr-2to1w.Wsa
-Tr-2to3.Cps
-Tr-2to3.Wsa
-Tr-3to2.Cps
-Tr-3to2.Wsa
-Tr-3to4.Cps
-Tr-3to4.Wsa
-Tr-4to1.Cps
-Tr-4to1.Wsa
-Tr-4to1w.Cps
-Tr-4to1w.Wsa
-Tr-4to5.Cps
-Tr-4to5.Wsa
-Tr-6to5.Cps
-Tr-6to5.Wsa
 Tr_Exit.Cps	Large Bar
 Tr_Exit.Wsa	Installation Complete
 Tracks01.Des
@@ -25749,31 +25820,31 @@ Traincar-1.Vqa
 Traincar.Vqa
 Trainrob.Vqa
 Trakgrip.Pcx
-Tran.Hva
-Tran.Shp	Chinook
-Tran.Vxl
+Tran02a4.Wsa	Sound Card Selection To Mouths
+Tran04a2.Wsa	Mouth To Sound Card Selection
+Tran04a3.Wsa	Mouth To Sound Card Selection
+Tran06a4.Wsa	Port Irq Dma Window To Mouth
 Tran0203.Wsa	Sound Card Selection
 Tran0204.Wsa	Sound Card Selection To Mouths
 Tran0205.Wsa	Sound Card Selection To Bars
 Tran0206.Wsa	Sound Card Selection To Port Irq Dma Window
-Tran02a4.Wsa	Sound Card Selection To Mouths
 Tran0305.Wsa	Mouth To Bars
 Tran0402.Wsa	Mouths To Sound Card Selection
 Tran0403.Wsa	Mouths To Sound Card Selection
-Tran04a2.Wsa	Mouth To Sound Card Selection
-Tran04a3.Wsa	Mouth To Sound Card Selection
 Tran0602.Wsa	Port Irq Dma Window To Sound Card Selection
 Tran0604.Wsa	Port Irq Dma Window To Mouths
-Tran06a4.Wsa	Port Irq Dma Window To Mouth
+Tran.Hva
+Tran.Shp	Chinook
+Tran.Vxl
 Trancelv.Wav
 Tranicnh.Des	Chinook
 Tranicnh.Tem	Chinook
 Tranicnh.Win	Chinook
 Tranicon.Shp	Chinook
 Tranload.Aud
-Trans.Icn	Bulding Placement Tiles
 Trans1.Aud
 Trans1.Juv
+Trans.Icn	Bulding Placement Tiles
 Transit.Inf
 Translg.Shp
 Transmd.Shp
@@ -26058,7 +26129,7 @@ Trofm.Pcx
 Trofnew.Pcx
 Trofr.Pcx
 Trouble.Aud	Looks Like Trouble
-Trouble.Var	Looks Like Trouble SFX
+Trouble.Var	Looks Like Trouble Remix
 Trpdoor1.Aud
 Trpdorc.Aud
 Trpdoro.Aud
@@ -26107,7 +26178,7 @@ Trukicon.Shp	Supply Truck
 Ts_Title.Vqa
 Tsc1465003e.Aud
 Tscredit.Txt	Tiberian Sun Credits
-Tsgun4.Aud	Wolverene Gun
+Tsgun4.Aud	Wolverine Gun
 Tshade.Mrf
 Tshadow.Mrf
 Tsla.Shp	Tesla Coil
@@ -26155,8 +26226,6 @@ Tuffguy1.Aud
 Tug.Hva
 Tug.Vxl
 Tunits.Mrf
-Tunnel.Ini
-Tunnel.Map
 Tunnel01.Des
 Tunnel01.Sno
 Tunnel01.Tem
@@ -26177,6 +26246,8 @@ Tunnel04.Sno
 Tunnel04.Tem
 Tunnel04.Ubn
 Tunnel04.Urb
+Tunnel.Ini
+Tunnel.Map
 Tunnet01.Des
 Tunnet01.Sno
 Tunnet01.Tem
@@ -26249,7 +26320,7 @@ Twlt036.Shp	Medium Explosion (White)
 Twlt050.Shp	Large Explosion (White)
 Twlt070.Shp	X-Large Explosion (White)
 Twlt070t.Shp
-Twlt100.Shp	Biggest Explosion In The Game
+Twlt100.Shp	Biggest Explosion
 Twlt100i.Shp
 Twnk1.Shp
 Twr1icon.Shp
@@ -26297,115 +26368,115 @@ Udloitr2.Aud
 Uewoods0.Aud
 Ufo.Tem
 Ufoguard.Vqa
-Ug01-Min.Set
 Ug01.Vqa
+Ug01-Min.Set
 Ug01_0.Vqa
 Ug01_1.Vqa
 Ug01_2.Vqa
 Ug01_3.Vqa
-Ug02-Min.Set
 Ug02.Vqa
+Ug02-Min.Set
 Ug02_0.Vqa
 Ug02_1.Vqa
 Ug02_2.Vqa
 Ug02_3.Vqa
-Ug03-Min.Set
 Ug03.Vqa
+Ug03-Min.Set
 Ug03_0.Vqa
 Ug03_1.Vqa
 Ug03_2.Vqa
 Ug03_3.Vqa
-Ug04-Min.Set
 Ug04.Vqa
+Ug04-Min.Set
 Ug04_0.Vqa
 Ug04_1.Vqa
 Ug04_2.Vqa
 Ug04_3.Vqa
-Ug05-Min.Set
 Ug05.Vqa
+Ug05-Min.Set
 Ug05_0.Vqa
 Ug05_1.Vqa
 Ug05_2.Vqa
 Ug05_3.Vqa
-Ug06-Min.Set
 Ug06.Vqa
+Ug06-Min.Set
 Ug06_0.Vqa
 Ug06_1.Vqa
 Ug06_2.Vqa
 Ug06_3.Vqa
-Ug07-Min.Set
 Ug07.Vqa
+Ug07-Min.Set
 Ug07_0.Vqa
 Ug07_1.Vqa
 Ug07_2.Vqa
 Ug07_3.Vqa
-Ug08-Min.Set
 Ug08.Vqa
+Ug08-Min.Set
 Ug08_0.Vqa
 Ug08_1.Vqa
 Ug08_2.Vqa
 Ug08_3.Vqa
-Ug09-Min.Set
 Ug09.Vqa
+Ug09-Min.Set
 Ug09_0.Vqa
 Ug09_1.Vqa
 Ug09_2.Vqa
 Ug09_3.Vqa
-Ug10-Min.Set
 Ug10.Vqa
+Ug10-Min.Set
 Ug10_0.Vqa
 Ug10_1.Vqa
 Ug10_2.Vqa
 Ug10_3.Vqa
-Ug12-Min.Set
 Ug12.Vqa
+Ug12-Min.Set
 Ug12_0.Vqa
 Ug12_1.Vqa
 Ug12_2.Vqa
 Ug12_3.Vqa
-Ug13-Min.Set
 Ug13.Vqa
+Ug13-Min.Set
 Ug13_0.Vqa
 Ug13_1.Vqa
 Ug13_2.Vqa
 Ug13_3.Vqa
-Ug14-Min.Set
 Ug14.Vqa
+Ug14-Min.Set
 Ug14_0.Vqa
 Ug14_1.Vqa
 Ug14_2.Vqa
 Ug14_3.Vqa
 Ug14over.Vqa
-Ug15-Min.Set
 Ug15.Vqa
+Ug15-Min.Set
 Ug15_0.Vqa
 Ug15_1.Vqa
 Ug15_2.Vqa
 Ug15_3.Vqa
 Ug15over.Vqa
-Ug16-Min.Set
 Ug16.Vqa
+Ug16-Min.Set
 Ug16_0.Vqa
 Ug16_1.Vqa
 Ug16_2.Vqa
 Ug16_3.Vqa
-Ug17-Min.Set
 Ug17.Vqa
+Ug17-Min.Set
 Ug17_0.Vqa
 Ug17_1.Vqa
 Ug17_2.Vqa
 Ug17_3.Vqa
 Ug17over.Vqa
-Ug18-Min.Set
 Ug18.Vqa
+Ug18-Min.Set
 Ug18_0.Vqa
 Ug18_1.Vqa
 Ug18_2.Vqa
 Ug18_3.Vqa
 Ug18over.Vqa
 Ug18ovr2.Vqa
-Ug19-Min.Set
 Ug19.Vqa
+Ug19-Min.Set
 Ug19_0.Vqa
 Ug19_1.Vqa
 Ug19_2.Vqa
@@ -26424,6 +26495,10 @@ Uibkgdy.Pal
 Uimd.Ini
 Umagicon.Shp	Umagon
 Umagon.Shp	Umagon
+Un_Flag.Vqa
+Un_Flag.Vqp
+Un_Red.Vqa
+Un_Red.Vqp
 Uncloakd.Shp
 Under3.Aud	Under3
 Underbed.Aud
@@ -26471,13 +26546,28 @@ Utnk.Vxl
 V01.Sno	Church
 V01.Tem	Church
 V01.Win	Church
-V0100324e.Aud
 V02.Sno	Civilian Building 1
 V02.Tem	Civilian Building 1
 V02.Win	Civilian Building 1
+V2.Shp	V2 Rocket
+V2rl.Shp	V2 Rocket Launcher
+V2rlicon.Shp	V2 Rocket Launcher
+V2rocket.Vqa	V2 Rocket Launcher Launching
+V2rocket.Vqp	V2 Rocket Launcher Launching
 V03.Sno	Civilian Building 2
 V03.Tem	Civilian Building 2
 V03.Win	Civilian Building 2
+V3.Hva
+V3.Vxl
+V3final.Bmp
+V3icon.Shp
+V3rocket.Hva
+V3rocket.Vxl
+V3takoff.Shp
+V3trail.Shp
+V3uico.Shp
+V3wo.Hva
+V3wo.Vxl
 V04.Sno	Civilian Building 3
 V04.Tem	Civilian Building 3
 V04.Win	Civilian Building 3
@@ -26527,7 +26617,6 @@ V18.Sno	Field
 V18.Tem	Field
 V18.Win	Field
 V19.Shp	Oil Pump
-V2.Shp	V2 Rocket
 V20.Des	Civilian Building 13
 V21.Des	Civilian Building 14
 V22.Des	Civilian Building 15
@@ -26538,12 +26627,6 @@ V26.Des	Civilian Building 19
 V27.Des	Civilian Building 20
 V28.Des	Civilian Building 21
 V29.Des	Civilian Building 22
-V2rl.Shp	V2 Rocket Launcher
-V2rlicon.Shp	V2 Rocket Launcher
-V2rocket.Vqa	V2 Rocket Launcher Launching
-V2rocket.Vqp	V2 Rocket Launcher Launching
-V3.Hva
-V3.Vxl
 V30.Des	Civilian Building 23
 V31.Des	Civilian Building 24
 V32.Des	Civilian Building 25
@@ -26552,15 +26635,7 @@ V34.Des	Civilian Building 27
 V35.Des	Civilian Building 28
 V36.Des	Civilian Building 29
 V37.Des	Civilian Building 30
-V3final.Bmp
-V3icon.Shp
-V3rocket.Hva
-V3rocket.Vxl
-V3takoff.Shp
-V3trail.Shp
-V3uico.Shp
-V3wo.Hva
-V3wo.Vxl
+V0100324e.Aud
 Valkyrie.Aud	Valkyrie
 Valves1b.Aud	Valves
 Vasebrk1.Aud
@@ -26575,8 +26650,8 @@ Vegawin.Vqa
 Veh-Hit1.Shp	Small Explosion
 Veh-Hit2.Shp	Explosion
 Veh-Hit3.Shp	Very Small Explosion
-Vehic1.R00	Soviet 1 Vehicle Reporting
-Vehic1.R02	Soviet 3 Comrade!
+Vehic1.R00	Soviet Vehicle Reporting
+Vehic1.R02	Soviet Comrade!
 Vehic1.V00	Vehicle Reporting
 Vehic1.V02	Vehicle Reporting
 Veinatac.Sno
@@ -26605,7 +26680,7 @@ Vicbatl1.Xmi
 Vice.Shp	Visceroid
 Viceicnh.Shp
 Viceicnh.Tem
-Vicer1.Aud	Two Viceroids Combine
+Vicer1.Aud	Two Visceroids Combine
 Vidfone1.Aud
 Village_.Aud
 Village_.Vqa
@@ -26614,11 +26689,11 @@ Virus.Shp
 Virusd.Shp
 Visc_Lrg.Shp
 Visc_Sml.Shp
-Vislgatk.Shp	Adult Visroid Attack Animation
-Vislrg.Shp	Adult Visroid
+Vislgatk.Shp	Adult Visceroid Attack Animation
+Vislrg.Shp	Adult Visceroid
 Visor.Vqa	Change Of Plan
 Visor.Vqp	Change Of Plan
-Vissml.Shp	Baby Visroid
+Vissml.Shp	Baby Visceroid
 Vk.Dat
 Vk.Shp
 Vk.Tre
@@ -26641,6 +26716,7 @@ Vladwo.Hva
 Vladwo.Vxl
 Vloitr1.Aud
 Voic226m.Aud	Voices
+Voice.Bmp
 Voices.Csv
 Voices.Lsv
 Voices.Vqa
@@ -26760,86 +26836,86 @@ Vvvwoodwlk1.Aud
 Vvvwoodwlk3.Aud
 Vvvwoodwlk5.Aud
 Vvvwoodwlk7.Aud
-W-A-01.Des
-W-A-01.Sno
-W-A-01.Tem
-W-A-01.Ubn
-W-A-01.Urb
-W-A-02.Des
-W-A-02.Sno
-W-A-02.Tem
-W-A-02.Ubn
-W-A-02.Urb
-W-A-03.Des
-W-A-03.Sno
-W-A-03.Tem
-W-A-03.Ubn
-W-A-03.Urb
 W-A-04.Des
 W-A-04.Sno
 W-A-04.Tem
 W-A-04.Ubn
 W-A-04.Urb
-W-B-01.Des
-W-B-01.Sno
-W-B-01.Tem
-W-B-01.Ubn
-W-B-01.Urb
-W-B-02.Des
-W-B-02.Sno
-W-B-02.Tem
-W-B-02.Ubn
-W-B-02.Urb
-W-B-03.Des
-W-B-03.Sno
-W-B-03.Tem
-W-B-03.Ubn
-W-B-03.Urb
+W-A-03.Des
+W-A-03.Sno
+W-A-03.Tem
+W-A-03.Ubn
+W-A-03.Urb
+W-A-02.Des
+W-A-02.Sno
+W-A-02.Tem
+W-A-02.Ubn
+W-A-02.Urb
+W-A-01.Des
+W-A-01.Sno
+W-A-01.Tem
+W-A-01.Ubn
+W-A-01.Urb
 W-B-04.Des
 W-B-04.Sno
 W-B-04.Tem
 W-B-04.Ubn
 W-B-04.Urb
-W-C-01.Des
-W-C-01.Sno
-W-C-01.Tem
-W-C-01.Ubn
-W-C-01.Urb
-W-C-02.Des
-W-C-02.Sno
-W-C-02.Tem
-W-C-02.Ubn
-W-C-02.Urb
-W-C-03.Des
-W-C-03.Sno
-W-C-03.Tem
-W-C-03.Ubn
-W-C-03.Urb
+W-B-03.Des
+W-B-03.Sno
+W-B-03.Tem
+W-B-03.Ubn
+W-B-03.Urb
+W-B-02.Des
+W-B-02.Sno
+W-B-02.Tem
+W-B-02.Ubn
+W-B-02.Urb
+W-B-01.Des
+W-B-01.Sno
+W-B-01.Tem
+W-B-01.Ubn
+W-B-01.Urb
 W-C-04.Des
 W-C-04.Sno
 W-C-04.Tem
 W-C-04.Ubn
 W-C-04.Urb
-W-D-01.Des
-W-D-01.Sno
-W-D-01.Tem
-W-D-01.Ubn
-W-D-01.Urb
-W-D-02.Des
-W-D-02.Sno
-W-D-02.Tem
-W-D-02.Ubn
-W-D-02.Urb
-W-D-03.Des
-W-D-03.Sno
-W-D-03.Tem
-W-D-03.Ubn
-W-D-03.Urb
+W-C-03.Des
+W-C-03.Sno
+W-C-03.Tem
+W-C-03.Ubn
+W-C-03.Urb
+W-C-02.Des
+W-C-02.Sno
+W-C-02.Tem
+W-C-02.Ubn
+W-C-02.Urb
+W-C-01.Des
+W-C-01.Sno
+W-C-01.Tem
+W-C-01.Ubn
+W-C-01.Urb
 W-D-04.Des
 W-D-04.Sno
 W-D-04.Tem
 W-D-04.Ubn
 W-D-04.Urb
+W-D-03.Des
+W-D-03.Sno
+W-D-03.Tem
+W-D-03.Ubn
+W-D-03.Urb
+W-D-02.Des
+W-D-02.Sno
+W-D-02.Tem
+W-D-02.Ubn
+W-D-02.Urb
+W-D-01.Des
+W-D-01.Sno
+W-D-01.Tem
+W-D-01.Ubn
+W-D-01.Urb
 W1.Des	Water
 W1.Sno	Water
 W1.Tem	Coast
@@ -26866,10 +26942,11 @@ Wa04x.Des
 Wa04x.Sno
 Wa04x.Tem
 Wa04x.Urb
-Wake.Shp	Gunboat Wakes
 Wake1.Shp
 Wake2.Shp
+Wake.Shp	Gunboat Wakes
 Wall0001.Int	Blank Tile
+Wall1.Aud
 Wall0002.Int	Grey Wall
 Wall0003.Int	Grey Wall
 Wall0004.Int	Grey Wall
@@ -26918,7 +26995,6 @@ Wall0046.Int	Grey Wall
 Wall0047.Int	Grey Wall
 Wall0048.Int	Grey Wall
 Wall0049.Int	Grey Wall
-Wall1.Aud
 Wallicon.Shp
 Wallkil2.Aud	Fence Over
 Warfare.Aud	Warfare
@@ -27017,9 +27093,9 @@ Warubb08.Urb
 Warubb09.Urb
 Wash01.Ubn
 Wash01.Urb
+Wash1.Aud
 Wash02.Ubn
 Wash02.Urb
-Wash1.Aud
 Wastelnd.Aud	Wasteland
 Wasticon.Shp	Tiberium Waste Facility
 Water01.Des
@@ -27598,8 +27674,8 @@ Wdtsd640.Pcx
 Wdttarget1.Shp
 Wdttrgt.Pal
 Weaficon.Shp	War Factory Fake
-Weap.Shp	War Factory
 Weap2.Shp	War Factory Base
+Weap.Shp	War Factory
 Weapicnh.Des	War Factory
 Weapicnh.Tem	War Factory
 Weapicnh.Win	War Factory
@@ -27659,7 +27735,7 @@ Wildcat4.Aud
 Wildcat5.Aud
 Wildcat6.Aud
 Win1.Aud	Great Shot!
-Win1.Var	Great Shot! SFX
+Win1.Var	Great Shot! Remix
 Wind1r.Aud
 Wind2r.Aud
 Wind3r.Aud
@@ -27751,11 +27827,11 @@ Womhurt2.Aud
 Wood.Shp
 Wood.Shp	Wood Fence
 Woodc1.Aud
-Woodc10.Aud
 Woodc2.Aud
 Woodc4.Aud
 Woodc6.Aud
 Woodc7.Aud
+Woodc10.Aud
 Woodcrt1.Aud
 Woodelev.Aud
 Woodicnh.Des	Wood Fence
@@ -27799,8 +27875,8 @@ World2.Aud	World
 Worm1.Aud
 Worm2.Aud
 Worm3.Aud
-Wormdie.Aud
 Wormdie2.Aud
+Wormdie.Aud
 Wormhit1.Aud
 Wormspit.Aud
 Wouact.Pcx
@@ -27870,7 +27946,9 @@ Wunits.Mrf
 Wwcrate.Shp	Watercrate
 Wwhite.Mrf
 Wwlogo.Vqa
+Wwlogo.Vqp
 Wyellow.Mrf
+X.Vqp
 Xa1ev01.Wav
 Xa1ev02.Wav
 Xa1ev03.Wav
@@ -28160,6 +28238,7 @@ Xseaofiso.Map
 Xshrapnel.Map
 Xtanyas.Map
 Xterritor.Map
+Xtitle.Pcx
 Xtn01mw.Map
 Xtn01t2.Map
 Xtn02mw.Map
@@ -28286,10 +28365,10 @@ Yell1m3.Aud
 Yengicon.Shp
 Yenguico.Shp
 Yes1.Aud	Yes Sir!
-Yessir1.R00	Soviet 1 Yes Sir!
-Yessir1.R01	Soviet 2 Yes Sir!
-Yessir1.R02	Soviet 3 Yes Sir!
-Yessir1.R03	Soviet 4 Yes Sir!
+Yessir1.R00	Soviet Yes Sir!
+Yessir1.R01	Soviet Yes Sir!
+Yessir1.R02	Soviet Yes Sir!
+Yessir1.R03	Soviet Yes Sir!
 Yessir1.V00	Yes Sir!
 Yessir1.V01	Yes Sir!
 Yessir1.V02	Yes Sir!
