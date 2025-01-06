@@ -321,7 +321,6 @@
 #define ID_POPUP_PLAY                   33054
 #define ID_VIEW_DIRECTX_OPTIONS         33056
 #define ID_VIEW_DIRECTORIES             33057
-#define ID_VIEW_VOXEL_TEST							33058
 
 #define ID_POPUP_COPY_AS_MAP_TS_PREVIEW 33073
 #define ID_POPUP_REFRESH                33075

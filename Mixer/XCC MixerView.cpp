@@ -231,7 +231,7 @@ void CXCCMixerView::OnFileNew()
 	const char* save_filter = "TD/RA MIX (*.mix)|*.mix|TS/RA2 MIX (*.mix)|*.mix|Renegade MIX (*.mix)|*.mix|Generals BIG (*.big)|*.big|";
 
 	close_all_locations();
-	CFileDialog dlg(false, NULL, NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT | OFN_PATHMUSTEXIST, save_filter, this);
+	CFileDialog dlg(false, save_filter, NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT | OFN_PATHMUSTEXIST, save_filter, this);
 	dlg.m_ofn.nFilterIndex = 2;
 	if (IDOK == dlg.DoModal())
 	{
@@ -836,7 +836,8 @@ const t_palette_entry* CXCCMixerView::get_default_palette() const
 
 bool CXCCMixerView::can_accept() const
 {
-	return !m_mix_f;
+	//return !m_mix_f;
+	return true;
 }
 
 bool CXCCMixerView::can_edit() const
@@ -960,7 +961,7 @@ bool CXCCMixerView::can_delete()
 
 bool CXCCMixerView::can_copy_as(t_file_type ft)
 {
-	if (!can_copy() || m_index_selected.empty())
+	if (m_other_pane->m_mix_f || m_mix_f || m_index_selected.empty())
 		return false;
 	for (auto& i : m_index_selected)
 	{
@@ -991,6 +992,33 @@ static void copy_succeeded(const Cfname& fname)
 	set_msg("Copy " + fname.get_ftitle() + " succeeded");
 }
 
+int big_insert_dir(Cbig_edit& f, const string& dir, const string& name_prefix)
+{
+	int error = 0;
+	WIN32_FIND_DATA fd;
+	HANDLE fh = FindFirstFile((dir + '*').c_str(), &fd);
+	if (fh != INVALID_HANDLE_VALUE)
+	{
+		do
+		{
+			string fname = dir + fd.cFileName;
+			if (fd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+			{
+				if (*fd.cFileName != '.')
+					error = error ? big_insert_dir(f, fname + '/', name_prefix + fd.cFileName + '\\'), error : big_insert_dir(f, fname + '/', name_prefix + fd.cFileName + '\\');
+			}
+			else
+			{
+				Cvirtual_binary d;
+				if (!d.load(fname))
+					error = error ? f.insert(name_prefix + fd.cFileName, d) : f.insert(name_prefix + fd.cFileName, d), error;
+			}
+		} while (FindNextFile(fh, &fd));
+		FindClose(fh);
+	}
+	return error;
+}
+
 void CXCCMixerView::copy_as(t_file_type ft)
 {
 	CWaitCursor wait;
@@ -1000,80 +1028,150 @@ void CXCCMixerView::copy_as(t_file_type ft)
 		const Cfname fname = m_other_pane->get_dir() + find_ref(m_index, get_id(i)).name;
 		if (find_ref(m_index, get_id(i)).name.find('\\') != string::npos)
 			create_deep_dir(m_other_pane->get_dir(), Cfname(find_ref(m_index, get_id(i)).name).get_path());
-		switch (ft)
+		if (m_other_pane->m_mix_f)
 		{
-		case -1:
-			error = copy(i, fname);
-			break;
-		case ft_aud:
-			error = copy_as_aud(i, fname);
-			break;
-		case ft_avi:
-			error = copy_as_avi(i, fname);
-			break;
-		case ft_cps:
-			error = copy_as_cps(i, fname);
-			break;
-		case ft_csv:
-			error = copy_as_csv(i, fname);
-			break;
-		case ft_html:
-			error = copy_as_html(i, fname);
-			break;
-		case ft_hva:
-			error = copy_as_hva(i, fname);
-			break;
-		case ft_jpeg:
-		case ft_jpeg_single:
-		case ft_pcx:
-		case ft_pcx_single:
-		case ft_png:
-		case ft_png_single:
-		case ft_tga:
-		case ft_tga_single:
-			error = copy_as_pcx(i, fname, ft);
-			break;
-		case ft_map_ts_preview:
-			error = copy_as_map_ts_preview(i, fname);
-			break;
-		case ft_pal:
-			error = copy_as_pal(i, fname);
-			break;
-		case ft_pal_jasc:
-			error = copy_as_pal_jasc(i, fname);
-			break;
-		case ft_shp:
-			error = copy_as_shp(i, fname);
-			break;
-		case ft_shp_ts:
-			error = copy_as_shp_ts(i, fname);
-			break;
-		case ft_text:
-			error = copy_as_text(i, fname);
-			break;
-		case ft_vxl:
-			error = copy_as_vxl(i, fname);
-			break;
-		case ft_wav_ima_adpcm:
-			error = copy_as_wav_ima_adpcm(i, fname);
-			break;
-		case ft_wav_pcm:
-			error = copy_as_wav_pcm(i, fname);
-			break;
-		case ft_xif:
-			error = copy_as_xif(i, fname);
-			break;
-		default:
-			error = 1;
+			const Cfname fname = get_dir() + find_ref(m_index, get_id(i)).name;
+			if (find_ref(m_index, get_id(i)).name.find('\\') != string::npos)
+				create_deep_dir(get_dir(), Cfname(find_ref(m_index, get_id(i)).name).get_path());
+			t_file_type mix_ft = m_other_pane->m_mix_f->get_file_type();
+			m_other_pane->close_location(false);
+			switch (mix_ft)
+			{
+			case ft_big:
+				{
+					Cbig_edit f;
+					error = f.open(m_other_pane->m_mix_fname);
+					if (!error)
+					{
+						Cvirtual_binary d;
+						DWORD file_attributes = GetFileAttributes(fname.get_all().c_str());
+						if (file_attributes == INVALID_FILE_ATTRIBUTES || ~file_attributes & FILE_ATTRIBUTE_DIRECTORY)
+						{
+							Cvirtual_binary d;
+							if (!d.load(fname))
+								error = error ? f.insert(Cfname(fname).get_fname(), d) : f.insert(Cfname(fname).get_fname(), d), error;
+						}
+						else
+							error = error ? big_insert_dir(f, string(fname) + '/', Cfname(fname).get_fname() + '\\'), error : big_insert_dir(f, string(fname) + '/', Cfname(fname).get_fname() + '\\');
+
+						error = error ? f.write_index(), error : f.write_index();
+						f.close();
+					}
+					break;
+				}
+			case ft_mix_rg:
+				{
+					Cmix_rg_edit f;
+					error = f.open(m_other_pane->m_mix_fname);
+					if (!error)
+					{
+						Cvirtual_binary d;
+						if (!d.load(fname))
+							error = error ? f.insert(Cfname(fname).get_fname(), d) : f.insert(Cfname(fname).get_fname(), d), error;
+						error = error ? f.write_index(), error : f.write_index();
+						f.close();
+					}
+					break;
+				}
+			default:
+				{
+					Cmix_edit f;
+					error = f.open(m_other_pane->m_mix_fname);
+					if (!error)
+					{
+						Cvirtual_binary d;
+						if (!d.load(fname))
+							error = error ? f.insert(Cfname(fname).get_fname(), d) : f.insert(Cfname(fname).get_fname(), d), error;
+						error = error ? f.write_index(), error : f.write_index();
+						f.close();
+					}
+				}
+			}
+			m_other_pane->open_location_mix(m_other_pane->m_mix_fname);
+			if (error)
+				copy_failed(fname, error);
+			else
+				copy_succeeded(fname);
 		}
-		if (error)
-			copy_failed(fname, error);
 		else
-			copy_succeeded(fname);
+		{
+			switch (ft)
+			{
+			case -1:
+				error = copy(i, fname);
+				break;
+			case ft_aud:
+				error = copy_as_aud(i, fname);
+				break;
+			case ft_avi:
+				error = copy_as_avi(i, fname);
+				break;
+			case ft_cps:
+				error = copy_as_cps(i, fname);
+				break;
+			case ft_csv:
+				error = copy_as_csv(i, fname);
+				break;
+			case ft_html:
+				error = copy_as_html(i, fname);
+				break;
+			case ft_hva:
+				error = copy_as_hva(i, fname);
+				break;
+			case ft_jpeg:
+			case ft_jpeg_single:
+			case ft_pcx:
+			case ft_pcx_single:
+			case ft_png:
+			case ft_png_single:
+			case ft_tga:
+			case ft_tga_single:
+				error = copy_as_pcx(i, fname, ft);
+				break;
+			case ft_map_ts_preview:
+				error = copy_as_map_ts_preview(i, fname);
+				break;
+			case ft_pal:
+				error = copy_as_pal(i, fname);
+				break;
+			case ft_pal_jasc:
+				error = copy_as_pal_jasc(i, fname);
+				break;
+			case ft_shp:
+				error = copy_as_shp(i, fname);
+				break;
+			case ft_shp_ts:
+				error = copy_as_shp_ts(i, fname);
+				break;
+			case ft_text:
+				error = copy_as_text(i, fname);
+				break;
+			case ft_vxl:
+				error = copy_as_vxl(i, fname);
+				break;
+			case ft_wav_ima_adpcm:
+				error = copy_as_wav_ima_adpcm(i, fname);
+				break;
+			case ft_wav_pcm:
+				error = copy_as_wav_pcm(i, fname);
+				break;
+			case ft_xif:
+				error = copy_as_xif(i, fname);
+				break;
+			default:
+				error = 1;
+			}
+			if (error)
+				copy_failed(fname, error);
+			else
+				copy_succeeded(fname);
+		}
 	}
 	if (m_dir == m_other_pane->m_dir && !m_mix_f)
 		update_list();
 	m_other_pane->update_list();
+	if (m_other_pane->m_mix_f)
+		m_other_pane->OnPopupCompact();
 }
 
 int CXCCMixerView::copy(int i, Cfname fname) const
@@ -2098,34 +2196,6 @@ void CXCCMixerView::OnPopupCopyAsXIF()
 void CXCCMixerView::OnUpdatePopupCopyAsXIF(CCmdUI* pCmdUI)
 {
 	pCmdUI->Enable(can_copy_as(ft_xif));
-}
-
-int big_insert_dir(Cbig_edit& f, const string& dir, const string& name_prefix)
-{
-	int error = 0;
-	WIN32_FIND_DATA fd;
-	HANDLE fh = FindFirstFile((dir + '*').c_str(), &fd);
-	if (fh != INVALID_HANDLE_VALUE)
-	{
-		do
-		{
-			string fname = dir + fd.cFileName;
-			if (fd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
-			{
-				if (*fd.cFileName != '.')
-					error = error ? big_insert_dir(f, fname + '/', name_prefix + fd.cFileName + '\\'), error : big_insert_dir(f, fname + '/', name_prefix + fd.cFileName + '\\');
-			}
-			else
-			{
-				Cvirtual_binary d;
-				if (!d.load(fname))
-					error = error ? f.insert(name_prefix + fd.cFileName, d) : f.insert(name_prefix + fd.cFileName, d), error;
-			}
-		}
-		while (FindNextFile(fh, &fd));
-		FindClose(fh);
-	}
-	return error;
 }
 
 void CXCCMixerView::OnDropFiles(HDROP hDropInfo)

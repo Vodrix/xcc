@@ -157,8 +157,8 @@ BEGIN
     POPUP "_POPUP_"
     BEGIN
         MENUITEM "Open\tEnter",													ID_POPUP_OPEN
-        MENUITEM "&Explore..",													ID_POPUP_EXPLORE
-				MENUITEM "&New Archive..",											ID_FILE_NEW
+        MENUITEM "&Explore...",													ID_POPUP_EXPLORE
+				MENUITEM "&New Archive...",											ID_FILE_NEW
         MENUITEM SEPARATOR
         POPUP "Clipboard"
         BEGIN
