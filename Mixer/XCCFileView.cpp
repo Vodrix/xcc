@@ -716,7 +716,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 			}
 		case ft_mix:
 			{
-				Cmix_file_rd f;
+				Cmix_file f;
 				f.load(m_data, m_size);
 				const int c_files = f.get_c_files();
 				const t_game game = f.get_game();
@@ -1345,7 +1345,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 				}
 			default:
 				Cfname fname = to_lower(m_fname);
-				if (fname.get_fext() == ".mix" && m_ft != ft_mix)
+				if (fname.get_fext() == ".mix" && m_ft != ft_mix && m_ft != ft_mix_rg)
 				{
 					m_ft = ft_mix;
 					Cmix_file_rd f;
