@@ -340,6 +340,19 @@ string Cmix_file::get_name(int id)
 #endif
 }
 
+unsigned int GetUInt32FromBuffer(std::string values, int length, int& index)
+{
+	unsigned int a = 0;
+	for (int i = 0; i < 4; ++i)
+	{
+		a >>= 8;
+		if (index < length)
+			a += static_cast<unsigned int>(values[index]) << 24;
+		index++;
+	}
+	return a;
+}
+
 int Cmix_file::get_id(t_game game, string name)
 {
 	name = to_upper(name);
@@ -348,7 +361,7 @@ int Cmix_file::get_id(t_game game, string name)
 	{
 	case game_ts:
 	case game_ra2:
-	case game_ra2_yr:
+	case game_ra2_yr:	//crc32
 		{
 			const int l = name.length();
 			int a = l & ~3;
@@ -363,20 +376,42 @@ int Cmix_file::get_id(t_game game, string name)
 	case game_gr:
 	case game_gr_zh:
 			return compute_crc(name.c_str(), name.length());
-	default:
+	case game_bfme:	//stand-in for rol3 (ts/ra2/nox/lol3 setup)
+	{
 		int i = 0;
 		unsigned int id = 0;
-		int l = name.length();
-		while (i < l)
+		int len = name.length();
+		while (i < len)
 		{
-			unsigned int a = 0;
-			for (int j = 0; j < 4; j++)
-			{
-				a >>= 8;
-				if (i < l)
-					a |= static_cast<unsigned int>(name[i++]) << 24;
-			}
-			id = (id << 1 | id >> 31) + a;
+			unsigned int buffer = GetUInt32FromBuffer(name, len, i);
+			int rot = (i <= len ? 3 : 1);	//yes, this is the only difference
+
+			id = (id << rot | id >> 32 - rot) + buffer;
+		}
+		return id;
+	}
+	case game_bfme2: //stand-in for ror (lol3)
+	{
+		int i = 0;
+		unsigned int id = 0;
+		int len = name.length();
+		while (i < len)
+		{
+			unsigned int buffer = (id >> 6 | id << 26);
+			id = static_cast<unsigned int>((name[i] - 48) & 63) + buffer;
+			i++;
+		}
+		return id;
+	}
+	default:	//rol1 (cnc, ra1)
+		int i = 0;
+		unsigned int id = 0;
+		int len = name.length();
+		while (i < len)
+		{
+			unsigned int buffer = GetUInt32FromBuffer(name, len, i);
+
+			id = (id << 1 | id >> 31) + buffer;
 		}
 		return id;
 	}

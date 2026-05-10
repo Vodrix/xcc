@@ -60,7 +60,8 @@ void write_list(t_idlist& id_list, Cfile32& f1, ofstream& f2)
 	{
 		f1.write(i.second.name.c_str(), i.second.name.size() + 1);
 		f1.write(i.second.description.c_str(), i.second.description.size() + 1);
-		f2 << nh(8, Cmix_file::get_id(game_td, i.second.name)) + "TD" << '\t' << nh(8, Cmix_file::get_id(game_ra2, i.second.name)) + "RA2" << '\t' << nh(8, Cmix_file::get_id(game_rg, i.second.name)) + "RG"
+		f2 << nh(8, Cmix_file::get_id(game_td, i.second.name)) + "-TD" << '\t' << nh(8, Cmix_file::get_id(game_ra2, i.second.name)) + "-RA2" << '\t' << nh(8, Cmix_file::get_id(game_rg, i.second.name)) + "-RG"
+			<< '\t' << nh(8, Cmix_file::get_id(game_bfme, i.second.name)) + "-ROL3" << '\t' << nh(8, Cmix_file::get_id(game_bfme2, i.second.name)) + "-ROR"
 			<< '\t' << '\t' << i.second.name << '\t' << i.second.description << endl;	//this is just for diagnostics anyways
 	}
 }

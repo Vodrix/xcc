@@ -466,6 +466,7 @@ void CXCCFileView::OnDraw(CDC* pDC)
 		draw_info("Size:", n(m_size));
 		draw_info("Type:", ft_name[m_ft]);
 		bool show_binary = false;
+
 		switch (m_ft)
 		{
 		case ft_aud:

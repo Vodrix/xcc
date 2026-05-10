@@ -46,6 +46,10 @@ int mix_database::load()
 	read_list(game_td, data);	//td for default id value (td, ra)
 	data = reinterpret_cast<const char*>(f.data());	//refresh
 	read_list(game_ts, data);	//ts for ts and ra2 value
+	data = reinterpret_cast<const char*>(f.data());	//refresh
+	read_list(game_bfme, data);	//stand-in for rol3 (ts/ra2/nox/lol3 setup)
+	data = reinterpret_cast<const char*>(f.data());	//refresh
+	read_list(game_bfme2, data); //stand-in for ror (lol3)
 
 	return 0;
 	char name[12] = "scg00ea.bin";	//i have no idea what's going on here, ra and td isn't my expertise
